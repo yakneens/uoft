@@ -1,0 +1,75 @@
+:-import append/3 from basics.
+
+/*******************************************************************************
+ * nextState(Plyr,Move,State,NewState,NextPlyr) holds iff NextPlyr is to play
+ * in state NewState as a result of Player making Move in state State.
+ * Pre: none.
+ *******************************************************************************/
+nextState(Plyr,pass,State,State,NextPlyr) :- 
+moves(Plyr,State,[pass]),
+color(Plyr,Color),
+flip(Color,OtherColor),
+color(NextPlyr,OtherColor),!.
+
+nextState(Plyr,Move,State,NewState,NextPlyr) :-
+directions(Dirs),
+genFlipped(Plyr,Move,State,Flip,Dirs),
+color(Plyr,Color),flip(Color,OtherColor),
+color(NextPlyr,OtherColor),
+doOutflank(State,Flip,Color,TempState),
+replPos(Move,TempState,Color,NewState).
+
+
+/*******************************************************************************
+ * doOutflank(State,ToBeFlipped,Color,NewState) holds iff NewState is the state
+ * resulting form flipping discs described in ToBeFlipped by a list of triples
+ * [StartPosition,FinishPosition,Direction] to Color in state State.
+ * Pre: none.
+ *******************************************************************************/
+doOutflank(State,[],_,State).
+
+doOutflank(State,[[S,F,D]|R],Color,NewState):- 
+doOutflank(State,R,Color,TempState),
+flipDiscs(TempState,S,F,D,Color,NewState).
+
+/*******************************************************************************
+ * flipDiscs(State,StartPos,FinishPos,Dir,Color,NewState) holds iff NewState
+ * results from State via flipping the discs from StartPos to FinishPos in 
+ * direction Dir to Color.
+ * Pre: none.
+ *******************************************************************************/
+
+flipDiscs(State,StartPos,StartPos,_,Color,NewState) :- 
+replPos(StartPos,State,Color,NewState).
+
+flipDiscs(State,StartPos,FinishPos,Dir,Color,NewState) :- 
+StartPos \= FinishPos,
+nextPos(Dir,StartPos,NextPos),
+flipDiscs(State,NextPos,FinishPos,Dir,Color,TempState),
+replPos(StartPos,TempState,Color,NewState). 
+
+
+
+/*******************************************************************************
+ * directions(L) holds iff L is the list [north,northeast,east,southeast,south,
+ * southwest,west,northwest].
+ * Pre: none.
+ *******************************************************************************/
+directions([north,northeast,east,southeast,south,southwest,west,northwest]).
+
+/*******************************************************************************
+ * genFlipped(Player,Move,State,Flip,Dirs) holds iff Flip is the list of triples 
+ * [StartPosition,FinishPosition,Direction] which identify opponent discs that 
+ * can be flipped as a result of playing Move in the state State by Player.
+ * Pre: none.
+ *******************************************************************************/
+genFlipped(_,_,_,[],[]).
+genFlipped(Plyr,Move,State,Flip,[F|R]) :-
+color(Plyr,Color),flip(Color,OtherColor),
+nextPos(F,Move,NextPos),
+furthest(F,State,NextPos,OtherColor,FurthestPos)->
+nextPos(F,FurthestPos,NextFurthestPos),
+(getDisc(NextFurthestPos,State,Color)->
+genFlipped(Plyr,Move,State,NewFlip,R),append([[NextPos, FurthestPos, F]],NewFlip,Flip);
+genFlipped(Plyr,Move,State,Flip,R));
+genFlipped(Plyr,Move,State,Flip,R).

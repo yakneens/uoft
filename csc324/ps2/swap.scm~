@@ -1,0 +1,3 @@
+(define swap
+  (lambda (a)
+    (if (>= (length a) 3) (cons (caddr a) (cadr a) (car a) (cdddr a))))) 

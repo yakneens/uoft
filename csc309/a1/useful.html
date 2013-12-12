@@ -1,0 +1,66 @@
+<script language="JavaScript" type="text/javascript"><!--
+// _dom : 0=other, 1=Mozilla, 2=NN4, 3=IE4/5
+_dom=(document.all?3:(document.getElementById?1:(document.layers?2:0)));
+_ie5=(navigator.appVersion.indexOf('MSIE 5')>=0);
+function getChild(ids){
+  if(document.getElementById) return document.getElementById(ids).firstChild;
+  return null;
+}
+function notSupported(){ alert('your browser is not supported.'); }
+function dataCD(ids){
+  var child=getChild(ids);
+  if(child) alert(child.data);
+  else notSupported();
+}
+function lengthCD(ids){
+  var child=getChild(ids);
+  if(child) alert(child.length);
+  else notSupported();
+}
+function appendCD(ids,phrase){
+  var child=getChild(ids);
+  if(child && child.appendData) child.appendData(phrase);
+  else notSupported();
+}
+function deleteCD(ids,offset,count){
+  var child=getChild(ids);
+  if(child && child.deleteData) child.deleteData(offset,count);
+  else notSupported();
+}
+function insertCD(ids,offset,str){
+  var child=getChild(ids);
+  if(child && child.insertData) child.insertData(offset,str);
+  else notSupported();
+}
+function replaceCD(ids,offset,count,str){
+  var child=getChild(ids);
+  if(child && child.replaceData) child.replaceData(offset,count,str);
+  else notSupported();
+}
+function substringCD(ids,offset,count){
+  var child=getChild(ids);
+  if(child && child.substringData) alert('result : "'+child.substringData(offset,count)+'"');
+  else notSupported();
+}
+// --></script>
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#cc6666" alink="#ff0000" vlink="cc6666">
+
+<h2>CharacterData</h2>
+
+<form name="f">
+<p id="phrase0">How are you?</p>
+<input type="button" value="data" onClick="dataCD('phrase0');">
+<p id="phrase1">How are you?</p>
+<input type="button" value="length" onClick="lengthCD('phrase1');">
+<p id="phrase2">How are you?</p>
+<input type="button" value="appendData(' ... I\'m fine.')" onClick="appendCD('phrase2',' ... I\'m fine.');">
+<p id="phrase3">How are you?</p>
+<input type="button" value="deleteData( 0, 4 )" onClick="deleteCD('phrase3',0,4);">
+<p id="phrase4">How are you?</p>
+<input type="button" value="insertData( 11, 'Tom and ')" onClick="insertCD('phrase4',8,'Tom and ');">
+<p id="phrase5">How are you?</p>
+<input type="button" value="replaceData( 4, 7, 'is Tom')" onClick="replaceCD('phrase5',4,7,'is Tom');">
+<p id="phrase6">How are you?</p>
+<input type="button" value="substringData( 8, 3)" onClick="substringCD('phrase6',8,3);">
+</form>

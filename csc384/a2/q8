@@ -1,0 +1,20 @@
+/*************************************
+ *            Assignment 2
+ *               CSC384
+ *             Question 8
+ *           Sergei Iakhnin
+ *             981 843 420
+ ************************************/
+
+a) Since for any disk that is out of place the neighouring state either puts the
+disk in place, leaves the disk where it is, or puts it in another spot where it
+is out of place for any configuration N there exists a neighbouring 
+configuration N' such that h1(N,D) >= h1(N',D). Thus h1 satisfies the monotone
+restriction.
+
+b),c) Admissibility does in fact hold for h2 and h3 since the minimal number of
+moves it takes to move 4 disks stacked on top of each other which are misplaced 
+into 4 disks stacked on top of each other which are in place is in fact 2^4 - 1
+= 15  >= the estimates of 10 and 15 given by h2 and h3. Since this configuration
+corresponds to the longest distance between a state and any goal the two
+heuristics are in fact admissible. 

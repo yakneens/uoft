@@ -1,0 +1,1 @@
+imagePanel->convertPointsToSpline();

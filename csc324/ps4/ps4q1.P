@@ -1,0 +1,27 @@
+/******************************* 
+ * Problem Set 4
+ * CSC324
+ * By: Sergei Iakhnin
+ * #: 981843420
+ * TA: Alex Kessaris
+ *******************************/
+
+/* Definitions for family predicates */
+:- [ps4family].
+
+/* Additional rule to reflect the symmetry of the married relation */
+married(X,Y) :- married(Y,X).
+
+/********************************************************************** 
+ * mother-in-law(X,Y) holds iff X is the mother-in-law of Y 
+ * Pre: none
+ **********************************************************************/
+mother-in-law(X,Y) :- parent(X,Z), female(X), married(Z,Y).
+
+
+/**********************************************************************
+ * sister-in-law(X,Y) holds iff X is the sister-in-law of Y
+ * Pre: none
+ **********************************************************************/
+sister-in-law(X,Y) :- female(X), married(X,Z), sibling(Z,Y).
+sister-in-law(X,Y) :- female(X), sibling(X,Z), married(Z,Y).

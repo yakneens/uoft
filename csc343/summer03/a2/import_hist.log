@@ -1,0 +1,12 @@
+
+07-04-2003 19:12:34 import from players.txt OF DEL INSERT INTO Players
+07-04-2003 19:12:38 DB20000I  The IMPORT command completed successfully.
+
+07-04-2003 19:12:38 import from franchise.txt OF DEL INSERT INTO Franchise
+07-04-2003 19:12:38 DB20000I  The IMPORT command completed successfully.
+
+07-04-2003 19:12:38 import from teams.txt OF DEL INSERT INTO Teams
+07-04-2003 19:12:40 DB20000I  The IMPORT command completed successfully.
+
+07-04-2003 19:12:40 import from salaries.txt OF DEL INSERT INTO Salaries
+07-04-2003 19:12:52 DB20000I  The IMPORT command completed successfully.

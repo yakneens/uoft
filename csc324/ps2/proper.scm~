@@ -1,0 +1,12 @@
+(define proper?
+  (lambda (l)
+    (cond ((null? l) #t)
+	  ((list? (cdr l)) (proper? (cdr l)))
+	  (else '())
+    )
+  )
+)
+
+(define deep-properlist?
+  (lambda (a)
+    (if (null? a) #t (and (proper? a) (if (pair? (car a)) (deep-properlist? (car a)) (deep-properlist? (cdr a))))))) 

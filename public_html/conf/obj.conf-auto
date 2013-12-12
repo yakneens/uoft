@@ -1,0 +1,38 @@
+###################################################################
+# Auto generated configuration. Dated: Tue Apr 15 00:53:39 EDT 2003
+###################################################################
+
+#
+# You will need to merge the content of this file with your 
+# regular obj.conf and then restart (=stop + start) your Netscape server. 
+#
+
+#
+# Loading the redirector into your server
+#
+
+Init fn="load-modules" funcs="jk_init,jk_service" shlib="<put full path to the redirector here>"
+Init fn="jk_init" worker_file="/h/u3/g2/00/g2poupon/public_html/conf/workers.properties" log_level="debug" log_file="/h/u3/g2/00/g2poupon/public_html/logs/netscape_redirect.log"
+
+<Object name=default>
+#
+# Redirecting the root context requests to tomcat.
+#
+NameTrans fn="assign-name" from="/servlet/*" name="servlet"
+NameTrans fn="assign-name" from="/*.jsp" name="servlet"
+
+#######################################################
+# Protecting the web inf directory.
+#######################################################
+PathCheck fn="deny-existence" path="*/WEB-INF/*"
+
+</Object>
+
+#######################################################
+# New object to execute your servlet requests.
+#######################################################
+<Object name=servlet>
+ObjectType fn=force-type type=text/html
+Service fn="jk_service" worker="ajp12" path="/*"
+</Object>
+

@@ -1,0 +1,178 @@
+<html>
+<head>
+	<title>Bob</title>
+	<link rel="stylesheet" href="store.css">
+<script language="JavaScript" src="populate.js"></script>
+<script language="JavaScript" src="jscripts.js"></script>
+</head>
+
+<body onload="populateCart();">
+<table width=800 cellpadding="0" cellspacing="0" border="1">
+	<tr>		
+		<td colspan="3"><img src="images/top.jpg"></td>
+	</tr>
+	<tr>
+		<td width="150"><img src="images/spacer.gif" width="100"></a></td>
+		<td width="500">
+			<table width="500" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td>
+						<table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td>
+									Category: Lettuce
+								</td>
+								<td>
+									<a name="man">Manufacturer: Lettuce Inc.</a>
+								</td>
+								<td>
+									Name: Lettuce
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#EGGS">Description: Some Lettuce</a>
+								</td>
+								<td>
+									Price: $20000
+								</td>
+								<td>
+									<a href="javascript:addToCart(1);"><img src="images/tomatoes.jpg" border="0"></a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table cellspacing="0" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td>
+									Category: bacon
+								</td>
+								<td>
+									Manufacturer: bacon Inc.
+								</td>
+								<td>
+									Name: bacon
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Description: Some bacon
+								</td>
+								<td>
+									Price: $20000
+								</td>
+								<td>
+									<a href="javascript:addToCart(2);"><img src="images/tomatoes.jpg" border="0"></a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table cellspacing="0" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td>
+									Category: tomatoes
+								</td>
+								<td>
+									Manufacturer: tomatoes Inc.
+								</td>
+								<td>
+									Name: tomatoes
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Description: Some tomatoes
+								</td>
+								<td>
+									Price: $20000
+								</td>
+								<td>
+									<a href="javascript:addToCart(3);"><img src="images/tomatoes.jpg" border="0"></a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table cellspacing="0" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td>
+									Category: Eggs
+								</td>
+								<td>
+									Manufacturer: Eggs Inc.
+								</td>
+								<td>
+									Name: Eggs
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a name="EGGS"></a>Description: Some eggs
+								</td>
+								<td>
+									Price: $20000
+								</td>
+								<td>
+									<a href="javascript:addToCart(4);"><img src="images/tomatoes.jpg" border="0"></a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width="150" valign="top">
+			<table width="150" border="0" cellpadding="0" cellspacing="5" class="shoppingCart"> 
+				<tr>
+					<td colspan="3" class="shoppingCartHeader">Shopping Cart</td>
+				</tr>
+				<tr>
+					<td colspan="3"><hr></td>
+				</tr>
+				<tr>
+					<td>1.</td>
+					<td id="id0">&nbsp;
+					</td>
+					<td width="20%"><a href="javascript:removeFromCart(0);" class="remove">remove</a></td>
+				</tr>
+				<tr>
+					<td>2.</td>
+					<td id="id1">&nbsp;
+					</td>
+					<td width="20%"><a href="javascript:removeFromCart(1);" class="remove">remove</a></td>
+				</tr>
+				<tr>
+					<td>3.</td>
+					<td id="id2">&nbsp;
+					</td>
+					<td width="20%"><a href="javascript:removeFromCart(2);" class="remove">remove</a></td>
+				</tr>
+				<tr>
+					<td>4.</td>
+					<td id="id3">&nbsp;
+					</td>
+					<td width="20%"><a href="javascript:removeFromCart(3);" class="remove">remove</a></td>
+				</tr>
+				<tr>
+					<td>5.</td>
+					<td id="id4">&nbsp;
+					</td>
+					<td width="20%"><a href="javascript:removeFromCart(4);" class="remove">remove</a></td>
+				</tr>
+				<tr>
+					<td align="center" colspan="3"><input type="text" id="search_field" value=""><input type="button" name="search" value="Search" onclick="doSearch();"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,98 @@
+Here are the test cases for Assignment 4, Q1.
+
+====================================================================
+
+-> note: there may be a lot of actions depending on how you encode
+your domain. If there are too many, idrplan may have memory difficulties
+on CDF. So in the "actlist" in your Prolog spec. of each problem, you
+should feel free to only mention the "sensible" actions (e.g., if
+you have an action that moves the robot from Location1 to Location2,
+you only need to list ground instances of that action where Location1
+and Location2 are different).
+
+====================================================================
+
+Parcel delivery domain:
+
+Test Case 1:
+------------
+
+startstate:
+* the robot is in Sandford Fleming
+* parcel1 is in Sandford Fleming
+* parcel2 is in Bahen
+* it's raining
+* robot is not wet
+* umbrella is in Sandford Fleming
+* robot is not carrying any parcel nor the umbrella
+
+goallist:
+* parcel1 is in Pratt
+* parcel2 is in Bahen
+* Robot is not wet
+
+Test Case 2:
+------------
+
+startstate:
+* the robot is in Pratt
+* parcel1 is in Sandford Fleming
+* it's raining
+* robot is not wet
+* umbrella is in Sandford Fleming
+* robot is not carrying any parcel nor the umbrella
+
+goallist:
+* parcel1 is in Pratt
+* Robot is wet
+* Robot is holding the umbrella
+
+================================================================
+
+Rover Domain:
+
+
+Test Case 1:
+------------
+
+objects: 
+
+* rovers: rov1
+* instruments: instr1
+* operations: therm, spectr
+* orientations: face, back
+
+startstate:
+* rov1 is back to the sun
+* instr1 is on rov1 and is not turned on
+* instr1 supports both spectr and therm
+
+goallist:
+* you want both thermographic and spectrographic images of the soil,
+back to the sun
+
+
+Test Case 2:
+------------
+
+objects:
+
+* rovers: rov1
+* instruments: instr1, instr2
+* operations: therm, spectr
+* orientations: face, back
+
+startstate:
+* rov1 is facing the sun 
+* instr1, instr2 are on rov1 
+* instr1 is turned on and warmed up
+* instr1 supports therm
+* instr2 supports spectr
+* you already have a thermographic image of the soil facing the sun
+
+goallist:
+* you want both thermographic and spectrographic images of the soil,
+facing the sun
+* you want a thermographic image of the soil, back to the sun
+
+

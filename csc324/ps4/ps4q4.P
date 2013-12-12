@@ -1,0 +1,27 @@
+/******************************* 
+ * Problem Set 4
+ * CSC324
+ * By: Sergei Iakhnin
+ * #: 981843420
+ * TA: Alex Kessaris
+ *******************************/
+
+/**********************************************************************
+ * delete(X,L1,L2) holds iff L2 is the same as L1 with all 
+ * instances of X removed 
+ * Pre: none
+ **********************************************************************/
+delete(_,[],[]).
+delete(X,[X|Tail1],Y) :- delete(X,Tail1,Y).
+delete(X,[Y|Tail1],[Y|Tail2]) :- \+(Y=X),delete(X,Tail1,Tail2).
+
+
+/**********************************************************************
+ * remDups(L1,L2) holds iff L2 is the same as L1 with the second and
+ * succeeding immediately adjacent duplicates removed
+ * Pre: none
+ **********************************************************************/
+remDups([],[]).
+remDups([X],[X]).
+remDups([X|Tail1],[X|Tail2]) :- remDups(Tail1,[X|Tail2]).
+remDups([X|Tail1],[Y|Tail2]) :- \+(X=Y), remDups([X|Tail1],Tail2).

@@ -1,0 +1,328 @@
+
+1.Give the names of the franchises with their id.
+
+SELECT franchName, franchID 
+FROM Franchise 
+
+
+FRANCHNAME                                                       FRANCHID
+---------------------------------------------------------------- --------
+Anaheim Angels                                                   ANA     
+Arizona Diamondbacks                                             ARI     
+Atlanta Braves                                                   ATL     
+
+
+
+
+
+
+2.Give the names of the franchise for the team playing in  AL  league
+
+SELECT DISTINCT f.franchName 
+FROM Franchise f, Teams t 
+WHERE f.franchID = t.franchID AND t.lgID = 'AL' 
+
+FRANCHNAME                                                      
+----------------------------------------------------------------
+Anaheim Angels                                                  
+Baltimore Orioles                                               
+Boston Red Sox      
+
+
+
+
+
+3.Give the number of players born in Canada.
+
+SELECT COUNT(playerID) AS numCanadianPlayers 
+FROM Players 
+WHERE birthCountry = 'Canada'
+
+NUMCANADIANPLAYERS
+------------------
+                29
+
+
+
+
+
+4. Give the names of the players who have also been a manager.
+
+SELECT DISTINCT CONCAT(CONCAT(nameFirst, ' '), nameLast) AS name 
+FROM Players 
+WHERE managerID IS NOT NULL 
+AND LENGTH(RTRIM(LTRIM(managerID))) > 0
+
+NAME
+--------------
+Bill Russell
+Bob Boone
+Bob Brenly
+
+
+
+
+
+5. How many players bat with both hands and throw with the left hand?
+
+SELECT COUNT(playerID) AS numPlayers 
+FROM Players 
+WHERE bath = 'B' AND throws = 'L'
+
+NUMPLAYERS 
+-----------
+         35
+
+
+
+
+
+6. Give the average attendance per teamid ordered from the largest number to
+the smallest.
+
+SELECT AVG(attendance) AS avgAttendance 
+FROM Teams 
+GROUP BY yearID 
+ORDER BY avgAttendance DESC
+
+AVGATTENDANCE
+-------------
+      2509212
+      2419370
+      2378630
+
+
+
+
+7. Give the first and last name of the best payed player ever with the salary that
+he earned the year he made this record amount.
+
+SELECT DISTINCT p.nameFirst, p.nameLast, s.salary 
+FROM Players p, Salaries s
+WHERE p.playerID = s.playerID  
+AND s.salary = (SELECT MAX(salary) FROM Salaries)
+
+
+NAMEFIRST     NAMELAST      SALARY     
+----------    ---------     ---------
+Alex          Rodriguez     22000000
+
+
+
+
+8. Give the first name and last name of the players who have been division win-ner,
+league champion, world series champion batting with both hand throw-ing
+the ball with his left hand with the name of the team which they played
+for when the won these titles and the year.
+
+SELECT p.nameFirst, p.nameLast, t.name, t.yearID 
+FROM Players p, Teams t, Salaries s 
+WHERE t.WSWin = 'Y' AND t.LgWin = 'Y' AND DivWin = 'Y' 
+AND p.playerID = s.playerID AND t.teamID = s.teamID AND t.yearID = s.yearID 
+AND p.bath = 'B' AND p.throws = 'L'
+
+
+NAMEFIRST   NAMELAST   NAME              YEARID     
+----------- ---------  ----------------  -----------
+Norm        Charlton   Cincinnati Reds   1990
+
+
+
+
+
+9. Give the name and the year of creation of the oldest team in the database.
+
+SELECT name, yearID as yearOfCreation 
+FROM Teams 
+WHERE yearID = (SELECT MIN(yearID) FROM Teams)
+
+NAME                        YEAROFCREATION
+-----------------------     --------------
+Chicago White Stockings     1876
+
+
+10. Give the first and last names with the total amount earned by players who
+made more than 70,000,000.
+
+SELECT p.nameFirst, p.nameLast, SUM(salary) AS totalEarned 
+FROM Players p, Salaries s 
+WHERE p.playerID = s.playerID 
+GROUP BY s.playerID, p.nameFirst, p.nameLast 
+HAVING SUM(salary) > 70000000
+
+
+NAMEFIRST    NAMELAST   TOTALEARNED
+------------ ---------- -----------
+Albert        Belle     84376294
+Barry         Bonds     97879882
+Kevin         Brown     83747644
+
+
+11. Give the number of players per year for the team whose name is:  Toronto Blue Jays .
+
+SELECT COUNT(s.playerID) AS numPlayers, s.yearID 
+FROM Salaries s, Teams t
+WHERE t.teamID = s.teamID AND t.name = 'Toronto Blue Jays' 
+AND s.yearID = t.yearID 
+GROUP BY s.yearID
+
+NUMPLAYERS  YEARID     
+----------- -----------
+         20        1985
+         27        1986
+         23        1987
+
+
+12. Give the id of the players who won the world series in 1992 with the fran-chise
+named: Toronto Blue Jays and played for this team in 2002.
+
+SELECT p.playerID FROM Players p, Teams t, Salaries s 
+WHERE p.playerID = s.playerID AND s.teamID = t.teamID  
+AND t.yearID = s.yearID AND t.yearID = 1992 
+AND t.WSWin = 'Y' AND t.name = 'Toronto Blue Jays' 
+AND p.playerID IN (SELECT  p1.playerID 
+FROM Players p1, Salaries s1, Teams t1 
+WHERE p1.playerID = s1.playerID AND s1.teamID = t1.teamID 
+AND t1.yearID = s1.yearID AND t1.yearID = 2002 
+AND t1.name = 'Toronto Blue Jays')
+
+PLAYERID
+----------------------------------------------------------------
+
+13. name of the player who never earned more than 100,000 per year.
+
+SELECT DISTINCT CONCAT(CONCAT(p.nameFirst, ' '), p.nameLast) AS name 
+FROM Players p, Salaries s 
+WHERE p.playerID = s.playerID AND p.playerID NOT IN 
+(SELECT playerID FROM Salaries WHERE salary > 100000)
+
+NAME
+-------------------
+Al Pedrique
+Alan Hargesheimer
+Alan Knicely
+
+
+14. The name of the team with the year and the number of wins for the team 
+who won the world championship and the most wins during this year. 
+
+SELECT name, yearID 
+FROM Teams 
+WHERE WSWin = 'Y' 
+GROUP BY yearID, W, name  
+HAVING W = MAX(W)
+
+NAME                   YEARID
+---------------------- -----------
+Boston Pilgrims        1903
+Chicago White Sox      1906
+Chicago Cubs           1907
+
+
+15. The name of the players who won at least once the world series as a player
+and as a manager (not necessarily the same year).
+
+SELECT DISTINCT CONCAT(CONCAT(p.nameFirst, ' '), p.nameLast) AS name 
+FROM Players p, Teams t, Salaries s 
+WHERE managerID IS NOT NULL AND LENGTH(RTRIM(LTRIM(managerID))) > 0 
+AND p.playerID = s.playerID AND t.teamID = s.teamID and t.yearID = s.yearID 
+AND t.WSWin = 'Y' 
+
+NAME         
+---------------
+Hal McRae
+John Wathan
+Mike Scioscia
+
+
+16. Name of the franchise that were always with the same teamId.
+
+SELECT DISTINCT f.franchName 
+FROM Franchise f, Teams t 
+WHERE t.franchID = f.franchID 
+AND NOT EXISTS (SELECT * FROM Franchise, Teams t1 
+WHERE f.franchID = t1.franchID 
+AND t.teamID <> t1.teamID)
+
+FRANCHNAME
+---------------------
+Arizona Diamondbacks
+Atlanta Braves
+Baltimore Orioles
+
+
+
+17. Name of the players who won at least once the world series with a team of
+the American league (AL) and with a team of the national league (NL).
+
+SELECT DISTINCT CONCAT(CONCAT(nameFirst, ' '), nameLast) AS name 
+FROM Players 
+WHERE playerID IN 
+(SELECT p1.playerID 
+FROM Players p1, Teams t1, Salaries s1 
+WHERE p1.playerID = s1.playerID AND t1.teamID = s1.teamID 
+AND t1.yearID = s1.yearID AND t1.WSWin = 'Y' AND t1.lgID = 'AL') 
+AND playerID IN 
+(SELECT p2.playerID 
+FROM Players p2, Teams t2, Salaries s2 
+WHERE p2.playerID = s2.playerID AND t2.teamID = s2.teamID 
+AND t2.yearID = s2.yearID AND t2.WSWin = 'Y' AND t2.lgID = 'NL') 
+
+
+NAME
+-----------------
+Al Leiter
+Alfredo Griffin
+Danny Jackson
+
+18. The name of the player who won most world series.
+
+SELECT DISTINCT CONCAT(CONCAT(p.nameFirst, ' '), p.nameLast) AS name 
+FROM Players p, Teams t, Salaries s 
+WHERE p.playerID = s.playerID AND t.teamID = s.teamID AND t.yearID = s.yearID 
+GROUP BY t.WSWin, p.nameFirst, p.nameLast 
+HAVING COUNT(t.WSWin) >= ALL 
+(SELECT COUNT(t1.WSWin) AS numSeries 
+FROM Players p1, Teams t1, Salaries s1 
+WHERE p1.playerID = s1.playerID AND t1.teamID = s1.teamID 
+AND t1.yearID = s1.yearID 
+GROUP BY t1.WSWin, p1.nameFirst, p1.nameLast)
+
+NAME
+------------
+Gary Gaetti
+John Franco
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

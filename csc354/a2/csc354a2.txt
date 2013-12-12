@@ -1,0 +1,151 @@
+CSC354 Assignment 2
+By: Sergei Iakhnin
+981 843 420
+
+Task 1B
+-------
+
+Based one the fact that the data represents service times and is thus samples 
+from a continuous domain we will be looking for a continuous distribution. 
+Also, the fact that observed values cannot be negative immediately rules out 
+the Gaussian distribution. The fact that observed c.o.v. is 
+approximately 0.66 which is far from 1.0 also rules out the 
+exponential distribution.
+
+The following histograms were obtained based on k = 10, 16 
+(suggested by Sturge's rule), and 20 respectively.
+
+  *
+  *
+  *
+  *
+  *
+  *
+  * *
+  * *
+  * *
+  * *
+  * *
+  * *
+  * *
+  * *
+* * *
+* * *
+* * *
+* * *
+* * *
+* * * *
+* * * *
+* * * *
+* * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *   *
+* * * * *   *
+* * * * * * *     *
+____________________
+
+k = 10
+
+
+    *
+    * *
+    * *
+    * * * 
+    * * *
+    * * *
+    * * *
+    * * *
+    * * *
+    * * *
+*   * * *
+* * * * *
+* * * * * 
+* * * * *
+* * * * *
+* * * * * 
+* * * * * * * 
+* * * * * * *
+* * * * * * * *
+* * * * * * * * 
+* * * * * * * *
+* * * * * * * *     *   
+* * * * * * * * *   * *       *
+________________________________ 
+
+k = 16
+
+
+      *
+      *
+      *
+      *
+      * *
+      * *  
+    * * * 
+  * * * * 
+  * * * * *
+  * * * * *
+  * * * * * 
+  * * * * * *
+  * * * * * *
+* * * * * * *   *
+* * * * * * * * *
+* * * * * * * * *
+* * * * * * * * * *
+* * * * * * * * * * 
+* * * * * * * * * *         *
+* * * * * * * * * * *     * *           * 
+
+__________________________________________
+
+k = 20
+
+
+The histograms look approximately like the density functions exhibited by the 
+lognormal distirbution, and the gamma and weibull distributions when 
+parameter alpha > 0. Due to the fact that the densities have a large spike 
+near x = 0 and fall off rather sharply afterwards staying at or almost at 
+zero for most upper intervals we shall hypothesize that the data belongs to a 
+lognormal distribution. 
+
+
+Task 3B
+-------
+
+The Chi-squared test value for k = 3 is 117.575
+The Chi-squared test value for k = 20 is 135.319
+
+Chi-squared critical point for k = 3 with 2 estimated parameters and 
+alpha = 0.05 is 3.841 < 117.575 and 
+we thus reject the hypothesis in this case. (Taking 1 degree of freedom since 0
+degrees of freedom is a degenerate case).
+
+Chi-squared critical point for k = 20 with 2 estimated parameters and 
+alpha = 0.05 is 27.587 < 135.319 and 
+we thus reject the hypothesis in this case.
+
+
+Task 3C
+-------
+Because we estimate parameters the true distribution function lies between those
+of k - m - 1 degrees of freedom and k - 1 degrees of freedom. If the true
+distribution was the function with k - m - 1 df then we would reject everything
+greater than chi-square(k - m - 1, 1 - alpha) and accept everyhthing less than
+that. If the true distribution was the function with k - 1 df then we would 
+reject everything greater than chi-square(k - 1, 1 - alpha) and accept 
+everything less than that. For the true distribution between the two bounding
+functions we should threshold based on anoterh value somewhere in this interval.
+Thus the amibuity lies in this interval of chi-square(k - m - 1, 1 - alpha) 
+to chi-square(k - 1, 1 - alpha) as we do not know where in this interval the 
+true distribution lies exactly.
+
+
+
+

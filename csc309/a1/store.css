@@ -1,0 +1,124 @@
+table.generic {
+	background-color:#AAAAAA;
+	font-family: Verdana;
+}
+td.logo {
+	text-align:center;
+	vertical-align:center;
+}
+td.menu {
+	padding-bottom : 10px;
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 10px;
+
+	vertical-align:top;
+}
+
+li.menu {
+	font-size: 10pt;
+	list-style-type: upper-roman;
+}
+td.heading {
+	text-align:right;
+}
+td.area {
+	text-align:left;
+}
+td.contents {
+	padding-bottom : 10px;
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 10px;
+
+	background-color:#999999;
+	width:500px;
+	vertical-align:top;
+	halign:center;
+}
+td.cart {
+	padding-bottom : 10px;
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 10px;
+
+	width:100px;
+	vertical-align:top;
+}
+
+font.heading {
+	font-weight: bold;
+}
+font.oldPrice {
+	color: red;
+	text-decoration: line-through;
+}
+
+body {
+	scrollbar-face-color: #6C80A6;
+	scrollbar-shadow-color: #444444;
+	scrollbar-3d-light-color: #444444;
+	scrollbar-dark-shadow-color: #444444;
+	scrollbar-base-color: #444444;
+	scrollbar-highlight-color: #444444;
+	scrollbar-arrow-color: #222222;
+	scrollbar-track-color: #444444;
+	background-color:#CCCCCC;
+	overflow : auto;
+}
+
+table.shoppingCart{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color:#6C80A6;
+	font-weight:bolder;
+}
+
+table.shoppingCartLarge{
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color:#222222;
+	font-weight:bolder;
+	
+}
+
+td.shoppingCartHeader{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color:#222222;
+	font-weight:400;
+	text-align:center;
+}
+	
+a.remove{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 8pt;
+		color:#ff0000;
+		font-weight:bolder;
+		text-decoration:none;
+}
+	
+.price{text-align:right}
+
+a.searchResults{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color:#6C80A6;
+	font-weight:bolder;
+	text-align:center;
+}
+
+.searchResultsHeader{
+
+font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color:#000000;
+	font-weight:bolder;
+	text-decoration:underline;
+}
+
+#totalAmount{
+
+	text-align:right
+}

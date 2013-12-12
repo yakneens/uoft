@@ -1,0 +1,10 @@
+To compile the program type make.
+To run the program type a2 input_file number_of_intervals.
+
+input_file must be a file containing floating point numbers separated by commas
+representing the sample data.
+The first record specifies the sample size of the distribution contained in the
+file (see input.dat)
+
+number_of_intervals specifies the number of intervals for both the histogram and
+the chi-squared test.

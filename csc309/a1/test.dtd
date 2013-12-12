@@ -1,0 +1,6 @@
+<!DOCTYPE products [
+<!ELEMENT product (name, description, price)>
+<!ATTLIST product name CDATA #REQUIRED>
+<!ATTLIST product description CDATA #REQUIRED>
+<!ATTLIST product price CDATA #REQUIRED>
+]>

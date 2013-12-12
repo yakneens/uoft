@@ -1,0 +1,26 @@
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- [New Depth bound: ,1]
+[New Depth bound: ,2]
+[New Depth bound: ,3]
+[New Depth bound: ,4]
+[New Depth bound: ,5]
+[New Depth bound: ,6]
+[New Depth bound: ,7]
+[The Plan is: ]
+activate(rov1,inst1)
+power_up(rov1,inst1)
+face_sun(rov1)
+warm_up(rov1,inst1)
+block_sun(rov1)
+perform_op(rov1,inst1,spectr,away_from_sun)
+perform_op(rov1,inst1,therm,away_from_sun)
+
+
+G = [activate(rov1,inst1),power_up(rov1,inst1),face_sun(rov1),warm_up(rov1,inst1),block_sun(rov1),perform_op(rov1,inst1,spectr,away_from_sun),perform_op(rov1,inst1,therm,away_from_sun)]
+yes
+| ?- 

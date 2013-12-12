@@ -1,0 +1,205 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0100 
+header_name {.h} 
+code_name {.cpp}
+class ScissorUI {open
+} {
+  decl {VImage *im;} {}
+  decl {VAttrList attrs;} {}
+  Function {ScissorUI()} {open
+  } {
+    code {\#include "fluid-hooks/init-scissor.h"} {}
+    Fl_Window mainWindow {
+      label {Scissoring Interface} open
+      xywh {586 135 667 390} resizable
+      code0 {\#include "stdafx.h"} visible
+    } {
+      Fl_Box imagePanel {
+        xywh {30 25 635 365} resizable
+        code0 {\#include "c-code/imdraw.h"}
+        code1 {\#include <iostream.h>}
+        class ImDraw
+      }
+      Fl_Menu_Bar TopMenu {open
+        xywh {0 1 665 25}
+      } {
+        submenu FileSubmenu {
+          label File open
+          xywh {0 0 100 20} labelfont 1
+        } {
+          menuitem OpenImageItem {
+            label {Open Image}
+            callback {\#include "fluid-hooks/callback-open-image.h"}
+            xywh {0 0 100 20} shortcut 0x8006f labelfont 1 divider
+            code0 {\#include <stdlib.h>}
+            code1 {\#include <FL/Fl_File_Chooser.H>}
+            code2 {\#include <FL/fl_ask.H>}
+            code3 {\#include <math.h>}
+          }
+          menuitem OpenCommandItem {
+            label {Open Drawing}
+            callback {\#include "fluid-hooks/callback-open-drawing.h"}
+            xywh {10 10 100 20} shortcut 0x80063 labelfont 1
+            code0 {\#include <stdlib.h>}
+            code1 {\#include <FL/fl_file_chooser.h>}
+          }
+          menuitem SaveCommandItem {
+            label {Save Drawing}
+            callback {\#include "fluid-hooks/callback-save-drawing.h"}
+            xywh {10 10 100 20} shortcut 0x80073 labelfont 1
+            code0 {\#include <stdlib.h>}
+            code1 {\#include <FL/fl_file_chooser.h>}
+          }
+          menuitem QuitItem {
+            label Quit
+            callback {\#include "fluid-hooks/callback-quit.h"}
+            xywh {15 15 100 20} shortcut 0x80071 labelfont 1
+            code0 {\#include <stdlib.h>}
+            code1 {\#include <FL/fl_file_chooser.h>}
+          }
+        }
+        submenu ScissorSubmenu {
+          label Scissor
+          xywh {120 10 100 20} labelfont 1
+        } {
+          menuitem SaveBoundary {
+            label {Save Boundary}
+            callback {\#include "fluid-hooks/callback-save-boundary.h"}
+            xywh {10 10 100 20} labelfont 1
+            code0 {\#include <stdlib.h>}
+            code1 {\#include <FL/Fl_File_Chooser.H>}
+            code2 {\#include <FL/fl_ask.H>}
+            code3 {\#include <math.h>}
+          }
+          menuitem SaveMatte {
+            label {Save Matte}
+            callback {\#include "fluid-hooks/callback-save-matte.h"}
+            xywh {20 20 100 20} labelfont 1
+            code0 {\#include <stdlib.h>}
+            code1 {\#include <FL/fl_file_chooser.h>}
+          }
+          menuitem SaveGradient {
+            label {Save Gradient}
+            callback {\#include "fluid-hooks/callback-save-gradient.h"}
+            xywh {30 30 100 20} labelfont 1
+            code0 {\#include <stdlib.h>}
+            code1 {\#include <FL/fl_file_chooser.h>}
+          }
+          menuitem SaveZeroCrossings {
+            label {Save Zero Crossings}
+            callback {\#include "fluid-hooks/callback-save-zero-crossings.h"}
+            xywh {40 40 100 20} labelfont 1
+            code0 {\#include <stdlib.h>}
+            code1 {\#include <FL/fl_file_chooser.h>}
+          }
+          menuitem SaveLinkCosts {
+            label {Save Link Costs}
+            callback {\#include "fluid-hooks/callback-save-link-costs.h"}
+            xywh {50 50 100 20} labelfont 1
+            code0 {\#include <stdlib.h>}
+            code1 {\#include <FL/fl_file_chooser.h>}
+          }
+          menuitem SaveSeedPoints {
+            label {Save Seed Points}
+            callback {\#include "fluid-hooks/callback-save-seed-points.h"}
+            xywh {60 60 100 20} labelfont 1
+            code0 {\#include <stdlib.h>}
+            code1 {\#include <FL/Fl_File_Chooser.H>}
+            code2 {\#include <FL/fl_ask.H>}
+            code3 {\#include <math.h>}
+          }
+          menuitem LoadSeedPoints {
+            label {Load Seed Points}
+            callback {\#include "fluid-hooks/callback-load-seed-points.h"}
+            xywh {80 80 100 20} labelfont 1
+            code0 {\#include <stdlib.h>}
+            code1 {\#include <FL/fl_file_chooser.h>}
+          }
+        }
+        submenu BSpline {
+          label {B-Spline} open
+          xywh {10 10 100 20} labelfont 1
+        } {
+          menuitem ConvertPointsToBSpline {
+            label {Convert Points to B-Spline}
+            callback {\#include "fluid-hooks/callback-convert-to-spline.h"}
+            xywh {10 10 100 20} labelfont 1
+          }
+          menuitem LoadSplineFromFile {
+            label {Load From File}
+            callback {\#include "fluid-hooks/callback-load-spline.h"}
+            xywh {25 25 100 20} labelfont 1
+            code0 {\#include <stdlib.h>}
+            code1 {\#include <FL/fl_file_chooser.h>}
+          }
+        }
+      }
+      Fl_Group Tools {open
+        xywh {0 0 665 395}
+      } {
+        Fl_Button DrawPoint {
+          callback {\#include "fluid-hooks/callback-point.h"}
+          private image {./images/dot.gif} xywh {0 25 30 30} type Radio down_box DOWN_BOX align 80
+        }
+        Fl_Button DrawLine {
+          callback {\#include "fluid-hooks/callback-line.h"}
+          private image {./images/line.gif} xywh {0 55 30 30} type Radio down_box DOWN_BOX
+        }
+        Fl_Button DrawRect {
+          callback {\#include "fluid-hooks/callback-rect.h"}
+          private image {./images/rectangle.gif} xywh {0 85 30 30} type Radio down_box DOWN_BOX align 16
+        }
+        Fl_Button DrawCircle {
+          callback {\#include "fluid-hooks/callback-circle.h"}
+          private image {./images/circle.gif} xywh {0 115 30 30} type Radio down_box DOWN_BOX align 16
+        }
+        Fl_Button DrawPoly {
+          callback {\#include "fluid-hooks/callback-poly.h"} selected
+          private image {./images/polygon.gif} xywh {0 145 30 30} type Radio down_box DOWN_BOX align 16
+        }
+        Fl_Button ChooseColor {
+          callback {\#include "fluid-hooks/callback-color.h"}
+          private image {./images/color.gif} xywh {0 175 30 30}
+          code0 {\#include <FL/Fl_Color_Chooser.h>}
+          code1 {\#include "c-code/color.h"}
+        }
+        Fl_Button ClearAll {
+          label {Clear All}
+          callback {\#include "fluid-hooks/callback-clearall.h"}
+          private xywh {275 5 70 17} box ROUND_UP_BOX down_box ROUND_DOWN_BOX
+        }
+        Fl_Button Undo {
+          label Undo
+          callback {\#include "fluid-hooks/callback-undo.h"}
+          private xywh {370 5 70 17} box ROUND_UP_BOX down_box ROUND_DOWN_BOX
+        }
+        Fl_Button ScissorTool {
+          callback {\#include "fluid-hooks/callback-scissor.h"}
+          private image {images/scissor.gif} xywh {0 205 30 30} type Radio
+        }
+        Fl_Button Bspline {
+          callback {\#include "fluid-hooks/callback-bspline.h"}
+          private image {images/bspline.gif} xywh {0 235 30 30} type Radio
+        }
+      }
+      Fl_Value_Slider levelOfDetail {
+        label Detail
+        callback {\#include "fluid-hooks/callback-level.h"}
+        tooltip {Adjust level of detail of B-Spline curve} xywh {0 265 30 125} labeltype NO_LABEL minimum 1 maximum 0 step 1 value 1 deactivate
+      }
+    }
+  }
+  Function {show()} {open
+  } {
+    code {mainWindow->show();
+imagePanel->setSlider(levelOfDetail);} {}
+  }
+  Function {set(VImage new_im)} {open return_type void
+  } {
+    code {imagePanel->set(new_im);} {}
+  }
+  Function {setLevelOfDetail(double l)} {open return_type void
+  } {
+    code {imagePanel->setLevelOfDetail(l);} {}
+  }
+} 

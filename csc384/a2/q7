@@ -1,0 +1,27 @@
+*********************************
+*	   Assignment 2
+* 	    Question 7
+* 	      CSC384
+* 	  Sergei Iakhnin
+* 	    981 843 420
+*********************************
+
+
+
+	  |    A*  |	A*-MPC   |   IDA*   |
+---------------------------------------------
+Case 1,h1 |   1692 |       72    |    282   |
+Case 1,h2 |    420 |	   66    |    551   |
+Case 1,h3 |    189 |	   60    |    282   |
+Case 2,h1 |  >4000 |	  138    |   1261   |
+Case 2,h2 |    673 |       85    |   1261   |
+Case 2,h3 |   1507 |       88    |   1006   |
+Case 3,h1 |  >4000 |      150    |  >9000   |
+Case 3,h2 |  >4000 |      120    |  >9000   |
+Case 3,h3 |  >4000 |      114    |   5190   |
+
+Heuristic h1 did the worst on all 3 cases and with all search algorithms.
+Heuristic h2 performed better than heuristic h3 on test case 2 with A*-MPC and
+IDA*
+Heuristic h3 performed the best on the majority of cases even though it was 
+second to heuristic h1 on test case 2.

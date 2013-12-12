@@ -1,0 +1,79 @@
+| ?- 
+yes
+| ?- *****Testing for first(X,L)*****
+yes
+| ?- no
+| ?- 
+X = ano
+| ?- 
+X = bno
+| ?- 
+X = [a,[a,b],c]no
+| ?- no
+| ?- 
+yes
+| ?- 
+L = [k|_h113]no
+| ?- 
+
+yes
+| ?- *****Testing for rest(X,L)*****
+yes
+| ?- no
+| ?- 
+X = []no
+| ?- 
+X = [b]no
+| ?- 
+X = [b,[c,d]]no
+| ?- 
+X = [b,c,[d,d],e,[f,[f,f,f],[f]],g,h,i,j]no
+| ?- no
+| ?- no
+| ?- 
+X = _h76
+L = [_h124|_h76]
+yes
+| ?- *****Testing for third(X,L)*****
+yes
+| ?- no
+| ?- no
+| ?- no
+| ?- 
+X = cno
+| ?- 
+X = [a,b]no
+| ?- 
+X = hno
+| ?- no
+| ?- 
+yes
+| ?- 
+X = _h76
+L = [_h124,_h126,_h76|_h129]no
+| ?- *****Testing for secondlast(X,L)*****
+yes
+| ?- no
+| ?- no
+| ?- 
+X = ano
+| ?- 
+X = bno
+| ?- 
+X = ino
+| ?- no
+| ?- 
+yes
+| ?- 
+X = _h76
+L = [_h76,_h126]
+X = _h76
+L = [_h124,_h76,_h128]
+X = _h76
+L = [_h124,_h126,_h76,_h130]
+X = _h76
+L = [_h124,_h126,_h128,_h76,_h132]
+X = _h76
+L = [_h124,_h126,_h128,_h130,_h76,_h134]
+yes
+| ?- 

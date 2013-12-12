@@ -1,0 +1,95 @@
+/********************************************************************************
+ * CSC 324 Prolog Project
+ * By: Sergei Iakhnin
+ * #: 981843420
+ ********************************************************************************/
+
+
+| ?- 
+yes
+| ?- no
+| ?- 
+From = montreal
+To = sherbrooke
+TrainType = passenger
+Path = [montreal,sherbrooke]
+Length = 145
+Duration = 0.9667
+From = montreal
+To = alexandria
+TrainType = freight
+Path = [montreal,alexandria]
+Length = 100
+Duration = 0.8333
+From = montreal
+To = alexandria
+TrainType = passenger
+Path = [montreal,alexandria]
+Length = 100
+Duration = 0.5556
+From = alexandria
+To = ottawa
+TrainType = freight
+Path = [alexandria,ottawa]
+Length = 100
+Duration = 0.8333
+From = alexandria
+To = ottawa
+TrainType = passenger
+Path = [alexandria,ottawa]
+Length = 100
+Duration = 0.5556
+yes
+| ?- no
+| ?- 
+TrainType = passenger
+Path = [sherbrooke,montreal,cornwall,brockville,kingston,toronto,hamilton,niagara_falls]
+Length = 815
+Duration = 5.5000no
+| ?- 
+From = montreal
+Path = [montreal]
+Duration = 0
+From = quebec_city
+Path = [quebec_city,montreal]
+Duration = 2.2500
+From = alexandria
+Path = [alexandria,ottawa,cornwall,montreal]
+Duration = 2.5000
+From = ottawa
+Path = [ottawa,cornwall,montreal]
+Duration = 1.5000
+From = ottawa
+Path = [ottawa,brockville,cornwall,montreal]
+Duration = 2.5833
+From = sherbrooke
+Path = [sherbrooke,montreal]
+Duration = 1.2083
+From = quebec_city
+Path = [quebec_city,sherbrooke,montreal]
+Duration = 3.0000
+From = alexandria
+Path = [alexandria,montreal]
+Duration = 0.8333
+From = ottawa
+Path = [ottawa,alexandria,montreal]
+Duration = 1.6667
+From = cornwall
+Path = [cornwall,ottawa,alexandria,montreal]
+Duration = 2.5000
+From = brockville
+Path = [brockville,ottawa,cornwall,montreal]
+Duration = 2.5833
+From = brockville
+Path = [brockville,ottawa,alexandria,montreal]
+Duration = 2.7500
+From = cornwall
+Path = [cornwall,montreal]
+Duration = 0.8333
+From = brockville
+Path = [brockville,cornwall,montreal]
+Duration = 1.6667
+From = kingston
+Path = [kingston,brockville,cornwall,montreal]
+Duration = 2.3333no
+| ?- 

@@ -1,0 +1,60 @@
+
+% This is a mini version of our office domain:
+% There are only three locations: l (lab), o (office), c (coffeeroom)
+% There are no dervied relations (e.g., accessible is dealt with directly)
+
+% I changed the action tidy (tidy the lab) as follows: If the robot
+% has coffee when it tidies the lab, it will lose its coffee. Notice
+% how I represented this action.
+
+preconds(move(X,Y), [loc(X), accessible(Y), adj(X,Y)]).
+preconds(getkeys, [loc(o), neg(rhk)]).
+preconds(makecoffee, [loc(c), neg(cm)]).
+preconds(grabcoffee, [loc(c), neg(rhc), cm]).
+preconds(givecoffee, [loc(o), neg(chc), rhc]).
+preconds(dropkeys, [loc(o), rhk]).
+preconds(tidyNoC, [loc(l), neg(rhc)]).
+preconds(tidyC, [loc(l), rhc]).
+
+addlist(move(_,Y), [loc(Y)]).
+addlist(getkeys, [rhk, accessible(l), accessible(o), accessible(c)]).
+addlist(makecoffee, [cm]).
+addlist(grabcoffee, [rhc]).
+addlist(givecoffee, [chc]).
+addlist(dropkeys, []).
+addlist(tidyNoC, [labtidy]).
+addlist(tidyC, [labtidy]).
+
+deletelist(move(X,_), [loc(X)]).
+deletelist(getkeys, []).
+deletelist(makecoffee, []).
+deletelist(grabcoffee, [cm]).
+deletelist(givecoffee, [rhc]).
+deletelist(dropkeys, [rhk, accessible(l), accessible(o), accessible(c)]).
+deletelist(tidyNoC, []).
+deletelist(tidyC, [rhc]).
+
+
+% The list of "boolean" predicates
+boolean(rhk).
+boolean(rhc).
+boolean(cm).
+boolean(labtidy).
+boolean(accessible(_)).
+boolean(adj(_,_)).
+boolean(chc).
+boolean(neg(X)) :- boolean(X).
+
+% loc(X) is the only "nonboolean" predicate
+nonboolean(loc(_)).
+nonboolean(neg(X)) :- nonboolean(X).
+
+% predicate(Lit,Pred) is true if the underlying domain predicate
+% in a domain literal Lit is Pred
+% e.g., Pred is "loc" for literals "loc(X)", "loc(o)", "neg(loc(m))", etc.
+predicate(loc(_),loc).
+predicate(neg(X),P) :- predicate(X,P).
+
+% The list of actions
+% actlist([tidyC,givecoffee]).
+actlist([move(l,o),move(o,l),move(c,o),move(o,c),move(c,l),move(l,c),getkeys,makecoffee,grabcoffee,givecoffee,dropkeys,tidyNoC,tidyC]).

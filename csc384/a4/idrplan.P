@@ -1,0 +1,350 @@
+% An iterative deepening regression planner
+% Copyright (c) 2001, Craig Boutilier
+% Uses iterative deepening code from Computational Intelligence:
+% An iterative deepening search, based on the generic search algorithm.
+% Copyright (c) 1998, Poole, Mackworth, Goebel and Oxford University Press.
+
+:- import append/3, ith/3 from basics.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% idrplan(G,S,P) is true if plan P (represented as a list of actions) 
+% achieves goal list G from start state S. It assumes a list of actions 
+% has been spelled out, and a neighbor predicate has been defined
+% using regression to determine feasible regressions.
+%
+% "startstate" and "goallist" predicates defined for convenience so
+% problems can be consulted from a file.
+% For convenience, this looks up goal list and start state in KB (so
+% we can just load a datafile to create a new problem). The normal call
+% (without these predicates) would be:
+% idrplan(G,S,P) :-
+%   consistent(G),
+%   idrplan_cons(G,S,P),
+%   mydisplay(P).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Domain Assumptions (see example domain for illustration):
+%
+%
+% (a) A list of all possible ground actions is provided in the KB having
+%     the form:   actlist([a1,a2,...]).
+%
+% (b) Preconditions, add lists, and delete lists, for all actions are
+%     provided in the KB, having the form:
+%
+%                 preconds(a, [p1, p2...]).
+%                 addlist(a, [p1, p2...]).
+%                 deletelist(a, [p1, p2...]).
+%
+%     The actions and literals are allowed to mention variables.
+%
+% (c) No derived relations are handled.
+%
+% (d) Domain literals must be declared "boolean" or "nonboolean".
+%
+%     "boolean" predicates are those in which each ground instance has
+%     an independent truth value. These must be declared in KB as
+%     boolean(p). Variables are allowed.
+%
+%     "nonboolean" predicates are those for which only one ground instance 
+%     can be true in a given state. These must be declared in KB as
+%     nonboolean(p). Variables *must* be used for this to make sense. The 
+%     "predicate" of a nonboolean literal must be specified using 
+%     assertions of the form predicate(p(X),p).
+%
+%     To illustrate, consider an example where atom rhk can be true or
+%     false, literal "adj(R,S)" can be true or false for any values of R 
+%     and S, and "loc(X)" can be true for only one value of X in any state.
+%     (e.g., it doesn't make sense to have "loc(m)" and "loc(o)" both
+%     true in the same state. We express this using:
+%
+%     boolean(rhk).
+%     boolean(adj(_,_)).
+%     boolean(neg(X)) :- boolean(X).
+%     nonboolean(loc(_)).
+%     nonboolean(neg(X)) :- nonboolean(X).
+%     predicate(loc(_),loc).
+%     predicate(neg(X),P) :- predicate(X,P).
+%
+%     Note: since we allow negative goals, we need to be able to determine
+%     whether a negative literal is boolean or nonboolean. Note also: we
+%     only define "predicates" for nonbooleans (we need to be able to test
+%     whether two instances of this "predicate" exist in a goal list
+%     to test consistency.
+%
+% (e) We assume a (unique) startstate declaration in the KB of the form:
+%
+%     startstate([p1,p2,...]).
+%
+%     where each p_i is a positive ground atom. That is, the state is
+%     represented using the CWR.
+%
+% (f) We assume a (unique) goallist declaration of the form:
+%
+%     goallist([l1,l2,...]).
+%
+%     where each l_i is a (positive or negative) literal. For example,
+%
+%     goallist([chc,labtidy,neg(rhk)])
+%
+%     include a negative literal among its goals.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% if goal list is consistent, plan; otherwise fail
+
+idrplan(P) :-
+  startstate(S),
+  goallist(G),
+  consistent(G),
+  idrplan_cons(G,S,P),
+  mydisplay(P).
+
+
+% idrplan_cons(G,S,P) is true if plan P is a path found to goal
+% list G using iterative deepening search.
+%
+% This predicate assumes the goal list G is consistent (since regression
+% will not check for consistency).
+
+idrplan_cons(G,S,P) :-
+   rdbsearch(S,[node(G,[],0)],0,[node(G,[],0)],natural,P).
+
+% rdbsearch(S,F,DB,Q,How1,P) is true if a depth bounded search from 
+% frontier F can find a plan P of length >= DB, from starting state S.
+% - Q is the initial frontier to (re)start from
+% - How specifies whether the previous bound failed naturally or unnaturally
+% - The frontier is a list of elements of form node(SGList,Plan,PlanLength)
+%   where Node is a node (subgoal list), Plan is the plan found from Node
+%   to the original Goal List, and PlanLength is the number of acts in the plan
+
+rdbsearch(S,[node(SG,Plan,DB)|_],DB,_,_,Plan) :-
+   holdsall(SG,S).
+rdbsearch(S,[node(SG,P,PL)|F1],DB,Q,H,Plan) :-
+   PL<DB,
+   nb(SG,NNs),
+   PL1 is PL+1,
+   add_paths_db(NNs,P,PL1,F1,F2),
+   rdbsearch(S,F2,DB,Q,H,Plan).
+rdbsearch(S,[node(_,_,PL)|F1],DB,Q,_,Plan) :-
+   PL >= DB,
+   rdbsearch(S,F1,DB,Q,unnatural,Plan).
+rdbsearch(S,[],DB,Q,unnatural,Plan) :-
+   DB1 is DB+1,
+   DB =< 10,
+   writeln(['New Depth bound: ',DB1]),
+   rdbsearch(S,Q,DB1,Q,natural,Plan).
+
+% add_paths_db(NNs,Plan,PL,F_0,F_1) adds the
+% neighbours NNs to the front of frontier F_0
+% forming frontier F_1. The neighbors need to be
+% converted to the form of elements of the frontier.
+% Plan is the plan found from the neighbor to the original goal, and PL
+% is the plan's length.
+
+add_paths_db([],_,_,F,F).
+add_paths_db([subgoal(A,NN)|R],Plan,PL,F0,[node(NN,[A|Plan],PL)|F1]) :-
+   add_paths_db(R,Plan,PL,F0,F1).
+
+mydisplay(Plan) :-
+ writeln(['The Plan is: ']),
+ myd(Plan).
+myd([]) :- nl.
+myd([Act|Rest]) :- writeln(Act), myd(Rest).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Code Implementing the Neighbor Relation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% nb(N,NList) - given goal list (node) N, Nlist is the list of
+% subgoal lists that can lead to N via some action a. We assume
+% a list of actions actlist(...) specified as part of the domain.
+% 
+% Basic structure: iterate through each action in actlist
+% and see if it (a) achieves some goal in N, and (b) can be 
+% consistently regressed. If so, add the regression of N through a
+% to the neighbor list.
+% 
+% Each neighbor in list is a term "subgoal(A,SGList)" where A is the
+% action regressed through, and SGList is the result of that regression
+
+nb(N,NList) :- actlist(AL), nb1(N,AL,NList).
+
+nb1(_,[],[]).
+
+% This is broken up as it is to prevent
+% backtracking over multiple goals if regress fails. Once
+% regress fails, there is no point looking for other goals
+% to achieve. (384 students: please note it is not necessary to use cuts :-)
+
+nb1(N,[A|RestA],[subgoal(A,SGList)|RestNbr]) :-
+  useful(N,A),
+  regress(A,N,SGList),
+  nb1(N,RestA,RestNbr).
+
+nb1(N,[A|RestA],Nbr) :-
+  not(useful(N,A)),
+  nb1(N,RestA,Nbr).
+
+nb1(N,[A|RestA],Nbr) :-
+  not(regress(A,N,_)),
+  nb1(N,RestA,Nbr).
+
+%useful(N,A): if A achieves some goal in goal list N
+
+useful(N,A) :-
+  member(G,N),
+  achieves(A,G),
+  !.
+
+% displayList([]) :- writeln([]).
+% displayList([X|Rest]) :- writeln(X), displayList(Rest).
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Code Implementing Regression
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% action A achieves goal G
+
+achieves(A,G) :- addlist(A,AList), member(G,AList).
+achieves(A,neg(G)) :- deletelist(A,DList), member(G,DList).
+
+% A achieves *some* instances of a nonboolean predicate
+achievessome(A,G) :- predicate(G,Pr), achieves(A,Eff), predicate(Eff,Pr).
+
+% consistent(GL) holds iff (ground) goal list GL is consistent
+% It assumes no duplicate literals are in the list
+
+consistent([]).
+consistent([G|RestG]) :- 
+  G \= neg(_),
+  boolean(G),
+  not(member(neg(G),RestG)), 
+  consistent(RestG).
+consistent([neg(G)|RestG]) :- 
+  not(member(G,RestG)), 
+  consistent(RestG).
+consistent([G|RestG]) :- 
+  nonboolean(G),
+  G \= neg(_),
+  notpresent(G,RestG),
+  not(member(neg(G),RestG)), 
+  consistent(RestG).
+
+% no positive instance of nonboolean G is in list L
+notpresent(_,[]).
+notpresent(G,[L|RestL]) :- 
+  boolean(L),
+  notpresent(G,RestL).
+notpresent(G,[L|RestL]) :-
+  nonboolean(L),
+  L = neg(_),
+  notpresent(G,RestL).
+notpresent(G,[L|RestL]) :-
+  nonboolean(L),
+  L \= neg(_),
+  predicate(G,P1),
+  predicate(L,P2),
+  P1 \= P2,
+  notpresent(G,RestL).
+
+
+% regress(A,GL,WP) if WP is the weakest precondition such that executing
+% A when WP holds results in goal list GL becoming true, and WP is
+% consistent (i.e., WP is the regression of GL through A). It will
+% fail if there is no (consistent) condition under which A can realize GL.
+% Approach: remove anything that A achieves from GL, add the preconditions
+% of A to this reduced list; but ensure that no precondition added
+% is already on the list (to prevent duplication), nor is its negation
+% to ensure consistency
+% NB: We assume GL is consistent. We could add a check for consistency
+%     but as long as the initial goal list is consistent, repeated
+%     consistency checking is wasteful. So its better to have your
+%     regression *planner* check for consistency initially.
+
+regress(A,GL,WP) :- 
+   removeeffects(A,GL,WGL), 
+   preconds(A,PC),
+   addpreconds(PC,WGL,WP).
+
+
+% removeeffects(A,GL,WGL) is true is WGL is the list obtained by removing
+% any effect of A from goal list GL. This fails if any goal in goal list
+% contradicts an effect of A.
+
+removeeffects(_,[],[]).
+removeeffects(A,[G|RestG],WGL) :-
+      achieves(A,G),
+      removeeffects(A,RestG,WGL).
+removeeffects(A,[G|RestG],[G|RestWGL]) :-
+      boolean(G),
+      G \= neg(_),
+      not(achieves(A,G)), 
+      not(achieves(A,neg(G))), 
+      removeeffects(A,RestG,RestWGL).
+removeeffects(A,[neg(G)|RestG],[neg(G)|RestWGL]) :-
+      boolean(G),
+      not(achieves(A,G)), 
+      not(achieves(A,neg(G))),
+      removeeffects(A,RestG,RestWGL).
+removeeffects(A,[G|RestG],[G|RestWGL]) :- 
+      nonboolean(G),
+      not(achievessome(A,G)),
+      removeeffects(A,RestG,RestWGL).
+
+% addpreconds(PC,WGL,WP) is true if WP results from adding preconditions
+% PC to (weakened) goal list WGL, and the result is consistent. Fails
+% if the preconditions conflict with WGL. WGL is assumed consistent.
+
+addpreconds([],WP,WP).
+addpreconds([P|RestP],L,WP) :-
+   addconsistent(P,L,L1),
+   addpreconds(RestP,L1,WP).
+
+% A hack added for nonboolean variables like "location". It is assumed
+% that variables are declared boolean or nonboolean, and that nonboolean
+% vars take one argument (very inelegant, I know). E.g., loc(X).
+% consistency for nonboolean vars, requires that only one instance
+% be present in the list
+
+addconsistent(P,L,L) :-
+  member(P,L).
+addconsistent(P,L,[P|L]) :-
+  boolean(P),
+  P \= neg(_),
+  not(member(P,L)),
+  not(member(neg(P),L)).
+addconsistent(neg(P),L,[neg(P)|L]) :-
+  boolean(P),
+  not(member(P,L)),
+  not(member(neg(P),L)).
+
+addconsistent(G,L,[G|L]) :-
+  nonboolean(G),
+  notpresent(G,L).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  THE MEMBERSHIP PREDICATES   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% member(E,L) is true if E is a member of list L
+member(N,[N|_]).
+member(N,[_|T]) :- member(N,T).
+
+% notmember(E,L) is true if E is not a member of list L
+notmember(_,[]).
+notmember(N,[H|T]) :- N \= H, notmember(N,T).
+
+
+holds(Fact,S) :- member(Fact,S).
+holds(neg(Fact),S) :- not(member(Fact,S)).
+
+holdsall([],_).
+holdsall([Fact|RestF],S) :-
+  holds(Fact,S),
+  holdsall(RestF,S).
+

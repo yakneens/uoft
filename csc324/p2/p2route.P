@@ -1,0 +1,118 @@
+/********************************************************************************
+ * CSC 324 Prolog Project
+ * By: Sergei Iakhnin
+ * #: 981843420
+ ********************************************************************************/
+
+:- ['p2facts.P'].
+:- import member/2 from basics.
+
+% stopover_time(City,TrainType,Time) holds iff Time is the stopover time for
+% a train of type TrainType at city City.
+%Pre: Time is either uninstantiated or a number
+stopover_time(City, TrainType, Time) :- 
+city(City, FreightStopover, PassStopover), 
+train(TrainType,_),
+(TrainType = freight -> SomeTime is FreightStopover / 60 ; SomeTime is PassStopover /60),
+Time = SomeTime.
+
+%duration(Duration,Speed,SpeedLimit,Length,Stopover) holds iff Duration is the duration
+% of a link of length Length with speed limit SpeedLimit for a train traveling at
+% speed Speed with a stopover of lenght Stopover 
+% Pre: Duration is either uninstantiated or a number, each of Speed,SpeedLimit, Length and Stopover
+% are numbers
+duration(Duration, Speed, SpeedLimit, Length, Stopover) :- 
+(Speed =< SpeedLimit -> 
+ SomeDuration is Length/Speed + Stopover ; 
+ SomeDuration is Length/SpeedLimit + Stopover), 
+Duration = SomeDuration.
+
+%make_route(Origin,Destination,TrainType,Path,Length,Duration,Visited) holds iff
+%Path is a non-redundant path from Origin to Destination of length Length which would
+%take Duration hours for a train of type TrainType to traverse while visiting the cities
+% in Visited
+%Pre: Length is either uninstantiated or a number
+%Duration is either uninstantiated or a number
+make_route(Origin,Origin,TrainType,[Origin],0,0,_) :- city(Origin,_,_),train(TrainType,_).
+
+make_route(Origin,Destination,TrainType,[Origin|RestOfRoute],Length,Duration,Visited) :-
+link(Origin,SomeCity,LinkSpeedLimit,LinkLength),
+\+(member(SomeCity,Visited)),
+train(TrainType,MaxSpeed),
+(SomeCity = Destination -> Stopover is 0 ; stopover_time(SomeCity,TrainType,Stopover)),
+duration(LinkDuration,MaxSpeed,LinkSpeedLimit,LinkLength,Stopover),
+make_route(SomeCity, Destination,TrainType,RestOfRoute,RouteLength,RouteDuration,[SomeCity|Visited]),
+SomeLength is RouteLength+LinkLength,
+SomeDuration is RouteDuration+LinkDuration,
+Length = SomeLength,
+Duration = SomeDuration.
+
+%route(Origin,Destination,TrainType,Path,Length,Duration) holds iff
+%Path is a non-redundant path from Origin to Destination of length Length which would
+%take Duration hours for a train of type TrainType to traverse.
+%Pre: Length is either uninstantiated or a number
+%Duration is either uninstantiated or a number
+route(Origin,Destination,TrainType,Path,Length,Duration) :-
+make_route(Origin,Destination,TrainType,Path,Length,Duration,[Origin]).
+
+%make_bdfsRoute(Origin,Destination,TrainType,DurationLimit,Path,Length,Duration,Visited) holds iff
+%Path is a non-redundant path from Origin to Destination of length Length which would
+%take Duration hours for a train of type TrainType to traverse while visiting the cities
+% in Visited and Duration is less than DurationLimit.
+%Pre: DurationLimit is a number, Length is either uninstantiated or a number
+%Duration is either uninstantiated or a number
+make_bdfsRoute(Origin,Origin,TrainType,DurationLimit,[Origin],0,0,_) :- 
+city(Origin,_,_),
+train(TrainType,_),
+DurationLimit > 0.
+
+make_bdfsRoute(Origin,Destination,TrainType,DurationLimit,[Origin|RestOfRoute],Length,Duration,Visited) :-
+link(Origin,SomeCity,LinkSpeedLimit,LinkLength),
+\+(member(SomeCity,Visited)),
+train(TrainType,MaxSpeed),
+(SomeCity = Destination -> Stopover is 0 ; stopover_time(SomeCity,TrainType,Stopover)),
+duration(LinkDuration,MaxSpeed,LinkSpeedLimit,LinkLength,Stopover),
+(DurationLimit =< 0 -> not(true) ;
+(NewDurationLimit is DurationLimit - LinkDuration,
+make_bdfsRoute(SomeCity, Destination,TrainType,NewDurationLimit,RestOfRoute,RouteLength,RouteDuration,[SomeCity|Visited]),
+SomeLength is RouteLength+LinkLength,
+SomeDuration is RouteDuration+LinkDuration,
+Length = SomeLength,
+Duration = SomeDuration)).
+
+%bdfsRoute(Origin,Destination,TrainType,DurationLimit,Path,Length,Duration) holds iff
+%Path is a non-redundant path from Origin to Destination of length Length which would
+%take Duration hours for a train of type TrainType to traverse and Duration is less 
+%than DurationLimit.
+%Pre: DurationLimit is a number, Length is either uninstantiated or a number
+%Duration is either uninstantiated or a number
+bdfsRoute(Origin,Destination,TrainType,DurationLimit,Path,Length,Duration) :-
+make_bdfsRoute(Origin,Destination,TrainType,DurationLimit,Path,Length,Duration,[Origin]).
+
+%findFastestRoute(Origin,Destination,TrainType,Path,Length,Duration,BestDurationSoFar,BestPathSoFar,BestLengthSoFar)
+%holds iff Path,Length and Duration describe the fastest route from Origin to Destination for a train of type
+%TrainType and Path = BestPathSoFar, Length = BestLengthSoFar, Duration = BestDurationSoFar
+%Pre: Origin and Destination are instantiated, Length is either uninstantiated or a number
+%Duration is either uninstantiated or a number, BestLengthSoFar is either uninstantiated or a number,
+%BestDurationSoFar is either uninstantiated or a number
+findFastestRoute(Origin,Destination,TrainType,Path,Length,Duration,BestDurationSoFar,BestPathSoFar,BestLengthSoFar) :-
+(bdfsRoute(Origin,Destination,TrainType,BestDurationSoFar,BetterPath,BetterLength,BetterDuration)->
+findFastestRoute(Origin,Destination,TrainType,Path,Length,Duration,BetterDuration,BetterPath,BetterLength) ; 
+Duration = BestDurationSoFar,Path = BestPathSoFar,Length = BestLengthSoFar).
+
+%fastestRoute(Origin,Destination,TrainType,Path,Length,Duration) holds iff Path, Length, and Duration describe
+% the fastest route from Origin to Destination for a train of type TrainType.
+%Pre: Origin and Destination are instantiated, Length is either uninstantiated or a number
+%Duration is either uninstantiated or a number
+fastestRoute(Origin,Destination,passenger,Path,Length,Duration):-
+(route(Origin,Destination,passenger,BestPathSoFar,BestLengthSoFar,BestDurationSoFar)->
+findFastestRoute(Origin,Destination,passenger,Path,Length,Duration,BestDurationSoFar, BestPathSoFar,BestLengthSoFar)).
+
+fastestRoute(Origin,Destination,freight,Path,Length,Duration):-
+(route(Origin,Destination,freight,BestPathSoFar,BestLengthSoFar,BestDurationSoFar)->
+findFastestRoute(Origin,Destination,freight,Path,Length,Duration,BestDurationSoFar, BestPathSoFar,BestLengthSoFar)).
+
+
+/*uroute(A,A,[A],_).
+uroute(A,Z,[A|X],L) :- link(A,Y,_,_), \+(member(Y,L)),uroute(Y,Z,X,[Y|L]).*/
+

@@ -1,0 +1,124 @@
+/*********************************
+ *	   Assignment 2
+ * 	      CSC384
+ *	    heuristics.P
+ * 	  Sergei Iakhnin
+ * 	    981 843 420
+ *********************************/
+
+
+:- import append/3 from basics.
+:- import member/2 from basics.
+:- import length/2 from basics.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% exp2(X,ExpX) is true iff ExpX is 2^X
+
+exp2(0,1).
+exp2(X,ExpX) :- X > 0, Y is X - 1, exp2(Y,ExpY), ExpX is 2 * ExpY.
+
+
+/*******************************************************************************
+ * locate(D,State,P) holds iff disk D is on peg P in state State where P can be
+ * one of l,m, or r.
+ * Pre: none.
+ ******************************************************************************/
+locate(D,[L,_,_],l) :- member(D,L).
+locate(D,[_,M,_],m) :- member(D,M).
+locate(D,[_,_,R],r) :- member(D,R).
+
+
+
+/*******************************************************************************
+ * disks_below(D,State,P,DList) holds iff DLis contains the disks positioned
+ * below disk D and on the same peg in state State.
+ * Pre: non 
+ ******************************************************************************/
+disks_below(D,[[D|R],_,_],l,R).
+disks_below(D,[_,[D|R],_],m,R).
+disks_below(D,[_,_,[D|R]],r,R).
+disks_below(D,[[_|R],_,_],l,L):-disks_below(D,[R,_,_],l,L).
+disks_below(D,[_,[_|R],_],m,L):-disks_below(D,[_,R,_],m,L).
+disks_below(D,[_,_,[_|R]],r,L):-disks_below(D,[_,_,R],r,L).
+
+
+
+/*******************************************************************************
+ * build_misplaced(D,State,Goal,Misp) holds iff Misp is a list containing the 
+ * disks in state State which are misplaced with respect to the goal state Goal.
+ * D corresponds to the largest allowable size of disk.
+ * Pre: D is a number.
+ ******************************************************************************/
+build_misplaced(0,_,_,[]).
+build_misplaced(D,State,Goal,NewMisp):- 
+Dnew is D - 1,locate(D,State,Loc1),locate(D,Goal,Loc2),
+(not(Loc1 = Loc2) -> build_misplaced(Dnew,State,Goal,Misp),NewMisp = [D|Misp];
+disks_below(D,State,Loc1,Slist),disks_below(D,Goal,Loc1,Glist),
+(not(Slist = Glist) -> build_misplaced(Dnew,State,Goal,Misp),NewMisp = [D|Misp];
+build_misplaced(Dnew,State,Goal,NewMisp))).
+
+
+
+/*******************************************************************************
+ * count_on_top(D,State,P,N,H) holds iff D is a disk positioned on peg P in   
+ * state State such that the number of disks on top of D is N - 1 when H = h2   
+ * and is N when H = h3.
+ * Pre: N is a number.
+ ******************************************************************************/
+count_on_top(D,[[D|_],_,_],l,N,H) :- H = h2, N is 1 ; H = h3, N is 0.
+count_on_top(D,[_,[D|_],_],m,N,H) :- H = h2, N is 1 ; H = h3, N is 0.
+count_on_top(D,[_,_,[D|_]],r,N,H) :- H = h2, N is 1 ; H = h3, N is 0.
+count_on_top(D,[[F|R],_,_],l,NewNum,H):- 
+not(D = F),count_on_top(D,[R,_,_],l,Num,H), NewNum is Num + 1.
+count_on_top(D,[_,[F|R],_],m,NewNum,H):- 
+not(D = F),count_on_top(D,[_,R,_],m,Num,H), NewNum is Num + 1.
+count_on_top(D,[_,_,[F|R]],r,NewNum,H):- 
+not(D = F),count_on_top(D,[_,_,R],r,Num,H), NewNum is Num + 1.
+
+
+
+/*******************************************************************************
+ * sum_on_top(State,Misp,N,H) holds iff Misp is a list of disks which are 
+ * misplaced in state State and N is the sum over all misplaced disks of the  
+ * quantity 1 + # of disks on top of every such disk if H = h2 and the quantity 
+ * 2^#of disks on top of every such disk if H = h3.
+ * Pre: N is a number.
+ ******************************************************************************/
+sum_on_top(_,[],0,_).
+sum_on_top(State,[F|R],NewNum,H):-
+locate(F,State,Loc),count_on_top(F,State,Loc,Count,H), sum_on_top(State,R,Num,H), 
+(H = h2, NewNum is Num + Count ; H = h3, exp2(Count,NewCount),NewNum is Num + NewCount).
+
+
+
+/*******************************************************************************
+ * h1(State,Goal,D) holds iff the distance between State and Goal configuration
+ * is estimated to be D where D is the number of disks in State that are 
+ * misplaced with respect to the goal configuration
+ * Pre: none.
+ ******************************************************************************/
+h1(State,Goal,D) :- build_misplaced(4,State,Goal,Misp),length(Misp,D).
+
+
+
+/*******************************************************************************
+ * h2(State,Goal,D) holds iff the distance between State and the Goal 
+ * configuration is estimated to be D where D is the sum of some quantity 
+ * q(mspDisk) for every misplaced disk mspDisk. q(mspDisk) = 1 + # of disks on 
+ * top of mspDisk
+ * Pre: none.
+ ******************************************************************************/
+h2(State,Goal,D) :- build_misplaced(4,State,Goal,Misp),sum_on_top(State,Misp,D,h2).
+
+
+
+/*******************************************************************************
+ * h3(State,Goal,D) holds iff the distance between State and the Goal 
+ * configuration is estimated to be D where D is the sum of some quantity 
+ * q(mspDisk) for every misplaced disk mspDisk. q(mspDisk) = 2^# of disks on top 
+ * of mspDisk.
+ * Pre: none.
+ ******************************************************************************/
+h3(State,Goal,D) :- build_misplaced(4,State,Goal,Misp),sum_on_top(State,Misp,D,h3).
+

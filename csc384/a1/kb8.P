@@ -1,0 +1,14 @@
+% kb8
+
+% program requirements
+allCourses([[c1,2],[c2,2],[c3,3],[c4,3],[c5,1],[c6,1],[c7,2],[c8,2],[c9,3],[c10,3]]).
+requiredCredits(10).
+group(g1,2,[c1,c2,c3]).
+group(g2,1,[c4,c5]).
+group(g3,3,[c6,c7,c8]).
+groupList([g1,g2,g3]).
+equivalent([c1,c2]).
+equivalent([c9,c10]).
+
+% student transcript
+transcript([[c1,a],[c3,b],[c4,c_plus],[c5,w],[c6,w],[c6,c],[c7,b_minus],[c8,a],[c9,b],[c10,f]]).

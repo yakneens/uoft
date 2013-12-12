@@ -1,0 +1,228 @@
+Company Name: 
+	Artesia Technologies
+
+Product Name: 
+	TEAMS
+
+URL:
+	www.artesiatech.com
+
+Core Capabilities:
+
+	Import/Ingest: TEAMS provides numerous ways to import media files including desktop import, batch import and administrator import mechanisms for immediate /scheduled imports of very large asset collections. 
+	In addition, TEAMS offers 'Import Adapters' for unique types of assets such as Quark Xpress, digital videos, and Microsoft PowerPoint. TEAMS also supports XML-formatted asset information.
+		. Web Import
+		. Power User Import
+		. Bulk Import
+		. Import Adapters
+		. Hot Folders
+		. Rich Media Filters (Audio/Video, Image, Text)
+		. Property Shortcuts
+		. Image Transformers
+		. Text/Document Transformers
+		. Enabling Third-Party Transformers (Watermarking, Encryption, etc.)
+		. XML-formatted property ingest
+		. DTD-compliance checking
+		. Scheduled or Immediate
+		
+		
+	.Index: TEAMS automatically enriches content with its physical descriptive property information so that it can be properly categorized according to user needs. In addition, logical descriptive property 
+	information can be added and/or edited to optimize the ability to rapidly retrieve and leverage digital assets across the enterprise.	
+		. Edit Properties
+		. Bulk Edit Properties
+		. Edit Content
+		. Delete
+		. Bulk Delete
+		. Undelete	
+		
+	.Search: TEAMS provides a variety of powerful search options, allowing users to browse for assets, search for assets based on their content, or search for assets based on their properties. All searches 
+	can be saved and shared among users or kept private for personal reuse	
+	
+		. Full Text Search
+		. Properties Search, Simple and Advanced
+		. Saved Searches
+		. Vocabulary Browse Search
+		. Search Basket
+		. Multiple View Options (Gallery, List, Detail Views)
+		
+	.Modify: TEAMS gives users complete control over modifying their assets with full check-out/check-in, locking, and version control.	
+		. Check Out
+		. Check In
+		. Version control
+		. Video Storyboard
+		. Edit video clips
+		. Create Play Decision Lists
+		
+		
+	.Link: TEAMS enables users to create, review, and delete relationships between assets, called 'links'. Links are used to define associations between source assets and destination assets, which are related 
+	through a specific relationship type such as 'is rendered from' or 'is related to'.	
+		. Link Assets
+		. Modify Links
+		. Navigate Links
+		
+	.Export/Distribute: TEAMS provides very robust export /distribution capabilities. Assets can be selected, transformed, and delivered to the user's desktop (via web download or e-mail), file location, or to a 
+	third party. With all exports/distributions, TEAMS generates a descriptive XML file that contains content and property information. TEAMS can also apply templates or formats to the content at the time of export.	
+		. Deliver
+		. List
+		. Export Adapters
+		. Transformations/Renditions
+		. Image Transformers
+		. Text/Document Transformers
+		. Third-Party Transformers (Watermarking, Encryption, etc.)
+		. XML-formatted property generation
+		. Scheduled or Immediate
+		
+		
+	.Usability Features: TEAMS is designed for the end-user. It contains ease-of-use features that greatly reduce the need for extensive training and ensure a short path to productivity and return on investment.	
+		. User Preferences
+		. On-line Help
+		. User-controlled
+		. Internationalization/Localization
+		. User Logs
+		. Role-, Level- & Organization-based Security	
+		
+	.Video/Audio: TEAMS provides unique features for audio and video, including editing capabilities as well as pre-built support for popular streaming formats, popular streaming servers and popular video/audio 
+	logging software.	
+		. Storyboards
+		. Clipping
+		. Play Decision Lists^(TM)
+		. Video/Audio Logging Integration
+		. Virage Video Logger Integration
+		. Virage Speech To Text 3.0
+		. Streaming Server Integration
+		. RealSystem Server
+		. Windows Media Server
+		. Darwin (QuickTime) Streaming Server
+	
+	.Pre-Built Integration: TEAMS also includes integration with popular third-party software packages. For example, users of Quark XPress can search and drag-and-drop images and text into Quark templates 
+	without leaving the tool.
+		. Quark Xpress 4.1/5.0
+		. Microsoft PowerPoint
+		. Interwoven TeamSite
+		. InterTrust Digital Rights Management
+		. Microsoft Office
+		. Microsoft Windows Explorer
+	
+	.Open and Easy to Integrate: In addition to pre-built integration, TEAMS provides many methods for integration with any other third-party system. This openness has allowed TEAMS to be integrated with 
+	third-party ERP systems, e-commerce engines and content delivery networks (CDNs).
+	
+		. Asset Properties: 
+			TEAMS can import asset properties from third-party databases. For example, properties such as 'Author' and 'List Price' can be populated from an ERP inventory system such as Oracle Inventory.
+		. Import/Export: 
+			TEAMS can import/export assets to/from any source/destination location. In addition, all TEAMS imports/exports can include all asset properties in XML format.
+		. Transformations: 
+			TEAMS Transformers can change/render an asset at import or export. A typical transformation is the creation of a new image rendition (from high-resolution TIFF to low resolution JPG or GIF). 
+			Advanced, customized Transformations can perform 'special processing' such as the placement of a specific rendition of an asset on a website, on a content-delivery network (CDN), or in a third-party 
+			rights-management system.
+		. Java API: 
+			TEAMS provides a second-generation API to allow integrators to access all of the functions of TEAMS and include/embed this functionality in custom applications or third party 'portals/websites'. 
+			The TEAMS API can also be used to create custom interfaces such as an 'asset and properties bridge' to another system.
+	
+	
+	
+Platforms:
+ 
+	Server Operating Systems
+		.Solaris 2.7 and 2.8
+		.NT 4.0
+		.Windows 2000
+	
+	Desktop Operating Systems
+		.NT 4.0
+		.Mac OS 8.6 and 9.x
+	
+	Database
+		.Oracle 8.0.6, 8.1.6 and 8.1.7
+
+	Browsers
+		.Netscape 4.6x and 4.7x
+		.Internet Explorer 5.x
+
+	Java
+		.1.1.8
+		.1.3
+
+
+Clients:
+	AOL Time Warner Book Group
+		Challenge: 
+			Expand the reach of extensive publishing holdings to generate new revenue streams
+
+		TEAMS Solution: 
+			Creates enterprise-wide web-accessible Digital Asset Warehouse
+
+		Benefits:
+			. Streamline processes - can now efficiently organize, store and repurpose print and audio books and their associated collateral
+			. Enhanced marketing capabilities in new digital channels
+			. Create new revenue streams (ebooks, print on demand)
+
+	BBC Technology
+		Challenge: 
+			Design state-of-the-art digital broadcast and media solutions for leading global clients
+
+
+		TEAMS Solution:
+			. Best-of-breed digital asset management platform
+
+		Benefits:
+			. Streamlines the production, management and distribution of rich media programming across emerging channels
+			. Enhances operational efficiencies
+			. Safeguards content
+			. Maximum flexibility (open APIs)
+
+	Canon
+		Challenge:
+			 Distributors and partners across the country need to access the most up-to-date marketing materials
+
+		TEAMS Solution: 
+			Digital Asset Warehouse as the infrastructure for storing and managing all collateral
+
+		Benefits:
+			.Streamlined processes
+			.Lower costs
+			.Online collaboration with third party vendors
+			.Brand consistency
+			.Higher margins
+	
+	DaimlerChrysler
+		Challenges:
+	    		* Difficult to find and access corporate brand content
+			* Redundant creative efforts
+    			* Wasted time and money
+
+		TEAMS Solution:
+    			* Accelerated Digital Asset Management system (ADAM)
+    			* Common system for all brand content
+
+		Benefits:
+    			* Cost reductions
+			* Shorter process cycle times
+    			* Consistent content reuse
+    			* Increased continuity of brands
+    			* Easy access to corporate digital brand assets
+
+	
+	General Motors
+		Challenge: 
+			Better manage a century of GM brand assets: photos and commercials
+
+		TEAMS Solution: 
+			Provides a corporate media archive for over a half million brand assets
+
+		Benefits:
+			.Significant reduction in search and retrieval time for archived brand assets
+			.Increased revenues from quicker fulfillment of licensing requests
+
+Contact Info:
+
+	700 King Farm Boulevard, Suite 400
+	Rockville, MD   20850 USA
+
+	301.548.4000 voice
+	301.548.4015 fax
+	1.866.ARTESIA toll free
+	sales@artesia.com
+	partners@artesia.com
+	
+	
+	

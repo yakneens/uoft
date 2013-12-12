@@ -1,0 +1,50 @@
+preconds(move_in(X,_), [loc(X)]).
+preconds(move_out_nr(X,_), [loc(X), neg(rain)]).
+preconds(move_out_r_u(X,_), [loc(X), rain, has(u)]).
+preconds(move_out_r_nu(X,_), [loc(X), rain, neg(has(u))]).
+preconds(pick_up(X,Y), [in(X,Y),loc(Y)]).
+preconds(drop(X,Y), [has(X), loc(Y)]).
+
+
+addlist(move_in(_,Y), [loc(Y)]).
+addlist(move_out_nr(_,Y), [loc(Y)]).
+addlist(move_out_r_u(_,Y), [loc(Y)]).
+addlist(move_out_r_nu(_,Y), [loc(Y), wet]).
+addlist(pick_up(X,_), [has(X)]).
+addlist(drop(X,Y), [in(X,Y)]).
+
+deletelist(move_in(X,_), [loc(X)]).
+deletelist(move_out_nr(X,_), [loc(X)]).
+deletelist(move_out_r_u(X,_), [loc(X)]).
+deletelist(move_out_r_nu(X,_), [loc(X)]).
+deletelist(pick_up(X,Y), [in(X,Y)]).
+deletelist(drop(X,_), [has(X)]).
+
+boolean(wet).
+boolean(rain).
+boolean(connected(_,_)).
+boolean(in(_,_)).
+boolean(has(_)).
+boolean(loc(_)).
+boolean(neg(X)) :- boolean(X).
+
+nonboolean(neg(X)) :- nonboolean(X).
+
+predicate(has(_), has).
+predicate(in(_,_), in).
+predicate(loc(_), loc).
+predicate(neg(X),P) :- predicate(X,P).
+
+
+actlist([
+move_in(s,p),move_in(p,s),
+move_out_nr(s,b),move_out_nr(b,s),move_out_nr(p,b),move_out_nr(b,p),
+move_out_r_u(s,b),move_out_r_u(b,s),move_out_r_u(p,b),move_out_r_u(b,p),
+move_out_r_nu(s,b),move_out_r_nu(b,s),move_out_r_nu(p,b),move_out_r_nu(b,p),
+pick_up(p1,s),pick_up(p1,p),pick_up(p1,b),
+pick_up(p2,s),pick_up(p2,p),pick_up(p2,b),
+pick_up(u,s),pick_up(u,p),pick_up(u,b),
+drop(p1,s),drop(p1,p),drop(p1,b),
+drop(p2,s),drop(p2,p),drop(p2,b),
+drop(u,s),drop(u,p),drop(u,b)
+]).

@@ -1,0 +1,239 @@
+AMIA Questionnaire on Digital Asset Management Software Functionality
+
+Participating vendors were asked to respond to the following questions about the specific functions of their software solutions. The purpose of the questionnaire is to give an overview of the different products and to 
+answer general questions. The vendor's answers are listed in alphabetical order. Please keep in mind that since different products address different functions, vendors may not have pertinent answers to every question.
+
+This survey was conducted during the November Annual 1999 AMIA Conference in Montreal, Canada 
+
+
+Participants:
+
+    AT&T
+    Bulldog
+    Cinebase
+    Excalibur
+    Informix
+    Mate
+    PNI
+    Teams
+	
+
+
+The Questions:
+
+	Question 1:
+		Please describe your product's functional strengths (i.e. video, still images, etc.)
+		
+	Replies:
+		Bulldog
+
+			The Bulldog Two.Four application is an enterprise content management system that allows users to store, locate, reuse, and repurpose media of all types. Bulldog's unique, distributed architecture 
+			allows our customers to scale and customize the software without having to modify the existing core application. Divided into various components, the architecture offers levels of functionality that 
+			would otherwise not be possible without extensive changes to the core system; our elemental approach allows us to incorporate additional functionality by extending or adding to the component 
+			architecture. The Bulldog architecture also provides a component for storing media files on any location to allow for limitless data storage.
+
+			Bulldog's extensive cataloguing capabilities allow our clients to categorize assets using keywords and user defined fields, as well as allowing them to define inter-asset relationships through our 
+			associations feature. Bulldog is the only system available that ensures that associations (relationships between assets) are stored and maintained. Bulldog permits an asset to have as many defined 
+			associations with other assets as required and supports standard relationships such as versioning, licensing, and sequencing, as well as user defined asset inter-relationships.
+
+			Bulldog also allows unlimited alternate representations. Any asset may have one or many digital representations in the system. This is very important as a single digital master may need to be 
+			transformed for a variety of resolution and format-specific distribution processes (for example, ad proofing). Bulldog ensures that the links between any master file and its many representations is 
+			maintained in the metadata model. When reviewing the metadata for a particular asset, a simple mouse click allows users to view any relationships linked to the selected asset, including all of its 
+			digital representations.
+
+
+		Cinebase
+
+			Cinebase3's core expertise lies in its ability to handle all forms of rich media. We have extensive experience with video, audio and animation. Scalable storage and an open architecture allow our 
+			customers to handle assets of just about any format and size. From text and storyboard beginnings throughout a project's development and realization, Cinebase can manage the creative assets.
+
+			CreativePartner provides the tools for management of creative assets (commercials, movie clips, print ads, still art and other complex assets) in environments where distribution, review, 
+			collaboration, annotation and workflow control are important requirements. CreativePartner can be deployed on a departmental, enterprise, or global basis.
+
+
+		Excalibur/ATT
+
+			Excalibur Screening Room 2.0 is the premier end-to-end solution for capturing, cataloging, managing and accessing all types of analog and digital video. Screening Room provides easy-to-use and 
+			familiar search and retrieval capabilities to locate and utilize valuable video assets in a fraction of the time it normally takes. Furthermore, Screening Room has been specifically engineered to 
+			fit within an organization's existing workflow for creating new programs from archived and real-time video footage.
+
+			Screening Room automatically creates a video storyboard from video assets by identifying and classifying each major scene change event - cuts, fades, and dissolves - as well as salient scene events 
+			like pans, zooms and composite graphics. An optionally created low-resolution video proxy enables broad access to all assets via any standard Web browser. Additionally, Screening Room indexes user 
+			annotations, Closed-Captioned text and VOICE-to-TEXT translation from the audio track, correlating this rich data back to the storyboard and low-resolution proxy with a frame accurate SMPTE format 
+			time code.
+
+			Video assets are stored using a vault metaphor for easy manual navigation. Or use the power of RetrievalWare natural language concept searching to quickly locate important and relevant clips in the 
+			vault database. An Edit Client lets users assemble a low-resolution rough-cut preview by selecting in and out points from any asset in the system. Screening Room lets users view the rough-cut 
+			immediately by playing the selected clips in order. Projects can be organized in persistent bins or exported as Edit Decision Lists for use with industry leading offline and online nonlinear editors 
+			such as Avid.
+
+
+		Informix
+
+			Media360 provides a complete environment to collect, index, retrieve and distribute content and media assets. It is tightly integrated with Informix's database, leading content creation tools 
+			(Avid, Quark, MS-Office etc), web publishing, e-commerce and analytic solutions. Informix Media360 is an end-to-end media asset management solution. It has been designed from the ground up to 
+			satisfy the requirements of global organizations that need to manage and distribute information and media assets throughout the enterprise. Having corporate content online and easily accessible 
+			generates increased efficiency and information re-use.
+
+			Media360 is targeted at any organization needing to manage assets such as video, audio, documents, images, maps, engineering drawings, web pages - literally any kind of content. Typical users include 
+			media and publishing companies, retailers, telcos, brand management organizations and agencies, federal and law enforcement agencies, education and healthcare.
+
+
+		Mate
+
+			Mate's Visionary DM automatically generates searchable content descriptions for video, audio and still images. The product's strengths are in the richness of descriptions (or metadata), the quality 
+			and accuracy of extraction, and effectiveness of searching.
+
+			Indexing and searching features currently supported by the system include:
+				* Video key-frame selection and classification (scene changes, motion key-frames).
+				* Face detection and recognition (video and still images)
+				* Image text recognition (video and still images)
+				* Speaker searching based on person's sound characteristics (video and audio)
+				* Audio event searching such as applause, laughter (video and audio)
+				* Visual event searching (such as explosion)
+				* Video logo and clip searching
+				* Video closed-caption decoding
+				* Video and audio speech recognition (speech-to-text)
+				* Video motion indexing
+
+
+		PNI
+
+		MediaQuest is a scalable, web-based solution that accommodates common media types (video, still, artwork). It provides an intuitive natural language search engine that makes it very easy to learn and use, 
+		which reduces training costs and broadens access to your assets. MediaQuest has a sophisticated rights management tool which allows you to control not only who can access your media assets, but what rights 
+		are associated with those assets and how they can be used. A comprehensive set of administrative tools allows you to track orders, view event history, manage users, caption and load new assets, and easily 
+		add new functionality to your system. It integrates with e-commerce solutions to enable users to generate revenue from their rights-protected assets.
+
+
+		Teams: Artesia
+
+			Artesia Technologies(tm) is a leading provider of digital asset management solutions for organizations seeking to best manage, leverage and distribute their digital content to maximize competitive 
+			advantage. Artesia's flagship product, te@ms (tm), provides both a powerful content engine for new media delivery that fuels e-business opportunities, and superior enterprise-wide access to content.
+
+			Artesia has built a distributed, highly scalable solution that enables archiving, managing, publishing, and branding assets across large and sophisticated enterprises. While Artesia has as rich a 
+			function set and supports as many media types as any solution available in the market, our most distinguishing trait is our scalability and breadth of offering. We connect creative behavior with 
+			competitive infrastructure yielding maximal asset value for our customers.
+
+			Leading organizations that have embraced te@ms (tm) include The Washington Post, General Motors, The Library of Congress, Tribune Media Services, Jane's Information Group, and many more.		
+		
+		
+		
+	
+	Question 2:
+		Please describe the architecture of your product, including database and client software, supported platforms, etc.
+			
+	Replies:		
+		Bulldog
+
+			The open and distributed architecture of Bulldog Two.Four provides solutions that overcome the limitations of a platform and database specific client/server architecture: Bulldog achieves 
+			platform-independence by writing the client code in Java, an architecture and platform-neutral programming language.
+
+			Bulldog's architecture is database independent. It permits the use of any industry standard database by replacing the database interface layer only. Bulldog Two.Four currently supports the following 
+			Object Relational DBMS systems: Oracle8 and Informix IDS. Bulldog Two.Four also supports Microsoft's SQL Server - a Relational DBM.
+
+			Standard clients run on Win 95/98/NT, Mac OS 8.1 and greater, Java. Bulldog currently supports installations on Sun Solaris, SGI, DEC, and NT server platforms. Web clients run on IE and Netscape.
+
+			Bulldog guarantees extensibility and flexibility through its component architecture. By design, the architecture allows for easy integration with other systems and distribution of data and processing 
+			across the network in a wide variety of configurations. Communication between these processes is handled by a CORBA compliant middleware facility, which ensures the interoperability of the various 
+			object components.
+
+
+		Cinebase
+
+			Cinebase3 Production Server runs on WindowsNT 4.0. It utilizes Oracle or Informix databases. The client software runs on Windows9x, WindowsNT 4.0, or Mac OS 8.5 or higher.
+
+			The server also supports sgi IRIX and will support SUN Solaris by 1Q00
+
+			The client will support sgi IRIX by Dec.'99
+
+			CreativePartner server runs on NT and the client can Windows9x, Windows NT 4.0, or Mac OS 8.5 or higher. Powered by Cinebase's patented DCMS, an SQL-based engine, and using the industry standard 
+			ODBC interface, CreativePartner supports TCP/IP, dial-up, ISDN, Frame Relay and T1 data transfer mechanisms.
+
+
+		Excalibur/ATT
+
+			Excalibur Screening Room is a client/server system consisting of four client applications-Capture Client, Edit Client, Browser Client, and Admin Client-and a set of standard databases and servers. 
+			Briefly, the four client applications are:
+
+			Capture Client analyzes analog or digital video input, developing a "Storyboard" of scene-change frames, capturing text, and optionally, digitizing a low-resolution, video-proxy file for on-line 
+			viewing. Related information such as Storyboard title, production date, etc. is specified, and all of these "metadata" are then indexed and saved for Browser Client and Edit Client access.
+
+			Edit Client accesses and modifies saved Storyboards. You can edit Storyboards and define clips. Clips can be "trimmed" to produce derivative Storyboards, and sets of clips can be exported as edit 
+			decision lists. To view a specific Storyboard, you can browse folders, search Storyboard-related text for a specific word or phrase, or search the Storyboards for frames that are similar in 
+			appearance to a selected frame or other image.
+
+			Browser Client provides widely distributed access to your Excalibur Screening Room video assets via the desktop Web browser. Anyone with the appropriate access privileges can view Storyboards and 
+			related information over the Internet, an intranet, or an extranet.
+
+			As with Edit Client, the desired Storyboard is chosen by browsing folders, by searching for specific text, or by searching for frames that are similar to a selected image.
+
+			Admin Client is an administrative tool for managing Excalibur Screening Room's Video Server(s) and configuring the system's search and filtering functions.
+
+			The "server" portion of the Excalibur Screening Room system actually consists of database and video servers, search applications, and supporting utilities. The primary service components are:
+
+			Metadata database server, providing access to Excalibur Screening Room "metadata" (including Storyboard images, transcribed text, annotations, etc.). Most popular SQL databases and media asset 
+			management systems are supported.
+
+			Text Search - provides boolean, concept and pattern text-search capabilities by indexing all text in the Metadata database.
+
+			Visual Search - provide the system's image-search capability by indexing the Storyboard images in the Metadata database.
+
+			Face Recognition - an optional, automatic service that identifies all keyframes that include a face.
+
+
+		Informix
+
+			Informix Media360 is a thin client application utilizing Distributed Java, Java Applets, Java Scripts and Dynamic-HTML. All Media360 application code, logic, business rules and workflow are executed 
+			from within the database (Informix Internet Foundation.2000 or Informix Dynamic Server) using the database's inherent ability to execute business logic. All Media360 functions are executed within 
+			Netscape or Internet Explorer. Media360 is available on NT, Linux and UNIX (including all major derivatives).
+
+
+
+		Mate
+
+			Visionary includes one or more indexing (auto-logging) workstations, which create an index of video programs and store it as tables and objects in a video-index database server. The database engine 
+			is augmented by a series of proprietary video search engines. Search clients log into the database server and send queries to be parsed and processed by the database and search engines. Search results
+			that match the user-submitted query are sent back to the search clients and displayed as thumbnail images, with program name and time-code (or video frame number) on his screen. The search results 
+			can also be exported as HTML documents or in industry standard EDL. The system does not store video, except temporarily for auto logging. Logging clients are PCs running Windows NT. The server, 
+			comprising of a database engine and MATE search engines run on multiple platforms, either Windows NT or Unix. Client software runs either on PCs or from a Web browser.
+
+
+		PNI
+
+			MediaQuest sits on commercially available databases (Oracle, SQL), and on NT or Sun Solaris platforms. Users access the MediaQuest product through standard web browsers (Netscape or Internet Explorer).
+			Loading or ingest of media assets is through the MediaQuest Catalyst client software. Streaming video is through either MediaQuest or the RealNetwork G2 server.
+
+
+		Teams: Artesia
+
+			Te@ms 3.0 provides a distributed, component-based, web-friendly architecture. Building upon Oracle 8i, te@ms provides a scalable asset repository for all types of digital media. Business logic 
+			services utilize CORBA to broker requests between the client and database, and XML to exchange content with it's metadata to other applications along the asset value chain. These services each have 
+			load balancing and fault tolerance capabilities to effectively scale across an enterprise. The application logic layer is built entirely using Javabeans. This provides an extremely customizable face 
+			for each application, accessible from the web or any platform that supports a Java virtual machine.
+	
+	Question 3:
+		Please describe the ways in which assets and metadata enter your system, including manual entry, automatic collection of machine-generated metadata video logging, etc. 
+	
+	Question 4:
+		Please describe the vocabulary control and thesaurus functions of your product. 
+	
+	Question 5:
+		Please describe the way in which the security of the assets is protected by your product, including watermarking, encryption, and permissions. 
+	
+	Question 6:
+		Please describe the way your product handles locking and versioning of assets.
+	
+	Question 7:
+		Please list all of the file types and file formats your product supports.
+	
+	Question 8:
+		Please describe how your system handles rights management, including asset ownership, approvals, tracking, and license windows.
+	
+	Question 9:
+		Please describe how your product handles asset storage, including hardware partners, and back-end systems softwares such as HSM or backups. 
+	
+	Question 10:
+		Please describe how your system handles traditional assets such as videotapes, photographs, etc.
+	
+	Question 11:
+		Describe your largest and your smallest installation.

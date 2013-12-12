@@ -1,0 +1,55 @@
+
+
+[x,y] = meshgrid([10:50:410],[1:10:201]);
+res = zeros(9,20);
+q = 1;
+r = 1;
+for maxepoch = 10:50:410,
+r = 1;
+
+    for numhid = 1:10:201,
+        restart = 1;
+        %numhid = 32;
+        %maxepoch = 60;
+
+        doitall;
+    res(q,r) = (avg23 - avg22)*(avg23 - avg22) + (avg33 - avg32)*(avg33 - avg32);
+    r = r+1;
+    end
+    
+    q = q + 1;
+end
+for numhid = 1:10:201,
+
+    maxepoch = 10;
+doitall;
+res(1,r) = (avg23 - avg22)*(avg23 - avg22) + (avg33 - avg32)*(avg33 - avg32);
+maxepoch = 60;
+doitall;
+res(1,r) = (avg23 - avg22)*(avg23 - avg22) + (avg33 - avg32)*(avg33 - avg32);
+maxepoch = 110;
+doitall;
+res(1,r) = (avg23 - avg22)*(avg23 - avg22) + (avg33 - avg32)*(avg33 - avg32);
+maxepoch = 160;
+doitall;
+res(1,r) = (avg23 - avg22)*(avg23 - avg22) + (avg33 - avg32)*(avg33 - avg32);
+maxepoch = 210;
+doitall;
+res(1,r) = (avg23 - avg22)*(avg23 - avg22) + (avg33 - avg32)*(avg33 - avg32);
+maxepoch = 260;
+doitall;
+res(1,r) = (avg23 - avg22)*(avg23 - avg22) + (avg33 - avg32)*(avg33 - avg32);
+maxepoch = 310;
+doitall;
+maxepoch = 360;
+doitall;
+maxepoch = 410;
+
+end
+
+%fprintf(1, '%6.2f %6.2f \n', avg23, sd23);
+%fprintf(1, '%6.2f %6.2f \n', avg33, sd33);
+%fprintf(1, '%6.2f %6.2f \n', avg22, sd22);
+%fprintf(1, '%6.2f %6.2f \n', avg32, sd32);
+%num = (avg23 - avg22)*(avg23 - avg22) + (avg33 - avg32)*(avg33 - avg32);
+%fprintf(1, '%6.2f \n', num);

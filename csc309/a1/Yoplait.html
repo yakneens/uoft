@@ -1,0 +1,124 @@
+<html xmlns:saxon="http://icl.com/saxon">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <title>Shopping Yoplait</title>
+      <link rel="stylesheet" type="text/css" href="store.css"><script type="text/javascript" src="populate.js"></script><script type="text/javascript" src="search.js"></script><script type="text/javascript" src="jscripts.js"></script></head>
+   <body onLoad="populateCart();">
+      <table class="generic" align="center">
+         <tr>
+            <td class="logo" colspan="3">
+               <h1>EASTERN GROCERS</h1>
+            </td>
+         </tr>
+         <tr>
+            <td class="menu">
+               <h4 class="menu">CATEGORY</h4>
+               <ol>
+                  <li class="menu"><a href="javascript:loadURL('Bulk.html');">Bulk</a></li>
+                  <li class="menu"><a href="javascript:loadURL('Cans.html');">Cans</a></li>
+                  <li class="menu"><a href="javascript:loadURL('Dairy.html');">Dairy</a></li>
+                  <li class="menu"><a href="javascript:loadURL('Meat.html');">Meat</a></li>
+               </ol>
+               <h4 class="menu">MANUFACTURER</h4>
+               <ol>
+                  <li class="menu"><a href="javascript:loadURL('Campbells.html');">Campbells</a></li>
+                  <li class="menu"><a href="javascript:loadURL('Kraft.html');">Kraft</a></li>
+                  <li class="menu"><a href="javascript:loadURL('Lactancia.html');">Lactancia</a></li>
+                  <li class="menu"><a href="javascript:loadURL('Natrel.html');">Natrel</a></li>
+                  <li class="menu"><a href="javascript:loadURL('President's Choice.html');">President's Choice</a></li>
+                  <li class="menu"><a href="javascript:loadURL('Schneiders.html');">Schneiders</a></li>
+                  <li class="menu"><a href="javascript:loadURL('Yoplait.html');">Yoplait</a></li>
+               </ol>
+               <h3 class="menu"><a href="javascript:loadURL('sale.html');">SALE ITEMS</a></h3>
+               <table border="0" cellpadding="4">
+                  <tr>
+                     <td><input id="searchVal" type="text" size="15"></td>
+                     <td><input type="button" onClick="doSearch();" value="SEARCH"></td>
+                  </tr>
+               </table>
+            </td>
+            <td class="contents">
+               <h2>Yoplait</h2>
+               <table border="0" cellpadding="0" align="center">
+                  <tr>
+                     <td><font class="heading">Manufacturer: </font>Yoplait
+                     </td>
+                     <td rowspan="5">
+                        <table>
+                           <tr>
+                              <td><img src="images/tomatoes.jpg"></td>
+                           </tr>
+                           <tr>
+                              <td><input type="button" onClick="javascript:addToCart(3)" value="Add To Cart"></td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td><a name="3"><font class="heading">Name: </font>Yogurt</a></td>
+                  </tr>
+                  <tr>
+                     <td><font class="heading">Type: </font>Strawberry
+                     </td>
+                  </tr>
+                  <tr>
+                     <td><font class="heading">Units: </font>12
+                     </td>
+                  </tr>
+                  <tr>
+                     <td><font class="heading">Price:  </font>
+                        				Reg: <font class="oldPrice">$6.00</font> Now: $4.00
+                     </td>
+                  </tr>
+                  <tr>
+                     <td colspan="2"><font class="heading">Description: </font>Healthy and fat free. Great for any occasion.
+                     </td>
+                  </tr>
+                  <tr height="50"></tr>
+               </table>
+            </td>
+            <td class="cart">
+               <table width="150" border="0" cellpadding="0" cellspacing="5" class="shoppingCart">
+                  <tr>
+                     <td colspan="3" class="shoppingCartHeader">Shopping Cart</td>
+                  </tr>
+                  <tr>
+                     <td colspan="3">
+                        <hr>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>1.</td>
+                     <td id="id0"> </td>
+                     <td width="20%"><a href="javascript:removeFromCart(0);" class="remove">remove</a></td>
+                  </tr>
+                  <tr>
+                     <td>2.</td>
+                     <td id="id1"> </td>
+                     <td width="20%"><a href="javascript:removeFromCart(1);" class="remove">remove</a></td>
+                  </tr>
+                  <tr>
+                     <td>3.</td>
+                     <td id="id2"> </td>
+                     <td width="20%"><a href="javascript:removeFromCart(2);" class="remove">remove</a></td>
+                  </tr>
+                  <tr>
+                     <td>4.</td>
+                     <td id="id3"> </td>
+                     <td width="20%"><a href="javascript:removeFromCart(3);" class="remove">remove</a></td>
+                  </tr>
+                  <tr>
+                     <td>5.</td>
+                     <td id="id4"> </td>
+                     <td width="20%"><a href="javascript:removeFromCart(4);" class="remove">remove</a></td>
+                  </tr>
+                  <tr>
+                     <td align="center" colspan="3"><input type="button" name="check-out" value="check-out" onclick="javascript:loadURL('checkout.html');"></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

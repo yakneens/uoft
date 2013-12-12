@@ -1,0 +1,328 @@
+
+% Othello
+% This file contains the game details to be used by "play.P"
+% Copyright (c) 2003 Pascal Poupart
+
+% State representation: [[P1,P2,P3,P4],[P5,...,P8],...,[P13 ... P16]] 
+% represents state 
+%
+%        |  1   2   3   4
+%      --------------------
+%      1 | P1  P2  P3  P4
+%      2 | P5  P6  P7  P8
+%      3 | P9  P10 P11 P12
+%      4 | P13 P14 P15 P16
+%
+% where each P is one of "b" (black), "w" (white), or "e" (empty)
+% 
+% In general we use the function "pos(R,C)" to indicate the position at
+% row R and column C
+
+:- import ith/3, append/3, length/2 from basics.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% initialize(InitState,FirstPlyr) 
+% the game always starts with the following board configuration
+
+initialize([[e,e,e,e],[e,w,b,e],[e,b,w,e],[e,e,e,e]],1).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% winner(State,Plyr,Val)
+% declare player Plyr the winner with score Val when State is terminal 
+
+winner(State,1,Val):-
+	terminal(State),
+	evaluate(State,Val),
+	Val>0.
+winner(State,2,Val):-
+	terminal(State),
+	evaluate(State,Val),
+	Val<0.
+
+% evaluate the board by counting the number of black discs minus
+% the number of white discs
+
+evaluate(b,1).
+evaluate(w,-1).
+evaluate(e,0).
+evaluate([],0).
+evaluate([E|Rest],Val):-
+	evaluate(E,EVal),
+	evaluate(Rest,RestVal),
+	Val is EVal + RestVal.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% tie(State)
+% declare a tie when State is terminal and the score is 0
+
+tie(State):-
+	terminal(State),
+	evaluate(State,0).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% terminal(State)
+% a state is terminal when both players must pass because neither of
+% them can outflank any opponent disc
+
+terminal(State):-
+	moves(1,State,[pass]),
+	moves(2,State,[pass]).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% showState(State)
+% print the board
+
+showState([]).
+showState([Row|OtherRows]):-
+	writeln(Row),
+	showState(OtherRows).
+
+/*******************************************************************************
+ * nextState(Plyr,Move,State,NewState,NextPlyr) holds iff NextPlyr is to play
+ * in state NewState as a result of Player making Move in state State.
+ * Pre: none.
+ *******************************************************************************/
+nextState(Plyr,pass,State,State,NextPlyr) :- 
+moves(Plyr,State,[pass]),
+color(Plyr,Color),
+flip(Color,OtherColor),
+color(NextPlyr,OtherColor).
+
+nextState(Plyr,Move,State,NewState,NextPlyr) :-
+directions(Dirs),
+genFlipped(Plyr,Move,State,Flip,Dirs),
+color(Plyr,Color),flip(Color,OtherColor),
+color(NextPlyr,OtherColor),
+doOutflank(State,Flip,Color,TempState),
+replPos(Move,TempState,Color,NewState).
+
+
+/*******************************************************************************
+ * doOutflank(State,ToBeFlipped,Color,NewState) holds iff NewState is the state
+ * resulting form flipping discs described in ToBeFlipped by a list of triples
+ * [StartPosition,FinishPosition,Direction] to Color in state State.
+ * Pre: none.
+ *******************************************************************************/
+doOutflank(State,[],_,State).
+
+doOutflank(State,[[S,F,D]|R],Color,NewState):- 
+doOutflank(State,R,Color,TempState),
+flipDiscs(TempState,S,F,D,Color,NewState).
+
+/*******************************************************************************
+ * flipDiscs(State,StartPos,FinishPos,Dir,Color,NewState) holds iff NewState
+ * results from State via flipping the discs from StartPos to FinishPos in 
+ * direction Dir to Color.
+ * Pre: none.
+ *******************************************************************************/
+
+flipDiscs(State,StartPos,StartPos,_,Color,NewState) :- 
+replPos(StartPos,State,Color,NewState).
+
+flipDiscs(State,StartPos,FinishPos,Dir,Color,NewState) :- 
+StartPos \= FinishPos,
+nextPos(Dir,StartPos,NextPos),
+flipDiscs(State,NextPos,FinishPos,Dir,Color,TempState),
+replPos(StartPos,TempState,Color,NewState). 
+
+
+
+/*******************************************************************************
+ * directions(L) holds iff L is the list [north,northeast,east,southeast,south,
+ * southwest,west,northwest].
+ * Pre: none.
+ *******************************************************************************/
+directions([north,northeast,east,southeast,south,southwest,west,northwest]).
+
+/*******************************************************************************
+ * genFlipped(Player,Move,State,Flip,Dirs) holds iff Flip is the list of triples 
+ * [StartPosition,FinishPosition,Direction] which identify opponent discs that 
+ * can be flipped as a result of playing Move in the state State by Player.
+ * Pre: none.
+ *******************************************************************************/
+genFlipped(_,_,_,[],[]).
+genFlipped(Plyr,Move,State,Flip,[F|R]) :-
+color(Plyr,Color),flip(Color,OtherColor),
+nextPos(F,Move,NextPos),
+furthest(F,State,NextPos,OtherColor,FurthestPos)->
+nextPos(F,FurthestPos,NextFurthestPos),
+(getDisc(NextFurthestPos,State,Color)->
+genFlipped(Plyr,Move,State,NewFlip,R),append([[NextPos, FurthestPos, F]],NewFlip,Flip);
+genFlipped(Plyr,Move,State,Flip,R));
+genFlipped(Plyr,Move,State,Flip,R).
+
+
+
+
+
+% replPos(Pos,State,Disc,NewState)
+% NewState is the resulting state after putting disc Disc in position
+% Pos of state State.  Enumeration is ok since this is a small domain.
+	
+replPos(pos(1,1),[[_,P2,P3,P4],R2,R3,R4],D,[[D,P2,P3,P4],R2,R3,R4]).
+replPos(pos(1,2),[[P1,_,P3,P4],R2,R3,R4],D,[[P1,D,P3,P4],R2,R3,R4]).
+replPos(pos(1,3),[[P1,P2,_,P4],R2,R3,R4],D,[[P1,P2,D,P4],R2,R3,R4]).
+replPos(pos(1,4),[[P1,P2,P3,_],R2,R3,R4],D,[[P1,P2,P3,D],R2,R3,R4]).
+replPos(pos(2,1),[R1,[_,P2,P3,P4],R3,R4],D,[R1,[D,P2,P3,P4],R3,R4]).
+replPos(pos(2,2),[R1,[P1,_,P3,P4],R3,R4],D,[R1,[P1,D,P3,P4],R3,R4]).
+replPos(pos(2,3),[R1,[P1,P2,_,P4],R3,R4],D,[R1,[P1,P2,D,P4],R3,R4]).
+replPos(pos(2,4),[R1,[P1,P2,P3,_],R3,R4],D,[R1,[P1,P2,P3,D],R3,R4]).
+replPos(pos(3,1),[R1,R2,[_,P2,P3,P4],R4],D,[R1,R2,[D,P2,P3,P4],R4]).
+replPos(pos(3,2),[R1,R2,[P1,_,P3,P4],R4],D,[R1,R2,[P1,D,P3,P4],R4]).
+replPos(pos(3,3),[R1,R2,[P1,P2,_,P4],R4],D,[R1,R2,[P1,P2,D,P4],R4]).
+replPos(pos(3,4),[R1,R2,[P1,P2,P3,_],R4],D,[R1,R2,[P1,P2,P3,D],R4]).
+replPos(pos(4,1),[R1,R2,R3,[_,P2,P3,P4]],D,[R1,R2,R3,[D,P2,P3,P4]]).
+replPos(pos(4,2),[R1,R2,R3,[P1,_,P3,P4]],D,[R1,R2,R3,[P1,D,P3,P4]]).
+replPos(pos(4,3),[R1,R2,R3,[P1,P2,_,P4]],D,[R1,R2,R3,[P1,P2,D,P4]]).
+replPos(pos(4,4),[R1,R2,R3,[P1,P2,P3,_]],D,[R1,R2,R3,[P1,P2,P3,D]]).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% moves(Plyr,State,MoveList) 
+% MoveList is the list of all possible moves that Plyr can execute in
+% state State. If Plyr can outflank some opponent discs then she *must*
+% do so by putting a disc in a position pos(R,C) that allows her to
+% outflank opponent discs. Otherwise she must "pass". Moves are
+% generated by enumerating all board positions and retaining only those
+% that are valid (i.e. outflank opponent discs).
+
+moves(Plyr,State,[pos(R,C)|MvList]):-
+	genMovesR(4,Plyr,State,[],[pos(R,C)|MvList]).
+moves(Plyr,State,[pass]):-
+	genMovesR(4,Plyr,State,[],[]).
+
+% genMovesR(R,Plyr,State,SoFar,MvList)
+% MvList contains all valid moves for player Plyr in state State that
+% involves putting a new disc in row number R or less.
+
+genMovesR(0,_,_,MvList,MvList).
+genMovesR(R,Plyr,State,SoFar,MvList):-
+	R > 0,
+	genMovesC(R,4,Plyr,State,[],MvListRow),
+	PrevR is R - 1,
+	append(MvListRow,SoFar,SoFarPrev),
+	genMovesR(PrevR,Plyr,State,SoFarPrev,MvList).
+
+% genMovesC(R,C,Plyr,State,SoFar,MvList)
+% MvList contains all valid moves for player Plyr in state State that
+% involve putting a new disc in row number R and column number C or less.
+
+genMovesC(_,0,_,_,MvList,MvList).
+genMovesC(R,C,Plyr,State,SoFar,MvList):-
+	C > 0,
+	validmove(Plyr,State,pos(R,C)),!,
+	PrevC is C - 1,
+	genMovesC(R,PrevC,Plyr,State,[pos(R,C)|SoFar],MvList).
+genMovesC(R,C,Plyr,State,SoFar,MvList):-
+	C > 0,
+	PrevC is C - 1,
+	genMovesC(R,PrevC,Plyr,State,SoFar,MvList).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% validmove(Plyr,State,Move)
+% verify that move Move is valid for player Plyr in state State
+
+% case 1: "pass" is a valid move when no opponent discs can be outflanked
+validmove(Plyr,State,pass):-
+	genMovesR(4,Plyr,State,[],[]).
+
+% case 2: adding a disc in row R and column C is valid when some
+% opponent discs can be outflanked.  This is verified by finding a
+% direction Dir in which there is a string of opponent disks followed
+% by one of our own discs.
+validmove(Plyr,State,pos(R,C)):-
+
+	% current position must be empty
+	getDisc(pos(R,C),State,e),  	
+
+	% find furthest disc in a string of opponent discs
+	color(Plyr,Color),
+	flip(Color,OtherColor),
+	nextPos(Dir,pos(R,C),NextPos), 
+	furthest(Dir,State,NextPos,OtherColor,FurthestPos),
+	
+	% following disc must be our own
+	nextPos(Dir,FurthestPos,NextFurthestPos),
+	getDisc(NextFurthestPos,State,Color).
+
+% getDisc(Pos,State,Disc)
+% return the disc Disc in position Pos of state State. 	
+getDisc(pos(R,C),State,Disc):-
+	ith(R,State,Row),
+	ith(C,Row,Elmt),!,
+	Disc = Elmt.
+% if the position is outside the board then return "e" (empty).
+getDisc(_,_,e).
+
+% color(Plyr,Col)
+% disc color for player 1 is "b"
+% disc color for player 2 is "w"
+
+color(1,b).
+color(2,w).
+
+% flip(Color,OtherColor)
+% flipping "b" results in "w"
+% flipping "w" results in "b"
+
+flip(b,w).
+flip(w,b).
+
+% furthest(Dir,State,Pos,Color,FurthestPos)
+% position FurthestPos is occupied by the last disc in a string of
+% color Color in direction Dir.  
+
+furthest(Dir,State,Pos,Color,FurthestPos):-
+	getDisc(Pos,State,Color),
+	nextPos(Dir,Pos,NextPos),
+	furthest(Dir,State,NextPos,Color,FurthestPos).
+furthest(Dir,State,Pos,Color,Pos):-
+	getDisc(Pos,State,Color),
+	nextPos(Dir,Pos,NextPos),
+	getDisc(NextPos,State,NextColor),
+	NextColor \= Color.
+
+% nextPos(Dir,Pos,NextPos)
+% Next Pos is the next position after Pos in direction Dir
+
+nextPos(north,pos(R,C),pos(NewR,C)):-
+	NewR is R - 1.
+nextPos(northeast,pos(R,C),pos(NewR,NewC)):-
+	NewR is R - 1,
+	NewC is C + 1.
+nextPos(east,pos(R,C),pos(R,NewC)):-
+	NewC is C + 1.
+nextPos(southeast,pos(R,C),pos(NewR,NewC)):-
+	NewR is R + 1,
+	NewC is C + 1.
+nextPos(south,pos(R,C),pos(NewR,C)):-
+	NewR is R + 1.
+nextPos(southwest,pos(R,C),pos(NewR,NewC)):-
+	NewR is R + 1,
+	NewC is C - 1.
+nextPos(west,pos(R,C),pos(R,NewC)):-
+	NewC is C - 1.
+nextPos(northwest,pos(R,C),pos(NewR,NewC)):-
+	NewR is R - 1,
+	NewC is C - 1.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% h(State,Val)
+% Heuristic to evaluate a board position.  This heuristic simply takes
+% the score of the board configuration as if it was the end of the game.
+
+h(State,Val):-
+	evaluate(State,Val).
+	
+h2(Plyr,State,Val):-color(Plyr,Col),flip(Col,OtherCol),color(OtherPlyr,OtherCol),moves(OtherPlyr,State,MVList),length(MVList,Len),
+Val is 1/Len.
+
+h3(Plyr,State,Val):-color(Plyr,Col),flip(Col,OtherCol),color(OtherPlyr,OtherCol),moves(OtherPlyr,State,MVList),length(MVList,Len),
+TVal is 1/Len, h(State,AVal),Val is TVal + AVal.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% lower and upper bounds on the value returned by the heuristic
+% function for any state.
+
+lowerBound(-16).
+upperBound(16).
+

@@ -1,0 +1,20 @@
+The ability of the network to recognize the two classes can be
+assessed by looking at the means of the scores assigned to the two data sets.
+For a particular number of hidden units and training epochs we calculate the
+means for both data sets and investigate the squared distance between them.
+Maximizing this distance corresponds to maximizing the networks' ability to
+recognize the two classes. 
+
+To achieve this we varied the number of hidden units between 1 and 201 in steps
+of 10 and varied the number of training epochs between 10 and 410 in steps of
+50. For each combination of these we record the squared distance between the
+means of the scores for two data sets. We pick the model that maximizes this
+distance as the best model for solving this task.
+
+N.B. The script ran for over 3 hours and when it terminated it turned out that
+some variable namings in the script replicated those defined in the main body of
+the program. For that reason we were unable to present the definitive number of
+hidden units and epochs that best suit this task. We present here a graph for
+110 hidden units and 400 training epochs. This model is adequate at solving the
+given task as can be seen from the graph. The code for the script is included
+with the assignment.

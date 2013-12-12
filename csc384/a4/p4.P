@@ -1,0 +1,5 @@
+startstate([facing(rov1,sun),active(rov1,inst1),powered(rov1,inst1),warmed(rov1,inst1),
+performs(inst1,therm),
+performs(inst2,spectr), has(rov1,therm,sun)
+]).
+goallist([has(rov1,therm,sun),has(rov1,therm,away_from_sun),has(rov1,spectr,sun)]).

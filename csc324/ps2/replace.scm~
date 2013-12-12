@@ -1,0 +1,18 @@
+(define replace
+  (lambda (a b lst)
+    (cond ((null? lst) '())
+	  ((eq? a (car lst)) (cons b (replace a b (cdr lst))))
+	  (else (cons (car lst) (replace a b (cdr lst))))
+    )
+  )
+)
+
+(define deep-replace
+  (lambda (a b c)
+    (cond ((null? lst) '())
+	  ((list? (car lst)) (deep-replace a b (car lst)))
+	  ((eq? a (car lst)) (cons b (deep-replace a b (cdr lst))))
+	  (else (cons (car lst) (deep-replace a b (cdr lst))))
+    )
+  )
+)

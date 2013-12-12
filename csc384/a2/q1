@@ -1,0 +1,20 @@
+/*********************************
+ *	   Assignment 2
+ * 	      CSC384
+ *	    Question 1
+ * 	  Sergei Iakhnin
+ * 	    981 843 420
+ *********************************/
+
+
+
+There are 3 combinations of 4 discs on 1 peg and no disks on two other pegs.
+There are 6*4 = 24 combinations of 3 disks on 1 peg, 1 disk on another peg and 0
+disks on the third peg
+There are 6*3 = 18 combinations of 2 disks each on two pegs and no disks on the
+third peg.
+There are 6*6 = 36 combinations of 2 disks on 1 peg and 1 disk each on two other
+pegs.
+Altogether there are 3 * 27 = 81 states for a game with 4 disks.
+
+There can be no more than 3 neighbours of any node.

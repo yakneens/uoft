@@ -1,0 +1,24 @@
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- [New Depth bound: ,1]
+[New Depth bound: ,2]
+[New Depth bound: ,3]
+[New Depth bound: ,4]
+[New Depth bound: ,5]
+[New Depth bound: ,6]
+[The Plan is: ]
+move_out_r_nu(p,b)
+move_out_r_nu(b,s)
+pick_up(u,s)
+pick_up(p1,s)
+move_in(s,p)
+drop(p1,p)
+
+
+G = [move_out_r_nu(p,b),move_out_r_nu(b,s),pick_up(u,s),pick_up(p1,s),move_in(s,p),drop(p1,p)]
+yes
+| ?- 

@@ -1,0 +1,43 @@
+%load the system
+[othello].
+[nextState].
+
+
+
+/*******************************************************************************
+ * Test Case 1: passing move
+ * Expecting: Move = Pass, Next State = [[w,w,w,w],[w,w,w,w],[w,w,w,w],[w,w,w,e]]
+ * NextPlayer = 2.
+ *******************************************************************************/
+nextState(1,Move,[[w,w,w,w],[w,w,w,w],[w,w,w,w],[w,w,w,e]],NewState,NextPlayer).
+
+
+
+/*******************************************************************************
+ * Test Case 2: discs flipped in 1 direction in position (1,3).
+ * Expecting: NextState = [[w,b,e,e],[w,b,b,e],[w,b,b,b],[w,w,b,w]].
+ *******************************************************************************/
+nextState(2,pos(4,1),[[w,b,e,e],[b,b,b,e],[b,b,b,b],[e,w,b,w]],NextState,1).
+
+
+/*******************************************************************************
+ * Test Case 3: discs flipped in 2 directions in positions (2,2) and (1,2)
+ * Expecting: NextState = [[e,b,b,b],[e,b,b,e],[e,b,w,b],[e,e,e,e]]
+ *******************************************************************************/
+nextState(1,pos(1,2),[[e,e,w,b],[e,w,b,e],[e,b,w,b],[e,e,e,e]],NextState,2).
+
+
+/*******************************************************************************
+ * Test Case 4: discs flipped in 3 directions in positions (2,2)-(3,3),
+ * (2,4)-(3,4), (4,2)-(4,3).
+ * Expecting: NextState = [[b,e,e,b],[e,b,w,b],[e,b,b,b],[b,b,b,b]].
+ *******************************************************************************/
+nextState(1,pos(4,4),[[b,e,e,b],[e,w,w,w],[e,b,w,w],[b,w,w,e]],NextState,2).
+
+
+/*******************************************************************************
+ * Test Case 5: pass since either opponent discs block off whole line, there's
+ * and empty spot on the other side of line, or own disc blocks off line.
+ * Expecting: Move = pass, Next State = [[e,w,b,b],[b,b,w,w],[b,w,b,w],[b,w,w,e]]
+ *******************************************************************************/
+nextState(2,Move,[[e,w,b,b],[b,b,w,w],[b,w,b,w],[b,w,w,e]],NextState,1).

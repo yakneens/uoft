@@ -1,0 +1,221 @@
+
+% Generic interactive Game using Minimax search
+% Copyright (c) 2002 Craig Boutilier
+
+
+% Human is player 1
+% Computer is player 2.
+
+
+% We assume some game-specific state representation.
+%
+% Predicates that must be defined to use this:
+%
+% * initialize(InitialState,InitialPlyr) 
+%   - returns an initial game state/player
+%
+% * winner(State,Plyr) 
+%   - returns winning player if State is a terminal position: If ties 
+%     allowed, winner could return "Player 0". But see "ties" predicate too.
+%
+% * tie(State) 
+%   - true if terminal State is a "tie" (no winner)
+%
+% * terminal(State) 
+%   - true if State is a terminal
+%
+% * showState(State) displays the current state of the game
+%
+% * nextState(Plyr,Move,State,NewState,NextPlyr)
+%   - determines next state (NewState) and next player to move (NextPlayer)
+%     after Plyr makes Move at State
+%
+% * moves(Plyr,State,MvList)
+%   - returns list MvList of all legal moves Plyr can make in State
+%
+% * validmove(Plyr,State,Proposed)
+%   - true if Proposed move by Plyr is valid at State.
+%
+% * h(State,Val)
+%   - given State, returns heuristic Val of that state
+%   - larger values are good for Max, smaller values are good for Min
+%
+% * lowerBound(B)
+%   - returns a value B less than the actual utility or heuristic value
+%     of any node (i.e., less than Min's best possible value)
+%
+% * upperBound(B)
+%   - returns a value B greater than the actual utility or heuristic value
+%     of any node (i.e., greater than Max's best possible value)
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+:- import length/2 from basics.
+
+%  MAIN PLAY ROUTINE
+%  assumes player 1 moves first
+
+play :- initialize(InitState,Plyr), playgame(Plyr,InitState).
+
+
+% playgame(Plyr,State) - plays the game from State with Plyr moving first
+% - tests for a winner; if not, get move from player, determine next State
+%   and player, and continue from new state/player
+
+playgame(_,State) :-
+  winner(State,Winner,Score),!,
+  showState(State),
+  write('Win by Player number '), write(Winner),
+  write(' with Score '), writeln(Score).
+
+playgame(_,State) :-
+  tie(State), !,
+  showState(State),
+  writeln('Game ended with no winner!').
+
+playgame(Plyr,State) :-
+  getmove(Plyr,State,Move),
+  write('The move chosen is : '),
+  writeln(Move),
+  nextState(Plyr,Move,State,NewState,NextPlyr),
+  playgame(NextPlyr,NewState).
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% getmove(Player,State,Move)
+% If Player = 1, move obtained from stdio
+% If Player = 2, move obtained using alpha-beta search
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Get move for player 1 (human)
+% - show state, ask for move, verify if move is valid
+% - if move is invalid, recall getmove until a valid move is input
+
+    %%%%
+    % STUB FOR LETTING THE COMPUTER SELECT A MOVE ON BEHALF OF THE
+    % HUMAN PLAYER
+     getmove(1,State,Move) :-
+     showState(State),
+     writeln('Computer selects a move on behalf of the human player'),
+     mmeval(1,State,_,Move,4).
+    %%%%
+
+getmove(1,State,Move) :-
+  showState(State),
+  write('Please input move ("pass" or "pos(R,C)") followed by a period: '),
+  read(Proposed),
+  validmove(1,State,Proposed), !,
+  Move = Proposed.
+
+getmove(1,State,Move) :-
+  writeln('Invalid Move Proposed.'),
+  getmove(1,State,Move).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Get move for player 2 (computer)
+% - do this using minimax evaluation
+% - if move is invalid, recall getmove until a valid move is input
+
+    %%%%
+    % STUB FOR INTERACTIVELY SUBMITTING COMPUTER MOVES RATHER THAN
+    % LETTING COMPUTER SEARCH FOR MOVE 
+    %
+    % getmove(2,State,Move) :-
+    %   showState(State),
+    %   write('Please input move for Computer: '),
+    %   read(Move).
+    %%%%
+
+% SET DEPTH BOUND HERE
+%  Depth should be set appropriately
+
+getmove(2,State,Move) :-
+  showState(State),
+  writeln('Computer is moving'),
+  mmeval(2,State,_,Move,4).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% mmeval(Plyr,State,Value,BestMove,Depth) - does minimax evaluation
+%  of State, assuming move by Plyr (1 = max, 2 = min) to bound Depth.
+%  returns Value of the state, as well a BestMove for the player (either
+%  the move with max or min value depending on player)
+%  Assume evaluation function h
+
+
+% if depth bound reached, use evaluation function
+mmeval(_,State,Val,_,0) :- 
+  % writeln('Evaluation reached Depth Bnd'),
+  h(State,Val).
+
+/*mmeval(2,State,Val,_,0) :- 
+  % writeln('Evaluation reached Depth Bnd'),
+  h3(2,State,Val).*/
+
+% if State is terminal, use evaluation function
+mmeval(_,State,Val,_,_) :- terminal(State), 
+  % writeln('Evaluation reached Terminal'),
+  h(State,Val).
+
+% FOR MAX PLAYER
+% we assume that if player has no moves available, the position is
+% terminal and would have been caught above
+
+mmeval(1,St,Val,BestMv,D) :-
+  moves(1,St,MvList),
+  % length(MvList,L),
+  % write('Evaluating '), write(L), write('moves at depth '), writeln(D),
+  lowerBound(B), % a value strictly less than worst value max can get
+  evalMoves(1,St,MvList,B,null,Val,BestMv,D). % Best so far set to lowerbnd
+
+% FOR MIN PLAYER
+% we assume that if player has no moves available, the position is
+% terminal and would have been caught above
+
+mmeval(2,St,Val,BestMv,D) :-
+  moves(2,St,MvList),
+  % length(MvList,L),
+  % write('Evaluating '), write(L), write('moves at depth '), writeln(D),
+  upperBound(B), % a value strictly less than worst value max can get
+  evalMoves(2,St,MvList,B,null,Val,BestMv,D). % Best so far set to upperbnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% evalMoves(Plyr,State,MvList,ValSoFar,MvSoFar,Val,BestMv,D)
+%
+% - evaluates all moves in MvList for Plyr at State.
+% - returns minimax value Val of State by recursively evaluating each
+%   successor state, returning BestMv (move that guarantees this value)
+% - it has as arguments, the best ValSoFar and best MvSoFar of any other
+%   moves that have already been processed (i.e., have been removed from
+%   the current list of moves).
+% - a depth bound D is enforced.
+
+
+% if no moves left, retrun best Val and Mv so far
+evalMoves(_,_,[],Val,BestMv,Val,BestMv,_).
+
+% otherwise evaluate current move (by calling mmeval on the player/state
+% that results from this move), and replace current Best move and value
+
+% by this Mv/Value if value is "better"
+evalMoves(1,St,[Mv|Rest],ValSoFar,MvSoFar,Val,BestMv,D) :-
+  nextState(1,Mv,St,NewSt,NextPlyr),
+  Dnew is D - 1,
+  mmeval(NextPlyr,NewSt,MvVal,_,Dnew),
+  maxMove(ValSoFar,MvSoFar,MvVal,Mv,NewValSoFar,NewMvSoFar),
+  evalMoves(1,St,Rest,NewValSoFar,NewMvSoFar,Val,BestMv,D).
+
+maxMove(V1,M1,V2,_,V1,M1) :- V1 >= V2.
+maxMove(V1,_,V2,M2,V2,M2) :- V1 < V2.
+
+evalMoves(2,St,[Mv|Rest],ValSoFar,MvSoFar,Val,BestMv,D) :-
+  nextState(2,Mv,St,NewSt,NextPlyr),
+  Dnew is D - 1,
+  mmeval(NextPlyr,NewSt,MvVal,_,Dnew),
+  minMove(ValSoFar,MvSoFar,MvVal,Mv,NewValSoFar,NewMvSoFar),
+  evalMoves(2,St,Rest,NewValSoFar,NewMvSoFar,Val,BestMv,D).
+
+minMove(V1,M1,V2,_,V1,M1) :- V1 < V2.
+minMove(V1,_,V2,M2,V2,M2) :- V1 >= V2.
+

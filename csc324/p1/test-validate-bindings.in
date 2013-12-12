@@ -1,0 +1,59 @@
+;Title: Scheme Project 1
+;By: Sergei Iakhnin
+;#: 981 843 420
+;For: Alex Kress
+;Course: CSC 324
+
+
+;Load the system
+(load "p1")
+
+;N.B. This testing relies on proper functioning of get-binding
+
+;Set the bindings
+(define bindings `((a . 1) (b . 2) (a . 3) (c . 5) (f . ,(lambda (x) (+ x x))) (e . 6) (g . ,(lambda (x y) (* x y)))))
+
+;Validate an empty expression
+;Expect: #t
+(validate-bindings '() bindings)
+
+;Validate an expression with no bindings present
+;Expect: #t
+(validate-bindings '(1 + (+ 2 (3 ^ 2))) bindings)
+
+;Validate an expression with bindings where all the bindings are present
+;Expect: #t
+(validate-bindings '(a + (b + (f a))) bindings)
+
+;Validate an expression where one of the variables is not bound and that variable occurs once in the expression
+;Expect: 
+;Undefined symbol d
+;()
+(validate-bindings '(a + (+ (d + b) (f c))) bindings)
+
+;Validate an expression where one of the variables is not bound and that variable occurs more than once in the expression
+;Expect:
+;Undefined symbol h
+;()
+(validate-bindings '((h a b) - (+ (a c) (f (h (h a) b)))) bindings)
+
+;Validate an expression where multiple variables are not bound and each only occurs once in the expression
+;Expect:
+;Undefined symbol chair
+;Undefined symbol jclarke
+;Undefined symbol dianeh
+;Undefined symbol z
+;()
+(validate-bindings '(a + (z - (dianeh - jclarke) = chair)) bindings)
+
+;Validate an expression where multiple variables are not bound and each variable may occur multiple times in the expression
+;Expect:
+;Undefined symbol q
+;Undefined symbol p
+;Undefined symbol z
+;()
+(validate-bindings '((f (z z z)) ^ (q - (p * q)) + a - b + q) bindings)
+
+
+;Finfished testing validate-bindings
+(exit)

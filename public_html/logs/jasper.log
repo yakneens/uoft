@@ -1,0 +1,63 @@
+2003-04-15 00:53:39 - Scratch dir for the JSP engine is: /h/u3/g2/00/g2poupon/public_html/work/localhost_8080
+2003-04-15 00:53:39 - IMPORTANT: Do not modify the generated servlets
+2003-04-15 00:53:42 - JspEngine --> /index.jsp
+2003-04-15 00:53:42 - 	     ServletPath: /index.jsp
+2003-04-15 00:53:42 - 	        PathInfo: null
+2003-04-15 00:53:42 - 	        RealPath: /h/u3/g2/00/g2poupon/public_html/webapps/ROOT/index.jsp
+2003-04-15 00:53:42 - 	      RequestURI: /index.jsp
+2003-04-15 00:53:42 - 	     QueryString: null
+2003-04-15 00:53:42 - 	  Request Params: 
+2003-04-15 00:53:42 - 		 page = p
+2003-04-15 00:53:42 - 		 cid = 5
+2003-04-15 00:53:42 - Classpath according to the Servlet Engine is: /h/u3/g2/00/g2poupon/public_html/webapps/ROOT/WEB-INF/classes
+2003-04-15 00:53:53 - JspEngine --> /index.jsp
+2003-04-15 00:53:53 - 	     ServletPath: /index.jsp
+2003-04-15 00:53:53 - 	        PathInfo: null
+2003-04-15 00:53:53 - 	        RealPath: /h/u3/g2/00/g2poupon/public_html/webapps/ROOT/index.jsp
+2003-04-15 00:53:53 - 	      RequestURI: /index.jsp
+2003-04-15 00:53:53 - 	     QueryString: null
+2003-04-15 00:53:53 - 	  Request Params: 
+2003-04-15 00:53:53 - 		 page = p
+2003-04-15 00:53:53 - 		 cid = 4
+2003-04-15 00:53:53 - Classpath according to the Servlet Engine is: /h/u3/g2/00/g2poupon/public_html/webapps/ROOT/WEB-INF/classes
+2003-04-15 00:53:55 - JspEngine --> /update-shopping-add.jsp
+2003-04-15 00:53:55 - 	     ServletPath: /update-shopping-add.jsp
+2003-04-15 00:53:55 - 	        PathInfo: null
+2003-04-15 00:53:55 - 	        RealPath: /h/u3/g2/00/g2poupon/public_html/webapps/ROOT/update-shopping-add.jsp
+2003-04-15 00:53:55 - 	      RequestURI: /update-shopping-add.jsp
+2003-04-15 00:53:55 - 	     QueryString: prodID=5&page=p&cid=4
+2003-04-15 00:53:55 - 	  Request Params: 
+2003-04-15 00:53:55 - 		 prodID = 5
+2003-04-15 00:53:55 - 		 page = p
+2003-04-15 00:53:55 - 		 cid = 4
+2003-04-15 00:53:55 - Classpath according to the Servlet Engine is: /h/u3/g2/00/g2poupon/public_html/webapps/ROOT/WEB-INF/classes
+2003-04-15 00:53:56 - JspEngine --> /index.jsp
+2003-04-15 00:53:56 - 	     ServletPath: /index.jsp
+2003-04-15 00:53:56 - 	        PathInfo: null
+2003-04-15 00:53:56 - 	        RealPath: /h/u3/g2/00/g2poupon/public_html/webapps/ROOT/index.jsp
+2003-04-15 00:53:56 - 	      RequestURI: /index.jsp
+2003-04-15 00:53:56 - 	     QueryString: page=p&cid=4
+2003-04-15 00:53:56 - 	  Request Params: 
+2003-04-15 00:53:56 - 		 page = p
+2003-04-15 00:53:56 - 		 cid = 4
+2003-04-15 00:53:56 - Classpath according to the Servlet Engine is: /h/u3/g2/00/g2poupon/public_html/webapps/ROOT/WEB-INF/classes
+2003-04-15 00:53:58 - JspEngine --> /update-shopping-clear.jsp
+2003-04-15 00:53:58 - 	     ServletPath: /update-shopping-clear.jsp
+2003-04-15 00:53:58 - 	        PathInfo: null
+2003-04-15 00:53:58 - 	        RealPath: /h/u3/g2/00/g2poupon/public_html/webapps/ROOT/update-shopping-clear.jsp
+2003-04-15 00:53:58 - 	      RequestURI: /update-shopping-clear.jsp
+2003-04-15 00:53:58 - 	     QueryString: page=p&cid=4
+2003-04-15 00:53:58 - 	  Request Params: 
+2003-04-15 00:53:58 - 		 page = p
+2003-04-15 00:53:58 - 		 cid = 4
+2003-04-15 00:53:58 - Classpath according to the Servlet Engine is: /h/u3/g2/00/g2poupon/public_html/webapps/ROOT/WEB-INF/classes
+2003-04-15 00:53:59 - JspEngine --> /index.jsp
+2003-04-15 00:53:59 - 	     ServletPath: /index.jsp
+2003-04-15 00:53:59 - 	        PathInfo: null
+2003-04-15 00:53:59 - 	        RealPath: /h/u3/g2/00/g2poupon/public_html/webapps/ROOT/index.jsp
+2003-04-15 00:53:59 - 	      RequestURI: /index.jsp
+2003-04-15 00:53:59 - 	     QueryString: page=p&cid=4
+2003-04-15 00:53:59 - 	  Request Params: 
+2003-04-15 00:53:59 - 		 page = p
+2003-04-15 00:53:59 - 		 cid = 4
+2003-04-15 00:53:59 - Classpath according to the Servlet Engine is: /h/u3/g2/00/g2poupon/public_html/webapps/ROOT/WEB-INF/classes

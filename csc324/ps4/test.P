@@ -1,0 +1,9 @@
+remDups([],[]).
+remDups([X],[X]).
+remDups([X|Tail1],[X|Tail2]) :- remDups(Tail1,[X|Tail2]).
+remDups([X|Tail1],[Y|Tail2]) :- \+(X=Y), remDups([X|Tail1],Tail2).
+
+remDups2([],[]).
+remDups2([X],[X]).
+remDups2([X,X|Rest],Rest2):- remDups2([X|Rest],Rest2).
+remDups2([X,Y|Rest],[X|Rest2]):- \+(X=Y),remDups2([Y|Rest],Rest2).

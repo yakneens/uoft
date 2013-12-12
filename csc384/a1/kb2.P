@@ -1,0 +1,18 @@
+% kb2
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 2003-02-02
+% corrected group g2 to include both c4 and c5
+% Pascal Poupart
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% program requirements
+allCourses([[c1,3],[c2,2],[c3,2],[c4,3],[c5,3],[c6,1],[c7,3],[c8,1]]).
+requiredCredits(9).
+group(g1,2,[c1,c4,c5]).
+group(g2,3,[c4,c5,c6,c8]).
+groupList([g2,g1]).
+equivalent([c4,c5]).
+
+% student transcript
+transcript([[c2,d],[c3,c],[c4,a],[c5,f],[c5,c_minus],[c6,b_minus],[c8,b_plus]]).

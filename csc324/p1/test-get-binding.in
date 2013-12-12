@@ -1,0 +1,124 @@
+;Title: Scheme Project 1
+;By: Sergei Iakhnin
+;#: 981 843 420
+;For: Alex Kress
+;Course: CSC 324
+
+
+;Load the system
+(load "p1")
+
+;Will try to get a binding from an empty list of bindings
+;Expect: ()
+(get-binding 'a '())
+
+
+;Will try to get a binding from a binding list of size 1 that has that binding in it
+;Expect: (a . 1)
+(get-binding 'a '((a . 1)))
+
+;Will try to get a binding from a binding list of size 1 that does not have that binding in it
+;Expect: ()
+(get-binding 'a '((b . 1)))
+
+;Will try to get a binding from a binding list of size 2 that has that binding as the first element
+;Expect: (a . 1)
+(get-binding 'a '((a . 1) (b . 2)))
+
+;Will try to get a binding from a binding list of size 2 that has that binding as the second element
+;Expect: (a . 2)
+(get-binding 'a '((b . 1) (a . 2)))
+
+;Will try to get a binding from a binding list of size 2 where both elements are bindings of that variable
+;Expect: (a . 2)
+(get-binding 'a '((a . 2) (a . 1)))
+
+;Will try to get a binding from a binding list of size 2 that does not have a binding for that variable
+;Expect: ()
+(get-binding 'a '((b . 1) (c . 2)))
+
+;Will try to get a binding from a binding list of size 3 that has that binding as the first element
+;Expect: (f . compound-procedure...)
+(get-binding 'f `((f . ,(lambda (x) (+ x x))) (a . 1) (b . 2)))
+
+;Will try to get a binding from a binding list of size 3 that has that binding as the middle element
+;Expect: (f . compound-procedure...)
+(get-binding 'f `((a . 1) (f . ,(lambda (x) (+ x x))) (b . 2)))
+
+;Will try to get a binding from a binding list of size 3 that has that binding as the last element
+;Expect: (f . compound-procedure...)
+(get-binding 'f `((a . 1) (b . 2) (f . ,(lambda (x) (+ x x)))))
+
+;Will try to get a binding from a list of size 3 that does not have that binding in it
+;Expect: ()
+(get-binding 'g `((a . 1) (b . 2) (f . ,(lambda (x) (+ x x)))))
+
+;Will try to get a binding from a list of size 3 where every binding has the same name
+;Expect: (a . 3)
+(get-binding 'a '((a . 3) (a . 2) (a . 1)))
+
+;Will try to get a binding from a list of size 3 where first and last bindings have the same name
+;Expect: (a . 2)
+(get-binding 'a '((a . 2) (b . 3) (a . 1)))
+
+;Will try to get a binding from a list of size 3 where first and middle bindings have the same name
+;Expect: (a . 2)
+(get-binding 'a '((a . 2) (a . 1) (b . 3)))
+
+;Will try to get a binding from a list of size 3 where middle and last bindings have the same name
+;Expect: (a . 2)
+(get-binding 'a '((b . 1) (a . 2) (a . 1)))
+
+;Will try to get a binding from a list of size 10 that has that binding as the first element and all bindings are distinct
+;Expect: (a . 1)
+(get-binding 'a `((a . 1) (b . 2) (c . 3) (d . ,(lambda (x) (+ x x))) (e . 5) (f . 6) (g . ,(lambda (x y) (+ x y))) (h . 8) (i . 9) (j . 10)))
+
+;Will try to get a binding from a list of size 10 that has that binding as the last element and all bindings are distinct
+;Expect: (j . 10)
+(get-binding 'j `((a . 1) (b . 2) (c . 3) (d . ,(lambda (x) (+ x x))) (e . 5) (f . 6) (g . ,(lambda (x y) (+ x y))) (h . 8) (i . 9) (j . 10)))
+
+;Will try to get a binding from a list of size 10 that has that binding as an element in the middle and all bindings are distinct
+;Expect: (d . compound-procedure...)
+(get-binding 'd `((a . 1) (b . 2) (c . 3) (d . ,(lambda (x) (+ x x))) (e . 5) (f . 6) (g . ,(lambda (x y) (+ x y))) (h . 8) (i . 9) (j . 10)))
+
+;Will try to get a binding from a list of size 10 that has that binding as the first element and some bindings repeat
+;Expect: (a . 1)
+(get-binding 'a `((a . 1) (a . 2) (c . 3) (a . ,(lambda (x) (+ x x))) (e . 5) (f . 6) (e . ,(lambda (x y) (+ x y))) (h . 8) (e . 9) (j . 10)))
+
+;Will try to get a binding from a list of size 10 that has that binding in middle and some bindings repeat
+;Expect: (d . compound-procedure...)
+(get-binding 'd `((a . 1) (b . 2) (a . 3) (d . ,(lambda (x) (+ x x))) (e . 5) (f . 6) (d . ,(lambda (x y) (+ x y))) (h . 8) (h . 9) (d . 10)))
+
+;Will try to get a binding from a list of size 10 that does not have that binding in it
+;Expect: ()
+(get-binding 'z `((a . 1) (b . 2) (c . 3) (d . ,(lambda (x) (+ x x))) (e . 5) (f . 6) (g . ,(lambda (x y) (+ x y))) (h . 8) (i . 9) (j . 10)))
+
+;Will try to get a binding from a list of size 29 that has that binding as the first element and all bindings are distinct
+;Expect: (a . 1)
+(get-binding 'a `((a . 1) (b . 2) (c . 3) (d . ,(lambda (x) (+ x x))) (e . 5) (f . 6) (g . ,(lambda (x y) (+ x y))) (h . 8) (i . 9) (j . 10) (k . 11) (l . 12) (m . 13) (n . 14) (o . ,(lambda () (+ 2 3))) (p . 16) (q . 17) (r . ,(lambda (x y z) (+ x (+ y z)))) (s . ,(lambda (x) (- x x))) (t . 20) (u . 21) (v . 22) (w . 23) (x . 24) (y . 25) (z . 26) (foo . 27) (bar . 28) (dianeh . 29)))
+
+;Will try to get a binding from list of size 29 that has that binding as the last element and all bindings are distinct
+;Expect: (dianeh . 29)
+(get-binding 'dianeh `((a . 1) (b . 2) (c . 3) (d . ,(lambda (x) (+ x x))) (e . 5) (f . 6) (g . ,(lambda (x y) (+ x y))) (h . 8) (i . 9) (j . 10) (k . 11) (l . 12) (m . 13) (n . 14) (o . ,(lambda () (+ 2 3))) (p . 16) (q . 17) (r . ,(lambda (x y z) (+ x (+ y z)))) (s . ,(lambda (x) (- x x))) (t . 20) (u . 21) (v . 22) (w . 23) (x . 24) (y . 25) (z . 26) (foo . 27) (bar . 28) (dianeh . 29)))
+
+;Will try to get a binding from a list of size 29 that has that binding as one of the middle elements and all bindings are distinct
+;Expect: (r . compound-procedure...)
+(get-binding 'r `((a . 1) (b . 2) (c . 3) (d . ,(lambda (x) (+ x x))) (e . 5) (f . 6) (g . ,(lambda (x y) (+ x y))) (h . 8) (i . 9) (j . 10) (k . 11) (l . 12) (m . 13) (n . 14) (o . ,(lambda () (+ 2 3))) (p . 16) (q . 17) (r . ,(lambda (x y z) (+ x (+ y z)))) (s . ,(lambda (x) (- x x))) (t . 20) (u . 21) (v . 22) (w . 23) (x . 24) (y . 25) (z . 26) (foo . 27) (bar . 28) (dianeh . 29)))
+
+;Will try to get a binding from a list of size 29 that does not have that binding
+;Expect: ()
+(get-binding 'foobar `((a . 1) (b . 2) (c . 3) (d . ,(lambda (x) (+ x x))) (e . 5) (f . 6) (g . ,(lambda (x y) (+ x y))) (h . 8) (i . 9) (j . 10) (k . 11) (l . 12) (m . 13) (n . 14) (o . ,(lambda () (+ 2 3))) (p . 16) (q . 17) (r . ,(lambda (x y z) (+ x (+ y z)))) (s . ,(lambda (x) (- x x))) (t . 20) (u . 21) (v . 22) (w . 23) (x . 24) (y . 25) (z . 26) (foo . 27) (bar . 28) (dianeh . 29)))
+
+;Will try to get a binding from a list of size 29 that has that binding as the first element and some bindings repeat
+;Expect: (a . 1)
+(get-binding 'a `((a . 1) (b . 2) (c . 3) (a . ,(lambda (x) (+ x x))) (e . 5) (a . 6) (g . ,(lambda (x y) (+ x y))) (h . 8) (i . 9) (j . 10) (k . 11) (l . 12) (m . 13) (n . 14) (o . ,(lambda () (+ 2 3))) (p . 16) (q . 17) (a . ,(lambda (x y z) (+ x (+ y z)))) (a . ,(lambda (x) (- x x))) (a . 20) (u . 21) (v . 22) (w . 23) (x . 24) (y . 25) (z . 26) (a . 27) (bar . 28) (dianeh . 29)))
+
+;Will try to get a binding from a list of size 29 that has that binding as one of the middle elements and some bindings repeat
+;Expect: (g . compound-procedure...)
+(get-binding 'g `((a . 1) (b . 2) (c . 3) (d . ,(lambda (x) (+ x x))) (e . 5) (f . 6) (g . ,(lambda (x y) (+ x y))) (g . 8) (g . 9) (j . 10) (k . 11) (l . 12) (m . 13) (g . 14) (g . ,(lambda () (+ 2 3))) (p . 16) (q . 17) (r . ,(lambda (x y z) (+ x (+ y z)))) (s . ,(lambda (x) (- x x))) (g . 20) (u . 21) (v . 22) (w . 23) (x . 24) (g . 25) (z . 26) (foo . 27) (bar . 28) (g . 29)))
+
+
+;Finished testing get-binding
+(exit)
+
+

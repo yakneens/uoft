@@ -1,0 +1,259 @@
+% Generic interactive Game using Minimax search
+% Copyright (c) 2002 Craig Boutilier
+
+
+% Human is player 1
+% Computer is player 2.
+
+
+% We assume some game-specific state representation.
+%
+% Predicates that must be defined to use this:
+%
+% * initialize(InitialState,InitialPlyr) 
+%   - returns an initial game state/player
+%
+% * winner(State,Plyr) 
+%   - returns winning player if State is a terminal position: If ties 
+%     allowed, winner could return "Player 0". But see "ties" predicate too.
+%
+% * tie(State) 
+%   - true if terminal State is a "tie" (no winner)
+%
+% * terminal(State) 
+%   - true if State is a terminal
+%
+% * showState(State) displays the current state of the game
+%
+% * nextState(Plyr,Move,State,NewState,NextPlyr)
+%   - determines next state (NewState) and next player to move (NextPlayer)
+%     after Plyr makes Move at State
+%
+% * moves(Plyr,State,MvList)
+%   - returns list MvList of all legal moves Plyr can make in State
+%
+% * validmove(Plyr,State,Proposed)
+%   - true if Proposed move by Plyr is valid at State.
+%
+% * h(State,Val)
+%   - given State, returns heuristic Val of that state
+%   - larger values are good for Max, smaller values are good for Min
+%
+% * lowerBound(B)
+%   - returns a value B less than the actual utility or heuristic value
+%     of any node (i.e., less than Min's best possible value)
+%
+% * upperBound(B)
+%   - returns a value B greater than the actual utility or heuristic value
+%     of any node (i.e., greater than Max's best possible value)
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+:- import length/2 from basics.
+
+%  MAIN PLAY ROUTINE
+%  assumes player 1 moves first
+
+play :- initialize(InitState,Plyr), playgame(Plyr,InitState).
+
+
+% playgame(Plyr,State) - plays the game from State with Plyr moving first
+% - tests for a winner; if not, get move from player, determine next State
+%   and player, and continue from new state/player
+
+playgame(_,State) :-
+  winner(State,Winner,Score),!,
+  showState(State),
+  write('Win by Player number '), write(Winner),
+  write(' with Score '), writeln(Score).
+
+playgame(_,State) :-
+  tie(State), !,
+  showState(State),
+  writeln('Game ended with no winner!').
+
+playgame(Plyr,State) :-
+  getmove(Plyr,State,Move),
+  write('The move chosen is : '),
+  writeln(Move),
+  nextState(Plyr,Move,State,NewState,NextPlyr),
+  playgame(NextPlyr,NewState).
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% getmove(Player,State,Move)
+% If Player = 1, move obtained from stdio
+% If Player = 2, move obtained using alpha-beta search
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Get move for player 1 (human)
+% - show state, ask for move, verify if move is valid
+% - if move is invalid, recall getmove until a valid move is input
+
+    %%%%
+    % STUB FOR LETTING THE COMPUTER SELECT A MOVE ON BEHALF OF THE
+    % HUMAN PLAYER
+     
+     getmove(1,State,Move) :-
+     showState(State),
+     writeln('Computer selects a move on behalf of the human player'),
+     lowerBound(L), upperBound(U), alphabetaTop(1,State,_,Move,8,L,U).
+
+
+    %%%%
+
+getmove(1,State,Move) :-
+  showState(State),
+  write('Please input move ("pass" or "pos(R,C)") followed by a period: '),
+  read(Proposed),
+  validmove(1,State,Proposed), !,
+  Move = Proposed.
+
+getmove(1,State,Move) :-
+  writeln('Invalid Move Proposed.'),
+  getmove(1,State,Move).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Get move for player 2 (computer)
+% - do this using minimax evaluation
+% - if move is invalid, recall getmove until a valid move is input
+
+    %%%%
+    % STUB FOR INTERACTIVELY SUBMITTING COMPUTER MOVES RATHER THAN
+    % LETTING COMPUTER SEARCH FOR MOVE 
+    %
+    % getmove(2,State,Move) :-
+    %   showState(State),
+    %   write('Please input move for Computer: '),
+    %   read(Move).
+    %%%%
+
+% SET DEPTH BOUND HERE
+%  Depth should be set appropriately
+
+  getmove(2,State,Move) :-
+  showState(State),
+  writeln('Computer is moving'),
+  lowerBound(L),upperBound(U), alphabetaTop(2,State,_,Move,8,L,U).
+
+
+  
+  maxMove(V1,M1,V2,_,V1,M1) :- V1 >= V2.
+  maxMove(V1,_,V2,M2,V2,M2) :- V1 < V2.
+  
+  minMove(V1,M1,V2,_,V1,M1) :- V1 =< V2.
+  minMove(V1,_,V2,M2,V2,M2) :- V1 > V2.
+
+
+/*******************************************************************************
+ * max(A,B,C) holds iff C is the larger of A and B
+ * Pre: A and B must be instantiated to numbers. 
+ *******************************************************************************/
+max(A,B,A):-A>=B.
+max(A,B,B):-A<B.
+
+
+/*******************************************************************************
+ * min(A,B,C) holds iff C is the smaller of A and B
+ * Pre: A and B must be instantiated to numbers. 
+ *******************************************************************************/
+min(A,B,A):-B>=A.
+min(A,B,B):-B<A.
+
+
+/*******************************************************************************
+ * alphabetaTop(Plyr,State,Val,BestMove,D,Alpha,Beta) holds if minimax with 
+ * alpha-beta pruning run on the tree resulting from State for Plyr searched
+ * to depth D with initial Alpha and Beta values results in BestMove with value
+ * Val.
+ * Pre: Alpha and Beta must be instantiated to numbers
+ *******************************************************************************/
+alphabetaTop(Plyr,State,Val,BestMove,D,Alpha,Beta):-
+moves(Plyr,State,MoveList),
+topEvalMoves(Plyr,State,MoveList,null,Val,BestMove,D,Alpha,Beta). 
+
+
+/*******************************************************************************
+ * topEvalMoves(Plyr,State,MoveList,BestSoFar,Val,BestMove,D,Alpha,Beta) holds 
+ * iff BestSoFar is the best move with value Val considered so far in the MoveList 
+ * given current State for Plyr.   
+ * Pre: Alpha,Beta and D must be instantiated to numbers. 
+ *******************************************************************************/
+topEvalMoves(1,_,[],BestMove,Alpha,BestMove,_,Alpha,_).
+
+topEvalMoves(2,_,[],BestMove,Beta,BestMove,_,_,Beta).
+
+topEvalMoves(1,State,[ThisMove|Rest],MoveSoFar,Val,BestMove,D,Alpha,Beta):-
+nextState(1,ThisMove,State,NewState,NextPlyr),
+Dnew is D-1,
+alphabetaTree(NextPlyr,NewState,Dnew,MoveVal,Alpha,Beta),
+maxMove(Alpha,MoveSoFar,MoveVal,ThisMove,NewAlpha,NewMoveSoFar),
+topEvalMoves(1,State,Rest,NewMoveSoFar,Val,BestMove,D,NewAlpha,Beta).
+
+topEvalMoves(2,State,[ThisMove|Rest],MoveSoFar,Val,BestMove,D,Alpha,Beta):-
+nextState(2,ThisMove,State,NewState,NextPlyr),
+Dnew is D-1,
+alphabetaTree(NextPlyr,NewState,Dnew,MoveVal,Alpha,Beta),
+minMove(Beta,MoveSoFar,MoveVal,ThisMove,NewBeta,NewMoveSoFar),
+topEvalMoves(1,State,Rest,NewMoveSoFar,Val,BestMove,D,Alpha,NewBeta).
+
+
+/*******************************************************************************
+ * alphabetaTree(Plyr,State,D,Val,Alpha,Beta) holds iff performing minimax
+ * with alpha-beta cuts on State for Plyr to depth D results in a move with 
+ * value Val.
+ * Pre: none
+ *******************************************************************************/
+alphabetaTree(_,State,0,Val,_,_):-h(State,Val).
+
+alphabetaTree(_,State,_,Val,_,_):-terminal(State),h(State,Val).
+
+alphabetaTree(Plyr,State,D,Val,Alpha,Beta):-
+moves(Plyr,State,MoveList),treeEvalMoves(Plyr,State,MoveList,D,Val,Alpha,Beta). 
+
+
+/*******************************************************************************
+ * treeEvalMoves(Plyr,State,MoveList,D,Val,Alpha,Beta) holds iff evaluating
+ * each move in MoveList for Plyr in State to depth D using minimax with 
+ * alpha-beta cuts resluts in best move with value Val.
+ * Pre: none
+ *******************************************************************************/
+treeEvalMoves(1,_,[],_,Alpha,Alpha,_).
+
+treeEvalMoves(2,_,[],_,Beta,_,Beta).
+
+treeEvalMoves(1,State,[ThisMove|Rest],D,Val,Alpha,Beta):-
+nextState(1,ThisMove,State,NewState,NextPlyr),Dnew is D - 1,
+alphabetaTree(NextPlyr,NewState,Dnew,MoveVal,Alpha,Beta),
+max(Alpha,MoveVal,NewAlpha),acut(State,Rest,D,Val,NewAlpha,Beta).
+
+treeEvalMoves(2,State,[ThisMove|Rest],D,Val,Alpha,Beta):-
+nextState(2,ThisMove,State,NewState,NextPlyr),Dnew is D - 1,
+alphabetaTree(NextPlyr,NewState,Dnew,MoveVal,Alpha,Beta),
+min(Beta,MoveVal,NewBeta),bcut(State,Rest,D,Val,Alpha,NewBeta).
+
+
+/*******************************************************************************
+ * acut(State,MoveList,D,Alpha,Beta,Val) holds iff Alpha >= Beta and all moves
+ * in MoveList are pruned(in this case Val is Beta) 
+ * or Alpha < Beta and the moves in MoveList are evaluated using treeEvalMoves.
+ * Pre: Alpha and Beta must be instantiated to numbers
+ *******************************************************************************/
+acut(_,[],_,Alpha,Alpha,_):-!.
+acut(_,_,_,Beta,Alpha,Beta):-Alpha>=Beta.
+acut(State,MoveList,D,Val,Alpha,Beta):-Alpha<Beta,treeEvalMoves(1,State,MoveList,D,Val,Alpha,Beta).
+
+
+/*******************************************************************************
+ * bcut(State,MoveList,D,Alpha,Beta,Val) holds iff Alpha >= Beta and all moves
+ * in MoveList are pruned(in this case Val is Alpha) 
+ * or Alpha < Beta and the moves in MoveList are evaluated using treeEvalMoves.
+ * Pre: Alpha and Beta must be instantiated to numbers
+ *******************************************************************************/
+bcut(_,[],_,Beta,_,Beta):-!.
+bcut(_,_,_,Alpha,Alpha,Beta):-Alpha>=Beta.
+bcut(State,MoveList,D,Val,Alpha,Beta):-Alpha < Beta,treeEvalMoves(2,State,MoveList,D,Val,Alpha,Beta).
+
+
+

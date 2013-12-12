@@ -1,0 +1,514 @@
+/*****************************
+ * CSC343 Assignment 3
+ * Sergei Iakhnin, 981843420
+ * L5101, g2poupon
+ *****************************/
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sql.h>
+#include <sqlenv.h>
+
+ 
+int     exit_flag = 0, valid_choice;
+char    menu_choice;
+
+EXEC SQL INCLUDE SQLCA; 
+
+/* Host variables to be used in queries */
+EXEC SQL BEGIN DECLARE SECTION;
+char db_name[8], debut[11], teamID[3],lgID[2], franchID[3];
+char playerID[64], managerID[64], birthCountry[64], birthState[64], birthCity[64];
+char deathCountry[64], deathState[64], deathCity[64], nameFirst[64], nameLast[64];
+char bath, throws, franchName[64], franchName2[64];
+long birthYear, birthMonth, birthDay, deathYear, deathMonth, deathDay;
+char* qstring;
+long result, wins, losses, yearID, yearID2, recExists;
+float salary, salary2;
+short indManagerID, indBirthCountry, indBirthState, indBirthCity;
+short indDeathCountry, indDeathState, indDeathCity, indNameFirst, indNameLast;
+short indDebut, indBath, indThrows, indBirthYear, indBirthMonth, indBirthDay;
+short indDeathYear, indDeathMonth, indDeathDay;
+EXEC SQL END DECLARE SECTION;
+
+/*******************************************************************************
+ * function doQuery1() performs the query "all available information regarding
+ * a user-specified playerID"
+ ******************************************************************************/
+void doQuery1(){
+	
+	/* Read user input */
+	printf("Enter playerID: ");
+	scanf("%s", playerID);
+		
+	
+	/* Create cursor for query */
+	EXEC SQL DECLARE c1 CURSOR FOR SELECT * FROM Players WHERE playerID = :playerID;
+	
+	EXEC SQL OPEN c1;
+	
+	/* Fetch results using indicator variables to check for nulls */
+	EXEC SQL FETCH c1 into :playerID, :managerID INDICATOR :indManagerID, 
+	:birthYear INDICATOR :indBirthYear, :birthMonth INDICATOR :indBirthMonth, 
+	:birthDay INDICATOR :indBirthDay, :birthCountry INDICATOR :indBirthCountry, 
+	:birthState INDICATOR :indBirthState, :birthCity INDICATOR :indBirthCity, 
+	:deathYear INDICATOR :indDeathYear, :deathMonth INDICATOR :indDeathMonth, 
+	:deathDay INDICATOR :indDeathDay, :deathCountry INDICATOR :indDeathCountry, 
+	:deathState INDICATOR :indDeathState, :deathCity INDICATOR :indDeathCity, 
+	:nameFirst INDICATOR :indNameFirst, :nameLast INDICATOR :indNameLast, 
+	:bath INDICATOR :indBath, :throws INDICATOR :indThrows, 
+	:debut INDICATOR :indDebut;
+		
+	/* If player not found. */
+	if(SQLCODE == 100){
+		printf("Player not found\n");
+		EXEC SQL CLOSE c1;
+		return;
+	}else if(SQLCODE != 0){
+		return;
+	}
+	
+	/* Print results of the query, while checking for nulls */
+	/* For every null print N/A in the place of field value */
+	printf("Player ID: %s\n", playerID);
+	
+	if(indManagerID >= 0){
+		printf("Manager ID: %s\n", managerID);
+	}else{
+		printf("Manageer ID: N/A\n");
+	}
+	
+	if(indBirthDay >= 0 && indBirthMonth > 0 && indBirthYear > 0){
+		printf("Date of Birth(dd/mm/yyyy): %ld/%ld/%ld\n", birthDay, birthMonth, birthYear);
+	
+	}else{
+		printf("Date of Birth: N/A\n");
+	}
+		
+	if(indBirthCountry >= 0){
+		printf("Country of Birth: %s\n", birthCountry);
+	
+	}else{
+		printf("Country of Birth: N/A\n");
+	}
+			
+	if(indBirthState >= 0){
+		printf("State of Birth: %s\n", birthState);
+	
+	}else{
+		printf("State of Birth: N/A\n");
+	}
+			
+	if(indBirthCity >= 0){
+		printf("City of Birth: %s\n", birthCity);
+	
+	}else{
+		printf("City of Birth: N/A\n");
+	}
+			
+	if(indDeathDay >= 0 && indDeathMonth >= 0 && indDeathYear >= 0){
+		printf("Date of Death(dd/mm/yyy): %ld/%ld/%ld\n", deathDay, deathMonth, deathYear);
+		
+	}else{
+		printf("Date of Death: N/A\n");
+	}
+			
+	if(indDeathCountry >= 0){
+		printf("Country of Death %s\n", deathCountry);
+			
+	}else{
+		printf("Country of Death: N/A\n");
+	}
+			
+	if(indDeathState >= 0){
+		printf("State of Death: %s\n", deathState);
+		
+	}else{
+		printf("State of Death: N/A\n");
+	}
+			
+	if(indDeathCity >= 0){
+		printf("City of Death: %s\n", deathCity);
+		
+	}else{
+		printf("City of Death: N/A\n");
+	}
+			
+	if(indNameFirst >= 0){
+		printf("First Name: %s\n", nameFirst);
+	
+	}else{
+		printf("First Name: N/A\n");
+	}
+			
+	if(indNameLast >= 0){
+		printf("Last Name: %s\n", nameLast);
+		
+	}else{
+		printf("Last Name: N/A\n");
+	}
+			
+	if(indBath >= 0){
+		printf("Batting hand: %c\n", bath);
+	}else{
+		printf("Batting hand: N/A\n");
+	}
+			
+	if(indThrows >= 0){
+		printf("Throwing hand: %c\n", throws);
+			
+	}else{
+		printf("Throwing hand: N/A\n");
+	}
+			
+	if(indDebut >= 0){
+		printf("Debut date: %s\n", debut);
+			
+	}else{
+		printf("Debut date: N/A\n");
+	}
+	
+	EXEC SQL CLOSE c1;
+		
+}
+
+/*******************************************************************************
+ * function doQuery2() performs the query "the number of wins and losses per 
+ * year for a user-specified playerID"
+ ******************************************************************************/
+void doQuery2(){
+	
+	/* Read user input */
+	printf("Enter playerID: ");
+	scanf("%s", playerID);
+		
+	
+	/* Create cursor for query */
+	EXEC SQL DECLARE c2 CURSOR FOR SELECT t.yearID, t.W, t.L 
+	FROM Teams t, Salaries s 
+	WHERE s.playerID = :playerID AND s.yearID = t.yearID 
+	AND s.teamID = t.teamID ORDER BY yearID ASC;
+	
+	EXEC SQL OPEN c2;
+	
+	/* go through the result set printing retreived values */
+	do{
+		EXEC SQL FETCH c2 into :yearID, :wins, :losses;
+		printf("Year: %ld\n", yearID);
+		printf("Wins: %ld\n", wins);
+		printf("Losses: %ld\n\n", losses);
+	}while(SQLCODE == 0);
+	
+	EXEC SQL CLOSE c2;
+
+}
+
+/*******************************************************************************
+ * function doQuery3() inserts a new tuple in the salaries table with information 
+ * input by the user.
+ ******************************************************************************/
+void doQuery3(){
+	
+	/* Read user input */
+	printf("Enter playerID: ");
+	scanf("%s", playerID);
+	
+	
+	/* Verify validity of playerID */
+	EXEC SQL DECLARE c3 CURSOR FOR SELECT COUNT(playerID) FROM Players WHERE playerID = :playerID;
+	EXEC SQL OPEN c3;
+	EXEC SQL FETCH c3 INTO :recExists;
+
+	if(SQLCODE == 100 || recExists != 1){
+		printf("Invalid playerID!\n");
+		EXEC SQL CLOSE c3;
+		return;
+	}
+
+	EXEC SQL CLOSE c3;
+	
+	recExists = 0;
+
+	/* Read user input */
+	printf("Enter teamID:");
+	scanf("%s", teamID);
+
+	/* Verify validity of teamID */
+	EXEC SQL DECLARE c4 CURSOR FOR SELECT COUNT(teamID) FROM Teams WHERE teamID = :teamID;
+	EXEC SQL OPEN c4;
+	EXEC SQL FETCH c4 INTO :recExists;
+
+	if(SQLCODE == 100 || recExists < 1){
+		printf("Invalid teamID!\n");
+		EXEC SQL CLOSE c4;
+		return;
+	}
+
+	EXEC SQL CLOSE c4;
+
+	/* Read user input */
+	printf("Enter yearID:");
+	scanf("%ld", &yearID);
+
+	recExists = 0;
+
+	/* Verify validity of userID */
+	EXEC SQL DECLARE c5 CURSOR FOR SELECT COUNT(teamID) FROM Teams WHERE teamID = :teamID AND yearID = :yearID;
+	EXEC SQL OPEN c5;
+	EXEC SQL FETCH c5 INTO :recExists;
+
+	if(SQLCODE == 100 || recExists != 1){
+		printf("Invalid yearID for this teamID!\n");
+		EXEC SQL CLOSE c5;
+		return;
+	}
+	
+	EXEC SQL CLOSE c5;
+
+	/* Read user input */
+	printf("Enter leagueID:");
+	scanf("%s", lgID);
+	
+	/* Verify validity of leagueID */
+	if(strcmp(lgID, "AL") != 0 && strcmp(lgID, "NL") != 0){
+		printf("Invalid leagueID!\n");
+		return;
+	}
+
+	/* Read user input */
+	printf("Enter salary:");
+	scanf("%f", &salary);
+
+	/* Make sure salary >= 0 */
+	if(salary < 0){
+		printf("Salary must be greater than 0!\n");
+		return;
+	}
+
+	/* Insert new tuple into table */
+	EXEC SQL INSERT INTO Salaries (playerID, teamID, yearID, salary, lgID) 
+	VALUES (:playerID, :teamID, :yearID, :salary, :lgID);
+	
+	/* If insert succeeds then commit, otherwise rollback */
+	if(SQLCODE != 0){
+		EXEC SQL ROLLBACK;
+	}else{
+		EXEC SQL COMMIT;
+	}
+
+	
+	printf("\nTable Salaries updated\n");
+}
+
+
+/*******************************************************************************
+ * function doQuery4() sets a 10% salary increase for all the players of a
+ * franchise
+ ******************************************************************************/
+void doQuery4(){
+	
+	
+	
+	/* Read user input */
+	printf("Enter franchiseID:");
+	scanf("%s", franchID);
+
+	recExists = 0;
+
+	/* Verify validity of franchiseID */
+	EXEC SQL DECLARE c6 CURSOR FOR SELECT COUNT(franchID) FROM Franchise WHERE franchID = :franchID;
+	EXEC SQL OPEN c6;
+	EXEC SQL FETCH c6 INTO :recExists;
+
+	if(SQLCODE != 0 || recExists != 1){
+		printf("Invalid franchiseID!\n");
+		EXEC SQL CLOSE c6;
+		return;
+	}
+
+	EXEC SQL CLOSE c6;
+
+	/* Create cursor for query */
+	EXEC SQL DECLARE c8 CURSOR FOR SELECT s.playerID, s.salary, s.yearID FROM Salaries s, Teams t, Franchise f 
+	WHERE s.teamID = t.teamID AND t.franchID = f.franchID AND f.franchID = :franchID AND s.yearID = t.yearID AND s.yearID = :yearID 
+	AND s.yearID = (SELECT max(t.yearID) FROM Teams t, Franchise f WHERE t.franchID = f.franchID);
+	EXEC SQL OPEN c8;
+
+	/* For each salary record retreived increase the value by 10% */
+	do{
+		EXEC SQL FETCH c8 INTO :playerID, :salary, :yearID;
+		if(SQLCODE != 0) break;
+		
+		EXEC SQL UPDATE Salaries SET salary = :salary + (:salary / 100) * 10 WHERE playerID = :playerID AND yearID = :yearID;
+	}while(1);
+
+	EXEC SQL CLOSE c8;
+
+	printf("\nTable Salaries updated.\n");
+
+}
+
+/*******************************************************************************
+ * function doQuery5() performs the query "the salary improvement rate per year
+ * with the name of the franchise for a user specified playerID"
+ ******************************************************************************/
+void doQuery5(){
+	
+	/* Read user input */
+	printf("Enter playerID:");
+	scanf("%s", playerID);
+	
+	recExists = 0;
+	
+	/* Verify playerID validity */
+	EXEC SQL DECLARE c10 CURSOR FOR SELECT COUNT(playerID) FROM Players WHERE playerID = :playerID;
+	EXEC SQL OPEN c10;
+	EXEC SQL FETCH c10 INTO :recExists;
+
+	if(SQLCODE == 100 || recExists != 1){
+		printf("Invalid playerID!\n");
+		EXEC SQL CLOSE c10;
+		return;
+	}
+
+	EXEC SQL CLOSE c10;	
+	
+	/* Create cursor for query */
+	EXEC SQL DECLARE c9 CURSOR FOR SELECT s1.yearID, s2.yearID, s1.salary, s2.salary, f1.franchName, f2.franchName  
+	FROM Salaries s1, Salaries s2, Players p, Teams t1, Teams t2, Franchise f1, Franchise f2  
+	WHERE p.playerID = :playerID AND s1.playerID = p.playerID AND s2.playerID = p.playerID 
+	AND s1.teamID = t1.teamID AND t1.franchID = f1.franchID AND s2.teamID = t2.teamID 
+	AND t2.franchID = f2.franchID 
+	GROUP BY s1.yearID, s2.yearID, s1.salary, s2.salary, p.playerID, f1.franchName, f2.franchName 
+	HAVING s2.yearID = (SELECT MIN(s3.yearID) 
+	FROM Salaries s3 WHERE s3.playerID = :playerID AND s3.yearID > s1.yearID);
+	EXEC SQL OPEN c9;
+	
+	/* Retreive and print all results */
+	do{
+	
+		EXEC SQL FETCH c9 INTO :yearID, :yearID2, :salary, :salary2, :franchName, :franchName2;
+		printf("Previous year: %ld, Current Year: %ld, Previous Franchise: %s, Current Franchise: %s, Salary Improvement Rate: %f%%\n", yearID, yearID2, franchName, franchName2, ((salary2 - salary)/salary)*100);
+	
+	}while(SQLCODE == 0);
+	
+	EXEC SQL CLOSE c9;
+	
+}
+
+/*******************************************************************************
+ * function displayMainMenu() prints the program's main menu. 
+ ******************************************************************************/
+void displayMainMenu(){
+	printf("\n[1] Player Information for given playerID");
+	printf("\n[2] Number of wins and losses per year for a specified playerID");
+	printf("\n[3] Insert a new tuple into Salaries");
+	printf("\n[4] 10%% salary increase for players in a franchise");
+	printf("\n[5] Salary improvement rate per year for a given player ID");
+	printf("\n[6] Exit");
+	printf("\n");
+	printf("\nEnter choice: ");
+
+}
+
+/*******************************************************************************
+ * function main() - entry point of the program. 
+ ******************************************************************************/
+int main(){
+	
+	int choiceIsValid,iMenuChoice;
+	char chMenuChoice[2];
+	
+	/* Retrieve db name from environment variable DB2DATABASE */
+	strcpy(db_name, getenv("DB2DATABASE"));
+
+	/* Connect to db */
+	EXEC SQL CONNECT TO :db_name; // connect to db
+	
+	
+	/* Catch connection errors */
+	if (SQLCODE != 0) {
+		printf("Connect failed!: reason %ld\n", sqlca.sqlcode);
+		exit(1);
+	}
+	
+	/* Main menu loop */
+	while(1)
+	{
+		
+		/* print main menu */
+		displayMainMenu();
+		
+		strcpy(chMenuChoice,"\0");
+
+		choiceIsValid = 0;
+		
+		while(choiceIsValid == 0){
+			
+			/* read in user's menu choice */
+			scanf("%s", chMenuChoice);
+			
+			if(!strcmp(chMenuChoice,"1")|| !strcmp(chMenuChoice,"2") || !strcmp(chMenuChoice,"3") ||
+				!strcmp(chMenuChoice,"4") || !strcmp(chMenuChoice,"5") || 
+				!strcmp(chMenuChoice,"6")){
+				
+				choiceIsValid = 1;
+				
+				iMenuChoice = atoi(chMenuChoice);
+			
+				break;
+			
+			}else{
+				printf("\nThe option you have entered is not valid please try again.");
+				displayMainMenu();
+			}
+		
+		}
+		
+		printf("\n");
+		
+		/* Call the function appropriate to a user's menu choice */
+		switch(iMenuChoice){
+			case 1: 
+				doQuery1();
+		    break;
+			case 2: 
+				doQuery2();
+		    break;
+			case 3: 
+				doQuery3();
+				break;							
+			case 4: 
+				doQuery4();
+	   	  break;
+			case 5: 
+				doQuery5();
+		    break;
+			case 6: 
+			 	goto out;
+		}
+		
+		/* prompt the user to either continue or exit */
+		do{
+			printf("\nBack to Main Menu? (y/n):");
+			scanf("%s", chMenuChoice);
+		}while(strcmp(chMenuChoice, "y") && strcmp(chMenuChoice, "n"));
+		
+		if(strcmp(chMenuChoice, "y")){
+			break;
+		}
+	
+	}
+
+	/* Label for main loop exit */
+	out:
+	
+	/* disconnect from db */
+	EXEC SQL CONNECT RESET;
+	printf("\nExiting.\n");
+	
+	return 0;
+
+}

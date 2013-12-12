@@ -1,0 +1,18 @@
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- [New Depth bound: ,1]
+[New Depth bound: ,2]
+[New Depth bound: ,3]
+[The Plan is: ]
+pick_up(p1,s)
+move_in(s,p)
+drop(p1,p)
+
+
+G = [pick_up(p1,s),move_in(s,p),drop(p1,p)]
+yes
+| ?- 

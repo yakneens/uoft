@@ -1,0 +1,3 @@
+startstate([adj(l,o),adj(o,l),adj(c,o),adj(o,c),adj(c,l),adj(l,c),loc(o),labtidy]).
+goallist([chc,labtidy,neg(rhk)]).
+

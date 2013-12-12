@@ -1,0 +1,97 @@
+%% A* Search Algorithm
+%% Copyright 1998 Craig Boutilier and David Poole
+
+
+%% start_search(Node,Path) is true if Path is a path from node 
+%% Node to a goal node.  start_search calls asearch with a priority queue 
+%% (i.e., frontier) containing only the start node. Predicate h(N,H)
+%% defines heuristic value H of node N.
+
+start_search(Node,Path) :-
+   emptyQ(Q),                         % initial queue is empty
+   h(Node,HVal),                      
+   insertQ(HVal,path(0,[Node]),Q,Q1), % insert start node into queue with HVal
+   asearch(Q1,Path,1),                  % call astar search with initial frontier
+   mydisplay(Path).                   % display solution path
+
+
+%% Some remarks on representations used by asearch:
+%% * A path is a term of the form path(PC,Elts) where PC is the path cost
+%%   and Elts is the list of the nodes on the path in reverse order.
+%% * The frontier is implemented as a priority queue of paths, ordered by
+%%   f-value of the path.
+
+%% asearch(Fr,P) is true if frontier Fr is a priority queue of paths
+%% (ordered by f-values), and P is a path to a goal extending a path
+%% on Fr.
+
+%% Case 1: Path selected ends at goal node
+
+asearch(Fr,path(PC,[N|Elts]),_) :-
+   removeQ(_,path(PC,[N|Elts]),Fr,_),
+   is_goal(N).
+
+%% Case 2: 
+
+asearch(Fr,P,NumExp) :-
+   NumExp > 4000 -> true;removeQ(_,path(PC,[N|Elts]),Fr,Fr1),
+   nb(N,NNs),
+   add_each_neighbor_to_frontier(NNs,N,PC,[N|Elts],Fr1,Fr2,NumN),
+   NewNumExp is NumExp + NumN,writeln(['Number of expanded nodes is:',NewNumExp]),asearch(Fr2,P,NewNumExp).
+
+% add_each_neighbor_to_frontier(NNs,N,PC,Path,Fr1,Fr2)
+%  * NNs is a list of terms of the form arc(NN,AC), where NN is a neighbor 
+%    of N and AC is the arc cost (cost of edge from N to NN).
+%  * PC is the path cost of the path to N and Path is list of elements on
+%    the path being expanded.
+%  * FR1 is the frontier before NNs are added and Fr2 is the frontier
+%  after they are added.
+
+add_each_neighbor_to_frontier([],_,_,_,Fr,Fr,0).
+add_each_neighbor_to_frontier([arc(NN,AC)|NNs],N,PC,Path,Fr0,Fr2,NumExp) :-
+   NewPC is PC + AC,
+   h(NN,HVal),
+   Fval is NewPC + HVal,
+   insertQ(Fval,path(NewPC,[NN|Path]),Fr0,Fr1),  % insert first nbr
+	% to implement best first search, replace Fval with HVal
+	% to implement least-cost first search, replace Fval with NewPC
+   add_each_neighbor_to_frontier(NNs,N,PC,Path,Fr1,Fr2,NewNumExp),
+   NumExp is NewNumExp + 1. % insert rest of nbrs
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%          PRIORITY QUEUE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% You could also substitute another implementation here: the rest
+%% of the program doesn't depend on how the priority queue is implemented.
+
+%% emptyQ(Q) is true if Q is an empty priority queue
+
+emptyQ([]).
+
+%% removeQ(Key,Item,Q0,Q1) is true if inserting Key-Item into priority
+%% queue Q0 results in priority queue Q1
+
+insertQ(Key,Item,[],[data(Key,Item)]).
+insertQ(Key,Item,[data(K1,I1)|R],[data(Key,Item),data(K1,I1)|R]) :-
+   Key =< K1.
+insertQ(Key,Item,[data(K1,I1)|R],[data(K1,I1)|R1]) :-
+   Key > K1,
+   insertQ(Key,Item,R,R1).
+
+%% removeQ(Key,Item,Q0,Q1) is true if Key-Item is the record with
+%% smallest key value in Q0 and Q1 is the resulting priority queue
+%% with Q1 removed.
+
+removeQ(Key,Item,[data(Key,Item)|Q],Q).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% to display paths with complex states.
+
+mydisplay(path(PC,Path)) :-
+ writeln(['Path Cost: ', PC]),
+ myd(Path).
+myd([]) :- nl.
+myd([State|Rest]) :- writeln(State), myd(Rest).
+

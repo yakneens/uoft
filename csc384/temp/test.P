@@ -1,0 +1,3 @@
+state(atBank(M,C),boat(Bank))
+
+miscan(state(atBank(M,C),boat(Bank)),Bank,M,C).

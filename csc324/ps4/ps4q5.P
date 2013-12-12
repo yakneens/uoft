@@ -1,0 +1,36 @@
+/* import the append predicate */
+:- import append/3 from basics.
+
+/**********************************************************************
+ * even(L) holds iff the list L has an even number of elements
+ * Pre: none
+ **********************************************************************/
+even([]).
+even([_,_|Tail]) :- even(Tail).
+
+
+/**********************************************************************
+ * palindrome(L) holds iff the list L is a palindrome
+ * Pre: none
+ **********************************************************************/
+palindrome([]).
+palindrome([_]).
+palindrome(L):- append([X|Y],[X], L), palindrome(Y).
+
+
+/**********************************************************************
+ * smallest(X,L) returns true iff X is the smallest element of L 
+ * Pre: X is instantiated to an number. L is a list of numbers. 
+ * NB: this predicate is used as a helper for selectionsort
+ **********************************************************************/
+smallest(_,[]).
+smallest(X,[Head|Tail]):- X=<Head, smallest(X,Tail).
+
+/**********************************************************************
+ * selectionsort(L1,L2) holds iff L1 is a list of positive integers
+ * and L2 contains the same elements as L1 but in non-decreasing order
+ * Pre: L1 is a list of numbers
+ **********************************************************************/
+selectionsort([],[]).
+selectionsort(L1,[X|R]):-append(Y,[X|Z],L1),smallest(X,L1),append(Y,Z,L2),selectionsort(L2,R).
+

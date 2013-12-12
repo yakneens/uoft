@@ -1,0 +1,74 @@
+/* Testing for a1 */
+
+/* Load the system */
+[a1].
+
+
+/* Load and test KB1 */
+[kb1].
+transcript(_T),enoughCourses(_T).
+transcript(_T),totalCredits(_T,TotalCredits).
+;
+
+
+/* Load and test KB2 */
+[kb2].
+transcript(_T),enoughCourses(_T).
+transcript(_T),totalCredits(_T,TotalCredits).
+;
+
+
+/* Load and test KB3 */
+[kb3].
+transcript(_T),enoughCourses(_T).
+transcript(_T),totalCredits(_T,TotalCredits).
+
+
+/* Load and test KB4 */
+[kb4].
+transcript(_T),enoughCourses(_T).
+transcript(_T),totalCredits(_T,TotalCredits).
+
+
+
+/* Load and test KB5 */
+[kb5].
+transcript(_T),enoughCourses(_T).
+transcript(_T),totalCredits(_T,TotalCredits).
+
+
+
+/* Load and test KB6 */
+[kb6].
+transcript(_T),enoughCourses(_T).
+transcript(_T),totalCredits(_T,TotalCredits).
+
+
+
+/* Load and test KB7 */
+[kb7].
+transcript(_T),enoughCourses(_T).
+transcript(_T),totalCredits(_T,TotalCredits).
+
+
+
+/* Load and test KB8 */
+[kb8].
+transcript(_T),enoughCourses(_T).
+transcript(_T),totalCredits(_T,TotalCredits).
+
+
+
+/* Load and test KB9 */
+[kb9].
+transcript(_T),enoughCourses(_T).
+transcript(_T),totalCredits(_T,TotalCredits).
+
+
+
+/* Load and test KB10 */
+[kb10].
+transcript(_T),enoughCourses(_T).
+transcript(_T),totalCredits(_T,TotalCredits).
+
+

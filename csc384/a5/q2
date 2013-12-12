@@ -1,0 +1,121 @@
+The following probabilities are stated in question 2 handout.
+
+Pr(Fraud | Trav) = 0.005
+Pr(Fraud | 'Trav) = 0.001
+
+Pr(Trav) = 0.05 - 5% of transactions happen while travelling?
+
+Pr(FP | 'Trav, Fraud) = 0.1
+Pr(FP | 'Trav, 'Fraud) = 0.01
+Pr(FP | Trav) = 0.9
+
+Pr(OC) = 0.6
+Pr(IP | OC, 'Fraud) = 0.01
+Pr(IP | OC, Fraud) = 0.02
+Pr(IP | 'OC, 'Fraud) = 0.001
+Pr(IP | 'OC, Fraud) = 0.011
+Pr(CRP | OC) = 0.1
+Pr(CRP | 'OC) = 0.001
+
+The following probabilities need to be computed to complete the network
+
+Pr(FP | Trav, Fraud)
+Pr(FP | Trav, 'Fraud)
+
+
+We have that Pr(FP | Trav) = 0.9 = Pr(FP | Trav, Fraud)*Pr(Fraud) + Pr(FP |
+Trav, 'Fraud) * Pr('Fraud) (1)
+
+Pr(Fraud) = Pr(Fraud | Trav)*Pr(Trav) + Pr(Fraud | 'Trav)*Pr('Trav) = 0.005 *
+0.05 + 0.001 + 0.95 = 0.00025 + 0.00095 = 0.0012
+
+Thus (1) becomes 0.9 = Pr(FP | Trav, Fraud)*0.0012 + Pr(FP | Trav,
+'Fraud)*0.9988
+
+Now, we have that Pr(FP | Trav, Fraud)*Pr(Trav) + Pr(FP | 'Trav,
+Fraud)*Pr('Trav) = Pr(FP | Fraud) into which we can substitute to obtain
+
+Pr(FP | Trav, Fraud)*0.05 + 0.1 * 0.95 = Pr(FP | Fraud) (2)
+
+Also we have that Pr(FP | Trav, 'Fraud)*Pr(Trav) + Pr(FP | 'Trav,
+'Fraud)*Pr('Trav) = Pr(FP | 'Fraud) into which we can substitute to obtain
+
+Pr(FP | Trav, 'Fraud)*0.05 + 0.01*0.95 = Pr(FP | 'Fraud) (3)
+
+Finally, consider Pr(FP | 'Trav) = Pr(FP | 'Trav, Fraud)*Pr(Fraud) + Pr(FP |
+'Trav, 'Fraud)*Pr('Fraud) into which we can substitute to obtain
+
+Pr(FP | 'Trav) = 0.1*0.0012 + 0.01*0.95 = 0.00012 + 0.0095 = 0.00962
+
+We can now compute Pr(FP) = Pr(FP | Trav)*Pr(Trav) + Pr(FP | 'Trav)*Pr('Trav) =
+0.9*0.05 + 0.00962 * 0.95 = 0.45 + 0.009139 = 0.459139 (4)
+
+Consider now Pr(FP) = 0.450139 = Pr(FP | Fraud)*Pr(Fraud) + Pr(FP |
+'Fraud)*Pr('Fraud) = Pr(FP | Fraud) * 0.0012 + Pr(FP | 'Fraud) * 0.9988 (5)
+
+Combining (2),(3) and (5) we get
+
+0.450139 = [Pr(FP | Trav,Fraud) * 0.05 + 0.01 * 0.95]*0.0012 + [Pr(FP | Trav,
+'Fraud)*0.05 + 0.01*0.95]*0.9988 (6)
+
+
+We can now solve (1) and (6) as a system with two equations and two unknowns.
+
+
+(1) 0.9 = Pr(FP | Trav, Fraud)*0.0012 + Pr(FP | Trav, 'Fraud)*0.9988
+
+(6) 0.450139 = [Pr(FP | Trav,Fraud) * 0.05 + 0.01 * 0.95]*0.0012 + [Pr(FP | Trav,
+'Fraud)*0.05 + 0.01*0.95]*0.9988
+
+Letting Pr(FP | Trav, Fraud) = x and Pr(FP | Trav, 'Fraud) = y we have
+
+0.9 = 0.0012*x + 0.9988*y
+0.450139 = (0.05*x + 0.0095)*0.0012 + (0.05*y + 0.0095)*0.9988 
+
+From equations above
+
+x = (0.9 - 0.9988*y) / 0.0012
+0.450139 = [0.05 * [(0.9 - 0.9988 * y) / 0.0012] + 0.0095] * 0.0012 + (0.05 * y
+ + 0.0095) * 0.9988
+
+
+Calculations above unfortunately lead to an unsolvable system which signifies
+that most likely an arithmetic error was made somewhere along the way. We will
+specify Pr(FP | Trav, Fraud) = x and Pr(FP | Trav, 'Fraud) = y in the probability
+tables for the network as time does not permit retracing of the above steps to
+locate the error. 
+
+Part b)
+
+Pr(Fraud) = 0.0012 prior
+
+Pr(Fraud) = 0.0063 after observed Computer Related Purchase, Foreign Purchase
+but Not Internet Purchase.
+
+Part c)
+
+Pr(Fraud) = 0.0049 if in addition is it confirmed that the card holder is
+travelling.
+
+Part d)
+
+We know that the net attaches a low probability of a transaction being a fraud
+while the owner is not travelling so the first step would be to carry out the
+transaction when the card owner is not travelling. Furthermore, for those who
+own a computer, the percentage of their legitimate transactions versus the
+percentage of their fradulent transactions over the net is 1/2 whereas for those
+who do not own a computer this ratio is 0.09. Thus those who do not own a
+computer are more likely to carry out a fradulent transaction over the internet.
+
+Thus our employee will want to make a computer related purchase a week prior to
+his fraudulent transaction and will want to make sure the owner is not
+travelling to minimize the risk of the transaction being flagged as a fraud.
+
+
+
+
+
+
+
+
+ 

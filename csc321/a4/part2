@@ -1,0 +1,37 @@
+In order to assess the best model for the task of producing month-ending day
+sequences I tried fitting different numbers of hidden states via a script. The
+graph of probabilities of producing the given string that each model settles on
+is presented in Figure 5. It is clear from this graph that the performance of
+the model improves significantly when the number of hidden states is increased
+from 1 to 9. Increasing the number of hidden states past 9 yields only marginal
+improvement. 
+
+I would have to recommend the 9 hidden state model as one that represents the
+problem best although the model is adequate starting from a 4 state model.
+Hidden and output probabilities are presented for both the 4 and the 9 hidden
+state models in figures 6-9. 
+
+The 4 state model is somewhat easier to interpret. State 1 is designated to
+producing the symbol 8 which is followed by either a transition to state 1 or
+state 4 that denotes a 9 (with much larger probability). The first possible 
+transition corresponds to the substring 88 denoting going from February to 
+March. The second possible transition corresponds to the substring 89 which
+occurs in every other case. State 4 always goes to state 2 which only outputs 
+a 0.From state 2 a transition to either state 3(symbol 1) or state 1(symbol 8)
+is possible. From state 3 a transition only to state 1 is possible as a 1 is
+always followed by an 8. 
+
+The 9 state model is harder to trace but implements essentially the same
+transitions. The advantage of this model is that it has a higher probability of
+generating the input string due to the fact that more states can produce the
+desired symbols. In the 4 state model starting anywhere other than state 1 makes
+it impossible to generate the string whereas in the 9 state model 4 different
+states can produce the symbol 8 which starts off the string. 
+
+It is worthy to note that this problem is unnecessarily complicated and a
+simple HMM with 7 hidden states can produce the input string containing the same
+amount of information with a probability approaching 1. To achieve this we can
+simply reduce the alphabet to {8,0,1} and encode the string as {181010110101}.
+The output of a script fitting models with different numbers of hidden states
+to this string is given in Figure 10 in the form of a graph of the number of
+hidden states used versus the log probability that the model settles on. 

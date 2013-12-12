@@ -1,0 +1,44 @@
+/*
+Note that this uses a reduced action list as the full action list is too large
+for the planner to work with in this particular problem.
+
+actlist([face_sun(rov1), block_sun(rov1), 
+perform_op(rov1,inst1,therm,away_from_sun),
+perform_op(rov1,inst2,spectr,sun),
+perform_op(rov1,inst2,spectr,away_from_sun),
+power_up(rov1,inst1),power_up(rov1,inst2),warm_up(rov1,inst1),
+warm_up(rov1,inst2),activate(rov1,inst1),activate(rov1,inst2),
+deactivate_warmed(rov1,inst1), deactivate_warmed(rov1,inst2)]).
+
+
+*/
+
+
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- [New Depth bound: ,1]
+[New Depth bound: ,2]
+[New Depth bound: ,3]
+[New Depth bound: ,4]
+[New Depth bound: ,5]
+[New Depth bound: ,6]
+[New Depth bound: ,7]
+[New Depth bound: ,8]
+[The Plan is: ]
+block_sun(rov1)
+perform_op(rov1,inst1,therm,away_from_sun)
+deactivate_warmed(rov1,inst1)
+activate(rov1,inst2)
+power_up(rov1,inst2)
+face_sun(rov1)
+warm_up(rov1,inst2)
+perform_op(rov1,inst2,spectr,sun)
+
+
+G = [block_sun(rov1),perform_op(rov1,inst1,therm,away_from_sun),deactivate_warmed(rov1,inst1),activate(rov1,inst2),power_up(rov1,inst2),face_sun(rov1),warm_up(rov1,inst2),perform_op(rov1,inst2,spectr,sun)]
+yes
+| ?- 

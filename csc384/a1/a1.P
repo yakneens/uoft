@@ -1,0 +1,88 @@
+:-import member/2 from basics.
+:-import append/3 from basics.
+
+allCourses([[c1,2],[c2,3],[c3,1],[c4,2],[c5,2],[c6,3],[c7,2],[c8,3],[c9,2]]).
+requiredCredits(30).
+group(g1,3,[c1,c2,c3]).
+group(g2,1,[c5,c6]).
+group(g3,2,[c9,c8,c7]).
+groupList([g1,g2,g3]).
+equivalent([c7,c9]).
+transcript([[c1,a],[c2,b_plus],[c3,a_minus],[c4,f],[c4,c],[c5,w],[c7,a_plus],[c7,a],[c8,d]]).
+
+
+
+/********************************************************************************
+ * pass(L) asserts that L is a list of passing grades.
+ ********************************************************************************/
+pass([a_plus,a,a_minus,b_plus,b,b_minus,c_plus,c,c_minus,d_plus,d,d_minus]).
+
+/********************************************************************************
+ * verifyGroup(T,L,N,E) holds iff transcript T satisfies requirements contained
+ * in a course list L and number of credits N such that E contains a list of
+ * courses equivalent to those that have already been considered by verifyGroup.
+ * Pre: none
+ ********************************************************************************/
+verifyGroup(_,_,0,_).
+verifyGroup(CoursesTaken,[CourseName|RestOfCourses],NumCred,EquivsList):- 
+(member([CourseName,Grade],CoursesTaken), 
+pass(PassingGradesList),
+member(Grade,PassingGradesList),
+(member(CourseName,EquivsList)->
+NewNumCred is NumCred, NewEquivsList = EquivsList;
+(NewNumCred is NumCred - 1,
+((equivalent(Equivs),member(CourseName,Equivs))->
+append(Equivs,EquivsList,NewEquivsList);
+NewEquivsList = EquivsList))))->
+verifyGroup(CoursesTaken,RestOfCourses,NewNumCred,NewEquivsList);
+verifyGroup(CoursesTaken,RestOfCourses,NumCred,EquivsList).
+
+
+/********************************************************************************
+ * verifyAllGroups(G,T) holds iff transcript T satisfies requirements of each group
+ * listed in list G.
+ * Pre: none
+ ********************************************************************************/
+verifyAllGroups([],_).
+verifyAllGroups([GroupName|RestOfGroups],CoursesTaken):-
+group(GroupName,NumCred,CourseList),
+verifyGroup(CoursesTaken,CourseList,NumCred,[]),
+verifyAllGroups(RestOfGroups,CoursesTaken).
+
+/********************************************************************************
+ * enoughCourses(T) holds iff transcript T satisfies all requirements of the 
+ * study program
+ * Pre: none
+ ********************************************************************************/
+enoughCourses(CoursesTaken):-groupList(GroupList),verifyAllGroups(GroupList,CoursesTaken).
+
+/********************************************************************************
+ * totalCreditsHelp(T,N,E) holds iff transcript T corresponds to the student
+ * having N credits such that E contains a list of all courses equivalent to those
+ * taken so far.
+ * Pre: none
+ ********************************************************************************/
+totalCreditsHelp([],0,_).
+totalCreditsHelp([[CourseName,Grade]|RestOfCourses],TotCred,EquivsList):-
+(member(CourseName,EquivsList)->
+totalCreditsHelp(RestOfCourses,TotCred,EquivsList);
+((pass(PassingGradeList),member(Grade,PassingGradeList))->
+((equivalent(Equivs),member(CourseName,Equivs))->
+append(Equivs,EquivsList,NewEquivsList);
+append([CourseName],EquivsList,NewEquivsList)),
+totalCreditsHelp(RestOfCourses,SubTotCred,NewEquivsList),
+allCourses(CourseList),
+member([CourseName,CreditValue],CourseList),
+TotCred is SubTotCred + CreditValue);
+totalCreditsHelp(RestOfCourses,TotCred,EquivsList)).
+
+/********************************************************************************
+ * totalCredits(T,N) holds iff transcript T corresponds to the student having N
+ * credits.
+ * Pre: none
+ ********************************************************************************/
+totalCredits(CoursesTaken,TotCred):-totalCreditsHelp(CoursesTaken,TotCred,[]).
+
+
+graduate:-transcript(L),enoughCourses(L),enoughCredits(L).
+enoughCredits(L):-totalCredits(L,TotCred),requiredCredits(ReqCred),TotCred>=ReqCred.

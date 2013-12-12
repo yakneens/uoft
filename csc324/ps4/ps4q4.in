@@ -1,0 +1,140 @@
+/******************************* 
+ * Problem Set 4
+ * CSC324
+ * By: Sergei Iakhnin
+ * #: 981843420
+ * TA: Alex Kessaris
+ *******************************/
+
+/* This file tests the predicates in ps4q4.P */
+
+% Load ps4q4.P
+[ps4q4].
+
+
+/* Testing for delete(X,L1,L2) */
+write('*****Testing for delete(X,L1,L2)*****').
+
+
+/**********************************************************************
+ * Remove all instances of k from list [a,b,c,d]
+ * Expecting: L = [a,b,c,d]
+ *            no
+ **********************************************************************/
+delete(k,[a,b,c,d],L).
+;
+
+/**********************************************************************
+ * Remove all instances of l from list [l,l,l,l,l,l]
+ * Expecting: L = []
+ *            no
+ **********************************************************************/
+delete(l,[l,l,l,l,l,l],L).
+;
+
+/**********************************************************************
+ * Remove all instances of a from [a,a,h,a,e,a,a,a,l,l,a,o,a,a,a]
+ * Expecting: L = [h,e,l,l,o]
+ *            no
+ **********************************************************************/
+delete(a,[a,a,h,a,e,a,a,a,l,l,a,o,a,a,a],L).
+;
+
+/**********************************************************************
+ * Determine the element deleted from list [[1,[1,2]],
+ * a,b,[1,[1,2]],[1,[1,2]],c,[1,[1,2]],[1,[1,2]],d,[1,[1,2]],[1,[1,2]]] to 
+ * produce list [a,b,c,d]
+ * Expecting: X = [1,[1,2]]
+ *            no
+ **********************************************************************/
+delete(X,[[1,[1,2]],a,b,[1,[1,2]],[1,[1,2]],c,[1,[1,2]],[1,[1,2]],d,[1,[1,2]],[1,[1,2]]],[a,b,c,d]).
+;
+
+/**********************************************************************
+ * Determine the element deleted from list [a,b,c] to produce list [c]
+ * Expecting: no
+ **********************************************************************/
+delete(X,[a,b,c],[c]).
+
+/**********************************************************************
+ * Determine whether list [p,r,o,l,o,g] is the same as list 
+ * [a,a,p,a,a,a,r,o,a,l,a,a,a,a,o,g,a] with all instances of a removed
+ * Expecting: yes
+ **********************************************************************/
+delete(a,[a,a,p,a,a,a,r,o,a,l,a,a,a,a,o,g,a],[p,r,o,l,o,g]).
+
+/**********************************************************************
+ * Determine whether list [p,r,o,l,o,g] is the same as list 
+ * [a,a,p,a,a,a,r,o,a,l,a,a,a,a,o,g,a] with all instances of b removed
+ * Expecting: no
+ **********************************************************************/
+delete(b,[a,a,p,a,a,a,r,o,a,l,a,a,a,a,o,g,a],[p,r,o,l,o,g]).
+
+
+/* Testing for remDups(L1,L2) */
+write('*****Testing for remDups(L1,L2)*****').
+
+/**********************************************************************
+ * Remove second and succeeding immediately adjacent duplicates from 
+ * the empty list.
+ * Expecting: L = []
+ *            no
+ **********************************************************************/
+remDups([],L).
+;
+
+/**********************************************************************
+ * Determine the list L such that L with the second and succeeding 
+ * immediately adjacent duplicates removed is the empty list
+ * Expecting: L = []
+ *            no
+ **********************************************************************/
+remDups(L,[]).
+;
+
+/**********************************************************************
+ * Determine the list L such that L is the list
+ * [a,a,a,b,b,b,c,c,c,c,c,c,a,b,c,c] with the second and succeeding
+ * immediately adjacent duplicates removed
+ * Expecting: L = [a,b,c,a,b,c]
+ *            no
+ **********************************************************************/
+remDups([a,a,a,b,b,b,c,c,c,c,c,c,a,b,c,c],L).
+;
+
+
+/**********************************************************************
+ * Determine the list L such that L is the list
+ * [[a],[a],[a],[a],[a],[a]] with the second and succeeding
+ * immediately adjacent duplicates removed
+ * Expecting: L = [[a]]
+ *            no
+ **********************************************************************/
+remDups([[a],[a],[a],[a],[a],[a]],L).
+;
+
+/**********************************************************************
+ * Determine whether the list [p,r,o,l,o,g] is the same as the list 
+ * [p,r,r,o,l,l,l,o,o,g,g] with the second and succeeding immediately 
+ * adjacent duplicates removed.
+ * Expecting: yes
+ **********************************************************************/
+remDups([p,r,r,o,l,l,l,o,o,g,g],[p,r,o,l,o,g]).
+
+/**********************************************************************
+ * Determine whether the list [p,r,o,l,o,g] is the sane as the list 
+ * [p,r,r,o,l,l,l,o,o,g,g,gg] with the second and succeeding immediately 
+ * adjacent duplicates removed.
+ * Expecting: no
+ **********************************************************************/
+remDups([p,r,r,o,l,l,l,o,o,g,g,gg],[p,r,o,l,o,g]).
+
+/**********************************************************************
+ * Determine whether the list [p,r,o,l,o,g] is the same as the list 
+ * [p,r,o,l,o,g,] with the second and succeeding immediately 
+ * adjacent duplicates removed.
+ * Expecting: yes
+ **********************************************************************/
+remDups([p,r,r,o,l,l,l,o,o,g,g],[p,r,o,l,o,g]).
+
+

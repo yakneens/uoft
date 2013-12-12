@@ -1,0 +1,53 @@
+/*********************************
+ *	   Assignment 2
+ * 	      CSC384
+ *	       nb.P
+ * 	  Sergei Iakhnin
+ * 	    981 843 420
+ *********************************/
+
+
+:- import append/3 from basics.
+
+
+/*******************************************************************************
+ * gen_nb(L1,L2,L3) holds iff there is a legal move between pegs L1 and L2 such 
+ * that the resulting configuration of pegs L1 and L2 is contained in the list      
+ * L3
+ * Pre: L1 and L2 are lists of numbers.
+ ******************************************************************************/
+gen_nb([],[T|R],[[T],R]).
+gen_nb([T|R],[],[R,[T]]).
+gen_nb([T1|R1],[T2|R2],[R1,[T1,T2|R2]]) :- T1 < T2.
+gen_nb([T1|R1],[T2|R2],[[T2,T1|R1],R2]) :- T1 > T2.
+
+
+
+/*******************************************************************************
+ * get_nb(L1,L2,L3,A,P) holds iff A is of the form arc(Nb,1) where Nb is a 
+ * state neighbouring to state [L1,L2,L3]. P is one of three values where
+ * lm corresponds to left-to-middle and middle-to-left disk moves
+ * lr corresponds to left-to-right and right-to-left disk moves
+ * mr corresponds to middle-to-right and right-to-middle disk moves.
+ * Pre: none.
+ ******************************************************************************/  
+get_nb([],[],_,[],_).
+get_nb(L1,L2,L3,A,lm) :- gen_nb(L1,L2,[F,L]),A = [arc([F,L,L3],1)]. 
+get_nb(L1,L2,L3,A,lr) :- gen_nb(L1,L2,[F,L]),A = [arc([F,L3,L],1)]. 
+get_nb(L1,L2,L3,A,mr) :- gen_nb(L1,L2,[F,L]),A = [arc([L3,F,L],1)]. 
+
+
+
+/*******************************************************************************
+ * nb(State,ArcList) holds iff ArcList contains the list of all neighbouring
+ * states of State.
+ * Pre: none.
+ ******************************************************************************/
+nb([L1,L2,L3],A) :- 
+get_nb(L1,L2,L3,A1,lm),
+get_nb(L1,L3,L2,A2,lr),
+get_nb(L2,L3,L1,A3,mr),
+append(A1,A2,A4),
+append(A4,A3,A).
+
+

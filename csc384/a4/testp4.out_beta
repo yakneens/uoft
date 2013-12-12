@@ -1,0 +1,25 @@
+| ?- [p5].
+[p5 loaded]
+
+yes
+| ?- idrplan(G).
+[New Depth bound: ,1]
+[New Depth bound: ,2]
+[New Depth bound: ,3]
+[New Depth bound: ,4]
+[New Depth bound: ,5]
+[New Depth bound: ,6]
+[New Depth bound: ,7]
+[New Depth bound: ,8]
+[The Plan is: ]
+perform_op(rov1,inst1,therm,sun)
+block_sun(rov1)
+perform_op(rov1,inst1,therm,away_from_sun)
+deactivate_warmed(rov1,inst1)
+activate(rov1,inst2)
+power_up(rov1,inst2)
+face_sun(rov1)
+warm_up(rov1,inst2)
+
+
+G = [perform_op(rov1,inst1,therm,sun),block_sun(rov1),perform_op(rov1,inst1,therm,away_from_sun),deactivate_warmed(rov1,inst1),activate(rov1,inst2),power_up(rov1,inst2),face_sun(rov1),warm_up(rov1,inst2)]

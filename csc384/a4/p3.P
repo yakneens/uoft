@@ -1,0 +1,5 @@
+startstate([can_activate(R),facing(rov1,away_from_sun),neg(powered(rov1,inst1)),
+neg(warmed(rov1,inst1)),
+performs(inst1,therm),
+performs(inst1,spectr)]).
+goallist([has(rov1,spectr,away_from_sun),has(rov1,therm,away_from_sun)]).

@@ -1,0 +1,20 @@
+% kb3
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 2003-02-02
+% Corrected group g1 to include c1, c2 and c3
+% Corrected group g3 to include c4 and c5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% program requirements
+allCourses([[c1,2],[c2,2],[c3,2],[c4,1],[c5,1],[c6,3],[c7,3],[c8,2],[c9,3]]).
+requiredCredits(10).
+group(g1,1,[c1,c2,c3,c6]).
+group(g2,2,[c6,c7]).
+group(g3,3,[c4,c5,c7,c8,c9]).
+groupList([g1,g2,g3]).
+equivalent([c1,c2,c3]).
+equivalent([c4,c5]).
+
+% student transcript
+transcript([[c1,a_plus],[c4,c],[c6,b],[c7,f],[c5,w],[c6,c_plus],[c7,f],[c8,d_plus],[c9,d]]).

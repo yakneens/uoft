@@ -1,0 +1,196 @@
+Scheme Microcode Version 14.0
+MIT Scheme running under GNU/Linux
+Type `^C' (control-C) followed by `H' to obtain information about interrupts.
+Scheme saved on Tuesday December 19, 2000 at 3:44:53 PM
+  Release 7.5.12
+  Microcode 14.0
+  Runtime 14.184
+
+1 ]=> ;Title: Scheme Project 1
+;By: Sergei Iakhnin
+;#: 981 843 420
+;For: Alex Kress
+;Course: CSC 324
+
+
+;Load the system
+(load "p1")
+
+;Loading "p1.scm" -- done
+;Value: infix-to-prefix
+
+1 ]=> ;Run with no bindings
+(run '())
+
+
+
+>;Try to use an undefined variable
+;Expect:
+;Undefined symbol a
+a
+
+Undefined symbol: a 
+
+>;Define a variable
+;Expect:
+;a
+(a := 5)
+
+a
+>;Use a defined variable
+;Expect: 5
+a
+
+5
+>;Redefine a variable
+;Expect:
+;a
+;10
+(a := 10)
+a
+>a
+
+10
+>;Assign one variable the value of another variable
+;Expect:
+;b
+;10
+;10
+(b := a)
+b
+>a
+10
+>b
+
+10
+>;Try to use an undefined function
+;Expect:
+;Undefined symbol: f
+(f a)
+
+Undefined symbol: f 
+
+>;Define a function of 1 argument
+;Expect: (f x)
+((f x) := (x + x))
+
+(f x)
+>;Use a defined function
+;Expect: 20
+(f a)
+
+20
+>;Redefine a function
+;Expect:
+;(f x y)
+;22
+((f x y) := (x + y))
+(f x y)
+>(f 2 (2 * a))
+
+22
+>;Define a function of no arguments
+;Expect: (f)
+((f) := (+ 2 3))
+
+(f)
+>;Use a function of no arguments
+;Expect: 5
+(f)
+
+5
+>;Define a function of 3 arguments
+;Expect: (f x y z)
+((f x y z) := (+ (2 ^ (a + x)) (* y z)))
+
+(f x y z)
+>;Use a function of 3 arguments
+;Expect: 2042
+(f 1 2 (3 + (- 4 a)))
+
+2042
+>;Evaluate an expression with no variables
+;Expect: ()
+(> 1 (2 * (3 % 2)))
+
+()
+>;Define some variables and functions for later use
+;Expect:
+;b
+;c
+;d
+;(g x)
+;(h x y)
+(b := (a + 1))
+b
+>(c := 2)
+c
+>(d := (- 5 1))
+d
+>((g x) := (+ x x))
+(g x)
+>((h x y) := ((g c) + (+ x y)))
+
+(h x y)
+>;Evaluate an expression with variables
+;Expect: 32
+(+ a (b * (c % d)))
+
+32
+>;Evaluate an expression with some unbound variables
+;Expect:
+;Undefined symbol: bar
+;Undefined symbol: foo
+;Undefined symbol: z
+(z - (foo + ((b + bar) ^ bar)))
+
+Undefined symbol: bar 
+Undefined symbol: foo 
+Undefined symbol: z 
+
+>;Evaluate an expression with variables and functions
+;Expect: 0
+(a + (h (c - (g a)) d))
+
+0
+>;Evaluate an expression with some unbound variables and functions
+;Expect:
+;Undefined symbol: q
+;Undefined symbol: x
+;Undefined symbol: y
+(- (+ x y) (q (a + b) (c ^ d)))
+
+Undefined symbol: q 
+Undefined symbol: y 
+Undefined symbol: x 
+
+>;Incorrect syntax
+;Expect: Invalid or unsupported expression
+(a :=)
+
+Invalid or unsupported expression.
+
+>;Incorrect syntax
+;Expect: Invalid or unsupported expression
+(:= a 2)
+
+Invalid or unsupported expression.
+
+>;Incorrect syntax
+;Expect: Invalid or unsupported expression
+((f x y) (+ (3 * a) (2 ^ (b % c))) :=)
+
+Invalid or unsupported expression.
+
+>;Done testing
+quit
+Done!
+;Unspecified return value
+
+1 ]=> (exit)
+
+
+
+Kill Scheme (y or n)? 
+End of input stream reached
+Happy Happy Joy Joy.

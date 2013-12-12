@@ -1,0 +1,32 @@
+| ?- 
+yes
+| ?- *****Testing for delete(X,L1,L2)*****
+yes
+| ?- 
+L = [a,b,c,d]no
+| ?- 
+L = []no
+| ?- 
+L = [h,e,l,l,o]no
+| ?- 
+X = [1,[1,2]]no
+| ?- no
+| ?- 
+yes
+| ?- no
+| ?- *****Testing for remDups(L1,L2)*****
+yes
+| ?- 
+L = []no
+| ?- 
+L = []no
+| ?- 
+L = [a,b,c,a,b,c]no
+| ?- 
+L = [[a]]no
+| ?- 
+yes
+| ?- no
+| ?- 
+yes
+| ?- 

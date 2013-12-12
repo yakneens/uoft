@@ -1,0 +1,147 @@
+				Preliminary Meeting
+							
+
+This document summarizes the results of a preliminary meeting held with Vickers
+and Benson Arnold Inc. on Jan. 14 regarding the possibility of my team performing 
+an analysis of a digital asset management system required by the company. 
+The two hour meeting was held between Sergei Iakhnin and Fil Magnoli(head 
+of the IT department at V&B Arnold Inc.) and produced a multitude of general
+information describing the system, it's intended users, possible budgets and 
+project delivery timelines as summarized below.
+
+
+List of Interview Questions
+
+
+1. Describe in general terms the proposed system.
+2. Who are the principle clients/users?
+3. Who(if any) are the secondary users?
+4. What is the main(intended) functionality of the system?
+5. What is the level of necessity for the system?
+6. What are the budget constraints?
+7. What are the time constraints associated with this project?
+8. How are the tasks the system is intended for being carried out in the company at 
+present?
+9. Is the production of this system an initiative of the management or clients
+(users)?
+10. What previous attempts were made to solve the problem?
+11. What prevented an earlier implementation of the system?
+12. What existing technologies in the company support the new system?
+13. What existing technologies in the company may interfere with the new system?
+14. Is the implementation of the system likely to affect the number of people 
+currently employed at the company?
+15. Is the system likely to significantly alter the current working environment 
+of its intended users?
+15. Is the system likely to complicate or simplify the current business process?
+
+
+Summary of Obtained Information
+
+N.B. The meeting took place as more of a free flowing discussion rather than 
+following the exact ordering of the questionnaire above and the summary will be 
+presented in paragraph or point form as needed.
+
+
+Vickers and Benson Arnold Inc. is a large Canadian based advertising agency with 
+two offices in Toronto and one office in Chicago. The information system in 
+question was requested by the main office in Toronto which employs around 200 
+people and is located at 1920 Yonge st. at the corner of Davisville. The company 
+has recently changed ownership and was bought out by Vivendi Universal which 
+resulted in several changes to company organization. The proposed new system is a 
+result of these changes and is intended to be a first step in establishing a 
+project workflow information sytem within the company. 
+
+The required system is intended to be used by the production studio in the company. 
+Graphical artists and art directors within the studio work with large collections 
+of images, video and audio that are used in various advertising campaigns. All data 
+is currently stored on individuals' workstations and shared between users through 
+a system of public access drop boxes on these machines. At monthly intervals data 
+is recorded onto DVD discs for storage and backup purposes. The current setup 
+introduces a significant amount of redundancy and confusion within the studio file
+system and people often find themselves searching for a current version of a 
+certain file or are faced with multiple versions of the same file. Since most files
+are production quality images they are frequently over 100 Mb in size and when 
+multiple copies of a file are present introduce a heavy toll on the file system. 
+
+A further challenge is introduced when a campaign is completed and needs to be sent 
+to a print shop for final print. Print shops require that files be in certain 
+formats and adhere to certain specifications before they are sent to the shop via 
+FTP. Preparing files in this manner is often a tedious and confusing task and 
+errors are frequent.
+
+The system required by the company should deal with both issues described above in
+that it should provide the studio employees with the ability to manage and share 
+their files easily and effectively with respect to both time and space, and also 
+act as a content delivery system by helping its users in preparing and sending 
+completed campaigns to various print shops. The exact utility of the system is at 
+this time unclear and will require further interviews with people managing and 
+working at the studio to determine. 
+
+The studio currently operates on Macintosh computers each of which has access to a 
+Windows 2000 file server, however at later stages the system may need to be 
+extended to also support PC workstations. This cross platform compatibility 
+requirement suggests a web browser based implementation as a likely candidate.
+
+Several products, and groups of products, currently exist that provide various 
+degrees of required functionality. The makers of these products include companies 
+such as Adobe and Quark and these software systems are predominantly highly 
+expensive and complicated to install and maintain. Several such systems exceed 
+$250,000 in price which is beyond what the company is willing to expend on the 
+project($100,000-$200,000) at present. This has prevented the company from 
+obtaining the system in the past.
+
+We will need to further investigate the products available on the market today as 
+well as a possibility of in-house development(the company has a subdivision which 
+acts as a web development shop), or perhaps a blend of both and give the company a 
+recommendation with regards to the course of action they need to take and what 
+returns they may expect on the capital invested in the production of this system.
+
+I was also advised that it is the company's goal to ultimately install a project 
+workflow management system across the company of which the system described above 
+is to be the first part. The larger system will likely have a user base of more 
+than 100 people(far exceeding the initial user base in the studio of about 20-30 
+people) and will be used by employees from several departmens including accounting,
+marketing, copy writers, and possibly clients. It is the intent of the company to 
+market the system to their clients as one that provides them with the ability to 
+request and produce localized advertising campaigns. This would be appealing to 
+large franchises such as banks, communication companies, automotive companies, 
+restaurant chains etc. which constitute a large percentage of the company's 
+clientele(Bank of Montreal, Volkswagen, previously MacDonald's). It is certain that
+the design of such a system is beyond our capabilities as information analysts 
+and architects as well as beyond the scope and time constraints of the course. 
+However we do need to keep this ultimate goal in mind in designing the smaller 
+system in order to prevent introducing anything that may obstruct or prevent an 
+implementation of the larger system within the company.
+
+This preliminary meeting provided a large amount of information about both the 
+company and the problem at hand. This information will be used extensively in our 
+research. Consequent meetings with company staff should help us further define the
+problem and possible solutions. There seems to be high level of enthusiasm within 
+the company associated with this project which should prove very useful in 
+obtaining internal resources to aid us in completing our project. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

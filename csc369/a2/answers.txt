@@ -1,0 +1,152 @@
+Question 1.
+-----------
+
+
+Spinlock is the type of semaphore where the process spins while waiting for the
+lock.
+Spinlocks are useful in multiprocessor systems since no context switch is 
+required when a process must wait on a lock and a context switch might take 
+considerable time. Thus when locks are expected to be held for short times, 
+spinlocks are useful.Spinlocks are not appropriate for uniprocessor systems 
+since they consume CPU resources which might be a problem if there is only one 
+CPU because that one CPU might be needed to resolve whatever situation the 
+spinlock is waiting for. (For example, the priority inversion problem: a low 
+priority process is in its critical section while a high priority process is 
+trying to enter this section. The low priority process can’t get the CPU because 
+it’s held by the high priority process. The high priority process spins in the 
+spinlock trying to enter the region being held by the low priority process. What 
+we have here is a deadlock situation).
+
+
+
+Question 2.
+-----------
+
+
+1.	boolean blocked[2];
+2.	int  turn;
+3.	void P (int id) {
+4.	    while (true) {
+5.	        blocked[id] = true;
+6.	        while (turn != id) {
+7.	            while (blocked[1-id]) {
+8.	                turn = id;
+9.	            }
+10.	        }
+11.	        /* critical section */
+12.	        blocked[id] = false;
+13.	        /* remainder */
+14.	    }
+15.	}
+16.	
+17.	void main() {
+18.	    blocked[0] = false;
+19.	    blocked[1] = false;
+20.	    turn = 0;
+21.	    parbegin (P(0), P(1));
+22.	}
+
+Counter example(numbers refer to execution of lines above):
+P0 executes: 5, 6, switches out
+P1 executes: 5, 6, 7, 8, 12, switches out
+P0 executes: 12
+
+P0 and P1 are both in the critical section, violating mutual exclusion: 
+If process Pi is executing in its critical section, then no other processes 
+can be executing in their critical sections.
+
+
+
+Question 3.
+-----------
+
+
+In a system where deadlock is controlled by the banker’s algorithm
+1.	Increase Available (new resources added) can be made safely at any time
+2.	Decrease Available (resources permanently removed from the system) can be 
+made safely only if Max is less than or equal to Available (after it has 
+been decreased)
+3.	Increase Max for one process (the process needs more resources than 
+allowed, it may want more) can be made safely only when the new Max is less than 
+or equal to Available
+4.	Decrease Max for one process (the process decides it does not need that 
+many resources) can be made safely at any time.
+5.	Increase the number of processes can be done safely at any time since 
+every new process entering the system must declare the maximum number of 
+instances of each resource type that it may need and this number can’t exceed 
+the total number of resources in the system.
+6.	Decrease the number of processes can  be safely made at any time.
+
+
+
+Question 4.
+-----------
+
+There exist two scenarios, which are identically resolved when all requests 
+cannot be immediately satisfied: Two of the three processes ask for the 
+maximum resources that may be needed (two resources each) while the third 
+process makes a request for either one or two resources.
+
+If only one process is to have its requests satisfied, the other two processes 
+can each hold one resource.
+
+Let all processes request 2 resources. Each process can acquire 1 resource and 
+the remaining unit can be given to one of the processes. The others will block 
+and that one process will run to completion. It will then release its 2 resources 
+and the other two processes will be able to complete. 
+
+Alternatively, let two processes acquire 2 resources each and 1 process get no
+resources. When one of the two processes completes it will release 2 resources
+at which point the last process is free to have them and thus will also complete.
+
+Hence the system is deadlock free. 
+
+
+
+Question 5.
+-----------
+
+Given:
+n=number of processes
+m=number of resources (of the same type)
+(a) the maximum  need of each process is between 1 and m resources
+(b) the sum of all maximum needs is less than m+n 
+
+Let N be the sum of all Need_i (where Need_i indicates the remaining 
+resources need of process i) , let A be the sum of all Allocation_i 
+(Allocation_i indicates the number of resources currently allocated to 
+process i) and let M be the sum of all Max_i (Max_i indicates the maximum 
+demand of process i) for i=0……n.
+
+Proof by contradiction:
+Assume the system is not deadlock free and there exists a deadlock state:
+=>	A = m  (since resources can be requested and released by processes 
+only one at a time).
+=>	N+A=M (by definition of N, A and M)
+=>	N+A<m+n (from (b))
+=>	N+m<m+n (from above)
+=>	N<n
+=>	There exists at least one process P_i such that Need_i=0 and therefore 
+from (a) process P_i can release at least one resource (since 1<=M_i<=m and 
+since N_i=0, A_i =>1)
+=>	There are n-1 processes sharing m resources and no process will be 
+waiting indefinitely.
+=>	contradiciton
+Therefore the system is deadlock free.
+
+
+
+
+Question 6.
+-----------
+
+An I/O bound program is one spending more of its time doing I/O than it spends 
+doing computations. A CPU bound program, on the other hand, is one generating 
+I/O requests infrequently, using more of its time doing computation than an 
+I/O-bound program uses.
+Therefore, a scheduling algorithm favoring processes that have used the least 
+processor time in the recent past will favor I/O bound programs, but since 
+these programs don’t use a lot of processor time, the ready queue will not be 
+long and as a result CPU-bound programs won’t get permanently starved.
+
+

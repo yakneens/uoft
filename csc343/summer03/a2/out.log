@@ -1,0 +1,80 @@
+SQL3109N  The utility is beginning to load data from file "players.txt".
+
+SQL3110N  The utility has completed processing.  "3014" rows were read from 
+the input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "3014".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "3014" rows were processed from the input file.  "3014" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 3014
+Number of rows skipped      = 0
+Number of rows inserted     = 3014
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 3014
+
+SQL3109N  The utility is beginning to load data from file "franchise.txt".
+
+SQL3110N  The utility has completed processing.  "30" rows were read from the 
+input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "30".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "30" rows were processed from the input file.  "30" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 30
+Number of rows skipped      = 0
+Number of rows inserted     = 30
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 30
+
+SQL3109N  The utility is beginning to load data from file "teams.txt".
+
+SQL3110N  The utility has completed processing.  "1716" rows were read from 
+the input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "1716".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "1716" rows were processed from the input file.  "1716" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 1716
+Number of rows skipped      = 0
+Number of rows inserted     = 1716
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 1716
+
+SQL3109N  The utility is beginning to load data from file "salaries.txt".
+
+SQL3110N  The utility has completed processing.  "14783" rows were read from 
+the input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "14783".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "14783" rows were processed from the input file.  "14783" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+
+
+Number of rows read         = 14783
+Number of rows skipped      = 0
+Number of rows inserted     = 14783
+Number of rows updated      = 0
+Number of rows rejected     = 0
+Number of rows committed    = 14783
+

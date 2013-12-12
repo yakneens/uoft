@@ -1,0 +1,136 @@
+;Title: Scheme Project 1
+;By: Sergei Iakhnin
+;#: 981 843 420
+;For: Alex Kress
+;Course: CSC 324
+
+
+;Load the system
+(load "p1")
+
+;Run with no bindings
+(run '())
+
+
+;Try to use an undefined variable
+;Expect:
+;Undefined symbol a
+a
+
+;Define a variable
+;Expect:
+;a
+(a := 5)
+
+;Use a defined variable
+;Expect: 5
+a
+
+;Redefine a variable
+;Expect:
+;a
+;10
+(a := 10)
+a
+
+;Assign one variable the value of another variable
+;Expect:
+;b
+;10
+;10
+(b := a)
+a
+b
+
+;Try to use an undefined function
+;Expect:
+;Undefined symbol: f
+(f a)
+
+;Define a function of 1 argument
+;Expect: (f x)
+((f x) := (x + x))
+
+;Use a defined function
+;Expect: 20
+(f a)
+
+;Redefine a function
+;Expect:
+;(f x y)
+;22
+((f x y) := (x + y))
+(f 2 (2 * a))
+
+;Define a function of no arguments
+;Expect: (f)
+((f) := (+ 2 3))
+
+;Use a function of no arguments
+;Expect: 5
+(f)
+
+;Define a function of 3 arguments
+;Expect: (f x y z)
+((f x y z) := (+ (2 ^ (a + x)) (* y z)))
+
+;Use a function of 3 arguments
+;Expect: 2042
+(f 1 2 (3 + (- 4 a)))
+
+;Evaluate an expression with no variables
+;Expect: ()
+(> 1 (2 * (3 % 2)))
+
+;Define some variables and functions for later use
+;Expect:
+;b
+;c
+;d
+;(g x)
+;(h x y)
+(b := (a + 1))
+(c := 2)
+(d := (- 5 1))
+((g x) := (+ x x))
+((h x y) := ((g c) + (+ x y)))
+
+;Evaluate an expression with variables
+;Expect: 32
+(+ a (b * (c % d)))
+
+;Evaluate an expression with some unbound variables
+;Expect:
+;Undefined symbol: bar
+;Undefined symbol: foo
+;Undefined symbol: z
+(z - (foo + ((b + bar) ^ bar)))
+
+;Evaluate an expression with variables and functions
+;Expect: 0
+(a + (h (c - (g a)) d))
+
+;Evaluate an expression with some unbound variables and functions
+;Expect:
+;Undefined symbol: q
+;Undefined symbol: x
+;Undefined symbol: y
+(- (+ x y) (q (a + b) (c ^ d)))
+
+;Incorrect syntax
+;Expect: Invalid or unsupported expression
+(a :=)
+
+;Incorrect syntax
+;Expect: Invalid or unsupported expression
+(:= a 2)
+
+;Incorrect syntax
+;Expect: Invalid or unsupported expression
+((f x y) (+ (3 * a) (2 ^ (b % c))) :=)
+
+;Done testing
+quit
+(exit)
+
+

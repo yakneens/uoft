@@ -1,0 +1,8 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Apache Software Foundation\Jakarta Isapi Redirector\1.0]
+"extension_uri"="/jakarta/isapi_redirect.dll"
+"log_file"="/h/u3/g2/00/g2poupon/public_html/logs/iis_redirect.log"
+"log_level"="debug"
+"worker_file"="/h/u3/g2/00/g2poupon/public_html/conf/workers.properties"
+"worker_mount_file"="/h/u3/g2/00/g2poupon/public_html/conf/uriworkermap.properties"

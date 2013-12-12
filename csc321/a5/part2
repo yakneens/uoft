@@ -1,0 +1,11 @@
+In doing our testing we came to the conclusion that the smaller the difference
+between the sizes of the models the more meaningful and beneficial averaging the
+two models turns out to be. For instance, averaging models with 1 and 500 hidden
+units does not produce any improvement over the results obtained by the separate
+models. However averaging between models with 5 and 105 hidden units improves
+the overall performance on test cases in that even though it decreases the
+squared distance between score means(3751 for numhid=5, 5354 for numhid=105,
+4504 for averaged model) the standard deviation of the scores is decreased as
+compared to the model with 105 hidden units. This means that the model's scores
+are more tightly clustered around the mean and consequently the network is more
+confident in making its decisions when recognizing the inputs. 

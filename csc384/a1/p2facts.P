@@ -1,0 +1,52 @@
+beta_link(montreal, sherbrooke, 150, 145).
+beta_link(sherbrooke, quebec_city, 140, 215).
+beta_link(quebec_city, montreal, 200, 270).
+beta_link(montreal, alexandria, 180, 100).
+beta_link(alexandria, ottawa, 180, 100).
+beta_link(ottawa, cornwall, 120, 80).
+beta_link(ottawa, brockville, 120, 110).
+beta_link(ottawa, north_bay, 150, 350).
+beta_link(north_bay, sudbury, 90, 150).
+beta_link(north_bay, toronto, 150, 350).
+beta_link(montreal, cornwall, 200, 100).
+beta_link(cornwall, brockville, 210, 100).
+beta_link(brockville, kingston, 230, 80).
+beta_link(kingston, toronto, 250, 260).
+beta_link(toronto, kitchener, 200, 100).
+beta_link(kitchener, london, 200, 95).
+beta_link(london, catham, 200, 105).
+beta_link(catham, windsor, 170, 70).
+beta_link(catham, sarnia, 150, 70).
+beta_link(sarnia, london, 150, 95).
+beta_link(london, brantford, 180, 80).
+beta_link(brantford, kitchener, 100, 30).
+beta_link(brantford, hamilton, 130, 40).
+beta_link(hamilton, niagara_falls, 120, 70).
+beta_link(hamilton, toronto, 150, 60).
+
+link(X,Y,Z,W) :- beta_link(X,Y,Z,W); beta_link(Y,X,Z,W).
+
+city(montreal, 20, 15).
+city(sherbrooke, 0, 3).
+city(quebec_city, 10, 10).
+city(alexandria, 0, 3).
+city(ottawa, 10, 10).
+city(cornwall, 0, 3).
+city(brockville, 0, 3).
+city(north_bay, 0, 5).
+city(sudbury, 0, 5).
+city(toronto, 20, 15).
+city(kingston, 10, 10).
+city(kitchener, 0, 5).
+city(london, 0, 8).
+city(catham, 0, 3).
+city(windsor, 10, 8).
+city(sarnia, 10, 8).
+city(brantford, 0, 3).
+city(hamilton, 0, 5).
+city(niagara_falls, 0, 3).
+
+
+train(freight, 120).
+train(passenger, 200).
+

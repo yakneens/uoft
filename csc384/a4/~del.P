@@ -1,0 +1,11 @@
+:- import append/3 from basics.
+
+d([],_,[]).
+d([F|R], X, [F|R2]) :- not(F = X), d(R,X, R2).
+d([F|R], F, L) :- d(R, F, L).
+
+
+a([],_,_).
+a([X|R],X,Y):- append(R2,[Y],R), a(R2,X,Y).
+
+rev([F|R], [F1|R1], [F2|R

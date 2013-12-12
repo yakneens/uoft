@@ -1,0 +1,67 @@
+:- ['p2facts.P'].
+:- [basics].
+
+stopover_time(City, TrainType, Time) :- 
+city(City, FreightStopover, PassStopover), 
+train(TrainType,_),
+(TrainType = freight -> SomeTime is FreightStopover / 60 ; SomeTime is PassStopover /60),
+Time = SomeTime.
+
+duration(Duration, Speed, SpeedLimit, Length, Stopover) :- 
+(Speed =< SpeedLimit -> 
+ SomeDuration is Length/Speed + Stopover ; 
+ SomeDuration is Length/SpeedLimit + Stopover), 
+Duration = SomeDuration.
+
+make_route(Origin,Origin,TrainType,[Origin],0,0,_) :- city(Origin,_,_),train(TrainType,_).
+
+make_route(Origin,Destination,TrainType,[Origin|RestOfRoute],Length,Duration,Visited) :-
+link(Origin,SomeCity,LinkSpeedLimit,LinkLength),
+\+(member(SomeCity,Visited)),
+train(TrainType,MaxSpeed),
+(SomeCity = Destination -> Stopover is 0 ; stopover_time(SomeCity,TrainType,Stopover)),
+duration(LinkDuration,MaxSpeed,LinkSpeedLimit,LinkLength,Stopover),
+make_route(SomeCity, Destination,TrainType,RestOfRoute,RouteLength,RouteDuration,[SomeCity|Visited]),
+SomeLength is RouteLength+LinkLength,
+SomeDuration is RouteDuration+LinkDuration,
+Length = SomeLength,
+Duration = SomeDuration.
+
+route(Origin,Destination,TrainType,Path,Length,Duration) :-
+make_route(Origin,Destination,TrainType,Path,Length,Duration,[Origin]).
+
+make_bdfsRoute(Origin,Origin,TrainType,DurationLimit,[Origin],0,0,_) :- 
+city(Origin,_,_),
+train(TrainType,_),
+DurationLimit > 0.
+
+make_bdfsRoute(Origin,Destination,TrainType,DurationLimit,[Origin|RestOfRoute],Length,Duration,Visited) :-
+link(Origin,SomeCity,LinkSpeedLimit,LinkLength),
+\+(member(SomeCity,Visited)),
+train(TrainType,MaxSpeed),
+(SomeCity = Destination -> Stopover is 0 ; stopover_time(SomeCity,TrainType,Stopover)),
+duration(LinkDuration,MaxSpeed,LinkSpeedLimit,LinkLength,Stopover),
+(DurationLimit =< 0 -> not(true) ;
+(NewDurationLimit is DurationLimit - LinkDuration,
+make_bdfsRoute(SomeCity, Destination,TrainType,NewDurationLimit,RestOfRoute,RouteLength,RouteDuration,[SomeCity|Visited]),
+SomeLength is RouteLength+LinkLength,
+SomeDuration is RouteDuration+LinkDuration,
+Length = SomeLength,
+Duration = SomeDuration)).
+
+bdfsRoute(Origin,Destination,TrainType,DurationLimit,Path,Length,Duration) :-
+make_bdfsRoute(Origin,Destination,TrainType,DurationLimit,Path,Length,Duration,[Origin]).
+
+findFastestRoute(Origin,Destination,TrainType,Path,Length,Duration,Limit) :-
+(bdfsRoute(Origin,Destination,TrainType,Limit,Path,Length,SomeDuration)->
+findFastestRoute(Origin,Destination,TrainType,Path,Length,SomeDuration,SomeDuration) ; 
+Duration = Limit).
+
+fastestRoute(Origin,Destination,TrainType,Path,Length,Duration):-
+route(Origin,Destination,TrainType,Path,Length,SomeDuration),!,
+findFastestRoute(Origin,Destination,TrainType,Path,Length,Duration,SomeDuration).
+
+
+/*uroute(A,A,[A],_).
+uroute(A,Z,[A|X],L) :- link(A,Y,_,_), \+(member(Y,L)),uroute(Y,Z,X,[Y|L]).*/
+

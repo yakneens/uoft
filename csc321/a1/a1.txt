@@ -1,0 +1,68 @@
+	    	                Assignment 1
+   	 		          CSC 321
+			       Sergei Iakhnin
+			         981843420
+
+This document outlines my findings about the various aspects of the backpropagation
+algorithm as they apply to the problem described in the assignment. 
+
+Because of the nature of the problem, i.e. the fact that no input data can be 
+produced that is different from the actual training data, we cannot in reality 
+verify the effectiveness of the backpropagation method using this particulr problem.
+Since the training set is the whole universe of inputs the network can be trained 
+to make the error arbitrarily small given that the number of hidden units is 
+sufficient to encode the information relayed by the input.
+
+I have tried various numbers of hidden units ranging from 1 to 64. The network 
+behaviour is somewhat erratic in the case of 1 and 2 hidden units. In certain runs 
+the network will converge on a minimum after around 500 epochs whereas on certain 
+other runs the network will not converge even after 6000 epochs. In general, for 1 
+and 2 hidden unit networks the error can be brought down to around 2.71 and 0.98
+respectively. The error of 2.71, for instance, signifies that for an 8 bit input 
+vector the network will produce a wrong result on around 3 of these bits. From my 
+testing it is my conclusion that a network with at least 3 hidden units is needed 
+to produce reliable results.
+
+In other problems increasing the number of hidden units may produce the undesirable
+result of overfitting the data as the network may produce a very good fit to the 
+test data which genralizes about local regularities of this test data but which do 
+not necessarily carry over to the entire domain of the problem. In our case, 
+however, the entire universe of inputs is finite and, in fact, is very small. For
+that reason overfitting does not apply to this particular problem and the number of
+hidden units can be safely increased without compromising the generalisation 
+ability of the network.
+
+It seems that the number of hidden units in single digits are best fit for the 
+solution of this problem as even four hidden units can get the error down to 0.1 in 
+around 450 epochs and a network with 8 units will converge in about 800 epochs with
+an error of 0.04. Further increasing the number of hidden units does not seem to 
+significantly decrease the error and takes a heavy toll on the resources of the 
+computer simulating the net. For networks with up to 64 hidden units the error can 
+be only brought down to 0.03 and the convergence times increase to over 8200 epochs
+(it is worth noting that for large numbers of hidden units the network approaches a
+very small error value quite rapudly and then spends large amounts of time making 
+small adjustments to the weights until it finally converges).
+
+When the training of the network starts, the weights in the network may consist of 
+numbers that vary significantly in magnitude, however the towards the end of the 
+training the weights seem to even out in magnitude. This observation is consistent 
+with the notion that all parts of the input are equally important in determining 
+the output value.
+
+It is the case that sometimes the network produces drastically different weights 
+when trained on the same training set. This is due to the fact that the network 
+does not use a momentum term to help the network escape from shallow local minima.
+Once the network reaches one such minimum it perceives it as the optimal answer. 
+An introduction of a momentum term would let the network take into account previous 
+weight adjustments when figuring out a current weight adjustment. This would allow 
+the network to sometimes move away from the direction of steepest descent and thus 
+allow the network to escape from some local minima it may be stuck in.
+
+I briefly tested the network on inputs with multiple bits set to 1 per input. For 
+input cases where only 2 or 3 bits are set to 1 the network seems to perform 
+reasonably well given the fact that it is only trained on cases where only one bit 
+is set to 1. This supports our claim that the network has made some generalisations
+about the nature of the mapping from inputs to outputs and not just learned to 
+produce the correct results given the limited number of inputs.                              
+
+   

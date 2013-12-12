@@ -1,0 +1,12 @@
+The ability of the network to distinguish between the two classes can be
+assessed by looking at the means of the scores assigned to the two data sets.
+For a particular number of hidden units and training epochs we calculate the
+means for both data sets and investigate the squared distance between them.
+Maximizing this distance corresponds to maximizing the the networks ability to
+separate between the two classes. 
+
+To achieve this we varied the number of hidden units between 1 and 201 in steps
+of 10 and varied the number of training epochs between 10 and 410 in steps of
+50. For each combination of these we record the squared distance between the
+means of the scores for two data sets. We pick the model that maximizes this
+distance as the best model for solving this task.

@@ -1,0 +1,275 @@
+/******************************* 
+ * Problem Set 4
+ * CSC324
+ * By: Sergei Iakhnin
+ * #: 981843420
+ * TA: Alex Kessaris
+ *******************************/
+ 
+/* This file tests the predicates in ps4q2.P */
+
+% Load ps4q2.P
+[ps4q2].
+
+
+/* Testing for first(X,L) */
+write('*****Testing for first(X,L)*****').
+
+
+
+/********************************************************************** 
+ * Find the first element of the empty list
+ * Expecting: no
+ **********************************************************************/
+first(X,[]).
+
+/**********************************************************************
+ * Find the first element of a list with one element
+ * Expecting: X = a 
+ *            no
+ **********************************************************************/
+first(X,[a]).
+;
+
+/**********************************************************************
+ * Find the first element of a list with 2 elements
+ * Expecting: X = b
+ *            no
+ **********************************************************************/
+first(X,[b,a]).
+;
+
+/**********************************************************************
+ * Find the first element of a list with 10 elements
+ * Expecting: X = [a, [a, b], c]
+ *            no
+ **********************************************************************/
+first(X, [[a,[a,b],c],b,[c,a],d,e,f,g,e,d,o]).
+;
+
+/**********************************************************************
+ * Test whether a is the first element of list [g,f,e,d,c,b,a]
+ * Expecting: no
+ **********************************************************************/
+first(a,[g,f,e,d,c,b,a]).
+
+/**********************************************************************
+ * Test whether g is the first element of list [g,f,e,d,c,b,a]
+ * Expecting: yes
+ **********************************************************************/
+first(g,[g,f,e,d,c,b,a]).
+
+
+/**********************************************************************
+ * Inspect the general structure of a list whose first element is k
+ * Expecting: L = [k|_somevar1]
+ *            no
+ **********************************************************************/
+first(k,L).
+;
+
+nl.
+
+/* Testing for rest(X,L) */
+write('*****Testing for rest(X,L)*****').
+
+/**********************************************************************
+ * Find all but the first element of the empty list
+ * Expecting: no
+ **********************************************************************/
+rest(X,[]).
+
+/**********************************************************************
+ * Find all but the first element of a list with 1 element
+ * Expecting: X = []
+ *            no
+ **********************************************************************/
+rest(X,[[a,b,[c,d]]]).
+;
+
+/**********************************************************************
+ * Find all but the first element of a list with 2 elements
+ * Expecting: X = [b]
+ *            no
+ **********************************************************************/
+rest(X,[a,b]).
+;
+
+/**********************************************************************
+ * Find all but the first element of a list with 3 elements
+ * Expecting: X = [b,[c,d]]
+ *             no
+ **********************************************************************/
+rest(X,[a,b,[c,d]]).
+;
+
+/**********************************************************************
+ * Find all but the first element of a list with 10 elements
+ * Expecting: X = [b,c,[d,d],e,[f,[f,f,f],[f]],g,h,i,j]
+ *            no
+ **********************************************************************/
+rest(X,[a,b,c,[d,d],e,[f,[f,f,f],[f]],g,h,i,j]).
+;
+
+/**********************************************************************
+ * Test whether [a,b] is all but the first element of list [a,b,c,d]
+ * Expecting: no	      
+ **********************************************************************/
+rest([a,b],[a,b,c,d]).
+
+/**********************************************************************
+ * Test whether [b,c,d] is all but the first element of list [a,b,c,d]
+ * Expecting: yes	      
+ **********************************************************************/
+rest([a,b],[a,b,c,d]).
+
+/**********************************************************************
+ * Inspect the general structure of a list L such that X is everything
+ * but the first element of L.
+ * Expecting: X = _somevar1
+ *            L = [_somevar2|somevar1]
+ *            no
+ **********************************************************************/
+rest(X,L).
+
+
+/* Testing for third (X,L). */
+write('*****Testing for third(X,L)*****').
+
+/**********************************************************************
+ * Find the third element of the empty list
+ * Expecting: no
+ **********************************************************************/
+third(X,[]).
+
+/**********************************************************************
+ * Find the third element of a list with 1 element
+ * Expecting: no
+ **********************************************************************/
+third(X,[a]).
+
+/**********************************************************************
+ * Find the third element of a list with 2 elements
+ * Expecting: no
+ **********************************************************************/
+third(X,[a,b]).
+
+/**********************************************************************
+ * Find the third element of a list with 3 elements
+ * Expecting: X = c
+ *            no
+ **********************************************************************/
+third(X,[a,b,c]).
+;
+
+/**********************************************************************
+ * Find the third element of a list with 4 elements
+ * Expecting: X = [a,b]
+ *	      no
+ **********************************************************************/
+third(X,[a,b,[a,b],c]).
+;
+
+/**********************************************************************
+ * Find the third element of a list with 10 elements
+ * Expecting: X = h
+ *            no
+ **********************************************************************/
+third(X,[j,i,h,g,f,e,d,c,b,a]).
+;
+
+/**********************************************************************
+ * Test whether e is the third element of the list [a,b,c,d,e,f]
+ * Expecting: no
+ **********************************************************************/
+third(e,[a,b,c,d,e,f]).
+
+/**********************************************************************
+ * Test whether c is the third element of the list [a,b,c,d,e,f]
+ * Expecting: yes
+ **********************************************************************/
+third(c,[a,b,c,d,e,f]). 
+ 
+/**********************************************************************
+ * Examine the general structure of a list L such that the third 
+ * element of L is X
+ * Expecting: X = _somevar1 
+ *            L = [_somevar2,_somevar3,_somevar1|_somevar4]
+ *            no
+ **********************************************************************/
+third(X,L).
+;
+
+/* Testing for secondlast(X,L) */
+write('*****Testing for secondlast(X,L)*****').
+
+/**********************************************************************
+ * Find the second last element of the empty list
+ * Expecting: no
+ **********************************************************************/
+secondlast(X,[]).
+
+/**********************************************************************
+ * Find the second last element of a list with 1 element
+ * Expecting: no
+ **********************************************************************/
+secondlast(X,[a]).
+
+
+/**********************************************************************
+ * Find the second last element of a list with 2 elements
+ * Expecting: X = a
+ *            no
+ **********************************************************************/
+secondlast(X,[a,b]).
+; 
+
+/**********************************************************************
+ * Find the second last element of a list with 3 elements
+ * Expecting: X = b
+ *            no
+ **********************************************************************/
+secondlast(X,[a,b,c]).
+;
+
+/**********************************************************************
+ * Find the second last element of a list with 10 elements
+ * Expecting: X = i
+ *            no
+ **********************************************************************/
+secondlast(X,[a,b,c,d,e,f,g,h,i,j]).
+; 	      
+
+/**********************************************************************
+ * Test whether [a,[b]] is the second last element of a list 
+ * [a,[a,b],[a,[b]]]
+ * Expecting: no
+ **********************************************************************/
+secondlast([a,[b]], [a,[a,b],[a,[b]]]).
+
+/**********************************************************************
+ * Test whether [a,b] is the second last element of a list
+ * [a,[a,b],[a,[b]]]
+ * Expecting: yes
+ **********************************************************************/
+secondlast([a,b],[a,[a,b],[a,[b]]]).
+
+/**********************************************************************
+ * Inspect the general structure of a list L such that the second last
+ * element of L is X.
+ * Look several levels deep.
+ * Expecting: X = _somevar1
+ *            L = [_somevar1,_somevar2]
+ *            X = _somevar1
+ *            L = [_somevar3,_somevar1, _somevar4]
+ *            X = _somevar1
+ *            L = [_somevar3, _somevar2, _somevar1, _somevar5]
+ *            X = _somevar1
+ *            L = [_somevar3, _somevar2, _somevar4, _somevar1, somevar6]
+ *            yes
+ **********************************************************************/
+secondlast(X,L).
+;
+;
+;
+.

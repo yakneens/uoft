@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>Search Results</title>
+<script language="Javascript" src="populate.js"></script>
+<script language="Javascript" src="jscripts.js"></script>
+<script language="JavaScript">
+	
+	function srch(){
+	doc = "<html><head><title>Search Results</title><link rel='stylesheet' href='store.css'></head><body>";
+	
+	qstring = ParseQueryString();
+	nqstring ="?";	
+	
+	
+	for(indx in qstring){
+		if(qstring[indx] && indx.search("id") == 0)
+			nqstring = nqstring + indx + "=" + qstring[indx] + "&";
+	
+	}
+	
+	for(indx in qstring){
+		
+		
+			if(qstring[indx] && indx.search("id") != 0){
+					
+					reg = new RegExp(qstring[indx],["igm"]);
+					
+					doc = doc + "<span class='searchResultsHeader'>The search results for " + qstring[indx] + " are:</span><p>";
+		
+					for(prod in myProducts){
+							
+							if(reg.test(myProducts[prod].category) || reg.test(myProducts[prod].manufacturer) || reg.test(myProducts[prod].name) || reg.test(myProducts[prod].type) || reg.test(myProducts[prod].description)){
+								 url = "\"" + myProducts[prod].category + ".html#" + myProducts[prod].id + nqstring  + "\"";
+								 doc = doc + "<a class='searchResults' href='javascript:window.opener.location=" + url + ";window.back()'>" + myProducts[prod].manufacturer + " " + myProducts[prod].name + "</a><br>";
+							}
+					}
+		
+				doc = doc + "</p>";
+			}
+				
+				
+	
+	
+	}
+
+	doc = doc + "<input type='button' value='Close Window' onclick='window.close()'/>";
+	document.write(doc);
+
+}
+
+function openParent(url){
+
+	window.parent.location.href = url;
+	window.parent.focus();
+	
+}
+</script>
+<body onload="srch();">
+asdsa
+</body>
+</html>

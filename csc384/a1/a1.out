@@ -1,0 +1,67 @@
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+TotalCredits = 11
+yes
+| ?- 
+yes
+| ?- 
+TotalCredits = 11
+yes
+| ?- 
+yes
+| ?- 
+TotalCredits = 11
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+TotalCredits = 17
+yes
+| ?- 
+yes
+| ?- no
+| ?- 
+TotalCredits = 11
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+TotalCredits = 13
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+TotalCredits = 14
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+TotalCredits = 16
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+TotalCredits = 14
+yes
+| ?- 
+yes
+| ?- no
+| ?- 
+TotalCredits = 10
+yes
+| ?- 

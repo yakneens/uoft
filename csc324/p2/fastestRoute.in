@@ -1,0 +1,49 @@
+/********************************************************************************
+ * CSC 324 Prolog Project
+ * By: Sergei Iakhnin
+ * #: 981843420
+ ********************************************************************************/
+
+
+% Load the fastestRoute predicate.
+import fastestRoute/6 from p2route.
+
+/********************************************************************************
+ * Find the fastest route for a passenger train between Toronto and Montreal
+ * Expecting: Path = [toronto,kingston,brockville,cornwall,montreal]
+ *            Length = 540
+ *            Duration = 2.9667
+ *            no
+ ********************************************************************************/
+fastestRoute(toronto,montreal,passenger,Path,Length,Duration).
+;
+
+
+/********************************************************************************
+ * Find from what cities the fastest route to windsor takes 0 hours to complete
+ * Expecting: City = windsor
+ *            City = windsor
+ *            no
+ ********************************************************************************/
+fastestRoute(City,windsor,_,_,_,0).
+;
+;
+
+/********************************************************************************
+ * Test whether the route from Windsor to Kitchener through Catham, Sarnia and London
+ * is the fastest route between those two cities for a freight train.
+ * Expecting: no
+ ********************************************************************************/
+fastestRoute(windsor,kitchener,freight,[windsor,catham,sarnia,london,kitchener],_,Duration).
+
+
+/********************************************************************************
+ * Test whether there can be two fastest routes between a pair of cities
+ * Expecting: no
+ ********************************************************************************/
+fastestRoute(From,To,_,_,_,Duration1),
+fastestRoute(From,To,_,_,_,Duration2), 
+\+(Duration1 = Duration2).
+
+
+ 

@@ -1,0 +1,11 @@
+
+:- import append/3 from basics.
+
+nb([a],[arc([b],8),arc([c],10),arc([d],9)]).
+nb([b],[arc([e],10)]).
+nb([c],[arc([e],9),arc([f],5)]).
+nb([d],[arc([f],7)]).
+nb([e],[arc([g],3)]).
+nb([f],[arc([e],8),arc([g],10)]). 
+
+

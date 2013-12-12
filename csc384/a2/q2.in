@@ -1,0 +1,51 @@
+/*********************************
+ *	   Assignment 2
+ * 	      CSC384
+ *	    Question 2
+ *	      q2.in
+ * 	  Sergei Iakhnin
+ * 	    981 843 420
+ *********************************/
+
+
+%Load the predicate nb(State,Arclist)
+[nb].
+
+
+/*******************************************************************************
+ * Test Case 1: only two possible neighbours [[2,3,4],[1],[]] and
+ * [[2,3,4],[],[1]
+ * Transfer between left and middle, and left and righ pegs.
+ * Start off with 4 discs on 1 peg and 0 discs on two other pegs
+ ******************************************************************************/
+nb([[1,2,3,4],[],[]],Arclist).
+;
+ 
+/*******************************************************************************
+ * Test Case 2: three possible neighbours [[],[1,2],[3,4]], [[1,3],[2],[4], and
+ * [[3],[2],[1,4]]
+ * Transfer between left and right, middle and left, and middle and righ pegs.
+ * Start off with 2 discs on 1 peg and 1 disc each on two other pegs.
+ ******************************************************************************/
+nb([[3],[1,2],[4]],Arclist).
+;
+
+/*******************************************************************************
+ * Test Case 3: three possible neighbours [[1],[2,3],[4]], [[4],[1,2,3],[]], and
+ * [[],[2,3],[1,4]]
+ * Transfer between middle and left, right and left, and middle and right pegs.
+ * Start off with 3 discs on 1 peg, 1 disc on another peg, 0 discs on third peg.
+ ******************************************************************************/
+nb([[],[1,2,3],[4]],Arclist).
+;
+
+/*******************************************************************************
+ * Test Case 4: three possible neighbours [[2],[1],[3,4]], [[2],[],[1,3,4], and
+ * [[1,2],[3],[4]]
+ * Transfer between left and middle, left and right, and right and middle pegs.
+ * Start off with 0 discs on one peg and 2 discs each on two other pegs.
+ ******************************************************************************/
+nb([[1,2],[],[3,4]],Arclist).
+;
+
+  

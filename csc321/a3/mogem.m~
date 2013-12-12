@@ -1,0 +1,93 @@
+function [boo] = mogem(numupdates, numgaussians, sdinit, pausesecs);
+
+%  mogem(numupdates, numgaussians, sdinit, pausesecs);
+%Simple version of EM that fits a mixture of Gaussians to data.
+%Assumes data has 2 columns.
+%Assumes mixing proportions do not adapt and are all equal.
+
+global train_data;
+global valid_data;
+global mixing;
+numcases   = size(train_data,1);
+mixing = ones(numcases,numgaussians);
+mixing = mixing ./ numgaussians;
+centers    = rand(numgaussians,2);
+xvars      = sdinit*sdinit * ones(1,numgaussians);
+yvars      = sdinit*sdinit * ones(1,numgaussians);
+minvar     = .00001; %we get problems if the varainces get very small.
+train_densities  = zeros(numcases, numgaussians);
+valid_densities   = zeros(numcases, numgaussians);
+posteriors = train_densities;
+train_xdata      = train_data(:,1)';
+train_ydata      = train_data(:,2)';
+
+
+%showmog;
+pause(pausesecs);
+
+for i = 1:numupdates,
+
+  %set valid densities
+  for g=1:numgaussians,                                                                                                                                    
+    xv= xvars(g);
+    yv= yvars(g);
+    xd = repmat(centers(g,1),numcases,1) - valid_data(:,1);
+    yd = repmat(centers(g,2),numcases,1) - valid_data(:,2);
+    valid_densities(:,g)= (1/(2*pi*sqrt(xv*yv)))*...
+                          exp(-xd.*xd/(2*xv) - yd.*yd/(2*yv));
+  end
+
+  %set posteriors
+  sums = sum(valid_densities');
+  post = valid_densities .* mixing;
+  posteriors = post ./ repmat(sums',1,numgaussians);
+  
+  fprintf(1, ' valid log prob = %4.5f    ', ...
+          sum(log(  sum(valid_densities')/numgaussians  )));
+val1 = sum(log(  sum(valid_densities')/numgaussians  ));
+  %set train densities
+  for g=1:numgaussians,
+    xv= xvars(g);
+    yv= yvars(g);
+    xd = repmat(centers(g,1),numcases,1) - train_data(:,1);
+    yd = repmat(centers(g,2),numcases,1) - train_data(:,2);
+    train_densities(:,g)= (1/(2*pi*sqrt(xv*yv)))*...
+                          exp(-xd.*xd/(2*xv) - yd.*yd/(2*yv));
+  end
+
+  %set posteriors
+  sums = sum(train_densities');
+  post = valid_densities .* mixing;
+  posteriors = post ./ repmat(sums',1,numgaussians);
+  fprintf(1, ' train log prob = %4.5f \n ', ...
+          sum(log(  sum(train_densities')/numgaussians  )));
+val2 = sum(log(  sum(train_densities')/numgaussians  ));
+  oldcenters = centers;
+  %set new centers and new variances.
+  for g=1:numgaussians,
+    r        = posteriors(:,g);
+    cx       = (train_xdata * r) / sum(r);
+    cy       = (train_ydata * r) / sum(r);
+    centers(g,:) = [cx cy];
+    xnoise   = train_xdata - repmat(cx,1,numcases);
+    xvars(g) = minvar + sum(r' .* xnoise .* xnoise)/ sum(r);
+    ynoise   = train_ydata - repmat(cy,1,numcases);
+    yvars(g) = minvar + sum(r' .* ynoise .* ynoise)/ sum(r);
+  end
+
+ % showmog;
+ % pause(pausesecs);
+end
+
+for j = 1:numgaussians
+    bob = 0;
+    for i = 1:numcases
+        bob = bob + posteriors(i,j);
+    end
+    bob = bob/numcases;
+    for i = 1: numcases
+        mixing(i,j) = bob/numcases;    
+    end
+end
+
+boo = [val1,val2]';

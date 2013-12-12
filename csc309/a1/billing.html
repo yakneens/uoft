@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>Checkout</title>
+<script type="text/javascript" src="populate.js" ></script>
+<script type="text/javascript" src="search.js" ></script>
+<script type="text/javascript" src="jscripts.js" ></script>
+<script type="text/javascript" src="validation.js" ></script>
+
+<script type="text/javascript" language="javascript">
+
+function validate() {
+    pass=true;
+    if(!isNumber(document.information.apart.value)) {
+        pass=false;
+    }  
+    if(!isNumber(document.information.cardNum.value)) {
+        pass=false;
+    }
+		if(!isValidEMail(document.information.email.value)) {
+       pass=false;
+    }
+     
+    if(!isValidDate(document.information.expiry.value)) {
+        pass=false;
+    }
+
+    alert(pass);
+}
+function clearForm() {
+    document.information.first.value = '';
+    document.information.last.value = '';
+    document.information.address.value = '';
+    document.information.apart.value = '';
+    document.information.city.value = '';
+    document.information.country.value = '';
+    document.information.postal.value = '';
+    document.information.email.value = '';
+    document.information.cardNum.value = '';
+    document.information.expiry.value = '';
+}
+
+function loadPrice(){
+    totalP = ParseQueryString();
+    document.information.total.value = '$'+totalP["total"];
+}
+</script>
+<link rel="stylesheet" type="text/css" href="store.css" />
+</head>
+<body onLoad="loadPrice();">
+
+<form name="information">
+
+
+<table class="generic" align="center">
+<tr><td class="logo" colspan="3"><h1>EASTERN GROCERS</h1></td></tr>
+<tr>
+<td class="menu">
+
+</td>
+
+<td class="contents"><h2>Billing Information</h2>
+
+    <table align="center">
+        <tr>
+	    <td class="heading">First: </td>
+	    <td class="area"><input id="first" type="text" size="20" value="Joe" /></td>
+	</tr>
+        <tr>
+	    <td class="heading">Last: </td>
+	    <td class="area"><input name="last" type="text" size="20" value="Smith" /></td>
+	</tr>
+        <tr>
+	    <td class="heading">Street Address: </td>
+	    <td class="area"><input name="address" type="text" size="40" value="1 Bloor St." /></td>
+	</tr>
+        <tr>
+	    <td class="heading">Apartment: </td>
+	    <td class="area"><input name="apart" type="text" size="4" value="10" /></td>
+	</tr>
+        <tr>
+	    <td class="heading">City: </td>
+	    <td class="area"><input name="city" type="text" size="20" value="Toronto" /></td>
+	</tr>
+        <tr>
+	    <td class="heading">Country: </td>
+	    <td class="area"><input name="country" type="text" size="20" value="Canada" /></td>
+        <tr>
+	    <td class="heading">Postal: </td>
+	    <td class="area"><input name="postal" type="text" size="7" value="L5B2C8" /></td>
+	</tr>
+        <tr>
+	    <td class="heading">E-mail: </td>
+	    <td class="area"><input name="email" type="text" size="25" value="joe@hotmail.com" /></td>
+	</tr>
+        <tr><td>&nbsp</td>
+	</tr>
+        <tr>
+	    <td class="heading">Credit Card #: </td>
+	    <td class="area"><input name="cardNum" type="text" size="18" value="1234567890123456" /></td>
+	</tr>
+        <tr>
+	    <td class="heading">Expiry (dd/mm/yy): </td>
+	    <td class="area"><input name="expiry" type="text" size="8" value="01/01/01" /></td>
+	</tr>
+        <tr>
+	    <td>&nbsp</td>
+	</tr>
+        <tr>
+	    <td class="heading">Total Purchase: </td>
+	    <td class="area"><input type="text" size="7" name="total" disabled /></td>
+	</tr>
+        <tr>
+	    <td>&nbsp</td>
+	</tr>
+        <tr>
+	    <td class="heading"><input type="button" name="clear" onClick="clearForm();" value="Clear" /></td>
+	    <td class="area"><input type="button" onClick="validate();" value="Submit" /></td>
+	</tr>
+
+
+    </table>
+</td>
+
+<td class="cart">
+</td>
+</tr>
+</table>
+
+
+</form>
+
+</body>
+</html>

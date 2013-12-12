@@ -1,0 +1,1716 @@
+1876,"NL","CHN ","CHC",,1,52,14," "," ","Y"," ","Chicago White Stockings","23rd Street Grounds",
+1877,"NL","CHN ","CHC",,5,26,33," "," ","N"," ","Chicago White Stockings","23rd Street Grounds",
+1878,"NL","CHN ","CHC",,4,30,30," "," ","N"," ","Chicago White Stockings","Lake Front Park I",
+1879,"NL","CHN ","CHC",,4,46,33," "," ","N"," ","Chicago White Stockings","Lake Front Park I",
+1880,"NL","CHN ","CHC",,1,67,17," "," ","Y"," ","Chicago White Stockings","Lake Front Park I",
+1881,"NL","CHN ","CHC",,1,56,28," "," ","Y"," ","Chicago White Stockings","Lake Front Park I",
+1882,"NL","CHN ","CHC",,1,55,29," "," ","Y"," ","Chicago White Stockings","Lake Front Park I/Lake Front Park II",
+1883,"NL","CHN ","CHC",,2,59,39," "," ","N"," ","Chicago White Stockings","Lake Front Park II",
+1883,"NL","PHI ","PHI",,8,17,81," "," ","N"," ","Philadelphia Quakers","Recreation Park",
+1884,"NL","CHN ","CHC",,5,62,50," "," ","N","N","Chicago White Stockings","Lake Front Park II",
+1884,"NL","PHI ","PHI",,6,39,73," "," ","N","N","Philadelphia Quakers","Recreation Park",
+1885,"NL","CHN ","CHC",,1,87,25," "," ","Y","N","Chicago White Stockings","West Side Park I",
+1885,"NL","PHI ","PHI",,3,56,54," "," ","N","N","Philadelphia Quakers","Recreation Park",
+1886,"NL","CHN ","CHC",,1,90,34," "," ","Y","N","Chicago White Stockings","West Side Park I",
+1886,"NL","PHI ","PHI",,4,71,43," "," ","N","N","Philadelphia Quakers","Recreation Park",
+1887,"NL","CHN ","CHC",,3,71,50," "," ","N","N","Chicago White Stockings","West Side Park I",
+1887,"NL","PHI ","PHI",,2,75,48," "," ","N","N","Philadelphia Quakers","Philadelphia Baseball Grounds",
+1887,"NL","PIT ","PIT",,6,55,69," "," ","N","N","Pittsburgh Alleghenys","Recreation Park",
+1888,"NL","CHN ","CHC",,2,77,58," "," ","N","N","Chicago White Stockings","West Side Park I",
+1888,"NL","PHI ","PHI",,3,69,61," "," ","N","N","Philadelphia Quakers","Philadelphia Baseball Grounds",
+1888,"NL","PIT ","PIT",,6,66,68," "," ","N","N","Pittsburgh Alleghenys","Recreation Park",
+1889,"NL","CHN ","CHC",,3,67,65," "," ","N","N","Chicago White Stockings","West Side Park I",
+1889,"NL","PHI ","PHI",,4,63,64," "," ","N","N","Philadelphia Quakers","Philadelphia Baseball Grounds",
+1889,"NL","PIT ","PIT",,5,61,71," "," ","N","N","Pittsburgh Alleghenys","Recreation Park",
+1890,"NL","CHN ","CHC",,2,84,53," "," ","N","N","Chicago Colts","West Side Park I",102536
+1890,"NL","CIN ","CIN",,4,77,55," "," ","N","N","Cincinnati Reds","League Park I",131980
+1890,"NL","PHI ","PHI",,3,78,54," "," ","N","N","Philadelphia Phillies","Philadelphia Baseball Grounds",148366
+1890,"NL","PIT ","PIT",,8,23,113," "," ","N","N","Pittsburgh Alleghenys","Recreation Park",16064
+1891,"NL","CHN ","CHC",,2,82,53," "," ","N"," ","Chicago Colts","South Side Park I",181431
+1891,"NL","CIN ","CIN",,7,56,81," "," ","N"," ","Cincinnati Reds","League Park I",97500
+1891,"NL","PHI ","PHI",,4,68,69," "," ","N"," ","Philadelphia Phillies","Philadelphia Baseball Grounds",217282
+1891,"NL","PIT ","PIT",,8,55,80," "," ","N"," ","Pittsburgh Pirates","Exposition Park",128000
+1892,"NL","CHN ","CHC",,7,70,76," "," ","N","N","Chicago Colts","South Side Park I",109067
+1892,"NL","CIN ","CIN",,5,82,68," "," ","N","N","Cincinnati Reds","League Park I",196473
+1892,"NL","PHI ","PHI",,4,87,66," "," ","N","N","Philadelphia Phillies","Philadelphia Baseball Grounds",193731
+1892,"NL","PIT ","PIT",,6,80,73," "," ","N","N","Pittsburgh Pirates","Exposition Park",177205
+1892,"NL","SLN ","STL",,11,56,94," "," ","N","N","St. Louis Browns","Sportsman's Park I",192442
+1893,"NL","CHN ","CHC",,9,56,71," "," ","N"," ","Chicago Colts","South Side Park I",223500
+1893,"NL","CIN ","CIN",,6,65,63," "," ","N"," ","Cincinnati Reds","League Park I",194250
+1893,"NL","PHI ","PHI",,4,72,57," "," ","N"," ","Philadelphia Phillies","Philadelphia Baseball Grounds",293019
+1893,"NL","PIT ","PIT",,2,81,48," "," ","N"," ","Pittsburgh Pirates","Exposition Park",184000
+1893,"NL","SLN ","STL",,10,57,75," "," ","N"," ","St. Louis Browns","Robison Field",195000
+1894,"NL","CHN ","CHC",,8,57,75," "," ","N"," ","Chicago Colts","West Side Park II",239000
+1894,"NL","CIN ","CIN",,10,55,75," "," ","N"," ","Cincinnati Reds","League Park II",158000
+1894,"NL","PHI ","PHI",,4,71,57," "," ","N"," ","Philadelphia Phillies","Philadelphia Baseball Grounds",352773
+1894,"NL","PIT ","PIT",,7,65,65," "," ","N"," ","Pittsburgh Pirates","Exposition Park",159000
+1894,"NL","SLN ","STL",,9,56,76," "," ","N"," ","St. Louis Browns","Robison Field",155000
+1895,"NL","CHN ","CHC",,4,72,58," "," ","N"," ","Chicago Colts","West Side Park II",382300
+1895,"NL","CIN ","CIN",,8,66,64," "," ","N"," ","Cincinnati Reds","League Park II",281000
+1895,"NL","PHI ","PHI",,3,78,53," "," ","N"," ","Philadelphia Phillies","Baker Bowl",474971
+1895,"NL","PIT ","PIT",,7,71,61," "," ","N"," ","Pittsburgh Pirates","Exposition Park",188000
+1895,"NL","SLN ","STL",,11,39,92," "," ","N"," ","St. Louis Browns","Robison Field",170000
+1896,"NL","CHN ","CHC",,5,71,57," "," ","N"," ","Chicago Colts","West Side Park II",317500
+1896,"NL","CIN ","CIN",,3,77,50," "," ","N"," ","Cincinnati Reds","League Park II",373000
+1896,"NL","PHI ","PHI",,8,62,68," "," ","N"," ","Philadelphia Phillies","Baker Bowl",357025
+1896,"NL","PIT ","PIT",,6,66,63," "," ","N"," ","Pittsburgh Pirates","Exposition Park",197000
+1896,"NL","SLN ","STL",,11,40,90," "," ","N"," ","St. Louis Browns","Robison Field",184000
+1897,"NL","CHN ","CHC",,9,59,73," "," ","N"," ","Chicago Colts","West Side Park II",327160
+1897,"NL","CIN ","CIN",,4,76,56," "," ","N"," ","Cincinnati Reds","League Park II",336800
+1897,"NL","PHI ","PHI",,10,55,77," "," ","N"," ","Philadelphia Phillies","Baker Bowl",290027
+1897,"NL","PIT ","PIT",,8,60,71," "," ","N"," ","Pittsburgh Pirates","Exposition Park",165950
+1897,"NL","SLN ","STL",,12,29,102," "," ","N"," ","St. Louis Browns","Robison Field",136400
+1898,"NL","CHN ","CHC",,4,85,65," "," ","N"," ","Chicago Orphans","West Side Park II",424352
+1898,"NL","CIN ","CIN",,3,92,60," "," ","N"," ","Cincinnati Reds","League Park II",336378
+1898,"NL","PHI ","PHI",,6,78,71," "," ","N"," ","Philadelphia Phillies","Baker Bowl",265414
+1898,"NL","PIT ","PIT",,8,72,76," "," ","N"," ","Pittsburgh Pirates","Exposition Park",150900
+1898,"NL","SLN ","STL",,12,39,111," "," ","N"," ","St. Louis Browns","Robison Field",151700
+1899,"NL","CHN ","CHC",,8,75,73," "," ","N"," ","Chicago Orphans","West Side Park II",352130
+1899,"NL","CIN ","CIN",,6,83,67," "," ","N"," ","Cincinnati Reds","League Park II",259536
+1899,"NL","PHI ","PHI",,3,94,58," "," ","N"," ","Philadelphia Phillies","Baker Bowl",388933
+1899,"NL","PIT ","PIT",,7,76,73," "," ","N"," ","Pittsburgh Pirates","Exposition Park",251834
+1899,"NL","SLN ","STL",,5,84,67," "," ","N"," ","St. Louis Perfectos","Robison Field",373909
+1900,"NL","CHN ","CHC",,6,65,75," "," ","N"," ","Chicago Orphans","West Side Park II",248577
+1900,"NL","CIN ","CIN",,7,62,77," "," ","N"," ","Cincinnati Reds","League Park II",170000
+1900,"NL","PHI ","PHI",,3,75,63," "," ","N"," ","Philadelphia Phillies","Baker Bowl",301913
+1900,"NL","PIT ","PIT",,2,79,60," "," ","N"," ","Pittsburgh Pirates","Exposition Park",264000
+1900,"NL","SLN ","STL",,5,65,75," "," ","N"," ","St. Louis Cardinals","Robison Field",270000
+1901,"AL","BOS ","BOS",,2,79,57," "," ","N"," ","Boston Americans","Huntington Avenue Grounds",289448
+1901,"AL","CHA ","CHW",,1,83,53," "," ","Y"," ","Chicago White Sox","South Side Park II",354350
+1901,"AL","CLE ","CLE",,7,54,82," "," ","N"," ","Cleveland Blues","League Park I",131380
+1901,"AL","DET ","DET",,3,74,61," "," ","N"," ","Detroit Tigers","Bennett Park",259430
+1901,"NL","CHN ","CHC",,6,53,86," "," ","N"," ","Chicago Orphans","West Side Park II",205071
+1901,"NL","CIN ","CIN",,8,52,87," "," ","N"," ","Cincinnati Reds","League Park II",205728
+1901,"NL","PHI ","PHI",,2,83,57," "," ","N"," ","Philadelphia Phillies","Baker Bowl",234937
+1901,"NL","PIT ","PIT",,1,90,49," "," ","Y"," ","Pittsburgh Pirates","Exposition Park",251955
+1901,"NL","SLN ","STL",,4,76,64," "," ","N"," ","St. Louis Cardinals","Robison Field",379988
+1902,"AL","BOS ","BOS",,3,77,60," "," ","N"," ","Boston Somersets","Huntington Avenue Grounds",348567
+1902,"AL","CHA ","CHW",,4,74,60," "," ","N"," ","Chicago White Sox","South Side Park II",337898
+1902,"AL","CLE ","CLE",,5,69,67," "," ","N"," ","Cleveland Bronchos","League Park I",275395
+1902,"AL","DET ","DET",,7,52,83," "," ","N"," ","Detroit Tigers","Bennett Park",189469
+1902,"NL","CHN ","CHC",,5,68,69," "," ","N"," ","Chicago Orphans","West Side Park II",263700
+1902,"NL","CIN ","CIN",,4,70,70," "," ","N"," ","Cincinnati Reds","Palace of the Fans",217300
+1902,"NL","PHI ","PHI",,7,56,81," "," ","N"," ","Philadelphia Phillies","Baker Bowl",112066
+1902,"NL","PIT ","PIT",,1,103,36," "," ","Y"," ","Pittsburgh Pirates","Exposition Park",243826
+1902,"NL","SLN ","STL",,6,56,78," "," ","N"," ","St. Louis Cardinals","Robison Field",226417
+1903,"AL","BOS ","BOS",,1,91,47," "," ","Y","Y","Boston Pilgrims","Huntington Avenue Grounds",379338
+1903,"AL","CHA ","CHW",,7,60,77," "," ","N","N","Chicago White Sox","South Side Park II",286183
+1903,"AL","CLE ","CLE",,3,77,63," "," ","N","N","Cleveland Naps","League Park I",311280
+1903,"AL","DET ","DET",,5,65,71," "," ","N","N","Detroit Tigers","Bennett Park",224523
+1903,"AL","NYA ","NYY",,4,72,62," "," ","N","N","New York Highlanders","Hilltop Park",211808
+1903,"NL","CHN ","CHC",,3,82,56," "," ","N","N","Chicago Cubs","West Side Park II",386205
+1903,"NL","CIN ","CIN",,4,74,65," "," ","N","N","Cincinnati Reds","Palace of the Fans",351680
+1903,"NL","PHI ","PHI",,7,49,86," "," ","N","N","Philadelphia Phillies","Baker Bowl",151729
+1903,"NL","PIT ","PIT",,1,91,49," "," ","Y","N","Pittsburgh Pirates","Exposition Park",326855
+1903,"NL","SLN ","STL",,8,43,94," "," ","N","N","St. Louis Cardinals","Robison Field",226538
+1904,"AL","BOS ","BOS",,1,95,59," "," ","Y"," ","Boston Pilgrims","Huntington Avenue Grounds",623295
+1904,"AL","CHA ","CHW",,3,89,65," "," ","N"," ","Chicago White Sox","South Side Park II",557123
+1904,"AL","CLE ","CLE",,4,86,65," "," ","N"," ","Cleveland Naps","League Park I",264749
+1904,"AL","DET ","DET",,7,62,90," "," ","N"," ","Detroit Tigers","Bennett Park",177796
+1904,"AL","NYA ","NYY",,2,92,59," "," ","N"," ","New York Highlanders","Hilltop Park",438919
+1904,"NL","CHN ","CHC",,2,93,60," "," ","N"," ","Chicago Cubs","West Side Park II",439100
+1904,"NL","CIN ","CIN",,3,88,65," "," ","N"," ","Cincinnati Reds","Palace of the Fans",391915
+1904,"NL","PHI ","PHI",,8,52,100," "," ","N"," ","Philadelphia Phillies","Baker Bowl",140771
+1904,"NL","PIT ","PIT",,4,87,66," "," ","N"," ","Pittsburgh Pirates","Exposition Park",340615
+1904,"NL","SLN ","STL",,5,75,79," "," ","N"," ","St. Louis Cardinals","Robison Field",386750
+1905,"AL","BOS ","BOS",,4,78,74," "," ","N","N","Boston Pilgrims","Huntington Avenue Grounds",468828
+1905,"AL","CHA ","CHW",,2,92,60," "," ","N","N","Chicago White Sox","South Side Park II",687419
+1905,"AL","CLE ","CLE",,5,76,78," "," ","N","N","Cleveland Naps","League Park I",316306
+1905,"AL","DET ","DET",,3,79,74," "," ","N","N","Detroit Tigers","Bennett Park",193384
+1905,"AL","NYA ","NYY",,6,71,78," "," ","N","N","New York Highlanders","Hilltop Park",309100
+1905,"NL","CHN ","CHC",,3,92,61," "," ","N","N","Chicago Cubs","West Side Park II",509900
+1905,"NL","CIN ","CIN",,5,79,74," "," ","N","N","Cincinnati Reds","Palace of the Fans",313927
+1905,"NL","PHI ","PHI",,4,83,69," "," ","N","N","Philadelphia Phillies","Baker Bowl",317932
+1905,"NL","PIT ","PIT",,2,96,57," "," ","N","N","Pittsburgh Pirates","Exposition Park",369124
+1905,"NL","SLN ","STL",,6,58,96," "," ","N","N","St. Louis Cardinals","Robison Field",292800
+1906,"AL","BOS ","BOS",,8,49,105," "," ","N","N","Boston Pilgrims","Huntington Avenue Grounds",410209
+1906,"AL","CHA ","CHW",,1,93,58," "," ","Y","Y","Chicago White Sox","South Side Park II",585202
+1906,"AL","CLE ","CLE",,3,89,64," "," ","N","N","Cleveland Naps","League Park I",325733
+1906,"AL","DET ","DET",,6,71,78," "," ","N","N","Detroit Tigers","Bennett Park",174043
+1906,"AL","NYA ","NYY",,2,90,61," "," ","N","N","New York Highlanders","Hilltop Park",434700
+1906,"NL","CHN ","CHC",,1,116,36," "," ","Y","N","Chicago Cubs","West Side Park II",654300
+1906,"NL","CIN ","CIN",,6,64,87," "," ","N","N","Cincinnati Reds","Palace of the Fans",330056
+1906,"NL","PHI ","PHI",,4,71,82," "," ","N","N","Philadelphia Phillies","Baker Bowl",294680
+1906,"NL","PIT ","PIT",,3,93,60," "," ","N","N","Pittsburgh Pirates","Exposition Park",394877
+1906,"NL","SLN ","STL",,7,52,98," "," ","N","N","St. Louis Cardinals","Robison Field",283770
+1907,"AL","BOS ","BOS",,7,59,90," "," ","N","N","Boston Red Sox","Huntington Avenue Grounds",436777
+1907,"AL","CHA ","CHW",,3,87,64," "," ","N","N","Chicago White Sox","South Side Park II",666307
+1907,"AL","CLE ","CLE",,4,85,67," "," ","N","N","Cleveland Naps","League Park I",382046
+1907,"AL","DET ","DET",,1,92,58," "," ","Y","N","Detroit Tigers","Bennett Park",297079
+1907,"AL","NYA ","NYY",,5,70,78," "," ","N","N","New York Highlanders","Hilltop Park",350020
+1907,"NL","CHN ","CHC",,1,107,45," "," ","Y","Y","Chicago Cubs","West Side Park II",422550
+1907,"NL","CIN ","CIN",,6,66,87," "," ","N","N","Cincinnati Reds","Palace of the Fans",317500
+1907,"NL","PHI ","PHI",,3,83,64," "," ","N","N","Philadelphia Phillies","Baker Bowl",341216
+1907,"NL","PIT ","PIT",,2,91,63," "," ","N","N","Pittsburgh Pirates","Exposition Park",319506
+1907,"NL","SLN ","STL",,8,52,101," "," ","N","N","St. Louis Cardinals","Robison Field",185377
+1908,"AL","BOS ","BOS",,5,75,79," "," ","N","N","Boston Red Sox","Huntington Avenue Grounds",473048
+1908,"AL","CHA ","CHW",,3,88,64," "," ","N","N","Chicago White Sox","South Side Park II",636096
+1908,"AL","CLE ","CLE",,2,90,64," "," ","N","N","Cleveland Naps","League Park I",422262
+1908,"AL","DET ","DET",,1,90,63," "," ","Y","N","Detroit Tigers","Bennett Park",436199
+1908,"AL","NYA ","NYY",,8,51,103," "," ","N","N","New York Highlanders","Hilltop Park",305500
+1908,"NL","CHN ","CHC",,1,99,55," "," ","Y","Y","Chicago Cubs","West Side Park II",665325
+1908,"NL","CIN ","CIN",,5,73,81," "," ","N","N","Cincinnati Reds","Palace of the Fans",399200
+1908,"NL","PHI ","PHI",,4,83,71," "," ","N","N","Philadelphia Phillies","Baker Bowl",420660
+1908,"NL","PIT ","PIT",,2,98,56," "," ","N","N","Pittsburgh Pirates","Exposition Park",382444
+1908,"NL","SLN ","STL",,8,49,105," "," ","N","N","St. Louis Cardinals","Robison Field",205129
+1909,"AL","BOS ","BOS",,3,88,63," "," ","N","N","Boston Red Sox","Huntington Avenue Grounds",668965
+1909,"AL","CHA ","CHW",,4,78,74," "," ","N","N","Chicago White Sox","South Side Park II",478400
+1909,"AL","CLE ","CLE",,6,71,82," "," ","N","N","Cleveland Naps","League Park I",354627
+1909,"AL","DET ","DET",,1,98,54," "," ","Y","N","Detroit Tigers","Bennett Park",490490
+1909,"AL","NYA ","NYY",,5,74,77," "," ","N","N","New York Highlanders","Hilltop Park",501000
+1909,"NL","CHN ","CHC",,2,104,49," "," ","N","N","Chicago Cubs","West Side Park II",633480
+1909,"NL","CIN ","CIN",,4,77,76," "," ","N","N","Cincinnati Reds","Palace of the Fans",424643
+1909,"NL","PHI ","PHI",,5,74,79," "," ","N","N","Philadelphia Phillies","Baker Bowl",303177
+1909,"NL","PIT ","PIT",,1,110,42," "," ","Y","Y","Pittsburgh Pirates","Exposition Park/Forbes Field",534950
+1909,"NL","SLN ","STL",,7,54,98," "," ","N","N","St. Louis Cardinals","Robison Field",299982
+1910,"AL","BOS ","BOS",,4,81,72," "," ","N","N","Boston Red Sox","Huntington Avenue Grounds",584619
+1910,"AL","CHA ","CHW",,6,68,85," "," ","N","N","Chicago White Sox","South Side Park II/Comiskey Park",552084
+1910,"AL","CLE ","CLE",,5,71,81," "," ","N","N","Cleveland Naps","League Park II",293456
+1910,"AL","DET ","DET",,3,86,68," "," ","N","N","Detroit Tigers","Bennett Park",391288
+1910,"AL","NYA ","NYY",,2,88,63," "," ","N","N","New York Highlanders","Hilltop Park",355857
+1910,"NL","CHN ","CHC",,1,104,50," "," ","Y","N","Chicago Cubs","West Side Park II",526152
+1910,"NL","CIN ","CIN",,5,75,79," "," ","N","N","Cincinnati Reds","Palace of the Fans",380622
+1910,"NL","PHI ","PHI",,4,78,75," "," ","N","N","Philadelphia Phillies","Baker Bowl",296597
+1910,"NL","PIT ","PIT",,3,86,67," "," ","N","N","Pittsburgh Pirates","Forbes Field",436586
+1910,"NL","SLN ","STL",,7,63,90," "," ","N","N","St. Louis Cardinals","Robison Field",355668
+1911,"AL","BOS ","BOS",,5,78,75," "," ","N","N","Boston Red Sox","Huntington Avenue Grounds",503961
+1911,"AL","CHA ","CHW",,4,77,74," "," ","N","N","Chicago White Sox","Comiskey Park",583208
+1911,"AL","CLE ","CLE",,3,80,73," "," ","N","N","Cleveland Naps","League Park II",406296
+1911,"AL","DET ","DET",,2,89,65," "," ","N","N","Detroit Tigers","Bennett Park",484988
+1911,"AL","NYA ","NYY",,6,76,76," "," ","N","N","New York Highlanders","Hilltop Park",302444
+1911,"NL","CHN ","CHC",,2,92,62," "," ","N","N","Chicago Cubs","West Side Park II",576000
+1911,"NL","CIN ","CIN",,6,70,83," "," ","N","N","Cincinnati Reds","Palace of the Fans",300000
+1911,"NL","PHI ","PHI",,4,79,73," "," ","N","N","Philadelphia Phillies","Baker Bowl",416000
+1911,"NL","PIT ","PIT",,3,85,69," "," ","N","N","Pittsburgh Pirates","Forbes Field",432000
+1911,"NL","SLN ","STL",,5,75,74," "," ","N","N","St. Louis Cardinals","Robison Field",447768
+1912,"AL","BOS ","BOS",,1,105,47," "," ","Y","Y","Boston Red Sox","Fenway Park I",597096
+1912,"AL","CHA ","CHW",,4,78,76," "," ","N","N","Chicago White Sox","Comiskey Park",602241
+1912,"AL","CLE ","CLE",,5,75,78," "," ","N","N","Cleveland Naps","League Park II",336844
+1912,"AL","DET ","DET",,6,69,84," "," ","N","N","Detroit Tigers","Navin Field",402870
+1912,"AL","NYA ","NYY",,8,50,102," "," ","N","N","New York Highlanders","Hilltop Park",242194
+1912,"NL","CHN ","CHC",,3,91,59," "," ","N","N","Chicago Cubs","West Side Park II",514000
+1912,"NL","CIN ","CIN",,4,75,78," "," ","N","N","Cincinnati Reds","Crosley Field",344000
+1912,"NL","PHI ","PHI",,5,73,79," "," ","N","N","Philadelphia Phillies","Baker Bowl",250000
+1912,"NL","PIT ","PIT",,2,93,58," "," ","N","N","Pittsburgh Pirates","Forbes Field",384000
+1912,"NL","SLN ","STL",,6,63,90," "," ","N","N","St. Louis Cardinals","Robison Field",241759
+1913,"AL","BOS ","BOS",,4,79,71," "," ","N","N","Boston Red Sox","Fenway Park I",437194
+1913,"AL","CHA ","CHW",,5,78,74," "," ","N","N","Chicago White Sox","Comiskey Park",644501
+1913,"AL","CLE ","CLE",,3,86,66," "," ","N","N","Cleveland Naps","League Park II",541000
+1913,"AL","DET ","DET",,6,66,87," "," ","N","N","Detroit Tigers","Navin Field",398502
+1913,"AL","NYA ","NYY",,7,57,94," "," ","N","N","New York Yankees","Polo Grounds IV",357551
+1913,"NL","CHN ","CHC",,3,88,65," "," ","N","N","Chicago Cubs","West Side Park II",419000
+1913,"NL","CIN ","CIN",,7,64,89," "," ","N","N","Cincinnati Reds","Crosley Field",258000
+1913,"NL","PHI ","PHI",,2,88,63," "," ","N","N","Philadelphia Phillies","Baker Bowl",470000
+1913,"NL","PIT ","PIT",,4,78,71," "," ","N","N","Pittsburgh Pirates","Forbes Field",296000
+1913,"NL","SLN ","STL",,8,51,99," "," ","N","N","St. Louis Cardinals","Robison Field",203531
+1914,"AL","BOS ","BOS",,2,91,62," "," ","N","N","Boston Red Sox","Fenway Park I",481359
+1914,"AL","CHA ","CHW",,7,70,84," "," ","N","N","Chicago White Sox","Comiskey Park",469290
+1914,"AL","CLE ","CLE",,8,51,102," "," ","N","N","Cleveland Naps","League Park II",185997
+1914,"AL","DET ","DET",,4,80,73," "," ","N","N","Detroit Tigers","Navin Field",416225
+1914,"AL","NYA ","NYY",,6,70,84," "," ","N","N","New York Yankees","Polo Grounds IV",359477
+1914,"NL","CHN ","CHC",,4,78,76," "," ","N","N","Chicago Cubs","West Side Park II",202516
+1914,"NL","CIN ","CIN",,8,60,94," "," ","N","N","Cincinnati Reds","Crosley Field",100791
+1914,"NL","PHI ","PHI",,6,74,80," "," ","N","N","Philadelphia Phillies","Baker Bowl",138474
+1914,"NL","PIT ","PIT",,7,69,85," "," ","N","N","Pittsburgh Pirates","Forbes Field",139620
+1914,"NL","SLN ","STL",,3,81,72," "," ","N","N","St. Louis Cardinals","Robison Field",256099
+1915,"AL","BOS ","BOS",,1,101,50," "," ","Y","Y","Boston Red Sox","Fenway Park I",539885
+1915,"AL","CHA ","CHW",,3,93,61," "," ","N","N","Chicago White Sox","Comiskey Park",539461
+1915,"AL","CLE ","CLE",,7,57,95," "," ","N","N","Cleveland Indians","League Park II",159285
+1915,"AL","DET ","DET",,2,100,54," "," ","N","N","Detroit Tigers","Navin Field",476105
+1915,"AL","NYA ","NYY",,5,69,83," "," ","N","N","New York Yankees","Polo Grounds IV",256035
+1915,"NL","CHN ","CHC",,4,73,80," "," ","N","N","Chicago Cubs","West Side Park II",217058
+1915,"NL","CIN ","CIN",,7,71,83," "," ","N","N","Cincinnati Reds","Crosley Field",218878
+1915,"NL","PHI ","PHI",,1,90,62," "," ","Y","N","Philadelphia Phillies","Baker Bowl",449898
+1915,"NL","PIT ","PIT",,5,73,81," "," ","N","N","Pittsburgh Pirates","Forbes Field",225743
+1915,"NL","SLN ","STL",,6,72,81," "," ","N","N","St. Louis Cardinals","Robison Field",252666
+1916,"AL","BOS ","BOS",,1,91,63," "," ","Y","Y","Boston Red Sox","Fenway Park I",496397
+1916,"AL","CHA ","CHW",,2,89,65," "," ","N","N","Chicago White Sox","Comiskey Park",679923
+1916,"AL","CLE ","CLE",,6,77,77," "," ","N","N","Cleveland Indians","League Park II",492106
+1916,"AL","DET ","DET",,3,87,67," "," ","N","N","Detroit Tigers","Navin Field",616772
+1916,"AL","NYA ","NYY",,4,80,74," "," ","N","N","New York Yankees","Polo Grounds IV",469211
+1916,"NL","CHN ","CHC",,5,67,86," "," ","N","N","Chicago Cubs","Wrigley Field",453685
+1916,"NL","CIN ","CIN",,8,60,93," "," ","N","N","Cincinnati Reds","Crosley Field",255846
+1916,"NL","PHI ","PHI",,2,91,62," "," ","N","N","Philadelphia Phillies","Baker Bowl",515365
+1916,"NL","PIT ","PIT",,6,65,89," "," ","N","N","Pittsburgh Pirates","Forbes Field",289132
+1916,"NL","SLN ","STL",,7,60,93," "," ","N","N","St. Louis Cardinals","Robison Field",224308
+1917,"AL","BOS ","BOS",,2,90,62," "," ","N","N","Boston Red Sox","Fenway Park I",387856
+1917,"AL","CHA ","CHW",,1,100,54," "," ","Y","Y","Chicago White Sox","Comiskey Park",684521
+1917,"AL","CLE ","CLE",,3,88,66," "," ","N","N","Cleveland Indians","League Park II",477298
+1917,"AL","DET ","DET",,4,78,75," "," ","N","N","Detroit Tigers","Navin Field",457289
+1917,"AL","NYA ","NYY",,6,71,82," "," ","N","N","New York Yankees","Polo Grounds IV",330294
+1917,"NL","CHN ","CHC",,5,74,80," "," ","N","N","Chicago Cubs","Wrigley Field",360218
+1917,"NL","CIN ","CIN",,4,78,76," "," ","N","N","Cincinnati Reds","Crosley Field",269056
+1917,"NL","PHI ","PHI",,2,87,65," "," ","N","N","Philadelphia Phillies","Baker Bowl",354428
+1917,"NL","PIT ","PIT",,8,51,103," "," ","N","N","Pittsburgh Pirates","Forbes Field",192807
+1917,"NL","SLN ","STL",,3,82,70," "," ","N","N","St. Louis Cardinals","Robison Field",288491
+1918,"AL","BOS ","BOS",,1,75,51," "," ","Y","Y","Boston Red Sox","Fenway Park I",249513
+1918,"AL","CHA ","CHW",,6,57,67," "," ","N","N","Chicago White Sox","Comiskey Park",195081
+1918,"AL","CLE ","CLE",,2,73,54," "," ","N","N","Cleveland Indians","League Park II",295515
+1918,"AL","DET ","DET",,7,55,71," "," ","N","N","Detroit Tigers","Navin Field",203719
+1918,"AL","NYA ","NYY",,4,60,63," "," ","N","N","New York Yankees","Polo Grounds IV",282047
+1918,"NL","CHN ","CHC",,1,84,45," "," ","Y","N","Chicago Cubs","Wrigley Field",337256
+1918,"NL","CIN ","CIN",,3,68,60," "," ","N","N","Cincinnati Reds","Crosley Field",163009
+1918,"NL","PHI ","PHI",,6,55,68," "," ","N","N","Philadelphia Phillies","Baker Bowl",122266
+1918,"NL","PIT ","PIT",,4,65,60," "," ","N","N","Pittsburgh Pirates","Forbes Field",213610
+1918,"NL","SLN ","STL",,8,51,78," "," ","N","N","St. Louis Cardinals","Robison Field",110599
+1919,"AL","BOS ","BOS",,6,66,71," "," ","N","N","Boston Red Sox","Fenway Park I",417291
+1919,"AL","CHA ","CHW",,1,88,52," "," ","Y","N","Chicago White Sox","Comiskey Park",627186
+1919,"AL","CLE ","CLE",,2,84,55," "," ","N","N","Cleveland Indians","League Park II",538135
+1919,"AL","DET ","DET",,4,80,60," "," ","N","N","Detroit Tigers","Navin Field",643805
+1919,"AL","NYA ","NYY",,3,80,59," "," ","N","N","New York Yankees","Polo Grounds IV",619164
+1919,"NL","CHN ","CHC",,3,75,65," "," ","N","N","Chicago Cubs","Wrigley Field",424430
+1919,"NL","CIN ","CIN",,1,96,44," "," ","Y","Y","Cincinnati Reds","Crosley Field",532501
+1919,"NL","PHI ","PHI",,8,47,90," "," ","N","N","Philadelphia Phillies","Baker Bowl",240424
+1919,"NL","PIT ","PIT",,4,71,68," "," ","N","N","Pittsburgh Pirates","Forbes Field",276810
+1919,"NL","SLN ","STL",,7,54,83," "," ","N","N","St. Louis Cardinals","Robison Field",167059
+1920,"AL","BOS ","BOS",,5,72,81," "," ","N","N","Boston Red Sox","Fenway Park I",402445
+1920,"AL","CHA ","CHW",,2,96,58," "," ","N","N","Chicago White Sox","Comiskey Park",833492
+1920,"AL","CLE ","CLE",,1,98,56," "," ","Y","Y","Cleveland Indians","League Park II",912832
+1920,"AL","DET ","DET",,7,61,93," "," ","N","N","Detroit Tigers","Navin Field",579650
+1920,"AL","NYA ","NYY",,3,95,59," "," ","N","N","New York Yankees","Polo Grounds IV",1289422
+1920,"NL","CHN ","CHC",,6,75,79," "," ","N","N","Chicago Cubs","Wrigley Field",480783
+1920,"NL","CIN ","CIN",,3,82,71," "," ","N","N","Cincinnati Reds","Crosley Field",568107
+1920,"NL","PHI ","PHI",,8,62,91," "," ","N","N","Philadelphia Phillies","Baker Bowl",330998
+1920,"NL","PIT ","PIT",,4,79,75," "," ","N","N","Pittsburgh Pirates","Forbes Field",429037
+1920,"NL","SLN ","STL",,5,75,79," "," ","N","N","St. Louis Cardinals","Robison Field/Sportsman's Park IV",326836
+1921,"AL","BOS ","BOS",,5,75,79," "," ","N","N","Boston Red Sox","Fenway Park I",279273
+1921,"AL","CHA ","CHW",,7,62,92," "," ","N","N","Chicago White Sox","Comiskey Park",543650
+1921,"AL","CLE ","CLE",,2,94,60," "," ","N","N","Cleveland Indians","League Park II",748705
+1921,"AL","DET ","DET",,6,71,82," "," ","N","N","Detroit Tigers","Navin Field",661527
+1921,"AL","NYA ","NYY",,1,98,55," "," ","Y","N","New York Yankees","Polo Grounds IV",1230696
+1921,"NL","CHN ","CHC",,7,64,89," "," ","N","N","Chicago Cubs","Wrigley Field",410107
+1921,"NL","CIN ","CIN",,6,70,83," "," ","N","N","Cincinnati Reds","Crosley Field",311227
+1921,"NL","PHI ","PHI",,8,51,103," "," ","N","N","Philadelphia Phillies","Baker Bowl",273961
+1921,"NL","PIT ","PIT",,2,90,63," "," ","N","N","Pittsburgh Pirates","Forbes Field",701567
+1921,"NL","SLN ","STL",,3,87,66," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",384773
+1922,"AL","BOS ","BOS",,8,61,93," "," ","N","N","Boston Red Sox","Fenway Park I",259184
+1922,"AL","CHA ","CHW",,5,77,77," "," ","N","N","Chicago White Sox","Comiskey Park",602860
+1922,"AL","CLE ","CLE",,4,78,76," "," ","N","N","Cleveland Indians","League Park II",528145
+1922,"AL","DET ","DET",,3,79,75," "," ","N","N","Detroit Tigers","Navin Field",861206
+1922,"AL","NYA ","NYY",,1,94,60," "," ","Y","N","New York Yankees","Polo Grounds IV",1026134
+1922,"NL","CHN ","CHC",,5,80,74," "," ","N","N","Chicago Cubs","Wrigley Field",542283
+1922,"NL","CIN ","CIN",,2,86,68," "," ","N","N","Cincinnati Reds","Crosley Field",493754
+1922,"NL","PHI ","PHI",,7,57,96," "," ","N","N","Philadelphia Phillies","Baker Bowl",232471
+1922,"NL","PIT ","PIT",,4,85,69," "," ","N","N","Pittsburgh Pirates","Forbes Field",523675
+1922,"NL","SLN ","STL",,3,85,69," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",536998
+1923,"AL","BOS ","BOS",,8,61,91," "," ","N","N","Boston Red Sox","Fenway Park I",229688
+1923,"AL","CHA ","CHW",,7,69,85," "," ","N","N","Chicago White Sox","Comiskey Park",573778
+1923,"AL","CLE ","CLE",,3,82,71," "," ","N","N","Cleveland Indians","League Park II",558856
+1923,"AL","DET ","DET",,2,83,71," "," ","N","N","Detroit Tigers","Navin Field",911377
+1923,"AL","NYA ","NYY",,1,98,54," "," ","Y","Y","New York Yankees","Yankee Stadium I",1007066
+1923,"NL","CHN ","CHC",,4,83,71," "," ","N","N","Chicago Cubs","Wrigley Field",703705
+1923,"NL","CIN ","CIN",,2,91,63," "," ","N","N","Cincinnati Reds","Crosley Field",575063
+1923,"NL","PHI ","PHI",,8,50,104," "," ","N","N","Philadelphia Phillies","Baker Bowl",228168
+1923,"NL","PIT ","PIT",,3,87,67," "," ","N","N","Pittsburgh Pirates","Forbes Field",611082
+1923,"NL","SLN ","STL",,5,79,74," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",338551
+1924,"AL","BOS ","BOS",,7,67,87," "," ","N","N","Boston Red Sox","Fenway Park I",448556
+1924,"AL","CHA ","CHW",,8,66,87," "," ","N","N","Chicago White Sox","Comiskey Park",606658
+1924,"AL","CLE ","CLE",,6,67,86," "," ","N","N","Cleveland Indians","League Park II",481905
+1924,"AL","DET ","DET",,3,86,68," "," ","N","N","Detroit Tigers","Navin Field",1015136
+1924,"AL","NYA ","NYY",,2,89,63," "," ","N","N","New York Yankees","Yankee Stadium I",1053533
+1924,"NL","CHN ","CHC",,5,81,72," "," ","N","N","Chicago Cubs","Wrigley Field",716922
+1924,"NL","CIN ","CIN",,4,83,70," "," ","N","N","Cincinnati Reds","Crosley Field",473707
+1924,"NL","PHI ","PHI",,7,55,96," "," ","N","N","Philadelphia Phillies","Baker Bowl",299818
+1924,"NL","PIT ","PIT",,3,90,63," "," ","N","N","Pittsburgh Pirates","Forbes Field",736883
+1924,"NL","SLN ","STL",,6,65,89," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",272885
+1925,"AL","BOS ","BOS",,8,47,105," "," ","N","N","Boston Red Sox","Fenway Park I",267782
+1925,"AL","CHA ","CHW",,5,79,75," "," ","N","N","Chicago White Sox","Comiskey Park",832231
+1925,"AL","CLE ","CLE",,6,70,84," "," ","N","N","Cleveland Indians","League Park II",419005
+1925,"AL","DET ","DET",,4,81,73," "," ","N","N","Detroit Tigers","Navin Field",820766
+1925,"AL","NYA ","NYY",,7,69,85," "," ","N","N","New York Yankees","Yankee Stadium I",697267
+1925,"NL","CHN ","CHC",,8,68,86," "," ","N","N","Chicago Cubs","Wrigley Field",622610
+1925,"NL","CIN ","CIN",,3,80,73," "," ","N","N","Cincinnati Reds","Crosley Field",464920
+1925,"NL","PHI ","PHI",,6,68,85," "," ","N","N","Philadelphia Phillies","Baker Bowl",304905
+1925,"NL","PIT ","PIT",,1,95,58," "," ","Y","Y","Pittsburgh Pirates","Forbes Field",804354
+1925,"NL","SLN ","STL",,4,77,76," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",404959
+1926,"AL","BOS ","BOS",,8,46,107," "," ","N","N","Boston Red Sox","Fenway Park I",285155
+1926,"AL","CHA ","CHW",,5,81,72," "," ","N","N","Chicago White Sox","Comiskey Park",710339
+1926,"AL","CLE ","CLE",,2,88,66," "," ","N","N","Cleveland Indians","League Park II",627426
+1926,"AL","DET ","DET",,6,79,75," "," ","N","N","Detroit Tigers","Navin Field",711914
+1926,"AL","NYA ","NYY",,1,91,63," "," ","Y","N","New York Yankees","Yankee Stadium I",1027675
+1926,"NL","CHN ","CHC",,4,82,72," "," ","N","N","Chicago Cubs","Wrigley Field",885063
+1926,"NL","CIN ","CIN",,2,87,67," "," ","N","N","Cincinnati Reds","Crosley Field",672987
+1926,"NL","PHI ","PHI",,8,58,93," "," ","N","N","Philadelphia Phillies","Baker Bowl",240600
+1926,"NL","PIT ","PIT",,3,84,69," "," ","N","N","Pittsburgh Pirates","Forbes Field",798542
+1926,"NL","SLN ","STL",,1,89,65," "," ","Y","Y","St. Louis Cardinals","Sportsman's Park IV",668428
+1927,"AL","BOS ","BOS",,8,51,103," "," ","N","N","Boston Red Sox","Fenway Park I",305275
+1927,"AL","CHA ","CHW",,5,70,83," "," ","N","N","Chicago White Sox","Comiskey Park",614423
+1927,"AL","CLE ","CLE",,6,66,87," "," ","N","N","Cleveland Indians","League Park II",373138
+1927,"AL","DET ","DET",,4,82,71," "," ","N","N","Detroit Tigers","Navin Field",773716
+1927,"AL","NYA ","NYY",,1,110,44," "," ","Y","Y","New York Yankees","Yankee Stadium I",1164015
+1927,"NL","CHN ","CHC",,4,85,68," "," ","N","N","Chicago Cubs","Wrigley Field",1159168
+1927,"NL","CIN ","CIN",,5,75,78," "," ","N","N","Cincinnati Reds","Crosley Field",442164
+1927,"NL","PHI ","PHI",,8,51,103," "," ","N","N","Philadelphia Phillies","Baker Bowl",305420
+1927,"NL","PIT ","PIT",,1,94,60," "," ","Y","N","Pittsburgh Pirates","Forbes Field",869720
+1927,"NL","SLN ","STL",,2,92,61," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",749340
+1928,"AL","BOS ","BOS",,8,57,96," "," ","N","N","Boston Red Sox","Fenway Park I",396920
+1928,"AL","CHA ","CHW",,5,72,82," "," ","N","N","Chicago White Sox","Comiskey Park",494152
+1928,"AL","CLE ","CLE",,7,62,92," "," ","N","N","Cleveland Indians","League Park II",375907
+1928,"AL","DET ","DET",,6,68,86," "," ","N","N","Detroit Tigers","Navin Field",474323
+1928,"AL","NYA ","NYY",,1,101,53," "," ","Y","Y","New York Yankees","Yankee Stadium I",1072132
+1928,"NL","CHN ","CHC",,3,91,63," "," ","N","N","Chicago Cubs","Wrigley Field",1143740
+1928,"NL","CIN ","CIN",,5,78,74," "," ","N","N","Cincinnati Reds","Crosley Field",490490
+1928,"NL","PHI ","PHI",,8,43,109," "," ","N","N","Philadelphia Phillies","Baker Bowl",182168
+1928,"NL","PIT ","PIT",,4,85,67," "," ","N","N","Pittsburgh Pirates","Forbes Field",495070
+1928,"NL","SLN ","STL",,1,95,59," "," ","Y","N","St. Louis Cardinals","Sportsman's Park IV",761574
+1929,"AL","BOS ","BOS",,8,58,96," "," ","N","N","Boston Red Sox","Fenway Park I",394620
+1929,"AL","CHA ","CHW",,7,59,93," "," ","N","N","Chicago White Sox","Comiskey Park",426795
+1929,"AL","CLE ","CLE",,3,81,71," "," ","N","N","Cleveland Indians","League Park II",536210
+1929,"AL","DET ","DET",,6,70,84," "," ","N","N","Detroit Tigers","Navin Field",869318
+1929,"AL","NYA ","NYY",,2,88,66," "," ","N","N","New York Yankees","Yankee Stadium I",960148
+1929,"NL","CHN ","CHC",,1,98,54," "," ","Y","N","Chicago Cubs","Wrigley Field",1485166
+1929,"NL","CIN ","CIN",,7,66,88," "," ","N","N","Cincinnati Reds","Crosley Field",295040
+1929,"NL","PHI ","PHI",,5,71,82," "," ","N","N","Philadelphia Phillies","Baker Bowl",281200
+1929,"NL","PIT ","PIT",,2,88,65," "," ","N","N","Pittsburgh Pirates","Forbes Field",491377
+1929,"NL","SLN ","STL",,4,78,74," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",399887
+1930,"AL","BOS ","BOS",,8,52,102," "," ","N","N","Boston Red Sox","Fenway Park I",444045
+1930,"AL","CHA ","CHW",,7,62,92," "," ","N","N","Chicago White Sox","Comiskey Park",406123
+1930,"AL","CLE ","CLE",,4,81,73," "," ","N","N","Cleveland Indians","League Park II",528657
+1930,"AL","DET ","DET",,5,75,79," "," ","N","N","Detroit Tigers","Navin Field",649450
+1930,"AL","NYA ","NYY",,3,86,68," "," ","N","N","New York Yankees","Yankee Stadium I",1169230
+1930,"NL","CHN ","CHC",,2,90,64," "," ","N","N","Chicago Cubs","Wrigley Field",1463624
+1930,"NL","CIN ","CIN",,7,59,95," "," ","N","N","Cincinnati Reds","Crosley Field",386727
+1930,"NL","PHI ","PHI",,8,52,102," "," ","N","N","Philadelphia Phillies","Baker Bowl",299007
+1930,"NL","PIT ","PIT",,5,80,74," "," ","N","N","Pittsburgh Pirates","Forbes Field",357795
+1930,"NL","SLN ","STL",,1,92,62," "," ","Y","N","St. Louis Cardinals","Sportsman's Park IV",508501
+1931,"AL","BOS ","BOS",,6,62,90," "," ","N","N","Boston Red Sox","Fenway Park I",350975
+1931,"AL","CHA ","CHW",,8,56,97," "," ","N","N","Chicago White Sox","Comiskey Park",403550
+1931,"AL","CLE ","CLE",,4,78,76," "," ","N","N","Cleveland Indians","League Park II",483027
+1931,"AL","DET ","DET",,7,61,93," "," ","N","N","Detroit Tigers","Navin Field",434056
+1931,"AL","NYA ","NYY",,2,94,59," "," ","N","N","New York Yankees","Yankee Stadium I",912437
+1931,"NL","CHN ","CHC",,3,84,70," "," ","N","N","Chicago Cubs","Wrigley Field",1086422
+1931,"NL","CIN ","CIN",,8,58,96," "," ","N","N","Cincinnati Reds","Crosley Field",263316
+1931,"NL","PHI ","PHI",,6,66,88," "," ","N","N","Philadelphia Phillies","Baker Bowl",284849
+1931,"NL","PIT ","PIT",,5,75,79," "," ","N","N","Pittsburgh Pirates","Forbes Field",260392
+1931,"NL","SLN ","STL",,1,101,53," "," ","Y","Y","St. Louis Cardinals","Sportsman's Park IV",608535
+1932,"AL","BOS ","BOS",,8,43,111," "," ","N","N","Boston Red Sox","Fenway Park I",182150
+1932,"AL","CHA ","CHW",,7,49,102," "," ","N","N","Chicago White Sox","Comiskey Park",233198
+1932,"AL","CLE ","CLE",,4,87,65," "," ","N","N","Cleveland Indians","League Park II/Cleveland Stadium",468953
+1932,"AL","DET ","DET",,5,76,75," "," ","N","N","Detroit Tigers","Navin Field",397157
+1932,"AL","NYA ","NYY",,1,107,47," "," ","Y","Y","New York Yankees","Yankee Stadium I",962320
+1932,"NL","CHN ","CHC",,1,90,64," "," ","Y","N","Chicago Cubs","Wrigley Field",974688
+1932,"NL","CIN ","CIN",,8,60,94," "," ","N","N","Cincinnati Reds","Crosley Field",356950
+1932,"NL","PHI ","PHI",,4,78,76," "," ","N","N","Philadelphia Phillies","Baker Bowl",268914
+1932,"NL","PIT ","PIT",,2,86,68," "," ","N","N","Pittsburgh Pirates","Forbes Field",287262
+1932,"NL","SLN ","STL",,6,72,82," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",279219
+1933,"AL","BOS ","BOS",,7,63,86," "," ","N","N","Boston Red Sox","Fenway Park I",268715
+1933,"AL","CHA ","CHW",,6,67,83," "," ","N","N","Chicago White Sox","Comiskey Park",397789
+1933,"AL","CLE ","CLE",,4,75,76," "," ","N","N","Cleveland Indians","League Park II/Cleveland Stadium",387936
+1933,"AL","DET ","DET",,5,75,79," "," ","N","N","Detroit Tigers","Navin Field",320972
+1933,"AL","NYA ","NYY",,2,91,59," "," ","N","N","New York Yankees","Yankee Stadium I",728014
+1933,"NL","CHN ","CHC",,3,86,68," "," ","N","N","Chicago Cubs","Wrigley Field",594112
+1933,"NL","CIN ","CIN",,8,58,94," "," ","N","N","Cincinnati Reds","Crosley Field",218281
+1933,"NL","PHI ","PHI",,7,60,92," "," ","N","N","Philadelphia Phillies","Baker Bowl",156421
+1933,"NL","PIT ","PIT",,2,87,67," "," ","N","N","Pittsburgh Pirates","Forbes Field",288747
+1933,"NL","SLN ","STL",,5,82,71," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",256171
+1934,"AL","BOS ","BOS",,4,76,76," "," ","N","N","Boston Red Sox","Fenway Park II",610640
+1934,"AL","CHA ","CHW",,8,53,99," "," ","N","N","Chicago White Sox","Comiskey Park",236559
+1934,"AL","CLE ","CLE",,3,85,69," "," ","N","N","Cleveland Indians","League Park II/Cleveland Stadium",391338
+1934,"AL","DET ","DET",,1,101,53," "," ","Y","N","Detroit Tigers","Navin Field",919161
+1934,"AL","NYA ","NYY",,2,94,60," "," ","N","N","New York Yankees","Yankee Stadium I",854682
+1934,"NL","CHN ","CHC",,3,86,65," "," ","N","N","Chicago Cubs","Wrigley Field",707525
+1934,"NL","CIN ","CIN",,8,52,99," "," ","N","N","Cincinnati Reds","Crosley Field",206773
+1934,"NL","PHI ","PHI",,7,56,93," "," ","N","N","Philadelphia Phillies","Baker Bowl",169885
+1934,"NL","PIT ","PIT",,5,74,76," "," ","N","N","Pittsburgh Pirates","Forbes Field",322622
+1934,"NL","SLN ","STL",,1,95,58," "," ","Y","Y","St. Louis Cardinals","Sportsman's Park IV",325056
+1935,"AL","BOS ","BOS",,4,78,75," "," ","N","N","Boston Red Sox","Fenway Park II",558568
+1935,"AL","CHA ","CHW",,5,74,78," "," ","N","N","Chicago White Sox","Comiskey Park",470281
+1935,"AL","CLE ","CLE",,3,82,71," "," ","N","N","Cleveland Indians","League Park II/Cleveland Stadium",397615
+1935,"AL","DET ","DET",,1,93,58," "," ","Y","Y","Detroit Tigers","Navin Field",1034929
+1935,"AL","NYA ","NYY",,2,89,60," "," ","N","N","New York Yankees","Yankee Stadium I",657508
+1935,"NL","CHN ","CHC",,1,100,54," "," ","Y","N","Chicago Cubs","Wrigley Field",692604
+1935,"NL","CIN ","CIN",,6,68,85," "," ","N","N","Cincinnati Reds","Crosley Field",448247
+1935,"NL","PHI ","PHI",,7,64,89," "," ","N","N","Philadelphia Phillies","Baker Bowl",205470
+1935,"NL","PIT ","PIT",,4,86,67," "," ","N","N","Pittsburgh Pirates","Forbes Field",352885
+1935,"NL","SLN ","STL",,2,96,58," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",506084
+1936,"AL","BOS ","BOS",,6,74,80," "," ","N","N","Boston Red Sox","Fenway Park II",626895
+1936,"AL","CHA ","CHW",,3,81,70," "," ","N","N","Chicago White Sox","Comiskey Park",440810
+1936,"AL","CLE ","CLE",,5,80,74," "," ","N","N","Cleveland Indians","League Park II/Cleveland Stadium",500391
+1936,"AL","DET ","DET",,2,83,71," "," ","N","N","Detroit Tigers","Navin Field",875948
+1936,"AL","NYA ","NYY",,1,102,51," "," ","Y","Y","New York Yankees","Yankee Stadium I",976913
+1936,"NL","CHN ","CHC",,3,87,67," "," ","N","N","Chicago Cubs","Wrigley Field",699370
+1936,"NL","CIN ","CIN",,5,74,80," "," ","N","N","Cincinnati Reds","Crosley Field",466345
+1936,"NL","PHI ","PHI",,8,54,100," "," ","N","N","Philadelphia Phillies","Baker Bowl",249219
+1936,"NL","PIT ","PIT",,4,84,70," "," ","N","N","Pittsburgh Pirates","Forbes Field",372524
+1936,"NL","SLN ","STL",,2,87,67," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",448078
+1937,"AL","BOS ","BOS",,5,80,72," "," ","N","N","Boston Red Sox","Fenway Park II",559659
+1937,"AL","CHA ","CHW",,3,86,68," "," ","N","N","Chicago White Sox","Comiskey Park",589245
+1937,"AL","CLE ","CLE",,4,83,71," "," ","N","N","Cleveland Indians","League Park II/Cleveland Stadium",564849
+1937,"AL","DET ","DET",,2,89,65," "," ","N","N","Detroit Tigers","Navin Field",1072276
+1937,"AL","NYA ","NYY",,1,102,52," "," ","Y","Y","New York Yankees","Yankee Stadium I",998148
+1937,"NL","CHN ","CHC",,2,93,61," "," ","N","N","Chicago Cubs","Wrigley Field",895020
+1937,"NL","CIN ","CIN",,8,56,98," "," ","N","N","Cincinnati Reds","Crosley Field",411221
+1937,"NL","PHI ","PHI",,7,61,92," "," ","N","N","Philadelphia Phillies","Baker Bowl",212790
+1937,"NL","PIT ","PIT",,3,86,68," "," ","N","N","Pittsburgh Pirates","Forbes Field",459679
+1937,"NL","SLN ","STL",,4,81,73," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",430811
+1938,"AL","BOS ","BOS",,2,88,61," "," ","N","N","Boston Red Sox","Fenway Park II",646459
+1938,"AL","CHA ","CHW",,6,65,83," "," ","N","N","Chicago White Sox","Comiskey Park",338278
+1938,"AL","CLE ","CLE",,3,86,66," "," ","N","N","Cleveland Indians","League Park II/Cleveland Stadium",652006
+1938,"AL","DET ","DET",,4,84,70," "," ","N","N","Detroit Tigers","Tiger Stadium",799557
+1938,"AL","NYA ","NYY",,1,99,53," "," ","Y","Y","New York Yankees","Yankee Stadium I",970916
+1938,"NL","CHN ","CHC",,1,89,63," "," ","Y","N","Chicago Cubs","Wrigley Field",951640
+1938,"NL","CIN ","CIN",,4,82,68," "," ","N","N","Cincinnati Reds","Crosley Field",706756
+1938,"NL","PHI ","PHI",,8,45,105," "," ","N","N","Philadelphia Phillies","Baker Bowl/Shibe Park",166111
+1938,"NL","PIT ","PIT",,2,86,64," "," ","N","N","Pittsburgh Pirates","Forbes Field",641033
+1938,"NL","SLN ","STL",,6,71,80," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",291418
+1939,"AL","BOS ","BOS",,2,89,62," "," ","N","N","Boston Red Sox","Fenway Park II",573070
+1939,"AL","CHA ","CHW",,4,85,69," "," ","N","N","Chicago White Sox","Comiskey Park",594104
+1939,"AL","CLE ","CLE",,3,87,67," "," ","N","N","Cleveland Indians","League Park II/Cleveland Stadium",563926
+1939,"AL","DET ","DET",,5,81,73," "," ","N","N","Detroit Tigers","Tiger Stadium",836279
+1939,"AL","NYA ","NYY",,1,106,45," "," ","Y","Y","New York Yankees","Yankee Stadium I",859785
+1939,"NL","CHN ","CHC",,4,84,70," "," ","N","N","Chicago Cubs","Wrigley Field",726663
+1939,"NL","CIN ","CIN",,1,97,57," "," ","Y","N","Cincinnati Reds","Crosley Field",981443
+1939,"NL","PHI ","PHI",,8,45,106," "," ","N","N","Philadelphia Phillies","Shibe Park",277973
+1939,"NL","PIT ","PIT",,6,68,85," "," ","N","N","Pittsburgh Pirates","Forbes Field",376734
+1939,"NL","SLN ","STL",,2,92,61," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",400245
+1940,"AL","BOS ","BOS",,5,82,72," "," ","N","N","Boston Red Sox","Fenway Park II",716234
+1940,"AL","CHA ","CHW",,4,82,72," "," ","N","N","Chicago White Sox","Comiskey Park",660336
+1940,"AL","CLE ","CLE",,2,89,65," "," ","N","N","Cleveland Indians","League Park II/Cleveland Stadium",902576
+1940,"AL","DET ","DET",,1,90,64," "," ","Y","N","Detroit Tigers","Tiger Stadium",1112693
+1940,"AL","NYA ","NYY",,3,88,66," "," ","N","N","New York Yankees","Yankee Stadium I",988975
+1940,"NL","CHN ","CHC",,5,75,79," "," ","N","N","Chicago Cubs","Wrigley Field",534878
+1940,"NL","CIN ","CIN",,1,100,53," "," ","Y","Y","Cincinnati Reds","Crosley Field",850180
+1940,"NL","PHI ","PHI",,8,50,103," "," ","N","N","Philadelphia Phillies","Shibe Park",207177
+1940,"NL","PIT ","PIT",,4,78,76," "," ","N","N","Pittsburgh Pirates","Forbes Field",507934
+1940,"NL","SLN ","STL",,3,84,69," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",324078
+1941,"AL","BOS ","BOS",,2,84,70," "," ","N","N","Boston Red Sox","Fenway Park II",718497
+1941,"AL","CHA ","CHW",,3,77,77," "," ","N","N","Chicago White Sox","Comiskey Park",677077
+1941,"AL","CLE ","CLE",,5,75,79," "," ","N","N","Cleveland Indians","League Park II/Cleveland Stadium",745948
+1941,"AL","DET ","DET",,4,75,79," "," ","N","N","Detroit Tigers","Tiger Stadium",684915
+1941,"AL","NYA ","NYY",,1,101,53," "," ","Y","Y","New York Yankees","Yankee Stadium I",964722
+1941,"NL","CHN ","CHC",,6,70,84," "," ","N","N","Chicago Cubs","Wrigley Field",545159
+1941,"NL","CIN ","CIN",,3,88,66," "," ","N","N","Cincinnati Reds","Crosley Field",643513
+1941,"NL","PHI ","PHI",,8,43,111," "," ","N","N","Philadelphia Phillies","Shibe Park",231401
+1941,"NL","PIT ","PIT",,4,81,73," "," ","N","N","Pittsburgh Pirates","Forbes Field",482241
+1941,"NL","SLN ","STL",,2,97,56," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",633645
+1942,"AL","BOS ","BOS",,2,93,59," "," ","N","N","Boston Red Sox","Fenway Park II",730340
+1942,"AL","CHA ","CHW",,6,66,82," "," ","N","N","Chicago White Sox","Comiskey Park",425734
+1942,"AL","CLE ","CLE",,4,75,79," "," ","N","N","Cleveland Indians","League Park II/Cleveland Stadium",459447
+1942,"AL","DET ","DET",,5,73,81," "," ","N","N","Detroit Tigers","Tiger Stadium",580087
+1942,"AL","NYA ","NYY",,1,103,51," "," ","Y","N","New York Yankees","Yankee Stadium I",922011
+1942,"NL","CHN ","CHC",,6,68,86," "," ","N","N","Chicago Cubs","Wrigley Field",590972
+1942,"NL","CIN ","CIN",,4,76,76," "," ","N","N","Cincinnati Reds","Crosley Field",427031
+1942,"NL","PHI ","PHI",,8,42,109," "," ","N","N","Philadelphia Phillies","Shibe Park",230183
+1942,"NL","PIT ","PIT",,5,66,81," "," ","N","N","Pittsburgh Pirates","Forbes Field",448897
+1942,"NL","SLN ","STL",,1,106,48," "," ","Y","Y","St. Louis Cardinals","Sportsman's Park IV",553552
+1943,"AL","BOS ","BOS",,7,68,84," "," ","N","N","Boston Red Sox","Fenway Park II",358275
+1943,"AL","CHA ","CHW",,4,82,72," "," ","N","N","Chicago White Sox","Comiskey Park",508962
+1943,"AL","CLE ","CLE",,3,82,71," "," ","N","N","Cleveland Indians","League Park II/Cleveland Stadium",438894
+1943,"AL","DET ","DET",,5,78,76," "," ","N","N","Detroit Tigers","Tiger Stadium",606287
+1943,"AL","NYA ","NYY",,1,98,56," "," ","Y","Y","New York Yankees","Yankee Stadium I",618330
+1943,"NL","CHN ","CHC",,5,74,79," "," ","N","N","Chicago Cubs","Wrigley Field",508247
+1943,"NL","CIN ","CIN",,2,87,67," "," ","N","N","Cincinnati Reds","Crosley Field",379122
+1943,"NL","PHI ","PHI",,7,64,90," "," ","N","N","Philadelphia Blue Jays","Shibe Park",466975
+1943,"NL","PIT ","PIT",,4,80,74," "," ","N","N","Pittsburgh Pirates","Forbes Field",498740
+1943,"NL","SLN ","STL",,1,105,49," "," ","Y","N","St. Louis Cardinals","Sportsman's Park IV",517135
+1944,"AL","BOS ","BOS",,4,77,77," "," ","N","N","Boston Red Sox","Fenway Park II",506975
+1944,"AL","CHA ","CHW",,7,71,83," "," ","N","N","Chicago White Sox","Comiskey Park",563539
+1944,"AL","CLE ","CLE",,6,72,82," "," ","N","N","Cleveland Indians","League Park II/Cleveland Stadium",475272
+1944,"AL","DET ","DET",,2,88,66," "," ","N","N","Detroit Tigers","Tiger Stadium",923176
+1944,"AL","NYA ","NYY",,3,83,71," "," ","N","N","New York Yankees","Yankee Stadium I",789995
+1944,"NL","CHN ","CHC",,4,75,79," "," ","N","N","Chicago Cubs","Wrigley Field",640110
+1944,"NL","CIN ","CIN",,3,89,65," "," ","N","N","Cincinnati Reds","Crosley Field",409567
+1944,"NL","PHI ","PHI",,8,61,92," "," ","N","N","Philadelphia Blue Jays","Shibe Park",369586
+1944,"NL","PIT ","PIT",,2,90,63," "," ","N","N","Pittsburgh Pirates","Forbes Field",604278
+1944,"NL","SLN ","STL",,1,105,49," "," ","Y","Y","St. Louis Cardinals","Sportsman's Park IV",461968
+1945,"AL","BOS ","BOS",,7,71,83," "," ","N","N","Boston Red Sox","Fenway Park II",603794
+1945,"AL","CHA ","CHW",,6,71,78," "," ","N","N","Chicago White Sox","Comiskey Park",657981
+1945,"AL","CLE ","CLE",,5,73,72," "," ","N","N","Cleveland Indians","League Park II/Cleveland Stadium",558182
+1945,"AL","DET ","DET",,1,88,65," "," ","Y","Y","Detroit Tigers","Tiger Stadium",1280341
+1945,"AL","NYA ","NYY",,4,81,71," "," ","N","N","New York Yankees","Yankee Stadium I",881845
+1945,"NL","CHN ","CHC",,1,98,56," "," ","Y","N","Chicago Cubs","Wrigley Field",1036386
+1945,"NL","CIN ","CIN",,7,61,93," "," ","N","N","Cincinnati Reds","Crosley Field",290070
+1945,"NL","PHI ","PHI",,8,46,108," "," ","N","N","Philadelphia Phillies","Shibe Park",285057
+1945,"NL","PIT ","PIT",,4,82,72," "," ","N","N","Pittsburgh Pirates","Forbes Field",604694
+1945,"NL","SLN ","STL",,2,95,59," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",594630
+1946,"AL","BOS ","BOS",,1,104,50," "," ","Y","N","Boston Red Sox","Fenway Park II",1416944
+1946,"AL","CHA ","CHW",,5,74,80," "," ","N","N","Chicago White Sox","Comiskey Park",983403
+1946,"AL","CLE ","CLE",,6,68,86," "," ","N","N","Cleveland Indians","League Park II/Cleveland Stadium",1057289
+1946,"AL","DET ","DET",,2,92,62," "," ","N","N","Detroit Tigers","Tiger Stadium",1722590
+1946,"AL","NYA ","NYY",,3,87,67," "," ","N","N","New York Yankees","Yankee Stadium I",2265512
+1946,"NL","CHN ","CHC",,3,82,71," "," ","N","N","Chicago Cubs","Wrigley Field",1342970
+1946,"NL","CIN ","CIN",,6,67,87," "," ","N","N","Cincinnati Reds","Crosley Field",715751
+1946,"NL","PHI ","PHI",,5,69,85," "," ","N","N","Philadelphia Phillies","Shibe Park",1045247
+1946,"NL","PIT ","PIT",,7,63,91," "," ","N","N","Pittsburgh Pirates","Forbes Field",749962
+1946,"NL","SLN ","STL",,1,98,58," "," ","Y","Y","St. Louis Cardinals","Sportsman's Park IV",1061807
+1947,"AL","BOS ","BOS",,3,83,71," "," ","N","N","Boston Red Sox","Fenway Park II",1427315
+1947,"AL","CHA ","CHW",,6,70,84," "," ","N","N","Chicago White Sox","Comiskey Park",876948
+1947,"AL","CLE ","CLE",,4,80,74," "," ","N","N","Cleveland Indians","Cleveland Stadium",1521978
+1947,"AL","DET ","DET",,2,85,69," "," ","N","N","Detroit Tigers","Tiger Stadium",1398093
+1947,"AL","NYA ","NYY",,1,97,57," "," ","Y","Y","New York Yankees","Yankee Stadium I",2178937
+1947,"NL","CHN ","CHC",,6,69,85," "," ","N","N","Chicago Cubs","Wrigley Field",1364039
+1947,"NL","CIN ","CIN",,5,73,81," "," ","N","N","Cincinnati Reds","Crosley Field",899975
+1947,"NL","PHI ","PHI",,8,62,92," "," ","N","N","Philadelphia Phillies","Shibe Park",907332
+1947,"NL","PIT ","PIT",,7,62,92," "," ","N","N","Pittsburgh Pirates","Forbes Field",1283531
+1947,"NL","SLN ","STL",,2,89,65," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",1247913
+1948,"AL","BOS ","BOS",,2,96,59," "," ","N","N","Boston Red Sox","Fenway Park II",1558798
+1948,"AL","CHA ","CHW",,8,51,101," "," ","N","N","Chicago White Sox","Comiskey Park",777844
+1948,"AL","CLE ","CLE",,1,97,58," "," ","Y","Y","Cleveland Indians","Cleveland Stadium",2620627
+1948,"AL","DET ","DET",,5,78,76," "," ","N","N","Detroit Tigers","Tiger Stadium",1743035
+1948,"AL","NYA ","NYY",,3,94,60," "," ","N","N","New York Yankees","Yankee Stadium I",2373901
+1948,"NL","CHN ","CHC",,8,64,90," "," ","N","N","Chicago Cubs","Wrigley Field",1237792
+1948,"NL","CIN ","CIN",,7,64,89," "," ","N","N","Cincinnati Reds","Crosley Field",823386
+1948,"NL","PHI ","PHI",,6,66,88," "," ","N","N","Philadelphia Phillies","Shibe Park",767429
+1948,"NL","PIT ","PIT",,4,83,71," "," ","N","N","Pittsburgh Pirates","Forbes Field",1517021
+1948,"NL","SLN ","STL",,2,85,69," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",1111440
+1949,"AL","BOS ","BOS",,2,96,58," "," ","N","N","Boston Red Sox","Fenway Park II",1596650
+1949,"AL","CHA ","CHW",,6,63,91," "," ","N","N","Chicago White Sox","Comiskey Park",937151
+1949,"AL","CLE ","CLE",,3,89,65," "," ","N","N","Cleveland Indians","Cleveland Stadium",2233771
+1949,"AL","DET ","DET",,4,87,67," "," ","N","N","Detroit Tigers","Tiger Stadium",1821204
+1949,"AL","NYA ","NYY",,1,97,57," "," ","Y","Y","New York Yankees","Yankee Stadium I",2283676
+1949,"NL","CHN ","CHC",,8,61,93," "," ","N","N","Chicago Cubs","Wrigley Field",1143139
+1949,"NL","CIN ","CIN",,7,62,92," "," ","N","N","Cincinnati Reds","Crosley Field",707782
+1949,"NL","PHI ","PHI",,3,81,73," "," ","N","N","Philadelphia Phillies","Shibe Park",819698
+1949,"NL","PIT ","PIT",,6,71,83," "," ","N","N","Pittsburgh Pirates","Forbes Field",1449435
+1949,"NL","SLN ","STL",,2,96,58," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",1430676
+1950,"AL","BOS ","BOS",,3,94,60," "," ","N","N","Boston Red Sox","Fenway Park II",1344080
+1950,"AL","CHA ","CHW",,6,60,94," "," ","N","N","Chicago White Sox","Comiskey Park",781330
+1950,"AL","CLE ","CLE",,4,92,62," "," ","N","N","Cleveland Indians","Cleveland Stadium",1727464
+1950,"AL","DET ","DET",,2,95,59," "," ","N","N","Detroit Tigers","Tiger Stadium",1951474
+1950,"AL","NYA ","NYY",,1,98,56," "," ","Y","Y","New York Yankees","Yankee Stadium I",2081380
+1950,"NL","CHN ","CHC",,7,64,89," "," ","N","N","Chicago Cubs","Wrigley Field",1165944
+1950,"NL","CIN ","CIN",,6,66,87," "," ","N","N","Cincinnati Reds","Crosley Field",538794
+1950,"NL","PHI ","PHI",,1,91,63," "," ","Y","N","Philadelphia Phillies","Shibe Park",1217035
+1950,"NL","PIT ","PIT",,8,57,96," "," ","N","N","Pittsburgh Pirates","Forbes Field",1166267
+1950,"NL","SLN ","STL",,5,78,75," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",1093411
+1951,"AL","BOS ","BOS",,3,87,67," "," ","N","N","Boston Red Sox","Fenway Park II",1312282
+1951,"AL","CHA ","CHW",,4,81,73," "," ","N","N","Chicago White Sox","Comiskey Park",1328234
+1951,"AL","CLE ","CLE",,2,93,61," "," ","N","N","Cleveland Indians","Cleveland Stadium",1704984
+1951,"AL","DET ","DET",,5,73,81," "," ","N","N","Detroit Tigers","Tiger Stadium",1132641
+1951,"AL","NYA ","NYY",,1,98,56," "," ","Y","Y","New York Yankees","Yankee Stadium I",1950107
+1951,"NL","CHN ","CHC",,8,62,92," "," ","N","N","Chicago Cubs","Wrigley Field",894415
+1951,"NL","CIN ","CIN",,6,68,86," "," ","N","N","Cincinnati Reds","Crosley Field",588268
+1951,"NL","PHI ","PHI",,5,73,81," "," ","N","N","Philadelphia Phillies","Shibe Park",937658
+1951,"NL","PIT ","PIT",,7,64,90," "," ","N","N","Pittsburgh Pirates","Forbes Field",980590
+1951,"NL","SLN ","STL",,3,81,73," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",1013429
+1952,"AL","BOS ","BOS",,6,76,78," "," ","N","N","Boston Red Sox","Fenway Park II",1115750
+1952,"AL","CHA ","CHW",,3,81,73," "," ","N","N","Chicago White Sox","Comiskey Park",1231675
+1952,"AL","CLE ","CLE",,2,93,61," "," ","N","N","Cleveland Indians","Cleveland Stadium",1444607
+1952,"AL","DET ","DET",,8,50,104," "," ","N","N","Detroit Tigers","Tiger Stadium",1026846
+1952,"AL","NYA ","NYY",,1,95,59," "," ","Y","Y","New York Yankees","Yankee Stadium I",1629665
+1952,"NL","CHN ","CHC",,5,77,77," "," ","N","N","Chicago Cubs","Wrigley Field",1024826
+1952,"NL","CIN ","CIN",,6,69,85," "," ","N","N","Cincinnati Reds","Crosley Field",604197
+1952,"NL","PHI ","PHI",,4,87,67," "," ","N","N","Philadelphia Phillies","Shibe Park",755417
+1952,"NL","PIT ","PIT",,8,42,112," "," ","N","N","Pittsburgh Pirates","Forbes Field",686673
+1952,"NL","SLN ","STL",,3,88,66," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",913113
+1953,"AL","BOS ","BOS",,4,84,69," "," ","N","N","Boston Red Sox","Fenway Park II",1026133
+1953,"AL","CHA ","CHW",,3,89,65," "," ","N","N","Chicago White Sox","Comiskey Park",1191353
+1953,"AL","CLE ","CLE",,2,92,62," "," ","N","N","Cleveland Indians","Cleveland Stadium",1069176
+1953,"AL","DET ","DET",,6,60,94," "," ","N","N","Detroit Tigers","Tiger Stadium",884658
+1953,"AL","NYA ","NYY",,1,99,52," "," ","Y","Y","New York Yankees","Yankee Stadium I",1537811
+1953,"NL","CHN ","CHC",,7,65,89," "," ","N","N","Chicago Cubs","Wrigley Field",763658
+1953,"NL","CIN ","CIN",,6,68,86," "," ","N","N","Cincinnati Reds","Crosley Field",548086
+1953,"NL","PHI ","PHI",,4,83,71," "," ","N","N","Philadelphia Phillies","Shibe Park",853644
+1953,"NL","PIT ","PIT",,8,50,104," "," ","N","N","Pittsburgh Pirates","Forbes Field",572757
+1953,"NL","SLN ","STL",,3,83,71," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",880242
+1954,"AL","BAL ","BAL",,7,54,100," "," ","N","N","Baltimore Orioles","Memorial Stadium",1060910
+1954,"AL","BOS ","BOS",,4,69,85," "," ","N","N","Boston Red Sox","Fenway Park II",931127
+1954,"AL","CHA ","CHW",,3,94,60," "," ","N","N","Chicago White Sox","Comiskey Park",1231629
+1954,"AL","CLE ","CLE",,1,111,43," "," ","Y","N","Cleveland Indians","Cleveland Stadium",1335472
+1954,"AL","DET ","DET",,5,68,86," "," ","N","N","Detroit Tigers","Tiger Stadium",1079847
+1954,"AL","NYA ","NYY",,2,103,51," "," ","N","N","New York Yankees","Yankee Stadium I",1475171
+1954,"NL","CHN ","CHC",,7,64,90," "," ","N","N","Chicago Cubs","Wrigley Field",748183
+1954,"NL","CIN ","CIN",,5,74,80," "," ","N","N","Cincinnati Reds","Crosley Field",704167
+1954,"NL","PHI ","PHI",,4,75,79," "," ","N","N","Philadelphia Phillies","Shibe Park",738991
+1954,"NL","PIT ","PIT",,8,53,101," "," ","N","N","Pittsburgh Pirates","Forbes Field",475494
+1954,"NL","SLN ","STL",,6,72,82," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",1039698
+1955,"AL","BAL ","BAL",,7,57,97," "," ","N","N","Baltimore Orioles","Memorial Stadium",852039
+1955,"AL","BOS ","BOS",,4,84,70," "," ","N","N","Boston Red Sox","Fenway Park II",1203200
+1955,"AL","CHA ","CHW",,3,91,63," "," ","N","N","Chicago White Sox","Comiskey Park",1175684
+1955,"AL","CLE ","CLE",,2,93,61," "," ","N","N","Cleveland Indians","Cleveland Stadium",1221780
+1955,"AL","DET ","DET",,5,79,75," "," ","N","N","Detroit Tigers","Tiger Stadium",1181838
+1955,"AL","NYA ","NYY",,1,96,58," "," ","Y","N","New York Yankees","Yankee Stadium I",1490138
+1955,"NL","CHN ","CHC",,6,72,81," "," ","N","N","Chicago Cubs","Wrigley Field",875800
+1955,"NL","CIN ","CIN",,5,75,79," "," ","N","N","Cincinnati Reds","Crosley Field",693662
+1955,"NL","PHI ","PHI",,4,77,77," "," ","N","N","Philadelphia Phillies","Shibe Park",922886
+1955,"NL","PIT ","PIT",,8,60,94," "," ","N","N","Pittsburgh Pirates","Forbes Field",469397
+1955,"NL","SLN ","STL",,7,68,86," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",849130
+1956,"AL","BAL ","BAL",,6,69,85," "," ","N","N","Baltimore Orioles","Memorial Stadium",901201
+1956,"AL","BOS ","BOS",,4,84,70," "," ","N","N","Boston Red Sox","Fenway Park II",1137158
+1956,"AL","CHA ","CHW",,3,85,69," "," ","N","N","Chicago White Sox","Comiskey Park",1000090
+1956,"AL","CLE ","CLE",,2,88,66," "," ","N","N","Cleveland Indians","Cleveland Stadium",865467
+1956,"AL","DET ","DET",,5,82,72," "," ","N","N","Detroit Tigers","Tiger Stadium",1051182
+1956,"AL","NYA ","NYY",,1,97,57," "," ","Y","Y","New York Yankees","Yankee Stadium I",1491784
+1956,"NL","CHN ","CHC",,8,60,94," "," ","N","N","Chicago Cubs","Wrigley Field",720118
+1956,"NL","CIN ","CIN",,3,91,63," "," ","N","N","Cincinnati Reds","Crosley Field",1125928
+1956,"NL","PHI ","PHI",,5,71,83," "," ","N","N","Philadelphia Phillies","Shibe Park",934798
+1956,"NL","PIT ","PIT",,7,66,88," "," ","N","N","Pittsburgh Pirates","Forbes Field",949878
+1956,"NL","SLN ","STL",,4,76,78," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",1029773
+1957,"AL","BAL ","BAL",,5,76,76," "," ","N","N","Baltimore Orioles","Memorial Stadium",1029581
+1957,"AL","BOS ","BOS",,3,82,72," "," ","N","N","Boston Red Sox","Fenway Park II",1181087
+1957,"AL","CHA ","CHW",,2,90,64," "," ","N","N","Chicago White Sox","Comiskey Park",1135668
+1957,"AL","CLE ","CLE",,6,76,77," "," ","N","N","Cleveland Indians","Cleveland Stadium",722256
+1957,"AL","DET ","DET",,4,78,76," "," ","N","N","Detroit Tigers","Tiger Stadium",1272346
+1957,"AL","NYA ","NYY",,1,98,56," "," ","Y","N","New York Yankees","Yankee Stadium I",1497134
+1957,"NL","CHN ","CHC",,8,62,92," "," ","N","N","Chicago Cubs","Wrigley Field",670629
+1957,"NL","CIN ","CIN",,4,80,74," "," ","N","N","Cincinnati Reds","Crosley Field",1070850
+1957,"NL","PHI ","PHI",,5,77,77," "," ","N","N","Philadelphia Phillies","Shibe Park",1146230
+1957,"NL","PIT ","PIT",,7,62,92," "," ","N","N","Pittsburgh Pirates","Forbes Field",850732
+1957,"NL","SLN ","STL",,2,87,67," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",1183575
+1958,"AL","BAL ","BAL",,6,74,79," "," ","N","N","Baltimore Orioles","Memorial Stadium",829991
+1958,"AL","BOS ","BOS",,3,79,75," "," ","N","N","Boston Red Sox","Fenway Park II",1077047
+1958,"AL","CHA ","CHW",,2,82,72," "," ","N","N","Chicago White Sox","Comiskey Park",797451
+1958,"AL","CLE ","CLE",,4,77,76," "," ","N","N","Cleveland Indians","Cleveland Stadium",663805
+1958,"AL","DET ","DET",,5,77,77," "," ","N","N","Detroit Tigers","Tiger Stadium",1098924
+1958,"AL","NYA ","NYY",,1,92,62," "," ","Y","Y","New York Yankees","Yankee Stadium I",1428438
+1958,"NL","CHN ","CHC",,6,72,82," "," ","N","N","Chicago Cubs","Wrigley Field",979904
+1958,"NL","CIN ","CIN",,4,76,78," "," ","N","N","Cincinnati Reds","Crosley Field",788582
+1958,"NL","LAN ","LAD",,7,71,83," "," ","N","N","Los Angeles Dodgers","Los Angeles Memorial Coliseum",1845556
+1958,"NL","PHI ","PHI",,8,69,85," "," ","N","N","Philadelphia Phillies","Shibe Park",931110
+1958,"NL","PIT ","PIT",,2,84,70," "," ","N","N","Pittsburgh Pirates","Forbes Field",1311988
+1958,"NL","SFN ","SFG",,3,80,74," "," ","N","N","San Francisco Giants","Seals Stadium",1272625
+1958,"NL","SLN ","STL",,5,72,82," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",1063730
+1959,"AL","BAL ","BAL",,6,74,80," "," ","N","N","Baltimore Orioles","Memorial Stadium",891926
+1959,"AL","BOS ","BOS",,5,75,79," "," ","N","N","Boston Red Sox","Fenway Park II",984102
+1959,"AL","CHA ","CHW",,1,94,60," "," ","Y","N","Chicago White Sox","Comiskey Park",1423144
+1959,"AL","CLE ","CLE",,2,89,65," "," ","N","N","Cleveland Indians","Cleveland Stadium",1497976
+1959,"AL","DET ","DET",,4,76,78," "," ","N","N","Detroit Tigers","Tiger Stadium",1221221
+1959,"AL","NYA ","NYY",,3,79,75," "," ","N","N","New York Yankees","Yankee Stadium I",1552030
+1959,"NL","CHN ","CHC",,6,74,80," "," ","N","N","Chicago Cubs","Wrigley Field",858255
+1959,"NL","CIN ","CIN",,5,74,80," "," ","N","N","Cincinnati Reds","Crosley Field",801298
+1959,"NL","LAN ","LAD",,1,88,68," "," ","Y","Y","Los Angeles Dodgers","Los Angeles Memorial Coliseum",2071045
+1959,"NL","PHI ","PHI",,8,64,90," "," ","N","N","Philadelphia Phillies","Shibe Park",802815
+1959,"NL","PIT ","PIT",,4,78,76," "," ","N","N","Pittsburgh Pirates","Forbes Field",1359917
+1959,"NL","SFN ","SFG",,3,83,71," "," ","N","N","San Francisco Giants","Seals Stadium",1422130
+1959,"NL","SLN ","STL",,7,71,83," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",929953
+1960,"AL","BAL ","BAL",,2,89,65," "," ","N","N","Baltimore Orioles","Memorial Stadium",1187849
+1960,"AL","BOS ","BOS",,7,65,89," "," ","N","N","Boston Red Sox","Fenway Park II",1129866
+1960,"AL","CHA ","CHW",,3,87,67," "," ","N","N","Chicago White Sox","Comiskey Park",1644460
+1960,"AL","CLE ","CLE",,4,76,78," "," ","N","N","Cleveland Indians","Cleveland Stadium",950985
+1960,"AL","DET ","DET",,6,71,83," "," ","N","N","Detroit Tigers","Tiger Stadium",1167669
+1960,"AL","NYA ","NYY",,1,97,57," "," ","Y","N","New York Yankees","Yankee Stadium I",1627349
+1960,"NL","CHN ","CHC",,7,60,94," "," ","N","N","Chicago Cubs","Wrigley Field",809770
+1960,"NL","CIN ","CIN",,6,67,87," "," ","N","N","Cincinnati Reds","Crosley Field",663486
+1960,"NL","LAN ","LAD",,4,82,72," "," ","N","N","Los Angeles Dodgers","Los Angeles Memorial Coliseum",2253887
+1960,"NL","PHI ","PHI",,8,59,95," "," ","N","N","Philadelphia Phillies","Shibe Park",862205
+1960,"NL","PIT ","PIT",,1,95,59," "," ","Y","Y","Pittsburgh Pirates","Forbes Field",1705828
+1960,"NL","SFN ","SFG",,5,79,75," "," ","N","N","San Francisco Giants","Candlestick Park",1795356
+1960,"NL","SLN ","STL",,3,86,68," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",1096632
+1961,"AL","BAL ","BAL",,3,95,67," "," ","N","N","Baltimore Orioles","Memorial Stadium",951089
+1961,"AL","BOS ","BOS",,6,76,86," "," ","N","N","Boston Red Sox","Fenway Park II",850589
+1961,"AL","CHA ","CHW",,4,86,76," "," ","N","N","Chicago White Sox","Comiskey Park",1146019
+1961,"AL","CLE ","CLE",,5,78,83," "," ","N","N","Cleveland Indians","Cleveland Stadium",725547
+1961,"AL","DET ","DET",,2,101,61," "," ","N","N","Detroit Tigers","Tiger Stadium",1600710
+1961,"AL","MIN ","MIN",,7,70,90," "," ","N","N","Minnesota Twins","Metropolitan Stadium",1256723
+1961,"AL","NYA ","NYY",,1,109,53," "," ","Y","Y","New York Yankees","Yankee Stadium I",1747725
+1961,"NL","CHN ","CHC",,7,64,90," "," ","N","N","Chicago Cubs","Wrigley Field",673057
+1961,"NL","CIN ","CIN",,1,93,61," "," ","Y","N","Cincinnati Reds","Crosley Field",1117603
+1961,"NL","LAN ","LAD",,2,89,65," "," ","N","N","Los Angeles Dodgers","Los Angeles Memorial Coliseum",1804250
+1961,"NL","PHI ","PHI",,8,47,107," "," ","N","N","Philadelphia Phillies","Shibe Park",590039
+1961,"NL","PIT ","PIT",,6,75,79," "," ","N","N","Pittsburgh Pirates","Forbes Field",1199128
+1961,"NL","SFN ","SFG",,3,85,69," "," ","N","N","San Francisco Giants","Candlestick Park",1390679
+1961,"NL","SLN ","STL",,5,80,74," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",855305
+1962,"AL","BAL ","BAL",,7,77,85," "," ","N","N","Baltimore Orioles","Memorial Stadium",790254
+1962,"AL","BOS ","BOS",,8,76,84," "," ","N","N","Boston Red Sox","Fenway Park II",733080
+1962,"AL","CHA ","CHW",,5,85,77," "," ","N","N","Chicago White Sox","Comiskey Park",1131562
+1962,"AL","CLE ","CLE",,6,80,82," "," ","N","N","Cleveland Indians","Cleveland Stadium",716076
+1962,"AL","DET ","DET",,4,85,76," "," ","N","N","Detroit Tigers","Tiger Stadium",1207881
+1962,"AL","MIN ","MIN",,2,91,71," "," ","N","N","Minnesota Twins","Metropolitan Stadium",1433116
+1962,"AL","NYA ","NYY",,1,96,66," "," ","Y","Y","New York Yankees","Yankee Stadium I",1493574
+1962,"NL","CHN ","CHC",,9,59,103," "," ","N","N","Chicago Cubs","Wrigley Field",609802
+1962,"NL","CIN ","CIN",,3,98,64," "," ","N","N","Cincinnati Reds","Crosley Field",982095
+1962,"NL","HOU ","HOU",,8,64,96," "," ","N","N","Houston Colt .45's","Colt Stadium",924456
+1962,"NL","LAN ","LAD",,2,102,63," "," ","N","N","Los Angeles Dodgers","Dodger Stadium",2755184
+1962,"NL","NYN ","NYM",,10,40,120," "," ","N","N","New York Mets","Polo Grounds IV",922530
+1962,"NL","PHI ","PHI",,7,81,80," "," ","N","N","Philadelphia Phillies","Shibe Park",762034
+1962,"NL","PIT ","PIT",,4,93,68," "," ","N","N","Pittsburgh Pirates","Forbes Field",1090648
+1962,"NL","SFN ","SFG",,1,103,62," "," ","Y","N","San Francisco Giants","Candlestick Park",1592594
+1962,"NL","SLN ","STL",,6,84,78," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",953895
+1963,"AL","BAL ","BAL",,4,86,76," "," ","N","N","Baltimore Orioles","Memorial Stadium",774343
+1963,"AL","BOS ","BOS",,7,76,85," "," ","N","N","Boston Red Sox","Fenway Park II",942642
+1963,"AL","CHA ","CHW",,2,94,68," "," ","N","N","Chicago White Sox","Comiskey Park",1158848
+1963,"AL","CLE ","CLE",,6,79,83," "," ","N","N","Cleveland Indians","Cleveland Stadium",562507
+1963,"AL","DET ","DET",,5,79,83," "," ","N","N","Detroit Tigers","Tiger Stadium",821952
+1963,"AL","MIN ","MIN",,3,91,70," "," ","N","N","Minnesota Twins","Metropolitan Stadium",1406652
+1963,"AL","NYA ","NYY",,1,104,57," "," ","Y","N","New York Yankees","Yankee Stadium I",1308920
+1963,"NL","CHN ","CHC",,7,82,80," "," ","N","N","Chicago Cubs","Wrigley Field",979551
+1963,"NL","CIN ","CIN",,5,86,76," "," ","N","N","Cincinnati Reds","Crosley Field",858805
+1963,"NL","HOU ","HOU",,9,66,96," "," ","N","N","Houston Colt .45's","Colt Stadium",719502
+1963,"NL","LAN ","LAD",,1,99,63," "," ","Y","Y","Los Angeles Dodgers","Dodger Stadium",2538602
+1963,"NL","NYN ","NYM",,10,51,111," "," ","N","N","New York Mets","Polo Grounds IV",1080108
+1963,"NL","PHI ","PHI",,4,87,75," "," ","N","N","Philadelphia Phillies","Shibe Park",907141
+1963,"NL","PIT ","PIT",,8,74,88," "," ","N","N","Pittsburgh Pirates","Forbes Field",783648
+1963,"NL","SFN ","SFG",,3,88,74," "," ","N","N","San Francisco Giants","Candlestick Park",1571306
+1963,"NL","SLN ","STL",,2,93,69," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",1170546
+1964,"AL","BAL ","BAL",,3,97,65," "," ","N","N","Baltimore Orioles","Memorial Stadium",1116215
+1964,"AL","BOS ","BOS",,8,72,90," "," ","N","N","Boston Red Sox","Fenway Park II",883276
+1964,"AL","CHA ","CHW",,2,98,64," "," ","N","N","Chicago White Sox","Comiskey Park",1250053
+1964,"AL","CLE ","CLE",,7,79,83," "," ","N","N","Cleveland Indians","Cleveland Stadium",653293
+1964,"AL","DET ","DET",,4,85,77," "," ","N","N","Detroit Tigers","Tiger Stadium",816139
+1964,"AL","MIN ","MIN",,6,79,83," "," ","N","N","Minnesota Twins","Metropolitan Stadium",1207514
+1964,"AL","NYA ","NYY",,1,99,63," "," ","Y","N","New York Yankees","Yankee Stadium I",1305638
+1964,"NL","CHN ","CHC",,8,76,86," "," ","N","N","Chicago Cubs","Wrigley Field",751647
+1964,"NL","CIN ","CIN",,3,92,70," "," ","N","N","Cincinnati Reds","Crosley Field",862466
+1964,"NL","HOU ","HOU",,9,66,96," "," ","N","N","Houston Colt .45's","Colt Stadium",725773
+1964,"NL","LAN ","LAD",,7,80,82," "," ","N","N","Los Angeles Dodgers","Dodger Stadium",2228751
+1964,"NL","NYN ","NYM",,10,53,109," "," ","N","N","New York Mets","Shea Stadium",1732597
+1964,"NL","PHI ","PHI",,2,92,70," "," ","N","N","Philadelphia Phillies","Shibe Park",1425891
+1964,"NL","PIT ","PIT",,6,80,82," "," ","N","N","Pittsburgh Pirates","Forbes Field",759496
+1964,"NL","SFN ","SFG",,4,90,72," "," ","N","N","San Francisco Giants","Candlestick Park",1504364
+1964,"NL","SLN ","STL",,1,93,69," "," ","Y","Y","St. Louis Cardinals","Sportsman's Park IV",1143294
+1965,"AL","BAL ","BAL",,3,94,68," "," ","N","N","Baltimore Orioles","Memorial Stadium",781649
+1965,"AL","BOS ","BOS",,9,62,100," "," ","N","N","Boston Red Sox","Fenway Park II",652201
+1965,"AL","CAL ","ANA",,7,75,87," "," ","N","N","California Angels","Dodger Stadium",566727
+1965,"AL","CHA ","CHW",,2,95,67," "," ","N","N","Chicago White Sox","Comiskey Park",1130519
+1965,"AL","CLE ","CLE",,5,87,75," "," ","N","N","Cleveland Indians","Cleveland Stadium",934786
+1965,"AL","DET ","DET",,4,89,73," "," ","N","N","Detroit Tigers","Tiger Stadium",1029645
+1965,"AL","MIN ","MIN",,1,102,60," "," ","Y","N","Minnesota Twins","Metropolitan Stadium",1463258
+1965,"AL","NYA ","NYY",,6,77,85," "," ","N","N","New York Yankees","Yankee Stadium I",1213552
+1965,"NL","CHN ","CHC",,8,72,90," "," ","N","N","Chicago Cubs","Wrigley Field",641361
+1965,"NL","CIN ","CIN",,4,89,73," "," ","N","N","Cincinnati Reds","Crosley Field",1047824
+1965,"NL","HOU ","HOU",,9,65,97," "," ","N","N","Houston Astros","Astrodome",2151470
+1965,"NL","LAN ","LAD",,1,97,65," "," ","Y","Y","Los Angeles Dodgers","Dodger Stadium",2553577
+1965,"NL","NYN ","NYM",,10,50,112," "," ","N","N","New York Mets","Shea Stadium",1768389
+1965,"NL","PHI ","PHI",,6,85,76," "," ","N","N","Philadelphia Phillies","Shibe Park",1166376
+1965,"NL","PIT ","PIT",,3,90,72," "," ","N","N","Pittsburgh Pirates","Forbes Field",909279
+1965,"NL","SFN ","SFG",,2,95,67," "," ","N","N","San Francisco Giants","Candlestick Park",1546075
+1965,"NL","SLN ","STL",,7,80,81," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV",1241201
+1966,"AL","BAL ","BAL",,1,97,63," "," ","Y","Y","Baltimore Orioles","Memorial Stadium",1203366
+1966,"AL","BOS ","BOS",,9,72,90," "," ","N","N","Boston Red Sox","Fenway Park II",811172
+1966,"AL","CAL ","ANA",,6,80,82," "," ","N","N","California Angels","Anaheim Stadium",1400321
+1966,"AL","CHA ","CHW",,4,83,79," "," ","N","N","Chicago White Sox","Comiskey Park",990016
+1966,"AL","CLE ","CLE",,5,81,81," "," ","N","N","Cleveland Indians","Cleveland Stadium",903359
+1966,"AL","DET ","DET",,3,88,74," "," ","N","N","Detroit Tigers","Tiger Stadium",1124293
+1966,"AL","MIN ","MIN",,2,89,73," "," ","N","N","Minnesota Twins","Metropolitan Stadium",1259374
+1966,"AL","NYA ","NYY",,10,70,89," "," ","N","N","New York Yankees","Yankee Stadium I",1124648
+1966,"NL","ATL ","ATL",,5,85,77," "," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",1539801
+1966,"NL","CHN ","CHC",,10,59,103," "," ","N","N","Chicago Cubs","Wrigley Field",635891
+1966,"NL","CIN ","CIN",,7,76,84," "," ","N","N","Cincinnati Reds","Crosley Field",742958
+1966,"NL","HOU ","HOU",,8,72,90," "," ","N","N","Houston Astros","Astrodome",1872108
+1966,"NL","LAN ","LAD",,1,95,67," "," ","Y","N","Los Angeles Dodgers","Dodger Stadium",2617029
+1966,"NL","NYN ","NYM",,9,66,95," "," ","N","N","New York Mets","Shea Stadium",1932693
+1966,"NL","PHI ","PHI",,4,87,75," "," ","N","N","Philadelphia Phillies","Shibe Park",1108201
+1966,"NL","PIT ","PIT",,3,92,70," "," ","N","N","Pittsburgh Pirates","Forbes Field",1196618
+1966,"NL","SFN ","SFG",,2,93,68," "," ","N","N","San Francisco Giants","Candlestick Park",1657192
+1966,"NL","SLN ","STL",,6,83,79," "," ","N","N","St. Louis Cardinals","Sportsman's Park IV/Busch Stadium II",1712980
+1967,"AL","BAL ","BAL",,7,76,85," "," ","N","N","Baltimore Orioles","Memorial Stadium",955053
+1967,"AL","BOS ","BOS",,1,92,70," "," ","Y","N","Boston Red Sox","Fenway Park II",1727832
+1967,"AL","CAL ","ANA",,5,84,77," "," ","N","N","California Angels","Anaheim Stadium",1317713
+1967,"AL","CHA ","CHW",,4,89,73," "," ","N","N","Chicago White Sox","Comiskey Park",985634
+1967,"AL","CLE ","CLE",,8,75,87," "," ","N","N","Cleveland Indians","Cleveland Stadium",662980
+1967,"AL","DET ","DET",,3,91,71," "," ","N","N","Detroit Tigers","Tiger Stadium",1447143
+1967,"AL","MIN ","MIN",,2,91,71," "," ","N","N","Minnesota Twins","Metropolitan Stadium",1483547
+1967,"AL","NYA ","NYY",,9,72,90," "," ","N","N","New York Yankees","Yankee Stadium I",1259514
+1967,"NL","ATL ","ATL",,7,77,85," "," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",1389222
+1967,"NL","CHN ","CHC",,3,87,74," "," ","N","N","Chicago Cubs","Wrigley Field",977226
+1967,"NL","CIN ","CIN",,4,87,75," "," ","N","N","Cincinnati Reds","Crosley Field",958300
+1967,"NL","HOU ","HOU",,9,69,93," "," ","N","N","Houston Astros","Astrodome",1348303
+1967,"NL","LAN ","LAD",,8,73,89," "," ","N","N","Los Angeles Dodgers","Dodger Stadium",1664362
+1967,"NL","NYN ","NYM",,10,61,101," "," ","N","N","New York Mets","Shea Stadium",1565492
+1967,"NL","PHI ","PHI",,5,82,80," "," ","N","N","Philadelphia Phillies","Shibe Park",828888
+1967,"NL","PIT ","PIT",,6,81,81," "," ","N","N","Pittsburgh Pirates","Forbes Field",907012
+1967,"NL","SFN ","SFG",,2,91,71," "," ","N","N","San Francisco Giants","Candlestick Park",1242480
+1967,"NL","SLN ","STL",,1,101,60," "," ","Y","Y","St. Louis Cardinals","Busch Stadium II",2090145
+1968,"AL","BAL ","BAL",,2,91,71," "," ","N","N","Baltimore Orioles","Memorial Stadium",943977
+1968,"AL","BOS ","BOS",,4,86,76," "," ","N","N","Boston Red Sox","Fenway Park II",1940788
+1968,"AL","CAL ","ANA",,8,67,95," "," ","N","N","California Angels","Anaheim Stadium",1025956
+1968,"AL","CHA ","CHW",,9,67,95," "," ","N","N","Chicago White Sox","Comiskey Park",803775
+1968,"AL","CLE ","CLE",,3,86,75," "," ","N","N","Cleveland Indians","Cleveland Stadium",857994
+1968,"AL","DET ","DET",,1,103,59," "," ","Y","Y","Detroit Tigers","Tiger Stadium",2031847
+1968,"AL","MIN ","MIN",,7,79,83," "," ","N","N","Minnesota Twins","Metropolitan Stadium",1143257
+1968,"AL","NYA ","NYY",,5,83,79," "," ","N","N","New York Yankees","Yankee Stadium I",1185666
+1968,"AL","OAK ","OAK",,6,82,80," "," ","N","N","Oakland Athletics","Oakland Coliseum",837466
+1968,"NL","ATL ","ATL",,5,81,81," "," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",1126540
+1968,"NL","CHN ","CHC",,3,84,78," "," ","N","N","Chicago Cubs","Wrigley Field",1043409
+1968,"NL","CIN ","CIN",,4,83,79," "," ","N","N","Cincinnati Reds","Crosley Field",733354
+1968,"NL","HOU ","HOU",,10,72,90," "," ","N","N","Houston Astros","Astrodome",1312887
+1968,"NL","LAN ","LAD",,8,76,86," "," ","N","N","Los Angeles Dodgers","Dodger Stadium",1581093
+1968,"NL","NYN ","NYM",,9,73,89," "," ","N","N","New York Mets","Shea Stadium",1781657
+1968,"NL","PHI ","PHI",,7,76,86," "," ","N","N","Philadelphia Phillies","Shibe Park",664546
+1968,"NL","PIT ","PIT",,6,80,82," "," ","N","N","Pittsburgh Pirates","Forbes Field",693485
+1968,"NL","SFN ","SFG",,2,88,74," "," ","N","N","San Francisco Giants","Candlestick Park",837220
+1968,"NL","SLN ","STL",,1,97,65," "," ","Y","N","St. Louis Cardinals","Busch Stadium II",2011167
+1969,"AL","BAL ","BAL","E",1,109,53,"Y"," ","Y","N","Baltimore Orioles","Memorial Stadium",1062069
+1969,"AL","BOS ","BOS","E",3,87,75,"N"," ","N","N","Boston Red Sox","Fenway Park II",1833246
+1969,"AL","CAL ","ANA","W",3,71,91,"N"," ","N","N","California Angels","Anaheim Stadium",758388
+1969,"AL","CHA ","CHW","W",5,68,94,"N"," ","N","N","Chicago White Sox","Comiskey Park",589546
+1969,"AL","CLE ","CLE","E",6,62,99,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",619970
+1969,"AL","DET ","DET","E",2,90,72,"N"," ","N","N","Detroit Tigers","Tiger Stadium",1577481
+1969,"AL","KCA ","KCR","W",4,69,93,"N"," ","N","N","Kansas City Royals","Municipal Stadium II",902414
+1969,"AL","MIN ","MIN","W",1,97,65,"Y"," ","N","N","Minnesota Twins","Metropolitan Stadium",1349328
+1969,"AL","NYA ","NYY","E",5,80,81,"N"," ","N","N","New York Yankees","Yankee Stadium I",1067996
+1969,"AL","OAK ","OAK","W",2,88,74,"N"," ","N","N","Oakland Athletics","Oakland Coliseum",778232
+1969,"NL","ATL ","ATL","W",1,93,69,"Y"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",1458320
+1969,"NL","CHN ","CHC","E",2,92,70,"N"," ","N","N","Chicago Cubs","Wrigley Field",1674993
+1969,"NL","CIN ","CIN","W",3,89,73,"N"," ","N","N","Cincinnati Reds","Crosley Field",987991
+1969,"NL","HOU ","HOU","W",5,81,81,"N"," ","N","N","Houston Astros","Astrodome",1442995
+1969,"NL","LAN ","LAD","W",4,85,77,"N"," ","N","N","Los Angeles Dodgers","Dodger Stadium",1784527
+1969,"NL","MON ","MON","E",6,52,110,"N"," ","N","N","Montreal Expos","Jarry Park",1212608
+1969,"NL","NYN ","NYM","E",1,100,62,"Y"," ","Y","Y","New York Mets","Shea Stadium",2175373
+1969,"NL","PHI ","PHI","E",5,63,99,"N"," ","N","N","Philadelphia Phillies","Shibe Park",519414
+1969,"NL","PIT ","PIT","E",3,88,74,"N"," ","N","N","Pittsburgh Pirates","Forbes Field",769369
+1969,"NL","SDN ","SDP","W",6,52,110,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",512970
+1969,"NL","SFN ","SFG","W",2,90,72,"N"," ","N","N","San Francisco Giants","Candlestick Park",873603
+1969,"NL","SLN ","STL","E",4,87,75,"N"," ","N","N","St. Louis Cardinals","Busch Stadium II",1682783
+1970,"AL","BAL ","BAL","E",1,108,54,"Y"," ","Y","Y","Baltimore Orioles","Memorial Stadium",1057069
+1970,"AL","BOS ","BOS","E",3,87,75,"N"," ","N","N","Boston Red Sox","Fenway Park II",1595278
+1970,"AL","CAL ","ANA","W",3,86,76,"N"," ","N","N","California Angels","Anaheim Stadium",1077741
+1970,"AL","CHA ","CHW","W",6,56,106,"N"," ","N","N","Chicago White Sox","Comiskey Park",495355
+1970,"AL","CLE ","CLE","E",5,76,86,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",729752
+1970,"AL","DET ","DET","E",4,79,83,"N"," ","N","N","Detroit Tigers","Tiger Stadium",1501293
+1970,"AL","KCA ","KCR","W",4,65,97,"N"," ","N","N","Kansas City Royals","Municipal Stadium II",693047
+1970,"AL","MIN ","MIN","W",1,98,64,"Y"," ","N","N","Minnesota Twins","Metropolitan Stadium",1261887
+1970,"AL","ML4 ","MIL","W",4,65,97,"N"," ","N","N","Milwaukee Brewers","County Stadium",933690
+1970,"AL","NYA ","NYY","E",2,93,69,"N"," ","N","N","New York Yankees","Yankee Stadium I",1136879
+1970,"AL","OAK ","OAK","W",2,89,73,"N"," ","N","N","Oakland Athletics","Oakland Coliseum",778355
+1970,"NL","ATL ","ATL","W",5,76,86,"N"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",1078848
+1970,"NL","CHN ","CHC","E",2,84,78,"N"," ","N","N","Chicago Cubs","Wrigley Field",1642705
+1970,"NL","CIN ","CIN","W",1,102,60,"Y"," ","Y","N","Cincinnati Reds","Crosley Field/Riverfront Stadium",1803568
+1970,"NL","HOU ","HOU","W",4,79,83,"N"," ","N","N","Houston Astros","Astrodome",1253444
+1970,"NL","LAN ","LAD","W",2,87,74,"N"," ","N","N","Los Angeles Dodgers","Dodger Stadium",1697142
+1970,"NL","MON ","MON","E",6,73,89,"N"," ","N","N","Montreal Expos","Jarry Park",1424683
+1970,"NL","NYN ","NYM","E",3,83,79,"N"," ","N","N","New York Mets","Shea Stadium",2697479
+1970,"NL","PHI ","PHI","E",5,73,88,"N"," ","N","N","Philadelphia Phillies","Shibe Park",708247
+1970,"NL","PIT ","PIT","E",1,89,73,"Y"," ","N","N","Pittsburgh Pirates","Forbes Field/Three Rivers Stadium",1341947
+1970,"NL","SDN ","SDP","W",6,63,99,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",643679
+1970,"NL","SFN ","SFG","W",3,86,76,"N"," ","N","N","San Francisco Giants","Candlestick Park",740720
+1970,"NL","SLN ","STL","E",4,76,86,"N"," ","N","N","St. Louis Cardinals","Busch Stadium II",1629736
+1971,"AL","BAL ","BAL","E",1,101,57,"Y"," ","Y","N","Baltimore Orioles","Memorial Stadium",1023037
+1971,"AL","BOS ","BOS","E",3,85,77,"N"," ","N","N","Boston Red Sox","Fenway Park II",1678732
+1971,"AL","CAL ","ANA","W",4,76,86,"N"," ","N","N","California Angels","Anaheim Stadium",926373
+1971,"AL","CHA ","CHW","W",3,79,83,"N"," ","N","N","Chicago White Sox","Comiskey Park",833891
+1971,"AL","CLE ","CLE","E",6,60,102,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",591361
+1971,"AL","DET ","DET","E",2,91,71,"N"," ","N","N","Detroit Tigers","Tiger Stadium",1591073
+1971,"AL","KCA ","KCR","W",2,85,76,"N"," ","N","N","Kansas City Royals","Municipal Stadium II",910784
+1971,"AL","MIN ","MIN","W",5,74,86,"N"," ","N","N","Minnesota Twins","Metropolitan Stadium",940858
+1971,"AL","ML4 ","MIL","W",6,69,92,"N"," ","N","N","Milwaukee Brewers","County Stadium",731531
+1971,"AL","NYA ","NYY","E",4,82,80,"N"," ","N","N","New York Yankees","Yankee Stadium I",1070771
+1971,"AL","OAK ","OAK","W",1,101,60,"Y"," ","N","N","Oakland Athletics","Oakland Coliseum",914993
+1971,"NL","ATL ","ATL","W",3,82,80,"N"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",1006320
+1971,"NL","CHN ","CHC","E",4,83,79,"N"," ","N","N","Chicago Cubs","Wrigley Field",1653007
+1971,"NL","CIN ","CIN","W",5,79,83,"N"," ","N","N","Cincinnati Reds","Riverfront Stadium",1501122
+1971,"NL","HOU ","HOU","W",4,79,83,"N"," ","N","N","Houston Astros","Astrodome",1261589
+1971,"NL","LAN ","LAD","W",2,89,73,"N"," ","N","N","Los Angeles Dodgers","Dodger Stadium",2064594
+1971,"NL","MON ","MON","E",5,71,90,"N"," ","N","N","Montreal Expos","Jarry Park",1290963
+1971,"NL","NYN ","NYM","E",3,83,79,"N"," ","N","N","New York Mets","Shea Stadium",2266680
+1971,"NL","PHI ","PHI","E",6,67,95,"N"," ","N","N","Philadelphia Phillies","Veterans Stadium",1511223
+1971,"NL","PIT ","PIT","E",1,97,65,"Y"," ","Y","Y","Pittsburgh Pirates","Three Rivers Stadium",1501132
+1971,"NL","SDN ","SDP","W",6,61,100,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",557513
+1971,"NL","SFN ","SFG","W",1,90,72,"Y"," ","N","N","San Francisco Giants","Candlestick Park",1106043
+1971,"NL","SLN ","STL","E",2,90,72,"N"," ","N","N","St. Louis Cardinals","Busch Stadium II",1604671
+1972,"AL","BAL ","BAL","E",3,80,74,"N"," ","N","N","Baltimore Orioles","Memorial Stadium",899950
+1972,"AL","BOS ","BOS","E",2,85,70,"N"," ","N","N","Boston Red Sox","Fenway Park II",1441718
+1972,"AL","CAL ","ANA","W",5,75,80,"N"," ","N","N","California Angels","Anaheim Stadium",744190
+1972,"AL","CHA ","CHW","W",2,87,67,"N"," ","N","N","Chicago White Sox","Comiskey Park",1177318
+1972,"AL","CLE ","CLE","E",5,72,84,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",626354
+1972,"AL","DET ","DET","E",1,86,70,"Y"," ","N","N","Detroit Tigers","Tiger Stadium",1892386
+1972,"AL","KCA ","KCR","W",4,76,78,"N"," ","N","N","Kansas City Royals","Municipal Stadium II",707656
+1972,"AL","MIN ","MIN","W",3,77,77,"N"," ","N","N","Minnesota Twins","Metropolitan Stadium",797901
+1972,"AL","ML4 ","MIL","E",6,65,91,"N"," ","N","N","Milwaukee Brewers","County Stadium",600440
+1972,"AL","NYA ","NYY","E",4,79,76,"N"," ","N","N","New York Yankees","Yankee Stadium I",966328
+1972,"AL","OAK ","OAK","W",1,93,62,"Y"," ","Y","Y","Oakland Athletics","Oakland Coliseum",921323
+1972,"AL","TEX ","TEX","W",6,54,100,"N"," ","N","N","Texas Rangers","Arlington Stadium",662974
+1972,"NL","ATL ","ATL","W",4,70,84,"N"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",752973
+1972,"NL","CHN ","CHC","E",2,85,70,"N"," ","N","N","Chicago Cubs","Wrigley Field",1299163
+1972,"NL","CIN ","CIN","W",1,95,59,"Y"," ","Y","N","Cincinnati Reds","Riverfront Stadium",1611459
+1972,"NL","HOU ","HOU","W",2,84,69,"N"," ","N","N","Houston Astros","Astrodome",1469247
+1972,"NL","LAN ","LAD","W",3,85,70,"N"," ","N","N","Los Angeles Dodgers","Dodger Stadium",1860858
+1972,"NL","MON ","MON","E",5,70,86,"N"," ","N","N","Montreal Expos","Jarry Park",1142145
+1972,"NL","NYN ","NYM","E",3,83,73,"N"," ","N","N","New York Mets","Shea Stadium",2134185
+1972,"NL","PHI ","PHI","E",6,59,97,"N"," ","N","N","Philadelphia Phillies","Veterans Stadium",1343329
+1972,"NL","PIT ","PIT","E",1,96,59,"Y"," ","N","N","Pittsburgh Pirates","Three Rivers Stadium",1427460
+1972,"NL","SDN ","SDP","W",6,58,95,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",644273
+1972,"NL","SFN ","SFG","W",5,69,86,"N"," ","N","N","San Francisco Giants","Candlestick Park",647744
+1972,"NL","SLN ","STL","E",4,75,81,"N"," ","N","N","St. Louis Cardinals","Busch Stadium II",1196894
+1973,"AL","BAL ","BAL","E",1,97,65,"Y"," ","N","N","Baltimore Orioles","Memorial Stadium",958667
+1973,"AL","BOS ","BOS","E",2,89,73,"N"," ","N","N","Boston Red Sox","Fenway Park II",1481002
+1973,"AL","CAL ","ANA","W",4,79,83,"N"," ","N","N","California Angels","Anaheim Stadium",1058206
+1973,"AL","CHA ","CHW","W",5,77,85,"N"," ","N","N","Chicago White Sox","Comiskey Park",1302527
+1973,"AL","CLE ","CLE","E",6,71,91,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",615107
+1973,"AL","DET ","DET","E",3,85,77,"N"," ","N","N","Detroit Tigers","Tiger Stadium",1724146
+1973,"AL","KCA ","KCR","W",2,88,74,"N"," ","N","N","Kansas City Royals","Royals Stadium",1345341
+1973,"AL","MIN ","MIN","W",3,81,81,"N"," ","N","N","Minnesota Twins","Metropolitan Stadium",907499
+1973,"AL","ML4 ","MIL","E",5,74,88,"N"," ","N","N","Milwaukee Brewers","County Stadium",1092158
+1973,"AL","NYA ","NYY","E",4,80,82,"N"," ","N","N","New York Yankees","Yankee Stadium I",1262103
+1973,"AL","OAK ","OAK","W",1,94,68,"Y"," ","Y","Y","Oakland Athletics","Oakland Coliseum",1000763
+1973,"AL","TEX ","TEX","W",6,57,105,"N"," ","N","N","Texas Rangers","Arlington Stadium",686085
+1973,"NL","ATL ","ATL","W",5,76,85,"N"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",800655
+1973,"NL","CHN ","CHC","E",5,77,84,"N"," ","N","N","Chicago Cubs","Wrigley Field",1351705
+1973,"NL","CIN ","CIN","W",1,99,63,"Y"," ","N","N","Cincinnati Reds","Riverfront Stadium",2017601
+1973,"NL","HOU ","HOU","W",4,82,80,"N"," ","N","N","Houston Astros","Astrodome",1394004
+1973,"NL","LAN ","LAD","W",2,95,66,"N"," ","N","N","Los Angeles Dodgers","Dodger Stadium",2136192
+1973,"NL","MON ","MON","E",4,79,83,"N"," ","N","N","Montreal Expos","Jarry Park",1246863
+1973,"NL","NYN ","NYM","E",1,82,79,"Y"," ","Y","N","New York Mets","Shea Stadium",1912390
+1973,"NL","PHI ","PHI","E",6,71,91,"N"," ","N","N","Philadelphia Phillies","Veterans Stadium",1475934
+1973,"NL","PIT ","PIT","E",3,80,82,"N"," ","N","N","Pittsburgh Pirates","Three Rivers Stadium",1319913
+1973,"NL","SDN ","SDP","W",6,60,102,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",611826
+1973,"NL","SFN ","SFG","W",3,88,74,"N"," ","N","N","San Francisco Giants","Candlestick Park",834193
+1973,"NL","SLN ","STL","E",2,81,81,"N"," ","N","N","St. Louis Cardinals","Busch Stadium II",1574046
+1974,"AL","BAL ","BAL","E",1,91,71,"Y"," ","N","N","Baltimore Orioles","Memorial Stadium",962572
+1974,"AL","BOS ","BOS","E",3,84,78,"N"," ","N","N","Boston Red Sox","Fenway Park II",1556411
+1974,"AL","CAL ","ANA","W",6,68,94,"N"," ","N","N","California Angels","Anaheim Stadium",917269
+1974,"AL","CHA ","CHW","W",4,80,80,"N"," ","N","N","Chicago White Sox","Comiskey Park",1149596
+1974,"AL","CLE ","CLE","E",4,77,85,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",1114262
+1974,"AL","DET ","DET","E",6,72,90,"N"," ","N","N","Detroit Tigers","Tiger Stadium",1243080
+1974,"AL","KCA ","KCR","W",5,77,85,"N"," ","N","N","Kansas City Royals","Royals Stadium",1173292
+1974,"AL","MIN ","MIN","W",3,82,80,"N"," ","N","N","Minnesota Twins","Metropolitan Stadium",662401
+1974,"AL","ML4 ","MIL","E",5,76,86,"N"," ","N","N","Milwaukee Brewers","County Stadium",955741
+1974,"AL","NYA ","NYY","E",2,89,73,"N"," ","N","N","New York Yankees","Shea Stadium",1273075
+1974,"AL","OAK ","OAK","W",1,90,72,"Y"," ","Y","Y","Oakland Athletics","Oakland Coliseum",845693
+1974,"AL","TEX ","TEX","W",2,84,76,"N"," ","N","N","Texas Rangers","Arlington Stadium",1193902
+1974,"NL","ATL ","ATL","W",3,88,74,"N"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",981085
+1974,"NL","CHN ","CHC","E",6,66,96,"N"," ","N","N","Chicago Cubs","Wrigley Field",1015378
+1974,"NL","CIN ","CIN","W",2,98,64,"N"," ","N","N","Cincinnati Reds","Riverfront Stadium",2164307
+1974,"NL","HOU ","HOU","W",4,81,81,"N"," ","N","N","Houston Astros","Astrodome",1090728
+1974,"NL","LAN ","LAD","W",1,102,60,"Y"," ","Y","N","Los Angeles Dodgers","Dodger Stadium",2632474
+1974,"NL","MON ","MON","E",4,79,82,"N"," ","N","N","Montreal Expos","Jarry Park",1019134
+1974,"NL","NYN ","NYM","E",5,71,91,"N"," ","N","N","New York Mets","Shea Stadium",1722209
+1974,"NL","PHI ","PHI","E",3,80,82,"N"," ","N","N","Philadelphia Phillies","Veterans Stadium",1808648
+1974,"NL","PIT ","PIT","E",1,88,74,"Y"," ","N","N","Pittsburgh Pirates","Three Rivers Stadium",1110552
+1974,"NL","SDN ","SDP","W",6,60,102,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",1075399
+1974,"NL","SFN ","SFG","W",5,72,90,"N"," ","N","N","San Francisco Giants","Candlestick Park",519987
+1974,"NL","SLN ","STL","E",2,86,75,"N"," ","N","N","St. Louis Cardinals","Busch Stadium II",1838413
+1975,"AL","BAL ","BAL","E",2,90,69,"N"," ","N","N","Baltimore Orioles","Memorial Stadium",1002157
+1975,"AL","BOS ","BOS","E",1,95,65,"Y"," ","Y","N","Boston Red Sox","Fenway Park II",1748587
+1975,"AL","CAL ","ANA","W",6,72,89,"N"," ","N","N","California Angels","Anaheim Stadium",1058163
+1975,"AL","CHA ","CHW","W",5,75,86,"N"," ","N","N","Chicago White Sox","Comiskey Park",750802
+1975,"AL","CLE ","CLE","E",4,79,80,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",977039
+1975,"AL","DET ","DET","E",6,57,102,"N"," ","N","N","Detroit Tigers","Tiger Stadium",1058836
+1975,"AL","KCA ","KCR","W",2,91,71,"N"," ","N","N","Kansas City Royals","Royals Stadium",1151836
+1975,"AL","MIN ","MIN","W",4,76,83,"N"," ","N","N","Minnesota Twins","Metropolitan Stadium",737156
+1975,"AL","ML4 ","MIL","E",5,68,94,"N"," ","N","N","Milwaukee Brewers","County Stadium",1213357
+1975,"AL","NYA ","NYY","E",3,83,77,"N"," ","N","N","New York Yankees","Shea Stadium",1288048
+1975,"AL","OAK ","OAK","W",1,98,64,"Y"," ","N","N","Oakland Athletics","Oakland Coliseum",1075518
+1975,"AL","TEX ","TEX","W",3,79,83,"N"," ","N","N","Texas Rangers","Arlington Stadium",1127924
+1975,"NL","ATL ","ATL","W",5,67,94,"N"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",534672
+1975,"NL","CHN ","CHC","E",6,75,87,"N"," ","N","N","Chicago Cubs","Wrigley Field",1034819
+1975,"NL","CIN ","CIN","W",1,108,54,"Y"," ","Y","Y","Cincinnati Reds","Riverfront Stadium",2315603
+1975,"NL","HOU ","HOU","W",6,64,97,"N"," ","N","N","Houston Astros","Astrodome",858002
+1975,"NL","LAN ","LAD","W",2,88,74,"N"," ","N","N","Los Angeles Dodgers","Dodger Stadium",2539349
+1975,"NL","MON ","MON","E",5,75,87,"N"," ","N","N","Montreal Expos","Jarry Park",908292
+1975,"NL","NYN ","NYM","E",3,82,80,"N"," ","N","N","New York Mets","Shea Stadium",1730566
+1975,"NL","PHI ","PHI","E",2,86,76,"N"," ","N","N","Philadelphia Phillies","Veterans Stadium",1909233
+1975,"NL","PIT ","PIT","E",1,92,69,"Y"," ","N","N","Pittsburgh Pirates","Three Rivers Stadium",1270018
+1975,"NL","SDN ","SDP","W",4,71,91,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",1281747
+1975,"NL","SFN ","SFG","W",3,80,81,"N"," ","N","N","San Francisco Giants","Candlestick Park",522919
+1975,"NL","SLN ","STL","E",4,82,80,"N"," ","N","N","St. Louis Cardinals","Busch Stadium II",1695270
+1976,"AL","BAL ","BAL","E",2,88,74,"N"," ","N","N","Baltimore Orioles","Memorial Stadium",1058609
+1976,"AL","BOS ","BOS","E",3,83,79,"N"," ","N","N","Boston Red Sox","Fenway Park II",1895846
+1976,"AL","CAL ","ANA","W",5,76,86,"N"," ","N","N","California Angels","Anaheim Stadium",1006774
+1976,"AL","CHA ","CHW","W",6,64,97,"N"," ","N","N","Chicago White Sox","Comiskey Park",914945
+1976,"AL","CLE ","CLE","E",4,81,78,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",948776
+1976,"AL","DET ","DET","E",5,74,87,"N"," ","N","N","Detroit Tigers","Tiger Stadium",1467020
+1976,"AL","KCA ","KCR","W",1,90,72,"Y"," ","N","N","Kansas City Royals","Royals Stadium",1680265
+1976,"AL","MIN ","MIN","W",3,85,77,"N"," ","N","N","Minnesota Twins","Metropolitan Stadium",715394
+1976,"AL","ML4 ","MIL","E",6,66,95,"N"," ","N","N","Milwaukee Brewers","County Stadium",1012164
+1976,"AL","NYA ","NYY","E",1,97,62,"Y"," ","Y","N","New York Yankees","Yankee Stadium II",2012434
+1976,"AL","OAK ","OAK","W",2,87,74,"N"," ","N","N","Oakland Athletics","Oakland Coliseum",780593
+1976,"AL","TEX ","TEX","W",4,76,86,"N"," ","N","N","Texas Rangers","Arlington Stadium",1164982
+1976,"NL","ATL ","ATL","W",6,70,92,"N"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",818179
+1976,"NL","CHN ","CHC","E",4,75,87,"N"," ","N","N","Chicago Cubs","Wrigley Field",1026217
+1976,"NL","CIN ","CIN","W",1,102,60,"Y"," ","Y","Y","Cincinnati Reds","Riverfront Stadium",2629708
+1976,"NL","HOU ","HOU","W",3,80,82,"N"," ","N","N","Houston Astros","Astrodome",886146
+1976,"NL","LAN ","LAD","W",2,92,70,"N"," ","N","N","Los Angeles Dodgers","Dodger Stadium",2386301
+1976,"NL","MON ","MON","E",6,55,107,"N"," ","N","N","Montreal Expos","Jarry Park",646704
+1976,"NL","NYN ","NYM","E",3,86,76,"N"," ","N","N","New York Mets","Shea Stadium",1468754
+1976,"NL","PHI ","PHI","E",1,101,61,"Y"," ","N","N","Philadelphia Phillies","Veterans Stadium",2480150
+1976,"NL","PIT ","PIT","E",2,92,70,"N"," ","N","N","Pittsburgh Pirates","Three Rivers Stadium",1025945
+1976,"NL","SDN ","SDP","W",5,73,89,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",1458478
+1976,"NL","SFN ","SFG","W",4,74,88,"N"," ","N","N","San Francisco Giants","Candlestick Park",626868
+1976,"NL","SLN ","STL","E",5,72,90,"N"," ","N","N","St. Louis Cardinals","Busch Stadium II",1207079
+1977,"AL","BAL ","BAL","E",2,97,64,"N"," ","N","N","Baltimore Orioles","Memorial Stadium",1195769
+1977,"AL","BOS ","BOS","E",3,97,64,"N"," ","N","N","Boston Red Sox","Fenway Park II",2074549
+1977,"AL","CAL ","ANA","W",5,74,88,"N"," ","N","N","California Angels","Anaheim Stadium",1432633
+1977,"AL","CHA ","CHW","W",3,90,72,"N"," ","N","N","Chicago White Sox","Comiskey Park",1657135
+1977,"AL","CLE ","CLE","E",5,71,90,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",900365
+1977,"AL","DET ","DET","E",4,74,88,"N"," ","N","N","Detroit Tigers","Tiger Stadium",1359856
+1977,"AL","KCA ","KCR","W",1,102,60,"Y"," ","N","N","Kansas City Royals","Royals Stadium",1852603
+1977,"AL","MIN ","MIN","W",4,84,77,"N"," ","N","N","Minnesota Twins","Metropolitan Stadium",1162727
+1977,"AL","ML4 ","MIL","E",6,67,95,"N"," ","N","N","Milwaukee Brewers","County Stadium",1114938
+1977,"AL","NYA ","NYY","E",1,100,62,"Y"," ","Y","Y","New York Yankees","Yankee Stadium II",2103092
+1977,"AL","OAK ","OAK","W",7,63,98,"N"," ","N","N","Oakland Athletics","Oakland Coliseum",495599
+1977,"AL","SEA ","SEA","W",6,64,98,"N"," ","N","N","Seattle Mariners","Kingdome",1338511
+1977,"AL","TEX ","TEX","W",2,94,68,"N"," ","N","N","Texas Rangers","Arlington Stadium",1250722
+1977,"AL","TOR ","TOR","E",7,54,107,"N"," ","N","N","Toronto Blue Jays","Exhibition Stadium",1701052
+1977,"NL","ATL ","ATL","W",6,61,101,"N"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",872464
+1977,"NL","CHN ","CHC","E",4,81,81,"N"," ","N","N","Chicago Cubs","Wrigley Field",1439834
+1977,"NL","CIN ","CIN","W",2,88,74,"N"," ","N","N","Cincinnati Reds","Riverfront Stadium",2519670
+1977,"NL","HOU ","HOU","W",3,81,81,"N"," ","N","N","Houston Astros","Astrodome",1109560
+1977,"NL","LAN ","LAD","W",1,98,64,"Y"," ","Y","N","Los Angeles Dodgers","Dodger Stadium",2955087
+1977,"NL","MON ","MON","E",5,75,87,"N"," ","N","N","Montreal Expos","Stade Olympique",1433757
+1977,"NL","NYN ","NYM","E",6,64,98,"N"," ","N","N","New York Mets","Shea Stadium",1066825
+1977,"NL","PHI ","PHI","E",1,101,61,"Y"," ","N","N","Philadelphia Phillies","Veterans Stadium",2700070
+1977,"NL","PIT ","PIT","E",2,96,66,"N"," ","N","N","Pittsburgh Pirates","Three Rivers Stadium",1237349
+1977,"NL","SDN ","SDP","W",5,69,93,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",1376269
+1977,"NL","SFN ","SFG","W",4,75,87,"N"," ","N","N","San Francisco Giants","Candlestick Park",700056
+1977,"NL","SLN ","STL","E",3,83,79,"N"," ","N","N","St. Louis Cardinals","Busch Stadium II",1659287
+1978,"AL","BAL ","BAL","E",4,90,71,"N"," ","N","N","Baltimore Orioles","Memorial Stadium",1051724
+1978,"AL","BOS ","BOS","E",2,99,64,"N"," ","N","N","Boston Red Sox","Fenway Park II",2320643
+1978,"AL","CAL ","ANA","W",3,87,75,"N"," ","N","N","California Angels","Anaheim Stadium",1755386
+1978,"AL","CHA ","CHW","W",5,71,90,"N"," ","N","N","Chicago White Sox","Comiskey Park",1491100
+1978,"AL","CLE ","CLE","E",6,69,90,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",800584
+1978,"AL","DET ","DET","E",5,86,76,"N"," ","N","N","Detroit Tigers","Tiger Stadium",1714893
+1978,"AL","KCA ","KCR","W",1,92,70,"Y"," ","N","N","Kansas City Royals","Royals Stadium",2255493
+1978,"AL","MIN ","MIN","W",4,73,89,"N"," ","N","N","Minnesota Twins","Metropolitan Stadium",787878
+1978,"AL","ML4 ","MIL","E",3,93,69,"N"," ","N","N","Milwaukee Brewers","County Stadium",1601406
+1978,"AL","NYA ","NYY","E",1,100,63,"Y"," ","Y","Y","New York Yankees","Yankee Stadium II",2335871
+1978,"AL","OAK ","OAK","W",6,69,93,"N"," ","N","N","Oakland Athletics","Oakland Coliseum",526999
+1978,"AL","SEA ","SEA","W",7,56,104,"N"," ","N","N","Seattle Mariners","Kingdome",877440
+1978,"AL","TEX ","TEX","W",2,87,75,"N"," ","N","N","Texas Rangers","Arlington Stadium",1447963
+1978,"AL","TOR ","TOR","E",7,59,102,"N"," ","N","N","Toronto Blue Jays","Exhibition Stadium",1562585
+1978,"NL","ATL ","ATL","W",6,69,93,"N"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",904494
+1978,"NL","CHN ","CHC","E",3,79,83,"N"," ","N","N","Chicago Cubs","Wrigley Field",1525311
+1978,"NL","CIN ","CIN","W",2,92,69,"N"," ","N","N","Cincinnati Reds","Riverfront Stadium",2532497
+1978,"NL","HOU ","HOU","W",5,74,88,"N"," ","N","N","Houston Astros","Astrodome",1126145
+1978,"NL","LAN ","LAD","W",1,95,67,"Y"," ","Y","N","Los Angeles Dodgers","Dodger Stadium",3347845
+1978,"NL","MON ","MON","E",4,76,86,"N"," ","N","N","Montreal Expos","Stade Olympique",1427007
+1978,"NL","NYN ","NYM","E",6,66,96,"N"," ","N","N","New York Mets","Shea Stadium",1007328
+1978,"NL","PHI ","PHI","E",1,90,72,"Y"," ","N","N","Philadelphia Phillies","Veterans Stadium",2583389
+1978,"NL","PIT ","PIT","E",2,88,73,"N"," ","N","N","Pittsburgh Pirates","Three Rivers Stadium",964106
+1978,"NL","SDN ","SDP","W",4,84,78,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",1670107
+1978,"NL","SFN ","SFG","W",3,89,73,"N"," ","N","N","San Francisco Giants","Candlestick Park",1740477
+1978,"NL","SLN ","STL","E",5,69,93,"N"," ","N","N","St. Louis Cardinals","Busch Stadium II",1278215
+1979,"AL","BAL ","BAL","E",1,102,57,"Y"," ","Y","N","Baltimore Orioles","Memorial Stadium",1681009
+1979,"AL","BOS ","BOS","E",3,91,69,"N"," ","N","N","Boston Red Sox","Fenway Park II",2353114
+1979,"AL","CAL ","ANA","W",1,88,74,"Y"," ","N","N","California Angels","Anaheim Stadium",2523575
+1979,"AL","CHA ","CHW","W",5,73,87,"N"," ","N","N","Chicago White Sox","Comiskey Park",1280702
+1979,"AL","CLE ","CLE","E",6,81,80,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",1011644
+1979,"AL","DET ","DET","E",5,85,76,"N"," ","N","N","Detroit Tigers","Tiger Stadium",1630929
+1979,"AL","KCA ","KCR","W",2,85,77,"N"," ","N","N","Kansas City Royals","Royals Stadium",2261845
+1979,"AL","MIN ","MIN","W",4,82,80,"N"," ","N","N","Minnesota Twins","Metropolitan Stadium",1070521
+1979,"AL","ML4 ","MIL","E",2,95,66,"N"," ","N","N","Milwaukee Brewers","County Stadium",1918343
+1979,"AL","NYA ","NYY","E",4,89,71,"N"," ","N","N","New York Yankees","Yankee Stadium II",2537765
+1979,"AL","OAK ","OAK","W",7,54,108,"N"," ","N","N","Oakland Athletics","Oakland Coliseum",306763
+1979,"AL","SEA ","SEA","W",6,67,95,"N"," ","N","N","Seattle Mariners","Kingdome",844447
+1979,"AL","TEX ","TEX","W",3,83,79,"N"," ","N","N","Texas Rangers","Arlington Stadium",1519671
+1979,"AL","TOR ","TOR","E",7,53,109,"N"," ","N","N","Toronto Blue Jays","Exhibition Stadium",1431651
+1979,"NL","ATL ","ATL","W",6,66,94,"N"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",769465
+1979,"NL","CHN ","CHC","E",5,80,82,"N"," ","N","N","Chicago Cubs","Wrigley Field",1648587
+1979,"NL","CIN ","CIN","W",1,90,71,"Y"," ","N","N","Cincinnati Reds","Riverfront Stadium",2356933
+1979,"NL","HOU ","HOU","W",2,89,73,"N"," ","N","N","Houston Astros","Astrodome",1900312
+1979,"NL","LAN ","LAD","W",3,79,83,"N"," ","N","N","Los Angeles Dodgers","Dodger Stadium",2860954
+1979,"NL","MON ","MON","E",2,95,65,"N"," ","N","N","Montreal Expos","Stade Olympique",2102173
+1979,"NL","NYN ","NYM","E",6,63,99,"N"," ","N","N","New York Mets","Shea Stadium",788905
+1979,"NL","PHI ","PHI","E",4,84,78,"N"," ","N","N","Philadelphia Phillies","Veterans Stadium",2775011
+1979,"NL","PIT ","PIT","E",1,98,64,"Y"," ","Y","Y","Pittsburgh Pirates","Three Rivers Stadium",1435454
+1979,"NL","SDN ","SDP","W",5,68,93,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",1456967
+1979,"NL","SFN ","SFG","W",4,71,91,"N"," ","N","N","San Francisco Giants","Candlestick Park",1456402
+1979,"NL","SLN ","STL","E",3,86,76,"N"," ","N","N","St. Louis Cardinals","Busch Stadium II",1627256
+1980,"AL","BAL ","BAL","E",2,100,62,"N"," ","N","N","Baltimore Orioles","Memorial Stadium",1797438
+1980,"AL","BOS ","BOS","E",4,83,77,"N"," ","N","N","Boston Red Sox","Fenway Park II",1956092
+1980,"AL","CAL ","ANA","W",6,65,95,"N"," ","N","N","California Angels","Anaheim Stadium",2297327
+1980,"AL","CHA ","CHW","W",5,70,90,"N"," ","N","N","Chicago White Sox","Comiskey Park",1200365
+1980,"AL","CLE ","CLE","E",6,79,81,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",1033827
+1980,"AL","DET ","DET","E",5,84,78,"N"," ","N","N","Detroit Tigers","Tiger Stadium",1785293
+1980,"AL","KCA ","KCR","W",1,97,65,"Y"," ","Y","N","Kansas City Royals","Royals Stadium",2288714
+1980,"AL","MIN ","MIN","W",3,77,84,"N"," ","N","N","Minnesota Twins","Metropolitan Stadium",769206
+1980,"AL","ML4 ","MIL","E",3,86,76,"N"," ","N","N","Milwaukee Brewers","County Stadium",1857408
+1980,"AL","NYA ","NYY","E",1,103,59,"Y"," ","N","N","New York Yankees","Yankee Stadium II",2627417
+1980,"AL","OAK ","OAK","W",2,83,79,"N"," ","N","N","Oakland Athletics","Oakland Coliseum",842259
+1980,"AL","SEA ","SEA","W",7,59,103,"N"," ","N","N","Seattle Mariners","Kingdome",836204
+1980,"AL","TEX ","TEX","W",4,76,85,"N"," ","N","N","Texas Rangers","Arlington Stadium",1198175
+1980,"AL","TOR ","TOR","E",7,67,95,"N"," ","N","N","Toronto Blue Jays","Exhibition Stadium",1400327
+1980,"NL","ATL ","ATL","W",4,81,80,"N"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",1048411
+1980,"NL","CHN ","CHC","E",6,64,98,"N"," ","N","N","Chicago Cubs","Wrigley Field",1206776
+1980,"NL","CIN ","CIN","W",3,89,73,"N"," ","N","N","Cincinnati Reds","Riverfront Stadium",2022450
+1980,"NL","HOU ","HOU","W",1,93,70,"Y"," ","N","N","Houston Astros","Astrodome",2278217
+1980,"NL","LAN ","LAD","W",2,92,71,"N"," ","N","N","Los Angeles Dodgers","Dodger Stadium",3249287
+1980,"NL","MON ","MON","E",2,90,72,"N"," ","N","N","Montreal Expos","Stade Olympique",2208175
+1980,"NL","NYN ","NYM","E",5,67,95,"N"," ","N","N","New York Mets","Shea Stadium",1192073
+1980,"NL","PHI ","PHI","E",1,91,71,"Y"," ","Y","Y","Philadelphia Phillies","Veterans Stadium",2651650
+1980,"NL","PIT ","PIT","E",3,83,79,"N"," ","N","N","Pittsburgh Pirates","Three Rivers Stadium",1646757
+1980,"NL","SDN ","SDP","W",6,73,89,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",1139026
+1980,"NL","SFN ","SFG","W",5,75,86,"N"," ","N","N","San Francisco Giants","Candlestick Park",1096115
+1980,"NL","SLN ","STL","E",4,74,88,"N"," ","N","N","St. Louis Cardinals","Busch Stadium II",1385147
+1981,"AL","BAL ","BAL","E",2,59,46,"N"," ","N","N","Baltimore Orioles","Memorial Stadium",1024247
+1981,"AL","BOS ","BOS","E",5,59,49,"N"," ","N","N","Boston Red Sox","Fenway Park II",1060379
+1981,"AL","CAL ","ANA","W",5,51,59,"N"," ","N","N","California Angels","Anaheim Stadium",1441545
+1981,"AL","CHA ","CHW","W",3,54,52,"N"," ","N","N","Chicago White Sox","Comiskey Park",946651
+1981,"AL","CLE ","CLE","E",6,52,51,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",661395
+1981,"AL","DET ","DET","E",4,60,49,"N"," ","N","N","Detroit Tigers","Tiger Stadium",1149144
+1981,"AL","KCA ","KCR","W",4,50,53,"Y"," ","N","N","Kansas City Royals","Royals Stadium",1279403
+1981,"AL","MIN ","MIN","W",7,41,68,"N"," ","N","N","Minnesota Twins","Metropolitan Stadium",469090
+1981,"AL","ML4 ","MIL","E",1,62,47,"Y"," ","N","N","Milwaukee Brewers","County Stadium",874292
+1981,"AL","NYA ","NYY","E",3,59,48,"Y"," ","Y","N","New York Yankees","Yankee Stadium II",1614353
+1981,"AL","OAK ","OAK","W",1,64,45,"Y"," ","N","N","Oakland Athletics","Oakland Coliseum",1304052
+1981,"AL","SEA ","SEA","W",6,44,65,"N"," ","N","N","Seattle Mariners","Kingdome",636276
+1981,"AL","TEX ","TEX","W",2,57,48,"N"," ","N","N","Texas Rangers","Arlington Stadium",850076
+1981,"AL","TOR ","TOR","E",7,37,69,"N"," ","N","N","Toronto Blue Jays","Exhibition Stadium",755083
+1981,"NL","ATL ","ATL","W",5,50,56,"N"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",535418
+1981,"NL","CHN ","CHC","E",6,38,65,"N"," ","N","N","Chicago Cubs","Wrigley Field",565637
+1981,"NL","CIN ","CIN","W",1,66,42,"N"," ","N","N","Cincinnati Reds","Riverfront Stadium",1093730
+1981,"NL","HOU ","HOU","W",3,61,49,"Y"," ","N","N","Houston Astros","Astrodome",1321282
+1981,"NL","LAN ","LAD","W",2,63,47,"Y"," ","Y","Y","Los Angeles Dodgers","Dodger Stadium",2381292
+1981,"NL","MON ","MON","E",2,60,48,"Y"," ","N","N","Montreal Expos","Stade Olympique",1534564
+1981,"NL","NYN ","NYM","E",5,41,62,"N"," ","N","N","New York Mets","Shea Stadium",704244
+1981,"NL","PHI ","PHI","E",3,59,48,"Y"," ","N","N","Philadelphia Phillies","Veterans Stadium",1638752
+1981,"NL","PIT ","PIT","E",4,46,56,"N"," ","N","N","Pittsburgh Pirates","Three Rivers Stadium",541789
+1981,"NL","SDN ","SDP","W",6,41,69,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",519161
+1981,"NL","SFN ","SFG","W",4,56,55,"N"," ","N","N","San Francisco Giants","Candlestick Park",632274
+1981,"NL","SLN ","STL","E",1,59,43,"N"," ","N","N","St. Louis Cardinals","Busch Stadium II",1010247
+1982,"AL","BAL ","BAL","E",2,94,68,"N"," ","N","N","Baltimore Orioles","Memorial Stadium",1613031
+1982,"AL","BOS ","BOS","E",3,89,73,"N"," ","N","N","Boston Red Sox","Fenway Park II",1950124
+1982,"AL","CAL ","ANA","W",1,93,69,"Y"," ","N","N","California Angels","Anaheim Stadium",2807360
+1982,"AL","CHA ","CHW","W",3,87,75,"N"," ","N","N","Chicago White Sox","Comiskey Park",1567787
+1982,"AL","CLE ","CLE","E",7,78,84,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",1044021
+1982,"AL","DET ","DET","E",4,83,79,"N"," ","N","N","Detroit Tigers","Tiger Stadium",1636058
+1982,"AL","KCA ","KCR","W",2,90,72,"N"," ","N","N","Kansas City Royals","Royals Stadium",2284464
+1982,"AL","MIN ","MIN","W",7,60,102,"N"," ","N","N","Minnesota Twins","Hubert H Humphrey Metrodome",921186
+1982,"AL","ML4 ","MIL","E",1,95,67,"Y"," ","Y","N","Milwaukee Brewers","County Stadium",1978896
+1982,"AL","NYA ","NYY","E",5,79,83,"N"," ","N","N","New York Yankees","Yankee Stadium II",2041219
+1982,"AL","OAK ","OAK","W",5,68,94,"N"," ","N","N","Oakland Athletics","Oakland Coliseum",1735489
+1982,"AL","SEA ","SEA","W",4,76,86,"N"," ","N","N","Seattle Mariners","Kingdome",1070404
+1982,"AL","TEX ","TEX","W",6,64,98,"N"," ","N","N","Texas Rangers","Arlington Stadium",1154432
+1982,"AL","TOR ","TOR","E",6,78,84,"N"," ","N","N","Toronto Blue Jays","Exhibition Stadium",1275978
+1982,"NL","ATL ","ATL","W",1,89,73,"Y"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",1801985
+1982,"NL","CHN ","CHC","E",5,73,89,"N"," ","N","N","Chicago Cubs","Wrigley Field",1249278
+1982,"NL","CIN ","CIN","W",6,61,101,"N"," ","N","N","Cincinnati Reds","Riverfront Stadium",1326528
+1982,"NL","HOU ","HOU","W",5,77,85,"N"," ","N","N","Houston Astros","Astrodome",1558555
+1982,"NL","LAN ","LAD","W",2,88,74,"N"," ","N","N","Los Angeles Dodgers","Dodger Stadium",3608881
+1982,"NL","MON ","MON","E",3,86,76,"N"," ","N","N","Montreal Expos","Stade Olympique",2318292
+1982,"NL","NYN ","NYM","E",6,65,97,"N"," ","N","N","New York Mets","Shea Stadium",1323036
+1982,"NL","PHI ","PHI","E",2,89,73,"N"," ","N","N","Philadelphia Phillies","Veterans Stadium",2376394
+1982,"NL","PIT ","PIT","E",4,84,78,"N"," ","N","N","Pittsburgh Pirates","Three Rivers Stadium",1024106
+1982,"NL","SDN ","SDP","W",4,81,81,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",1607516
+1982,"NL","SFN ","SFG","W",3,87,75,"N"," ","N","N","San Francisco Giants","Candlestick Park",1200948
+1982,"NL","SLN ","STL","E",1,92,70,"Y"," ","Y","Y","St. Louis Cardinals","Busch Stadium II",2111906
+1983,"AL","BAL ","BAL","E",1,98,64,"Y"," ","Y","Y","Baltimore Orioles","Memorial Stadium",2042071
+1983,"AL","BOS ","BOS","E",6,78,84,"N"," ","N","N","Boston Red Sox","Fenway Park II",1782285
+1983,"AL","CAL ","ANA","W",5,70,92,"N"," ","N","N","California Angels","Anaheim Stadium",2555016
+1983,"AL","CHA ","CHW","W",1,99,63,"Y"," ","N","N","Chicago White Sox","Comiskey Park",2132821
+1983,"AL","CLE ","CLE","E",7,70,92,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",768941
+1983,"AL","DET ","DET","E",2,92,70,"N"," ","N","N","Detroit Tigers","Tiger Stadium",1829636
+1983,"AL","KCA ","KCR","W",2,79,83,"N"," ","N","N","Kansas City Royals","Royals Stadium",1963875
+1983,"AL","MIN ","MIN","W",6,70,92,"N"," ","N","N","Minnesota Twins","Hubert H Humphrey Metrodome",858939
+1983,"AL","ML4 ","MIL","E",5,87,75,"N"," ","N","N","Milwaukee Brewers","County Stadium",2397131
+1983,"AL","NYA ","NYY","E",3,91,71,"N"," ","N","N","New York Yankees","Yankee Stadium II",2257976
+1983,"AL","OAK ","OAK","W",4,74,88,"N"," ","N","N","Oakland Athletics","Oakland Coliseum",1294941
+1983,"AL","SEA ","SEA","W",7,60,102,"N"," ","N","N","Seattle Mariners","Kingdome",813537
+1983,"AL","TEX ","TEX","W",3,77,85,"N"," ","N","N","Texas Rangers","Arlington Stadium",1363469
+1983,"AL","TOR ","TOR","E",4,89,73,"N"," ","N","N","Toronto Blue Jays","Exhibition Stadium",1930415
+1983,"NL","ATL ","ATL","W",2,88,74,"N"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",2119935
+1983,"NL","CHN ","CHC","E",5,71,91,"N"," ","N","N","Chicago Cubs","Wrigley Field",1479717
+1983,"NL","CIN ","CIN","W",6,74,88,"N"," ","N","N","Cincinnati Reds","Riverfront Stadium",1190419
+1983,"NL","HOU ","HOU","W",3,85,77,"N"," ","N","N","Houston Astros","Astrodome",1351962
+1983,"NL","LAN ","LAD","W",1,91,71,"Y"," ","N","N","Los Angeles Dodgers","Dodger Stadium",3510313
+1983,"NL","MON ","MON","E",3,82,80,"N"," ","N","N","Montreal Expos","Stade Olympique",2320651
+1983,"NL","NYN ","NYM","E",6,68,94,"N"," ","N","N","New York Mets","Shea Stadium",1112774
+1983,"NL","PHI ","PHI","E",1,90,72,"Y"," ","Y","N","Philadelphia Phillies","Veterans Stadium",2128339
+1983,"NL","PIT ","PIT","E",2,84,78,"N"," ","N","N","Pittsburgh Pirates","Three Rivers Stadium",1225916
+1983,"NL","SDN ","SDP","W",4,81,81,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",1539815
+1983,"NL","SFN ","SFG","W",5,79,83,"N"," ","N","N","San Francisco Giants","Candlestick Park",1251530
+1983,"NL","SLN ","STL","E",4,79,83,"N"," ","N","N","St. Louis Cardinals","Busch Stadium II",2317914
+1984,"AL","BAL ","BAL","E",5,85,77,"N"," ","N","N","Baltimore Orioles","Memorial Stadium",2045784
+1984,"AL","BOS ","BOS","E",4,86,76,"N"," ","N","N","Boston Red Sox","Fenway Park II",1661618
+1984,"AL","CAL ","ANA","W",2,81,81,"N"," ","N","N","California Angels","Anaheim Stadium",2402997
+1984,"AL","CHA ","CHW","W",6,74,88,"N"," ","N","N","Chicago White Sox","Comiskey Park",2136988
+1984,"AL","CLE ","CLE","E",6,75,87,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",734079
+1984,"AL","DET ","DET","E",1,104,58,"Y"," ","Y","Y","Detroit Tigers","Tiger Stadium",2704794
+1984,"AL","KCA ","KCR","W",1,84,78,"Y"," ","N","N","Kansas City Royals","Royals Stadium",1810018
+1984,"AL","MIN ","MIN","W",3,81,81,"N"," ","N","N","Minnesota Twins","Hubert H Humphrey Metrodome",1598692
+1984,"AL","ML4 ","MIL","E",7,67,94,"N"," ","N","N","Milwaukee Brewers","County Stadium",1608509
+1984,"AL","NYA ","NYY","E",3,87,75,"N"," ","N","N","New York Yankees","Yankee Stadium II",1821815
+1984,"AL","OAK ","OAK","W",4,77,85,"N"," ","N","N","Oakland Athletics","Oakland Coliseum",1353281
+1984,"AL","SEA ","SEA","W",5,74,88,"N"," ","N","N","Seattle Mariners","Kingdome",870372
+1984,"AL","TEX ","TEX","W",7,69,92,"N"," ","N","N","Texas Rangers","Arlington Stadium",1102471
+1984,"AL","TOR ","TOR","E",2,89,73,"N"," ","N","N","Toronto Blue Jays","Exhibition Stadium",2110009
+1984,"NL","ATL ","ATL","W",3,80,82,"N"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",1724892
+1984,"NL","CHN ","CHC","E",1,96,65,"Y"," ","N","N","Chicago Cubs","Wrigley Field",2107655
+1984,"NL","CIN ","CIN","W",5,70,92,"N"," ","N","N","Cincinnati Reds","Riverfront Stadium",1275887
+1984,"NL","HOU ","HOU","W",2,80,82,"N"," ","N","N","Houston Astros","Astrodome",1229862
+1984,"NL","LAN ","LAD","W",4,79,83,"N"," ","N","N","Los Angeles Dodgers","Dodger Stadium",3134824
+1984,"NL","MON ","MON","E",5,78,83,"N"," ","N","N","Montreal Expos","Stade Olympique",1606531
+1984,"NL","NYN ","NYM","E",2,90,72,"N"," ","N","N","New York Mets","Shea Stadium",1842695
+1984,"NL","PHI ","PHI","E",4,81,81,"N"," ","N","N","Philadelphia Phillies","Veterans Stadium",2062693
+1984,"NL","PIT ","PIT","E",6,75,87,"N"," ","N","N","Pittsburgh Pirates","Three Rivers Stadium",773500
+1984,"NL","SDN ","SDP","W",1,92,70,"Y"," ","Y","N","San Diego Padres","Jack Murphy Stadium",1983904
+1984,"NL","SFN ","SFG","W",6,66,96,"N"," ","N","N","San Francisco Giants","Candlestick Park",1001545
+1984,"NL","SLN ","STL","E",3,84,78,"N"," ","N","N","St. Louis Cardinals","Busch Stadium II",2037448
+1985,"AL","BAL ","BAL","E",4,83,78,"N"," ","N","N","Baltimore Orioles","Memorial Stadium",2132387
+1985,"AL","BOS ","BOS","E",5,81,81,"N"," ","N","N","Boston Red Sox","Fenway Park II",1786633
+1985,"AL","CAL ","ANA","W",2,90,72,"N"," ","N","N","California Angels","Anaheim Stadium",2567427
+1985,"AL","CHA ","CHW","W",3,85,77,"N"," ","N","N","Chicago White Sox","Comiskey Park",1669888
+1985,"AL","CLE ","CLE","E",7,60,102,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",655181
+1985,"AL","DET ","DET","E",3,84,77,"N"," ","N","N","Detroit Tigers","Tiger Stadium",2286609
+1985,"AL","KCA ","KCR","W",1,91,71,"Y"," ","Y","Y","Kansas City Royals","Royals Stadium",2162717
+1985,"AL","MIN ","MIN","W",4,77,85,"N"," ","N","N","Minnesota Twins","Hubert H Humphrey Metrodome",1651814
+1985,"AL","ML4 ","MIL","E",6,71,90,"N"," ","N","N","Milwaukee Brewers","County Stadium",1360265
+1985,"AL","NYA ","NYY","E",2,97,64,"N"," ","N","N","New York Yankees","Yankee Stadium II",2214587
+1985,"AL","OAK ","OAK","W",5,77,85,"N"," ","N","N","Oakland Athletics","Oakland Coliseum",1334599
+1985,"AL","SEA ","SEA","W",6,74,88,"N"," ","N","N","Seattle Mariners","Kingdome",1128696
+1985,"AL","TEX ","TEX","W",7,62,99,"N"," ","N","N","Texas Rangers","Arlington Stadium",1112497
+1985,"AL","TOR ","TOR","E",1,99,62,"Y"," ","N","N","Toronto Blue Jays","Exhibition Stadium",2468925
+1985,"NL","ATL ","ATL","W",5,66,96,"N"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",1350137
+1985,"NL","CHN ","CHC","E",4,77,84,"N"," ","N","N","Chicago Cubs","Wrigley Field",2161534
+1985,"NL","CIN ","CIN","W",2,89,72,"N"," ","N","N","Cincinnati Reds","Riverfront Stadium",1834619
+1985,"NL","HOU ","HOU","W",4,83,79,"N"," ","N","N","Houston Astros","Astrodome",1184314
+1985,"NL","LAN ","LAD","W",1,95,67,"Y"," ","N","N","Los Angeles Dodgers","Dodger Stadium",3264593
+1985,"NL","MON ","MON","E",3,84,77,"N"," ","N","N","Montreal Expos","Stade Olympique",1502494
+1985,"NL","NYN ","NYM","E",2,98,64,"N"," ","N","N","New York Mets","Shea Stadium",2761601
+1985,"NL","PHI ","PHI","E",5,75,87,"N"," ","N","N","Philadelphia Phillies","Veterans Stadium",1830350
+1985,"NL","PIT ","PIT","E",6,57,104,"N"," ","N","N","Pittsburgh Pirates","Three Rivers Stadium",735900
+1985,"NL","SDN ","SDP","W",3,83,79,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",2210352
+1985,"NL","SFN ","SFG","W",6,62,100,"N"," ","N","N","San Francisco Giants","Candlestick Park",818697
+1985,"NL","SLN ","STL","E",1,101,61,"Y"," ","Y","N","St. Louis Cardinals","Busch Stadium II",2637563
+1986,"AL","BAL ","BAL","E",7,73,89,"N"," ","N","N","Baltimore Orioles","Memorial Stadium",1973176
+1986,"AL","BOS ","BOS","E",1,95,66,"Y"," ","Y","N","Boston Red Sox","Fenway Park II",2147641
+1986,"AL","CAL ","ANA","W",1,92,70,"Y"," ","N","N","California Angels","Anaheim Stadium",2655872
+1986,"AL","CHA ","CHW","W",5,72,90,"N"," ","N","N","Chicago White Sox","Comiskey Park",1424313
+1986,"AL","CLE ","CLE","E",5,84,78,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",1471805
+1986,"AL","DET ","DET","E",3,87,75,"N"," ","N","N","Detroit Tigers","Tiger Stadium",1899437
+1986,"AL","KCA ","KCR","W",3,76,86,"N"," ","N","N","Kansas City Royals","Royals Stadium",2320794
+1986,"AL","MIN ","MIN","W",6,71,91,"N"," ","N","N","Minnesota Twins","Hubert H Humphrey Metrodome",1255453
+1986,"AL","ML4 ","MIL","E",6,77,84,"N"," ","N","N","Milwaukee Brewers","County Stadium",1265041
+1986,"AL","NYA ","NYY","E",2,90,72,"N"," ","N","N","New York Yankees","Yankee Stadium II",2268030
+1986,"AL","OAK ","OAK","W",4,76,86,"N"," ","N","N","Oakland Athletics","Oakland Coliseum",1314646
+1986,"AL","SEA ","SEA","W",7,67,95,"N"," ","N","N","Seattle Mariners","Kingdome",1029045
+1986,"AL","TEX ","TEX","W",2,87,75,"N"," ","N","N","Texas Rangers","Arlington Stadium",1692002
+1986,"AL","TOR ","TOR","E",4,86,76,"N"," ","N","N","Toronto Blue Jays","Exhibition Stadium",2455477
+1986,"NL","ATL ","ATL","W",6,72,89,"N"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",1387181
+1986,"NL","CHN ","CHC","E",5,70,90,"N"," ","N","N","Chicago Cubs","Wrigley Field",1859102
+1986,"NL","CIN ","CIN","W",2,86,76,"N"," ","N","N","Cincinnati Reds","Riverfront Stadium",1692432
+1986,"NL","HOU ","HOU","W",1,96,66,"Y"," ","N","N","Houston Astros","Astrodome",1734276
+1986,"NL","LAN ","LAD","W",5,73,89,"N"," ","N","N","Los Angeles Dodgers","Dodger Stadium",3023208
+1986,"NL","MON ","MON","E",4,78,83,"N"," ","N","N","Montreal Expos","Stade Olympique",1128981
+1986,"NL","NYN ","NYM","E",1,108,54,"Y"," ","Y","Y","New York Mets","Shea Stadium",2767601
+1986,"NL","PHI ","PHI","E",2,86,75,"N"," ","N","N","Philadelphia Phillies","Veterans Stadium",1933335
+1986,"NL","PIT ","PIT","E",6,64,98,"N"," ","N","N","Pittsburgh Pirates","Three Rivers Stadium",1000917
+1986,"NL","SDN ","SDP","W",4,74,88,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",1805716
+1986,"NL","SFN ","SFG","W",3,83,79,"N"," ","N","N","San Francisco Giants","Candlestick Park",1528748
+1986,"NL","SLN ","STL","E",3,79,82,"N"," ","N","N","St. Louis Cardinals","Busch Stadium II",2471974
+1987,"AL","BAL ","BAL","E",6,67,95,"N"," ","N","N","Baltimore Orioles","Memorial Stadium",1835692
+1987,"AL","BOS ","BOS","E",5,78,84,"N"," ","N","N","Boston Red Sox","Fenway Park II",2231551
+1987,"AL","CAL ","ANA","W",7,75,87,"N"," ","N","N","California Angels","Anaheim Stadium",2696299
+1987,"AL","CHA ","CHW","W",5,77,85,"N"," ","N","N","Chicago White Sox","Comiskey Park",1208060
+1987,"AL","CLE ","CLE","E",7,61,101,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",1077898
+1987,"AL","DET ","DET","E",1,98,64,"Y"," ","N","N","Detroit Tigers","Tiger Stadium",2061830
+1987,"AL","KCA ","KCR","W",2,83,79,"N"," ","N","N","Kansas City Royals","Royals Stadium",2392471
+1987,"AL","MIN ","MIN","W",1,85,77,"Y"," ","Y","Y","Minnesota Twins","Hubert H Humphrey Metrodome",2081976
+1987,"AL","ML4 ","MIL","E",3,91,71,"N"," ","N","N","Milwaukee Brewers","County Stadium",1909244
+1987,"AL","NYA ","NYY","E",4,89,73,"N"," ","N","N","New York Yankees","Yankee Stadium II",2427672
+1987,"AL","OAK ","OAK","W",3,81,81,"N"," ","N","N","Oakland Athletics","Oakland Coliseum",1678921
+1987,"AL","SEA ","SEA","W",4,78,84,"N"," ","N","N","Seattle Mariners","Kingdome",1134255
+1987,"AL","TEX ","TEX","W",6,75,87,"N"," ","N","N","Texas Rangers","Arlington Stadium",1763053
+1987,"AL","TOR ","TOR","E",2,96,66,"N"," ","N","N","Toronto Blue Jays","Exhibition Stadium",2778429
+1987,"NL","ATL ","ATL","W",5,69,92,"N"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",1217402
+1987,"NL","CHN ","CHC","E",6,76,85,"N"," ","N","N","Chicago Cubs","Wrigley Field",2035130
+1987,"NL","CIN ","CIN","W",2,84,78,"N"," ","N","N","Cincinnati Reds","Riverfront Stadium",2185205
+1987,"NL","HOU ","HOU","W",3,76,86,"N"," ","N","N","Houston Astros","Astrodome",1909902
+1987,"NL","LAN ","LAD","W",4,73,89,"N"," ","N","N","Los Angeles Dodgers","Dodger Stadium",2797409
+1987,"NL","MON ","MON","E",3,91,71,"N"," ","N","N","Montreal Expos","Stade Olympique",1850324
+1987,"NL","NYN ","NYM","E",2,92,70,"N"," ","N","N","New York Mets","Shea Stadium",3034129
+1987,"NL","PHI ","PHI","E",5,80,82,"N"," ","N","N","Philadelphia Phillies","Veterans Stadium",2100110
+1987,"NL","PIT ","PIT","E",4,80,82,"N"," ","N","N","Pittsburgh Pirates","Three Rivers Stadium",1161193
+1987,"NL","SDN ","SDP","W",6,65,97,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",1454061
+1987,"NL","SFN ","SFG","W",1,90,72,"Y"," ","N","N","San Francisco Giants","Candlestick Park",1917168
+1987,"NL","SLN ","STL","E",1,95,67,"Y"," ","Y","N","St. Louis Cardinals","Busch Stadium II",3072122
+1988,"AL","BAL ","BAL","E",7,54,107,"N"," ","N","N","Baltimore Orioles","Memorial Stadium",1660738
+1988,"AL","BOS ","BOS","E",1,89,73,"Y"," ","N","N","Boston Red Sox","Fenway Park II",2464851
+1988,"AL","CAL ","ANA","W",4,75,87,"N"," ","N","N","California Angels","Anaheim Stadium",2340925
+1988,"AL","CHA ","CHW","W",5,71,90,"N"," ","N","N","Chicago White Sox","Comiskey Park",1115749
+1988,"AL","CLE ","CLE","E",6,78,84,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",1411610
+1988,"AL","DET ","DET","E",2,88,74,"N"," ","N","N","Detroit Tigers","Tiger Stadium",2081162
+1988,"AL","KCA ","KCR","W",3,84,77,"N"," ","N","N","Kansas City Royals","Royals Stadium",2350181
+1988,"AL","MIN ","MIN","W",2,91,71,"N"," ","N","N","Minnesota Twins","Hubert H Humphrey Metrodome",3030672
+1988,"AL","ML4 ","MIL","E",4,87,75,"N"," ","N","N","Milwaukee Brewers","County Stadium",1923238
+1988,"AL","NYA ","NYY","E",5,85,76,"N"," ","N","N","New York Yankees","Yankee Stadium II",2633701
+1988,"AL","OAK ","OAK","W",1,104,58,"Y"," ","Y","N","Oakland Athletics","Oakland Coliseum",2287335
+1988,"AL","SEA ","SEA","W",7,68,93,"N"," ","N","N","Seattle Mariners","Kingdome",1022398
+1988,"AL","TEX ","TEX","W",6,70,91,"N"," ","N","N","Texas Rangers","Arlington Stadium",1581901
+1988,"AL","TOR ","TOR","E",3,87,75,"N"," ","N","N","Toronto Blue Jays","Exhibition Stadium",2595175
+1988,"NL","ATL ","ATL","W",6,54,106,"N"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",848089
+1988,"NL","CHN ","CHC","E",4,77,85,"N"," ","N","N","Chicago Cubs","Wrigley Field",2089034
+1988,"NL","CIN ","CIN","W",2,87,74,"N"," ","N","N","Cincinnati Reds","Riverfront Stadium",2072528
+1988,"NL","HOU ","HOU","W",5,82,80,"N"," ","N","N","Houston Astros","Astrodome",1933505
+1988,"NL","LAN ","LAD","W",1,94,67,"Y"," ","Y","Y","Los Angeles Dodgers","Dodger Stadium",2980262
+1988,"NL","MON ","MON","E",3,81,81,"N"," ","N","N","Montreal Expos","Stade Olympique",1478659
+1988,"NL","NYN ","NYM","E",1,100,60,"Y"," ","N","N","New York Mets","Shea Stadium",3055445
+1988,"NL","PHI ","PHI","E",6,65,96,"N"," ","N","N","Philadelphia Phillies","Veterans Stadium",1990041
+1988,"NL","PIT ","PIT","E",2,85,75,"N"," ","N","N","Pittsburgh Pirates","Three Rivers Stadium",1866713
+1988,"NL","SDN ","SDP","W",3,83,78,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",1506896
+1988,"NL","SFN ","SFG","W",4,83,79,"N"," ","N","N","San Francisco Giants","Candlestick Park",1785297
+1988,"NL","SLN ","STL","E",5,76,86,"N"," ","N","N","St. Louis Cardinals","Busch Stadium II",2892799
+1989,"AL","BAL ","BAL","E",2,87,75,"N"," ","N","N","Baltimore Orioles","Memorial Stadium",2535208
+1989,"AL","BOS ","BOS","E",3,83,79,"N"," ","N","N","Boston Red Sox","Fenway Park II",2510012
+1989,"AL","CAL ","ANA","W",3,91,71,"N"," ","N","N","California Angels","Anaheim Stadium",2647291
+1989,"AL","CHA ","CHW","W",7,69,92,"N"," ","N","N","Chicago White Sox","Comiskey Park",1045651
+1989,"AL","CLE ","CLE","E",6,73,89,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",1285542
+1989,"AL","DET ","DET","E",7,59,103,"N"," ","N","N","Detroit Tigers","Tiger Stadium",1543656
+1989,"AL","KCA ","KCR","W",2,92,70,"N"," ","N","N","Kansas City Royals","Royals Stadium",2477700
+1989,"AL","MIN ","MIN","W",5,80,82,"N"," ","N","N","Minnesota Twins","Hubert H Humphrey Metrodome",2277438
+1989,"AL","ML4 ","MIL","E",4,81,81,"N"," ","N","N","Milwaukee Brewers","County Stadium",1970735
+1989,"AL","NYA ","NYY","E",5,74,87,"N"," ","N","N","New York Yankees","Yankee Stadium II",2170485
+1989,"AL","OAK ","OAK","W",1,99,63,"Y"," ","Y","Y","Oakland Athletics","Oakland Coliseum",2667225
+1989,"AL","SEA ","SEA","W",6,73,89,"N"," ","N","N","Seattle Mariners","Kingdome",1298443
+1989,"AL","TEX ","TEX","W",4,83,79,"N"," ","N","N","Texas Rangers","Arlington Stadium",2043993
+1989,"AL","TOR ","TOR","E",1,89,73,"Y"," ","N","N","Toronto Blue Jays","Exhibition Stadium /Skydome",3375883
+1989,"NL","ATL ","ATL","W",6,63,97,"N"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",984930
+1989,"NL","CHN ","CHC","E",1,93,69,"Y"," ","N","N","Chicago Cubs","Wrigley Field",2491942
+1989,"NL","CIN ","CIN","W",5,75,87,"N"," ","N","N","Cincinnati Reds","Riverfront Stadium",1979320
+1989,"NL","HOU ","HOU","W",3,86,76,"N"," ","N","N","Houston Astros","Astrodome",1834908
+1989,"NL","LAN ","LAD","W",4,77,83,"N"," ","N","N","Los Angeles Dodgers","Dodger Stadium",2944653
+1989,"NL","MON ","MON","E",4,81,81,"N"," ","N","N","Montreal Expos","Stade Olympique",1783533
+1989,"NL","NYN ","NYM","E",2,87,75,"N"," ","N","N","New York Mets","Shea Stadium",2918710
+1989,"NL","PHI ","PHI","E",6,67,95,"N"," ","N","N","Philadelphia Phillies","Veterans Stadium",1861985
+1989,"NL","PIT ","PIT","E",5,74,88,"N"," ","N","N","Pittsburgh Pirates","Three Rivers Stadium",1374141
+1989,"NL","SDN ","SDP","W",2,89,73,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",2009031
+1989,"NL","SFN ","SFG","W",1,92,70,"Y"," ","Y","N","San Francisco Giants","Candlestick Park",2059701
+1989,"NL","SLN ","STL","E",3,86,76,"N"," ","N","N","St. Louis Cardinals","Busch Stadium II",3080980
+1990,"AL","BAL ","BAL","E",5,76,85,"N"," ","N","N","Baltimore Orioles","Memorial Stadium",2415189
+1990,"AL","BOS ","BOS","E",1,88,74,"Y"," ","N","N","Boston Red Sox","Fenway Park II",2528986
+1990,"AL","CAL ","ANA","W",4,80,82,"N"," ","N","N","California Angels","Anaheim Stadium",2555688
+1990,"AL","CHA ","CHW","W",2,94,68,"N"," ","N","N","Chicago White Sox","Comiskey Park",2002357
+1990,"AL","CLE ","CLE","E",4,77,85,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",1225240
+1990,"AL","DET ","DET","E",3,79,83,"N"," ","N","N","Detroit Tigers","Tiger Stadium",1495785
+1990,"AL","KCA ","KCR","W",6,75,86,"N"," ","N","N","Kansas City Royals","Royals Stadium",2244956
+1990,"AL","MIN ","MIN","W",7,74,88,"N"," ","N","N","Minnesota Twins","Hubert H Humphrey Metrodome",1751584
+1990,"AL","ML4 ","MIL","E",6,74,88,"N"," ","N","N","Milwaukee Brewers","County Stadium",1752900
+1990,"AL","NYA ","NYY","E",7,67,95,"N"," ","N","N","New York Yankees","Yankee Stadium II",2006436
+1990,"AL","OAK ","OAK","W",1,103,59,"Y"," ","Y","N","Oakland Athletics","Oakland Coliseum",2900217
+1990,"AL","SEA ","SEA","W",5,77,85,"N"," ","N","N","Seattle Mariners","Kingdome",1509727
+1990,"AL","TEX ","TEX","W",3,83,79,"N"," ","N","N","Texas Rangers","Arlington Stadium",2057911
+1990,"AL","TOR ","TOR","E",2,86,76,"N"," ","N","N","Toronto Blue Jays","Skydome",3885284
+1990,"NL","ATL ","ATL","W",6,65,97,"N"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",980129
+1990,"NL","CHN ","CHC","E",5,77,85,"N"," ","N","N","Chicago Cubs","Wrigley Field",2243791
+1990,"NL","CIN ","CIN","W",1,91,71,"Y"," ","Y","Y","Cincinnati Reds","Riverfront Stadium",2400892
+1990,"NL","HOU ","HOU","W",5,75,87,"N"," ","N","N","Houston Astros","Astrodome",1310927
+1990,"NL","LAN ","LAD","W",2,86,76,"N"," ","N","N","Los Angeles Dodgers","Dodger Stadium",3002396
+1990,"NL","MON ","MON","E",3,85,77,"N"," ","N","N","Montreal Expos","Stade Olympique",1373087
+1990,"NL","NYN ","NYM","E",2,91,71,"N"," ","N","N","New York Mets","Shea Stadium",2732745
+1990,"NL","PHI ","PHI","E",4,77,85,"N"," ","N","N","Philadelphia Phillies","Veterans Stadium",1992484
+1990,"NL","PIT ","PIT","E",1,95,67,"Y"," ","N","N","Pittsburgh Pirates","Three Rivers Stadium",2049908
+1990,"NL","SDN ","SDP","W",4,75,87,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",1856396
+1990,"NL","SFN ","SFG","W",3,85,77,"N"," ","N","N","San Francisco Giants","Candlestick Park",1975528
+1990,"NL","SLN ","STL","E",6,70,92,"N"," ","N","N","St. Louis Cardinals","Busch Stadium II",2573225
+1991,"AL","BAL ","BAL","E",6,67,95,"N"," ","N","N","Baltimore Orioles","Memorial Stadium",2552753
+1991,"AL","BOS ","BOS","E",2,84,78,"N"," ","N","N","Boston Red Sox","Fenway Park II",2562435
+1991,"AL","CAL ","ANA","W",7,81,81,"N"," ","N","N","California Angels","Anaheim Stadium",2416236
+1991,"AL","CHA ","CHW","W",2,87,75,"N"," ","N","N","Chicago White Sox","Comiskey Park II",2934154
+1991,"AL","CLE ","CLE","E",7,57,105,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",1051863
+1991,"AL","DET ","DET","E",2,84,78,"N"," ","N","N","Detroit Tigers","Tiger Stadium",1641661
+1991,"AL","KCA ","KCR","W",6,82,80,"N"," ","N","N","Kansas City Royals","Royals Stadium",2161537
+1991,"AL","MIN ","MIN","W",1,95,67,"Y"," ","Y","Y","Minnesota Twins","Hubert H Humphrey Metrodome",2293842
+1991,"AL","ML4 ","MIL","E",4,83,79,"N"," ","N","N","Milwaukee Brewers","County Stadium",1478729
+1991,"AL","NYA ","NYY","E",5,71,91,"N"," ","N","N","New York Yankees","Yankee Stadium II",1863733
+1991,"AL","OAK ","OAK","W",4,84,78,"N"," ","N","N","Oakland Athletics","Oakland Coliseum",2713493
+1991,"AL","SEA ","SEA","W",5,83,79,"N"," ","N","N","Seattle Mariners","Kingdome",2147905
+1991,"AL","TEX ","TEX","W",3,85,77,"N"," ","N","N","Texas Rangers","Arlington Stadium",2297720
+1991,"AL","TOR ","TOR","E",1,91,71,"Y"," ","N","N","Toronto Blue Jays","Skydome",4001527
+1991,"NL","ATL ","ATL","W",1,94,68,"Y"," ","Y","N","Atlanta Braves","Atlanta-Fulton County Stadium",2140217
+1991,"NL","CHN ","CHC","E",4,77,83,"N"," ","N","N","Chicago Cubs","Wrigley Field",2314250
+1991,"NL","CIN ","CIN","W",5,74,88,"N"," ","N","N","Cincinnati Reds","Riverfront Stadium",2372377
+1991,"NL","HOU ","HOU","W",6,65,97,"N"," ","N","N","Houston Astros","Astrodome",1196152
+1991,"NL","LAN ","LAD","W",2,93,69,"N"," ","N","N","Los Angeles Dodgers","Dodger Stadium",3348170
+1991,"NL","MON ","MON","E",6,71,90,"N"," ","N","N","Montreal Expos","Stade Olympique",934742
+1991,"NL","NYN ","NYM","E",5,77,84,"N"," ","N","N","New York Mets","Shea Stadium",2284484
+1991,"NL","PHI ","PHI","E",3,78,84,"N"," ","N","N","Philadelphia Phillies","Veterans Stadium",2050012
+1991,"NL","PIT ","PIT","E",1,98,64,"Y"," ","N","N","Pittsburgh Pirates","Three Rivers Stadium",2065302
+1991,"NL","SDN ","SDP","W",3,84,78,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",1804289
+1991,"NL","SFN ","SFG","W",4,75,87,"N"," ","N","N","San Francisco Giants","Candlestick Park",1737478
+1991,"NL","SLN ","STL","E",2,84,78,"N"," ","N","N","St. Louis Cardinals","Busch Stadium II",2448699
+1992,"AL","BAL ","BAL","E",3,89,73,"N"," ","N","N","Baltimore Orioles","Oriole Park at Camden Yards",3567819
+1992,"AL","BOS ","BOS","E",7,73,89,"N"," ","N","N","Boston Red Sox","Fenway Park II",2468574
+1992,"AL","CAL ","ANA","W",6,72,90,"N"," ","N","N","California Angels","Anaheim Stadium",2065444
+1992,"AL","CHA ","CHW","W",3,86,76,"N"," ","N","N","Chicago White Sox","Comiskey Park II",2681156
+1992,"AL","CLE ","CLE","E",5,76,86,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",1224094
+1992,"AL","DET ","DET","E",6,75,87,"N"," ","N","N","Detroit Tigers","Tiger Stadium",1423963
+1992,"AL","KCA ","KCR","W",5,72,90,"N"," ","N","N","Kansas City Royals","Royals Stadium",1867689
+1992,"AL","MIN ","MIN","W",2,90,72,"N"," ","N","N","Minnesota Twins","Hubert H Humphrey Metrodome",2482428
+1992,"AL","ML4 ","MIL","E",2,92,70,"N"," ","N","N","Milwaukee Brewers","County Stadium",1857351
+1992,"AL","NYA ","NYY","E",4,76,86,"N"," ","N","N","New York Yankees","Yankee Stadium II",1748737
+1992,"AL","OAK ","OAK","W",1,96,66,"Y"," ","N","N","Oakland Athletics","Oakland Coliseum",2494160
+1992,"AL","SEA ","SEA","W",7,64,98,"N"," ","N","N","Seattle Mariners","Kingdome",1651367
+1992,"AL","TEX ","TEX","W",4,77,85,"N"," ","N","N","Texas Rangers","Arlington Stadium",2198231
+1992,"AL","TOR ","TOR","E",1,96,66,"Y"," ","Y","Y","Toronto Blue Jays","Skydome",4028318
+1992,"NL","ATL ","ATL","W",1,98,64,"Y"," ","Y","N","Atlanta Braves","Atlanta-Fulton County Stadium",3077400
+1992,"NL","CHN ","CHC","E",4,78,84,"N"," ","N","N","Chicago Cubs","Wrigley Field",2126720
+1992,"NL","CIN ","CIN","W",2,90,72,"N"," ","N","N","Cincinnati Reds","Riverfront Stadium",2315946
+1992,"NL","HOU ","HOU","W",4,81,81,"N"," ","N","N","Houston Astros","Astrodome",1211412
+1992,"NL","LAN ","LAD","W",6,63,99,"N"," ","N","N","Los Angeles Dodgers","Dodger Stadium",2473266
+1992,"NL","MON ","MON","E",2,87,75,"N"," ","N","N","Montreal Expos","Stade Olympique",1669127
+1992,"NL","NYN ","NYM","E",5,72,90,"N"," ","N","N","New York Mets","Shea Stadium",1779534
+1992,"NL","PHI ","PHI","E",6,70,92,"N"," ","N","N","Philadelphia Phillies","Veterans Stadium",1927448
+1992,"NL","PIT ","PIT","E",1,96,66,"Y"," ","N","N","Pittsburgh Pirates","Three Rivers Stadium",1829395
+1992,"NL","SDN ","SDP","W",3,82,80,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",1721406
+1992,"NL","SFN ","SFG","W",5,72,90,"N"," ","N","N","San Francisco Giants","Candlestick Park",1560998
+1992,"NL","SLN ","STL","E",3,83,79,"N"," ","N","N","St. Louis Cardinals","Busch Stadium II",2418483
+1993,"AL","BAL ","BAL","E",3,85,77,"N"," ","N","N","Baltimore Orioles","Oriole Park at Camden Yards",3644965
+1993,"AL","BOS ","BOS","E",5,80,82,"N"," ","N","N","Boston Red Sox","Fenway Park II",2422021
+1993,"AL","CAL ","ANA","W",5,71,91,"N"," ","N","N","California Angels","Anaheim Stadium",2057460
+1993,"AL","CHA ","CHW","W",1,94,68,"Y"," ","N","N","Chicago White Sox","Comiskey Park II",2581091
+1993,"AL","CLE ","CLE","E",6,76,86,"N"," ","N","N","Cleveland Indians","Cleveland Stadium",2177908
+1993,"AL","DET ","DET","E",4,85,77,"N"," ","N","N","Detroit Tigers","Tiger Stadium",1971421
+1993,"AL","KCA ","KCR","W",3,84,78,"N"," ","N","N","Kansas City Royals","Royals Stadium",1934578
+1993,"AL","MIN ","MIN","W",6,71,91,"N"," ","N","N","Minnesota Twins","Hubert H Humphrey Metrodome",2048673
+1993,"AL","ML4 ","MIL","E",7,69,93,"N"," ","N","N","Milwaukee Brewers","County Stadium",1688080
+1993,"AL","NYA ","NYY","E",2,88,74,"N"," ","N","N","New York Yankees","Yankee Stadium II",2416942
+1993,"AL","OAK ","OAK","W",7,68,94,"N"," ","N","N","Oakland Athletics","Oakland Coliseum",2035025
+1993,"AL","SEA ","SEA","W",4,82,80,"N"," ","N","N","Seattle Mariners","Kingdome",2052638
+1993,"AL","TEX ","TEX","W",2,86,76,"N"," ","N","N","Texas Rangers","Arlington Stadium",2244616
+1993,"AL","TOR ","TOR","E",1,95,67,"Y"," ","Y","Y","Toronto Blue Jays","Skydome",4057947
+1993,"NL","ATL ","ATL","W",1,104,58,"Y"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",3884720
+1993,"NL","CHN ","CHC","E",4,84,78,"N"," ","N","N","Chicago Cubs","Wrigley Field",2653763
+1993,"NL","CIN ","CIN","W",5,73,89,"N"," ","N","N","Cincinnati Reds","Riverfront Stadium",2453232
+1993,"NL","COL ","COL","W",6,67,95,"N"," ","N","N","Colorado Rockies","Mile High Stadium",4483350
+1993,"NL","FLO ","FLA","E",6,64,98,"N"," ","N","N","Florida Marlins","Joe Robbie Stadium",3064847
+1993,"NL","HOU ","HOU","W",3,85,77,"N"," ","N","N","Houston Astros","Astrodome",2084618
+1993,"NL","LAN ","LAD","W",4,81,81,"N"," ","N","N","Los Angeles Dodgers","Dodger Stadium",3170393
+1993,"NL","MON ","MON","E",2,94,68,"N"," ","N","N","Montreal Expos","Stade Olympique",1641437
+1993,"NL","NYN ","NYM","E",7,59,103,"N"," ","N","N","New York Mets","Shea Stadium",1873183
+1993,"NL","PHI ","PHI","E",1,97,65,"Y"," ","Y","N","Philadelphia Phillies","Veterans Stadium",3137674
+1993,"NL","PIT ","PIT","E",5,75,87,"N"," ","N","N","Pittsburgh Pirates","Three Rivers Stadium",1650593
+1993,"NL","SDN ","SDP","W",7,61,101,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",1375432
+1993,"NL","SFN ","SFG","W",2,103,59,"N"," ","N","N","San Francisco Giants","Candlestick Park",2606354
+1993,"NL","SLN ","STL","E",3,87,75,"N"," ","N","N","St. Louis Cardinals","Busch Stadium II",2844977
+1994,"AL","BAL ","BAL","E",2,63,49,"N"," ","N","N","Baltimore Orioles","Oriole Park at Camden Yards",2535359
+1994,"AL","BOS ","BOS","E",4,54,61,"N"," ","N","N","Boston Red Sox","Fenway Park II",1775818
+1994,"AL","CAL ","ANA","W",4,47,68,"N"," ","N","N","California Angels","Anaheim Stadium",1512622
+1994,"AL","CHA ","CHW","C",1,67,46,"Y"," ","N","N","Chicago White Sox","Comiskey Park II",1697398
+1994,"AL","CLE ","CLE","C",2,66,47,"N"," ","N","N","Cleveland Indians","Jacobs Field",1995174
+1994,"AL","DET ","DET","E",5,53,62,"N"," ","N","N","Detroit Tigers","Tiger Stadium",1184783
+1994,"AL","KCA ","KCR","C",3,64,51,"N"," ","N","N","Kansas City Royals","Royals Stadium",1400494
+1994,"AL","MIN ","MIN","C",4,53,60,"N"," ","N","N","Minnesota Twins","Hubert H Humphrey Metrodome",1398565
+1994,"AL","ML4 ","MIL","C",5,53,62,"N"," ","N","N","Milwaukee Brewers","County Stadium",1268399
+1994,"AL","NYA ","NYY","E",1,70,43,"Y"," ","N","N","New York Yankees","Yankee Stadium II",1675556
+1994,"AL","OAK ","OAK","W",2,51,63,"N"," ","N","N","Oakland Athletics","Oakland Coliseum",1242692
+1994,"AL","SEA ","SEA","W",3,49,63,"N"," ","N","N","Seattle Mariners","Kingdome",1104206
+1994,"AL","TEX ","TEX","W",1,52,62,"Y"," ","N","N","Texas Rangers","The Ballpark at Arlington",2503198
+1994,"AL","TOR ","TOR","E",3,55,60,"N"," ","N","N","Toronto Blue Jays","Skydome",2907933
+1994,"NL","ATL ","ATL","E",2,68,46,"N"," ","N","N","Atlanta Braves","Atlanta-Fulton County Stadium",2539240
+1994,"NL","CHN ","CHC","C",5,49,64,"N"," ","N","N","Chicago Cubs","Wrigley Field",1845208
+1994,"NL","CIN ","CIN","C",1,66,48,"Y"," ","N","N","Cincinnati Reds","Riverfront Stadium",1897681
+1994,"NL","COL ","COL","W",3,53,64,"N"," ","N","N","Colorado Rockies","Mile High Stadium",3281511
+1994,"NL","FLO ","FLA","E",5,51,64,"N"," ","N","N","Florida Marlins","Joe Robbie Stadium",1937467
+1994,"NL","HOU ","HOU","C",2,66,49,"N"," ","N","N","Houston Astros","Astrodome",1561136
+1994,"NL","LAN ","LAD","W",1,58,56,"Y"," ","N","N","Los Angeles Dodgers","Dodger Stadium",2279355
+1994,"NL","MON ","MON","E",1,74,40,"Y"," ","N","N","Montreal Expos","Stade Olympique",1276250
+1994,"NL","NYN ","NYM","E",3,55,58,"N"," ","N","N","New York Mets","Shea Stadium",1151471
+1994,"NL","PHI ","PHI","E",4,54,61,"N"," ","N","N","Philadelphia Phillies","Veterans Stadium",2290971
+1994,"NL","PIT ","PIT","C",3,53,61,"N"," ","N","N","Pittsburgh Pirates","Three Rivers Stadium",1222520
+1994,"NL","SDN ","SDP","W",4,47,70,"N"," ","N","N","San Diego Padres","Jack Murphy Stadium",953857
+1994,"NL","SFN ","SFG","W",2,55,60,"N"," ","N","N","San Francisco Giants","Candlestick Park",1704608
+1994,"NL","SLN ","STL","C",3,53,61,"N"," ","N","N","St. Louis Cardinals","Busch Stadium II",1866544
+1995,"AL","BAL ","BAL","E",3,71,73,"N","N","N","N","Baltimore Orioles","Oriole Park at Camden Yards",3098475
+1995,"AL","BOS ","BOS","E",1,86,58,"Y","N","N","N","Boston Red Sox","Fenway Park II",2164410
+1995,"AL","CAL ","ANA","W",2,78,67,"N","N","N","N","California Angels","Anaheim Stadium",1748680
+1995,"AL","CHA ","CHW","C",3,68,76,"N","N","N","N","Chicago White Sox","Comiskey Park II",1609773
+1995,"AL","CLE ","CLE","C",1,100,44,"Y","N","Y","N","Cleveland Indians","Jacobs Field",2842745
+1995,"AL","DET ","DET","E",4,60,84,"N","N","N","N","Detroit Tigers","Tiger Stadium",1180979
+1995,"AL","KCA ","KCR","C",2,70,74,"N","N","N","N","Kansas City Royals","Royals Stadium",1233530
+1995,"AL","MIN ","MIN","C",5,56,88,"N","N","N","N","Minnesota Twins","Hubert H Humphrey Metrodome",1057667
+1995,"AL","ML4 ","MIL","C",4,65,79,"N","N","N","N","Milwaukee Brewers","County Stadium",1087560
+1995,"AL","NYA ","NYY","E",2,79,65,"N","Y","N","N","New York Yankees","Yankee Stadium II",1705263
+1995,"AL","OAK ","OAK","W",4,67,77,"N","N","N","N","Oakland Athletics","Oakland Coliseum",1174310
+1995,"AL","SEA ","SEA","W",1,79,66,"Y","N","N","N","Seattle Mariners","Kingdome",1643203
+1995,"AL","TEX ","TEX","W",3,74,70,"N","N","N","N","Texas Rangers","The Ballpark at Arlington",1985910
+1995,"AL","TOR ","TOR","E",5,56,88,"N","N","N","N","Toronto Blue Jays","Skydome",2826483
+1995,"NL","ATL ","ATL","E",1,90,54,"Y","N","Y","Y","Atlanta Braves","Atlanta-Fulton County Stadium",2561831
+1995,"NL","CHN ","CHC","C",3,73,71,"N","N","N","N","Chicago Cubs","Wrigley Field",1918265
+1995,"NL","CIN ","CIN","C",1,85,59,"Y","N","N","N","Cincinnati Reds","Riverfront Stadium",1837649
+1995,"NL","COL ","COL","W",2,77,67,"N","Y","N","N","Colorado Rockies","Coors Field",3390037
+1995,"NL","FLO ","FLA","E",4,67,76,"N","N","N","N","Florida Marlins","Joe Robbie Stadium",1700466
+1995,"NL","HOU ","HOU","C",2,76,68,"N","N","N","N","Houston Astros","Astrodome",1363801
+1995,"NL","LAN ","LAD","W",1,78,66,"Y","N","N","N","Los Angeles Dodgers","Dodger Stadium",2766251
+1995,"NL","MON ","MON","E",5,66,78,"N","N","N","N","Montreal Expos","Stade Olympique",1309618
+1995,"NL","NYN ","NYM","E",2,69,75,"N","N","N","N","New York Mets","Shea Stadium",1273183
+1995,"NL","PHI ","PHI","E",3,69,75,"N","N","N","N","Philadelphia Phillies","Veterans Stadium",2043598
+1995,"NL","PIT ","PIT","C",5,58,86,"N","N","N","N","Pittsburgh Pirates","Three Rivers Stadium",905517
+1995,"NL","SDN ","SDP","W",3,70,74,"N","N","N","N","San Diego Padres","Jack Murphy Stadium",1041805
+1995,"NL","SFN ","SFG","W",4,67,77,"N","N","N","N","San Francisco Giants","Candlestick Park",1241500
+1995,"NL","SLN ","STL","C",4,62,81,"N","N","N","N","St. Louis Cardinals","Busch Stadium II",1756727
+1996,"AL","BAL ","BAL","E",2,88,74,"N","Y","N","N","Baltimore Orioles","Oriole Park at Camden Yards",3646950
+1996,"AL","BOS ","BOS","E",3,85,77,"N","N","N","N","Boston Red Sox","Fenway Park II",2315231
+1996,"AL","CAL ","ANA","W",4,70,91,"N","N","N","N","California Angels","Anaheim Stadium",1820521
+1996,"AL","CHA ","CHW","C",2,85,77,"N","N","N","N","Chicago White Sox","Comiskey Park II",1676403
+1996,"AL","CLE ","CLE","C",1,99,62,"Y","N","N","N","Cleveland Indians","Jacobs Field",3318174
+1996,"AL","DET ","DET","E",5,53,109,"N","N","N","N","Detroit Tigers","Tiger Stadium",1168610
+1996,"AL","KCA ","KCR","C",5,75,86,"N","N","N","N","Kansas City Royals","Royals Stadium",1435997
+1996,"AL","MIN ","MIN","C",4,78,84,"N","N","N","N","Minnesota Twins","Hubert H Humphrey Metrodome",1437352
+1996,"AL","ML4 ","MIL","C",3,80,82,"N","N","N","N","Milwaukee Brewers","County Stadium",1327155
+1996,"AL","NYA ","NYY","E",1,92,70,"Y","N","Y","Y","New York Yankees","Yankee Stadium II",2250877
+1996,"AL","OAK ","OAK","W",3,78,84,"N","N","N","N","Oakland Athletics","Oakland Coliseum",1148380
+1996,"AL","SEA ","SEA","W",2,85,76,"N","N","N","N","Seattle Mariners","Kingdome",2723850
+1996,"AL","TEX ","TEX","W",1,90,72,"Y","N","N","N","Texas Rangers","The Ballpark at Arlington",2889020
+1996,"AL","TOR ","TOR","E",4,74,88,"N","N","N","N","Toronto Blue Jays","Skydome",2559573
+1996,"NL","ATL ","ATL","E",1,96,66,"Y","N","Y","N","Atlanta Braves","Atlanta-Fulton County Stadium",2901242
+1996,"NL","CHN ","CHC","C",4,76,86,"N","N","N","N","Chicago Cubs","Wrigley Field",2219110
+1996,"NL","CIN ","CIN","C",3,81,81,"N","N","N","N","Cincinnati Reds","Riverfront Stadium",1861428
+1996,"NL","COL ","COL","W",3,83,79,"N","N","N","N","Colorado Rockies","Coors Field",3891014
+1996,"NL","FLO ","FLA","E",3,80,82,"N","N","N","N","Florida Marlins","Joe Robbie Stadium",1746767
+1996,"NL","HOU ","HOU","C",2,82,80,"N","N","N","N","Houston Astros","Astrodome",1975888
+1996,"NL","LAN ","LAD","W",2,90,72,"N","Y","N","N","Los Angeles Dodgers","Dodger Stadium",3188454
+1996,"NL","MON ","MON","E",2,88,74,"N","N","N","N","Montreal Expos","Stade Olympique",1616709
+1996,"NL","NYN ","NYM","E",4,71,91,"N","N","N","N","New York Mets","Shea Stadium",1588323
+1996,"NL","PHI ","PHI","E",5,67,95,"N","N","N","N","Philadelphia Phillies","Veterans Stadium",1801677
+1996,"NL","PIT ","PIT","C",5,73,89,"N","N","N","N","Pittsburgh Pirates","Three Rivers Stadium",1332150
+1996,"NL","SDN ","SDP","W",1,91,71,"Y","N","N","N","San Diego Padres","Jack Murphy Stadium",2187886
+1996,"NL","SFN ","SFG","W",4,68,94,"N","N","N","N","San Francisco Giants","Candlestick Park",1413922
+1996,"NL","SLN ","STL","C",1,88,74,"Y","N","N","N","St. Louis Cardinals","Busch Stadium II",2654718
+1997,"AL","ANA ","ANA","W",2,84,78,"N","N","N","N","Anaheim Angels","Anaheim Stadium",1767330
+1997,"AL","BAL ","BAL","E",1,98,64,"Y","N","N","N","Baltimore Orioles","Oriole Park at Camden Yards",3711132
+1997,"AL","BOS ","BOS","E",4,78,84,"N","N","N","N","Boston Red Sox","Fenway Park II",2226136
+1997,"AL","CHA ","CHW","C",2,80,81,"N","N","N","N","Chicago White Sox","Comiskey Park II",1864782
+1997,"AL","CLE ","CLE","C",1,86,75,"Y","N","Y","N","Cleveland Indians","Jacobs Field",3404750
+1997,"AL","DET ","DET","E",3,79,83,"N","N","N","N","Detroit Tigers","Tiger Stadium",1365157
+1997,"AL","KCA ","KCR","C",5,67,94,"N","N","N","N","Kansas City Royals","Royals Stadium",1517638
+1997,"AL","MIN ","MIN","C",4,68,94,"N","N","N","N","Minnesota Twins","Hubert H Humphrey Metrodome",1411064
+1997,"AL","ML4 ","MIL","C",3,78,83,"N","N","N","N","Milwaukee Brewers","County Stadium",1444027
+1997,"AL","NYA ","NYY","E",2,96,66,"N","Y","N","N","New York Yankees","Yankee Stadium II",2580325
+1997,"AL","OAK ","OAK","W",4,65,97,"N","N","N","N","Oakland Athletics","Oakland Coliseum",1264218
+1997,"AL","SEA ","SEA","W",1,90,72,"Y","N","N","N","Seattle Mariners","Kingdome",3192237
+1997,"AL","TEX ","TEX","W",3,77,85,"N","N","N","N","Texas Rangers","The Ballpark at Arlington",2945228
+1997,"AL","TOR ","TOR","E",5,76,86,"N","N","N","N","Toronto Blue Jays","Skydome",2589297
+1997,"NL","ATL ","ATL","E",1,101,61,"Y","N","N","N","Atlanta Braves","Turner Field",3464488
+1997,"NL","CHN ","CHC","C",5,68,94,"N","N","N","N","Chicago Cubs","Wrigley Field",2190308
+1997,"NL","CIN ","CIN","C",3,76,86,"N","N","N","N","Cincinnati Reds","Cinergy Field",1785788
+1997,"NL","COL ","COL","W",3,83,79,"N","N","N","N","Colorado Rockies","Coors Field",3888453
+1997,"NL","FLO ","FLA","E",2,92,70,"N","Y","Y","Y","Florida Marlins","Joe Robbie Stadium",2364387
+1997,"NL","HOU ","HOU","C",1,84,78,"Y","N","N","N","Houston Astros","Astrodome",2046781
+1997,"NL","LAN ","LAD","W",2,88,74,"N","N","N","N","Los Angeles Dodgers","Dodger Stadium",3319504
+1997,"NL","MON ","MON","E",4,78,84,"N","N","N","N","Montreal Expos","Stade Olympique",1497609
+1997,"NL","NYN ","NYM","E",3,88,74,"N","N","N","N","New York Mets","Shea Stadium",1766174
+1997,"NL","PHI ","PHI","E",5,68,94,"N","N","N","N","Philadelphia Phillies","Veterans Stadium",1490638
+1997,"NL","PIT ","PIT","C",2,79,83,"N","N","N","N","Pittsburgh Pirates","Three Rivers Stadium",1657022
+1997,"NL","SDN ","SDP","W",4,76,86,"N","N","N","N","San Diego Padres","Qualcomm Stadium",2089333
+1997,"NL","SFN ","SFG","W",1,90,72,"Y","N","N","N","San Francisco Giants","3Com Park",1690869
+1997,"NL","SLN ","STL","C",4,73,89,"N","N","N","N","St. Louis Cardinals","Busch Stadium II",2634014
+1998,"AL","ANA ","ANA","W",2,85,77,"N","N","N","N","Anaheim Angels","Anaheim Stadium",2519280
+1998,"AL","BAL ","BAL","E",4,79,83,"N","N","N","N","Baltimore Orioles","Oriole Park at Camden Yards",3684650
+1998,"AL","BOS ","BOS","E",2,92,70,"N","Y","N","N","Boston Red Sox","Fenway Park II",2314704
+1998,"AL","CHA ","CHW","C",2,80,82,"N","N","N","N","Chicago White Sox","Comiskey Park II",1391146
+1998,"AL","CLE ","CLE","C",1,89,73,"Y","N","N","N","Cleveland Indians","Jacobs Field",3467299
+1998,"AL","DET ","DET","C",5,65,97,"N","N","N","N","Detroit Tigers","Tiger Stadium",1409391
+1998,"AL","KCA ","KCR","C",3,72,89,"N","N","N","N","Kansas City Royals","Royals Stadium",1494875
+1998,"AL","MIN ","MIN","C",4,70,92,"N","N","N","N","Minnesota Twins","Hubert H Humphrey Metrodome",1165976
+1998,"AL","NYA ","NYY","E",1,114,48,"Y","N","Y","Y","New York Yankees","Yankee Stadium II",2955193
+1998,"AL","OAK ","OAK","W",4,74,88,"N","N","N","N","Oakland Athletics","Oakland Coliseum",1232343
+1998,"AL","SEA ","SEA","W",3,76,85,"N","N","N","N","Seattle Mariners","Kingdome",2651511
+1998,"AL","TBA ","TBD","E",5,63,99,"N","N","N","N","Tampa Bay Devil Rays","Tropicana Field",2506293
+1998,"AL","TEX ","TEX","W",1,88,74,"Y","N","N","N","Texas Rangers","The Ballpark at Arlington",2927399
+1998,"AL","TOR ","TOR","E",3,88,74,"N","N","N","N","Toronto Blue Jays","Skydome",2454303
+1998,"NL","ARI ","ARI","W",5,65,97,"N","N","N","N","Arizona Diamondbacks","Bank One Ballpark",3610290
+1998,"NL","ATL ","ATL","E",1,106,56,"Y","N","N","N","Atlanta Braves","Turner Field",3360860
+1998,"NL","CHN ","CHC","C",2,90,73,"N","Y","N","N","Chicago Cubs","Wrigley Field",2623194
+1998,"NL","CIN ","CIN","C",4,77,85,"N","N","N","N","Cincinnati Reds","Cinergy Field",1793649
+1998,"NL","COL ","COL","W",4,77,85,"N","N","N","N","Colorado Rockies","Coors Field",3792683
+1998,"NL","FLO ","FLA","E",5,54,108,"N","N","N","N","Florida Marlins","Joe Robbie Stadium",1730384
+1998,"NL","HOU ","HOU","C",1,102,60,"Y","N","N","N","Houston Astros","Astrodome",2458451
+1998,"NL","LAN ","LAD","W",3,83,79,"N","N","N","N","Los Angeles Dodgers","Dodger Stadium",3089222
+1998,"NL","MIL ","MIL","C",5,74,88,"N","N","N","N","Milwaukee Brewers","County Stadium",1811593
+1998,"NL","MON ","MON","E",4,65,97,"N","N","N","N","Montreal Expos","Stade Olympique",914909
+1998,"NL","NYN ","NYM","E",2,88,74,"N","N","N","N","New York Mets","Shea Stadium",2287948
+1998,"NL","PHI ","PHI","E",3,75,87,"N","N","N","N","Philadelphia Phillies","Veterans Stadium",1715722
+1998,"NL","PIT ","PIT","C",6,69,93,"N","N","N","N","Pittsburgh Pirates","Three Rivers Stadium",1560950
+1998,"NL","SDN ","SDP","W",1,98,64,"Y","N","Y","N","San Diego Padres","Qualcomm Stadium",2555874
+1998,"NL","SFN ","SFG","W",2,89,74,"N","N","N","N","San Francisco Giants","3Com Park",1925364
+1998,"NL","SLN ","STL","C",3,83,79,"N","N","N","N","St. Louis Cardinals","Busch Stadium II",3195691
+1999,"AL","ANA ","ANA","W",4,70,92,"N","N","N","N","Anaheim Angels","Anaheim Stadium",2253123
+1999,"AL","BAL ","BAL","E",4,78,84,"N","N","N","N","Baltimore Orioles","Oriole Park at Camden Yards",3433150
+1999,"AL","BOS ","BOS","E",2,94,68,"N","Y","N","N","Boston Red Sox","Fenway Park II",2446162
+1999,"AL","CHA ","CHW","C",2,75,86,"N","N","N","N","Chicago White Sox","Comiskey Park II",1338851
+1999,"AL","CLE ","CLE","C",1,97,65,"Y","N","N","N","Cleveland Indians","Jacobs Field",3468456
+1999,"AL","DET ","DET","C",3,69,92,"N","N","N","N","Detroit Tigers","Tiger Stadium",2026441
+1999,"AL","KCA ","KCR","C",4,64,97,"N","N","N","N","Kansas City Royals","Royals Stadium",1506068
+1999,"AL","MIN ","MIN","C",5,63,97,"N","N","N","N","Minnesota Twins","Hubert H Humphrey Metrodome",1202829
+1999,"AL","NYA ","NYY","E",1,98,64,"Y","N","Y","Y","New York Yankees","Yankee Stadium II",3292736
+1999,"AL","OAK ","OAK","W",2,87,75,"N","N","N","N","Oakland Athletics","Oakland Coliseum",1434610
+1999,"AL","SEA ","SEA","W",3,79,83,"N","N","N","N","Seattle Mariners","Kingdome / Safeco Field",2916346
+1999,"AL","TBA ","TBD","E",5,69,93,"N","N","N","N","Tampa Bay Devil Rays","Tropicana Field",1562827
+1999,"AL","TEX ","TEX","W",1,95,67,"Y","N","N","N","Texas Rangers","The Ballpark at Arlington",2771469
+1999,"AL","TOR ","TOR","E",3,84,78,"N","N","N","N","Toronto Blue Jays","Skydome",2163464
+1999,"NL","ARI ","ARI","W",1,100,62,"Y","N","N","N","Arizona Diamondbacks","Bank One Ballpark",3019654
+1999,"NL","ATL ","ATL","E",1,103,59,"Y","N","Y","N","Atlanta Braves","Turner Field",3284897
+1999,"NL","CHN ","CHC","C",6,67,95,"N","N","N","N","Chicago Cubs","Wrigley Field",2813854
+1999,"NL","CIN ","CIN","C",2,96,67,"N","N","N","N","Cincinnati Reds","Cinergy Field",2061222
+1999,"NL","COL ","COL","W",5,72,90,"N","N","N","N","Colorado Rockies","Coors Field",3481065
+1999,"NL","FLO ","FLA","E",5,64,98,"N","N","N","N","Florida Marlins","Pro Player Stadium",1369421
+1999,"NL","HOU ","HOU","C",1,97,65,"Y","N","N","N","Houston Astros","Astrodome",2706017
+1999,"NL","LAN ","LAD","W",3,77,85,"N","N","N","N","Los Angeles Dodgers","Dodger Stadium",3095346
+1999,"NL","MIL ","MIL","C",5,74,87,"N","N","N","N","Milwaukee Brewers","County Stadium",1701796
+1999,"NL","MON ","MON","E",4,68,94,"N","N","N","N","Montreal Expos","Stade Olympique",773277
+1999,"NL","NYN ","NYM","E",2,97,66,"N","Y","N","N","New York Mets","Shea Stadium",2725668
+1999,"NL","PHI ","PHI","E",3,77,85,"N","N","N","N","Philadelphia Phillies","Veterans Stadium",1825337
+1999,"NL","PIT ","PIT","C",3,78,83,"N","N","N","N","Pittsburgh Pirates","Three Rivers Stadium",1638023
+1999,"NL","SDN ","SDP","W",4,74,88,"N","N","N","N","San Diego Padres","Qualcomm Stadium",2523538
+1999,"NL","SFN ","SFG","W",2,86,76,"N","N","N","N","San Francisco Giants","3Com Park",2078399
+1999,"NL","SLN ","STL","C",4,75,86,"N","N","N","N","St. Louis Cardinals","Busch Stadium II",3225334
+2000,"AL","ANA ","ANA","W",3,82,80,"N","N","N","N","Anaheim Angels","Anaheim Stadium",2066982
+2000,"AL","BAL ","BAL","E",4,74,88,"N","N","N","N","Baltimore Orioles","Oriole Park at Camden Yards",3297031
+2000,"AL","BOS ","BOS","E",2,85,77,"N","N","N","N","Boston Red Sox","Fenway Park II",2585895
+2000,"AL","CHA ","CHW","C",1,95,67,"Y","N","N","N","Chicago White Sox","Comiskey Park II",1947799
+2000,"AL","CLE ","CLE","C",2,90,72,"N","N","N","N","Cleveland Indians","Jacobs Field",3456278
+2000,"AL","DET ","DET","C",3,79,83,"N","N","N","N","Detroit Tigers","Comerica Park",2438617
+2000,"AL","KCA ","KCR","C",4,77,85,"N","N","N","N","Kansas City Royals","Royals Stadium",1564847
+2000,"AL","MIN ","MIN","C",5,69,93,"N","N","N","N","Minnesota Twins","Hubert H Humphrey Metrodome",1000760
+2000,"AL","NYA ","NYY","E",1,87,74,"Y","N","Y","Y","New York Yankees","Yankee Stadium II",3055435
+2000,"AL","OAK ","OAK","W",1,91,70,"Y","N","N","N","Oakland Athletics","Oakland Coliseum",1603744
+2000,"AL","SEA ","SEA","W",2,91,71,"N","Y","N","N","Seattle Mariners","Safeco Field",2914624
+2000,"AL","TBA ","TBD","E",5,69,92,"N","N","N","N","Tampa Bay Devil Rays","Tropicana Field",1449673
+2000,"AL","TEX ","TEX","W",4,71,91,"N","N","N","N","Texas Rangers","The Ballpark at Arlington",2588401
+2000,"AL","TOR ","TOR","E",3,83,79,"N","N","N","N","Toronto Blue Jays","Skydome",1705712
+2000,"NL","ARI ","ARI","W",3,85,77,"N","N","N","N","Arizona Diamondbacks","Bank One Ballpark",2942251
+2000,"NL","ATL ","ATL","E",1,95,67,"Y","N","N","N","Atlanta Braves","Turner Field",3234304
+2000,"NL","CHN ","CHC","C",6,65,97,"N","N","N","N","Chicago Cubs","Wrigley Field",2789511
+2000,"NL","CIN ","CIN","C",2,85,77,"N","N","N","N","Cincinnati Reds","Cinergy Field",2577371
+2000,"NL","COL ","COL","W",4,82,80,"N","N","N","N","Colorado Rockies","Coors Field",3295129
+2000,"NL","FLO ","FLA","E",3,79,82,"N","N","N","N","Florida Marlins","Pro Player Stadium",1218326
+2000,"NL","HOU ","HOU","C",4,72,90,"N","N","N","N","Houston Astros","Enron Field",3056139
+2000,"NL","LAN ","LAD","W",2,86,76,"N","N","N","N","Los Angeles Dodgers","Dodger Stadium",2880242
+2000,"NL","MIL ","MIL","C",3,73,89,"N","N","N","N","Milwaukee Brewers","County Stadium",1573621
+2000,"NL","MON ","MON","E",4,67,95,"N","N","N","N","Montreal Expos","Stade Olympique",926272
+2000,"NL","NYN ","NYM","E",2,94,68,"N","Y","Y","N","New York Mets","Shea Stadium",2820530
+2000,"NL","PHI ","PHI","E",5,65,97,"N","N","N","N","Philadelphia Phillies","Veterans Stadium",1612769
+2000,"NL","PIT ","PIT","C",5,69,93,"N","N","N","N","Pittsburgh Pirates","Three Rivers Stadium",1748908
+2000,"NL","SDN ","SDP","W",5,76,86,"N","N","N","N","San Diego Padres","Qualcomm Stadium",2352443
+2000,"NL","SFN ","SFG","W",1,97,65,"Y","N","N","N","San Francisco Giants","PacBell Park",3318800
+2000,"NL","SLN ","STL","C",1,95,67,"Y","N","N","N","St. Louis Cardinals","Busch Stadium II",3336493
+2001,"AL","ANA ","ANA","W",3,75,87,"N","N","N","N","Anaheim Angels","Anaheim Stadium",2000919
+2001,"AL","BAL ","BAL","E",4,63,98,"N","N","N","N","Baltimore Orioles","Oriole Park at Camden Yards",3094841
+2001,"AL","BOS ","BOS","E",2,82,79,"N","N","N","N","Boston Red Sox","Fenway Park II",2625333
+2001,"AL","CHA ","CHW","C",3,83,79,"N","N","N","N","Chicago White Sox","Comiskey Park II",1766172
+2001,"AL","CLE ","CLE","C",1,91,71,"Y","N","N","N","Cleveland Indians","Jacobs Field",3175523
+2001,"AL","DET ","DET","C",4,66,96,"N","N","N","N","Detroit Tigers","Comerica Park",1921305
+2001,"AL","KCA ","KCR","C",5,65,97,"N","N","N","N","Kansas City Royals","Royals Stadium",1536371
+2001,"AL","MIN ","MIN","C",2,85,77,"N","N","N","N","Minnesota Twins","Hubert H Humphrey Metrodome",1782929
+2001,"AL","NYA ","NYY","E",1,95,65,"Y","N","Y","N","New York Yankees","Yankee Stadium II",3264907
+2001,"AL","OAK ","OAK","W",2,102,60,"N","Y","N","N","Oakland Athletics","Oakland Coliseum",2133277
+2001,"AL","SEA ","SEA","W",1,116,46,"Y","N","N","N","Seattle Mariners","Safeco Field",3507326
+2001,"AL","TBA ","TBD","E",5,62,100,"N","N","N","N","Tampa Bay Devil Rays","Tropicana Field",1298365
+2001,"AL","TEX ","TEX","W",4,73,89,"N","N","N","N","Texas Rangers","The Ballpark at Arlington",2831021
+2001,"AL","TOR ","TOR","E",3,80,82,"N","N","N","N","Toronto Blue Jays","Skydome",1915438
+2001,"NL","ARI ","ARI","W",1,92,70,"Y","N","Y","Y","Arizona Diamondbacks","Bank One Ballpark",2736451
+2001,"NL","ATL ","ATL","E",1,88,74,"Y","N","N","N","Atlanta Braves","Turner Field",2823530
+2001,"NL","CHN ","CHC","C",3,88,74,"N","N","N","N","Chicago Cubs","Wrigley Field",2779465
+2001,"NL","CIN ","CIN","C",5,66,96,"N","N","N","N","Cincinnati Reds","Cinergy Field",1879757
+2001,"NL","COL ","COL","W",5,73,89,"N","N","N","N","Colorado Rockies","Coors Field",3166821
+2001,"NL","FLO ","FLA","E",4,76,86,"N","N","N","N","Florida Marlins","Pro Player Stadium",1261226
+2001,"NL","HOU ","HOU","C",1,93,69,"Y","N","N","N","Houston Astros","Enron Field",2904277
+2001,"NL","LAN ","LAD","W",3,86,76,"N","N","N","N","Los Angeles Dodgers","Dodger Stadium",3017143
+2001,"NL","MIL ","MIL","C",4,68,94,"N","N","N","N","Milwaukee Brewers","Miller Park",2811041
+2001,"NL","MON ","MON","E",5,68,94,"N","N","N","N","Montreal Expos","Stade Olympique",642745
+2001,"NL","NYN ","NYM","E",3,82,80,"N","N","N","N","New York Mets","Shea Stadium",2658330
+2001,"NL","PHI ","PHI","E",2,86,76,"N","N","N","N","Philadelphia Phillies","Veterans Stadium",1782054
+2001,"NL","PIT ","PIT","C",6,62,100,"N","N","N","N","Pittsburgh Pirates","PNC Park",2464870
+2001,"NL","SDN ","SDP","W",4,79,83,"N","N","N","N","San Diego Padres","Qualcomm Stadium",2378128
+2001,"NL","SFN ","SFG","W",2,90,72,"N","N","N","N","San Francisco Giants","PacBell Park",3311958
+2001,"NL","SLN ","STL","C",1,93,69,"Y","Y","N","N","St. Louis Cardinals","Busch Stadium II",3109578
+2002,"NL","SLN ","STL","C",1,97,65,"Y","N","N","N","St. Louis Cardinals","Busch Stadium II",3011756
+2002,"AL","TBA ","TBD","E",5,55,106,"N","N","N","N","Tampa Bay Devil Rays","Tropicana Field",1065742
+2002,"NL","SDN ","SDP","W",5,66,96,"N","N","N","N","San Diego Padres","Qualcomm Stadium",2220601
+2002,"AL","SEA ","SEA","W",3,93,69,"N","N","N","N","Seattle Mariners","Safeco Field",3542938
+2002,"NL","SFN ","SFG","W",2,95,66,"N","Y","Y","N","San Francisco Giants","PacBell Park",3253203
+2002,"AL","ANA ","ANA","W",2,99,63,"N","Y","Y","Y","Anaheim Angels","Anaheim Stadium",2305547
+2002,"NL","ARI ","ARI","W",1,98,64,"Y","N","N","N","Arizona Diamondbacks","Bank One Ballpark",3198977
+2002,"NL","ATL ","ATL","E",1,101,59,"Y","N","N","N","Atlanta Braves","Turner Field",2603484
+2002,"AL","BAL ","BAL","E",4,67,95,"N","N","N","N","Baltimore Orioles","Oriole Park at Camden Yards",2682439
+2002,"AL","BOS ","BOS","E",2,93,69,"N","N","N","N","Boston Red Sox","Fenway Park II",2650862
+2002,"NL","CHN ","CHC","C",5,67,95,"N","N","N","N","Chicago Cubs","Wrigley Field",2693096
+2002,"AL","CHA ","CHW","C",2,81,81,"N","N","N","N","Chicago White Sox","Comiskey Park II",1676911
+2002,"NL","CIN ","CIN","C",3,78,84,"N","N","N","N","Cincinnati Reds","Cinergy Field",1855787
+2002,"AL","CLE ","CLE","C",3,74,88,"N","N","N","N","Cleveland Indians","Jacobs Field",2616940
+2002,"NL","COL ","COL","W",4,73,89,"N","N","N","N","Colorado Rockies","Coors Field",2737838
+2002,"AL","DET ","DET","C",5,55,106,"N","N","N","N","Detroit Tigers","Comerica Park",1503623
+2002,"NL","FLO ","FLA","E",4,79,83,"N","N","N","N","Florida Marlins","Pro Player Stadium",813118
+2002,"NL","HOU ","HOU","C",2,84,78,"N","N","N","N","Houston Astros","Minute Maid Park",2517357
+2002,"AL","KCA ","KCR","C",4,62,100,"N","N","N","N","Kansas City Royals","Royals Stadium",1323036
+2002,"NL","LAN ","LAD","W",3,92,70,"N","N","N","N","Los Angeles Dodgers","Dodger Stadium",3131255
+2002,"NL","MIL ","MIL","C",6,56,106,"N","N","N","N","Milwaukee Brewers","Miller Park",1969153
+2002,"AL","MIN ","MIN","C",1,94,67,"Y","N","N","N","Minnesota Twins","Hubert H Humphrey Metrodome",1924473
+2002,"NL","MON ","MON","E",2,83,79,"N","N","N","N","Montreal Expos","Stade Olympique",812045
+2002,"NL","NYN ","NYM","E",5,75,86,"N","N","N","N","New York Mets","Shea Stadium",2804838
+2002,"AL","NYA ","NYY","E",1,103,58,"Y","N","N","N","New York Yankees","Yankee Stadium II",3465807
+2002,"AL","OAK ","OAK","W",1,103,59,"Y","N","N","N","Oakland Athletics","Oakland Coliseum",2169811
+2002,"NL","PHI ","PHI","E",3,80,81,"N","N","N","N","Philadelphia Phillies","Veterans Stadium",1618467
+2002,"NL","PIT ","PIT","C",4,72,89,"N","N","N","N","Pittsburgh Pirates","PNC Park",1784988
+2002,"AL","TEX ","TEX","W",4,72,90,"N","N","N","N","Texas Rangers","The Ballpark at Arlington",2352397
+2002,"AL","TOR ","TOR","E",3,78,84,"N","N","N","N","Toronto Blue Jays","Skydome",1637900

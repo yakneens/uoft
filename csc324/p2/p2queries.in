@@ -1,0 +1,111 @@
+[p2facts].
+
+% a) What links have a speed limit of 100 km/h or less?
+
+link(From,To,SpeedLimit,Length), SpeedLimit =< 100.
+;
+;
+;
+;
+
+% b) What cities are directly connected to Toronto?
+
+link(toronto,ConnectedTo,_,_).
+;
+;
+;
+;
+
+% c) Which links can be taversed in less than 2 hours by a freght train?
+
+link(From, To, SpeedLimit, Length), train(freight, _MaxSpeed),((_MaxSpeed =<
+SpeedLimit, _Duration is Length/_MaxSpeed, _Duration =< 2);(_MaxSpeed > SpeedLimit, _Duration is
+Length/SpeedLimit, _Duration =< 2)).
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+
+% d) What pairs of distinct cities can be connected using exactly two links?
+
+link(From,_Intermediate,_,_), link(_Intermediate,To,_,_),\+(From = To).
+;
+;
+;
+;
+
+% e) On which links can a passenger train travel at its maximum speed?
+
+link(From, To, SpeedLimit, Length), train(passenger, _MaxSpeed), (_MaxSpeed =< SpeedLimit).
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+
+% f) Which city is the closest one to Toronto?
+% Note: There should
+link(toronto,ClosestCity,_,DistanceToClosestCity),
+((link(toronto,_,_,_AnyOtherDistance), DistanceToClosestCity > _AnyOtherDistance) -> not(true);true).
+;
+
+% g) Which cities have the shortest stop-over time for passenger trains?
+city(City,_,MinPassStopover), ((city(_,_,_AnyOtherStopover), MinPassStopover > _AnyOtherStopover) -> not(true);true).
+;
+;
+;
+;
+;
+;
+;
+
+

@@ -1,0 +1,19 @@
+/********************************************************************************
+ * CSC 324 Prolog Project
+ * By: Sergei Iakhnin
+ * #: 981843420
+ ********************************************************************************/
+
+
+| ?- 
+yes
+| ?- 
+Path = [toronto,kingston,brockville,cornwall,montreal]
+Length = 540
+Duration = 2.9667no
+| ?- 
+City = windsor
+City = windsorno
+| ?- no
+| ?- no
+| ?- 

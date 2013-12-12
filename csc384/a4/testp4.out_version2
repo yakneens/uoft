@@ -1,0 +1,14 @@
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- [New Depth bound: ,1]
+[New Depth bound: ,2]
+[New Depth bound: ,3]
+[New Depth bound: ,4]
+[New Depth bound: ,5]
+[New Depth bound: ,6]
+[New Depth bound: ,7]
+[New Depth bound: ,8]

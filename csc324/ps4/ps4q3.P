@@ -1,0 +1,19 @@
+/******************************* 
+ * Problem Set 4
+ * CSC324
+ * By: Sergei Iakhnin
+ * #: 981843420
+ * TA: Alex Kessaris
+ *******************************/
+
+/* returns yes iff X is the last element of L */
+append(_,[X],L). 
+
+/* returns yes iff the second and second-last elements of list L are the same */
+append([_,X],_, L), append(_,[X,_],L). 
+
+/* returns yes iff the list Y is the list X with one element removed */
+append(L1,[Z|L2],X),append(L1,L2,Y).
+
+/* returns yes iff the lists X and Y share a common substring of length 3 */
+append(_,[S1,S2,S3|_],X),append(_,[S1,S2,S3|_],Y).

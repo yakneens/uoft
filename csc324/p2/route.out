@@ -1,0 +1,133 @@
+/********************************************************************************
+ * CSC 324 Prolog Project
+ * By: Sergei Iakhnin
+ * #: 981843420
+ ********************************************************************************/
+
+
+| ?- 
+yes
+| ?- 
+CityName = montreal
+TrainType = freight
+Path = [montreal]
+Length = 0
+Duration = 0
+CityName = montreal
+TrainType = passenger
+Path = [montreal]
+Length = 0
+Duration = 0
+CityName = sherbrooke
+TrainType = freight
+Path = [sherbrooke]
+Length = 0
+Duration = 0
+CityName = sherbrooke
+TrainType = passenger
+Path = [sherbrooke]
+Length = 0
+Duration = 0
+CityName = quebec_city
+TrainType = freight
+Path = [quebec_city]
+Length = 0
+Duration = 0
+yes
+| ?- 
+Path = [sudbury,north_bay,toronto]
+Path = [sudbury,north_bay,ottawa,cornwall,brockville,kingston,toronto]
+Path = [sudbury,north_bay,ottawa,brockville,kingston,toronto]
+Path = [sudbury,north_bay,ottawa,alexandria,montreal,cornwall,brockville,kingston,toronto]no
+| ?- 
+TrainType = freight
+Path = [windsor,catham,sarnia]
+Length = 140
+Duration = 1.1667
+TrainType = freight
+Path = [windsor,catham,london,sarnia]
+Length = 270
+Duration = 2.2500
+TrainType = passenger
+Path = [windsor,catham,sarnia]
+Length = 140
+Duration = 0.9284
+TrainType = passenger
+Path = [windsor,catham,london,sarnia]
+Length = 270
+Duration = 1.7534no
+| ?- 
+yes
+| ?- 
+Path1 = [windsor,catham,sarnia,london,brantford,kitchener]
+Path2 = [kitchener,brantford,london,sarnia,catham,windsor]
+Path1 = [windsor,catham,sarnia,london,brantford,hamilton,toronto,kitchener]
+Path2 = [kitchener,toronto,hamilton,brantford,london,sarnia,catham,windsor]
+Path1 = [windsor,catham,sarnia,london,kitchener]
+Path2 = [kitchener,london,sarnia,catham,windsor]
+Path1 = [windsor,catham,london,brantford,kitchener]
+Path2 = [kitchener,brantford,london,catham,windsor]
+Path1 = [windsor,catham,london,brantford,hamilton,toronto,kitchener]
+Path2 = [kitchener,toronto,hamilton,brantford,london,catham,windsor]
+Path1 = [windsor,catham,london,kitchener]
+Path2 = [kitchener,london,catham,windsor]no
+| ?- 
+yes
+| ?- 
+TrainType = freight
+Path = [ottawa,alexandria,montreal,cornwall]
+Length = 300
+Duration = 2.8333
+TrainType = passenger
+Path = [ottawa,alexandria,montreal,cornwall]
+Length = 300
+Duration = 1.9111no
+| ?- 
+Length = 345no
+| ?- 
+TrainType = freight
+Duration = 2.2500
+TrainType = passenger
+Duration = 1.5951no
+| ?- 
+From = montreal
+To = sherbrooke
+TrainType = freight
+Path = [montreal,sherbrooke]
+Length = 145
+Duration = 1.2083
+From = montreal
+To = sherbrooke
+TrainType = passenger
+Path = [montreal,sherbrooke]
+Length = 145
+Duration = 0.9667
+From = sherbrooke
+To = quebec_city
+TrainType = freight
+Path = [sherbrooke,quebec_city]
+Length = 215
+Duration = 1.7917
+From = sherbrooke
+To = quebec_city
+TrainType = passenger
+Path = [sherbrooke,quebec_city]
+Length = 215
+Duration = 1.5357
+From = quebec_city
+To = montreal
+TrainType = freight
+Path = [quebec_city,montreal]
+Length = 270
+Duration = 2.2500
+yes
+| ?- no
+| ?- no
+| ?- 
+To = alexandria
+To = alexandriano
+| ?- no
+| ?- no
+| ?- no
+| ?- no
+| ?- 

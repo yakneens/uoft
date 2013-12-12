@@ -1,0 +1,223 @@
+/********************************************************************************
+ * CSC 324 Prolog Project
+ * By: Sergei Iakhnin
+ * #: 981843420
+ ********************************************************************************/
+
+
+% Load the route predicate
+import route/6 from p2route.
+
+
+/********************************************************************************
+ * Find a route from any city to itself on any train. Will list the first 5 answers
+ * All answers should be of the form 
+ * CityName = cityName
+ * TrainType = theTrainType
+ * Path = [cityName] 
+ * Length = 0 
+ * Duration = 0
+ * Expecting a yes at the end
+ ********************************************************************************/
+route(CityName,CityName,TrainType,Path,Length,Duration).
+;
+;
+;
+;
+
+ 
+ 
+ /********************************************************************************
+  * Find all non-redundant paths from Sudbury to Toronto on a passenger train
+  * The paths produced should be: 
+  * [sudbury,north_bay,toronto]
+  * [sudbury,north_bay,ottawa,brockville,kingston,toronto]
+  * [sudbury,north_bay,ottawa,cornwall,brockvill,kingston,toronto]
+  * [sudbury,north_bay,ottawa,alexandria,montreal,cornwall,brockville,kingston,toronto]
+  * The paths will not necessarily be printed in that order
+  ********************************************************************************/
+route(sudbury,toronto,passenger,Path,_,_).
+;
+;
+;
+;
+
+/********************************************************************************
+ * Find all routes from windsor to sarnia on any train type.
+ * This should produce 2 routes for each train type as follows
+ *
+ * TrainType = passenger
+ * Path = [windsor,catham,sarnia]
+ * Length = 140
+ * Duration = 0.9284
+ *
+ * TrainType = freight
+ * Path = [windsor,catham,sarnia]
+ * Length = 140
+ * Duration = 1.1667
+ *
+ * TrainType = passenger
+ * Path = [windsor,catham,london,sarnia]
+ * Length = 270
+ * Duration = 1.7534
+ *
+ * TrainType = freight
+ * Path = [windsor,catham,london,sarnia]
+ * Length = 270
+ * Duration = 2.2500
+ *
+ * Expecting a no at the end
+ ********************************************************************************/
+route(windsor,sarnia,TrainType,Path,Length,Duration).
+;
+;
+;
+;
+
+/********************************************************************************
+ * Check whether all the paths from Windsor to Kitchener via a freight train
+ * are the reverse of the paths from Kitchener to Windsor via a freight train. 
+ * There should be six such paths as follows
+ *
+ * Path1 = [windsor,catham,sarnia,london,brantford,kitchener]
+ * Path2 = [kitchener,brantford,london,sarnia,catham,windsor]
+ *
+ * Path1 = [windsor,catham,sarnia,london,brantford,hamilton,toronto,kitchener]
+ * Path2 = [kitchener,toronto,hamilton,brantford,london,sarnia,catham,windsor]
+ *
+ * Path1 = [windsor,catham,sarnia,london,kitchener]
+ * Path2 = [kitchener,london,sarnia,catham,windsor]
+ *
+ * Path1 = [windsor,catham,london,brantford,kitchener]
+ * Path2 = [kitchener,brantford,london,catham,windsor]
+ *
+ * Path1 = [windsor,catham,london,brantford,hamilton,toronto,kitchener]
+ * Path2 = [kitchener,toronto,hamilton,brantford,london,catham,windsor]
+ *
+ * Path1 = [windsor,catham,london,kitchener]
+ * Path2 = [kitchener,london,catham,windsor]
+ *
+ * Expecting a no at the end
+ ********************************************************************************/
+ import reverse/2 from basics.
+
+route(windsor,kitchener,freight,Path1,_,_),
+route(kitchener,windsor,freight,Path2,_,_),
+reverse(Path1,Path2).
+;
+;
+;
+;
+;
+;
+
+/********************************************************************************
+ * Find all routes from Ottawa to Cornwall that go through Montreal and Alexandria
+ * There is only one such route for each train type.
+ * The answers should be as follows:
+ *
+ * TrainType = freight
+ * Path = [ottawa,alexandria,montreal,cornwall]
+ * Length = 300
+ * Duration = 2.8333
+ *
+ * TrainType = passenger
+ * Path = [ottawa,alexandria,montreal,cornwall]
+ * Length = 300
+ * Duration = 1.9111
+ *
+ * Expecting a no at the end
+ ********************************************************************************/
+import member/2 from basics.
+route(ottawa,cornwall,TrainType,Path,Length,Duration),
+member(montreal, Path), 
+member(alexandria, Path).
+;
+;
+
+/********************************************************************************
+ * Find the length of a route from Kitchener to Windsor through Brantford,
+ * London, Sarnia, and Catham using a freight train.
+ * The length should be 345
+ * Expecting no at the end
+ ********************************************************************************/
+route(kitchener,windsor,freight,[kitchener,brantford,london,sarnia,catham,windsor],Length,_).
+;
+
+/********************************************************************************
+ * Find the durations of a route from Kitchener to Windsor through London and Catham
+ * using each train type.
+ * The duration should be 2.2500 for a freight train and 1.5951 for a passenger
+ * train
+ * Expecting no at the end
+ ********************************************************************************/
+route(kitchener,windsor,TrainType,[kitchener,london,catham,windsor],_,Duration).
+;
+;
+
+/********************************************************************************
+ * Find all possible routes in the database such that the Origin is different
+ * from the destination. Will show first 5 results.
+ ********************************************************************************/
+route(From,To,TrainType,Path,Length,Duration), \+(From = To).
+;
+;
+;
+;
+
+/********************************************************************************
+ * Verify whether there exist any routes that do not start at their origin.
+ * Expecting: no
+ ********************************************************************************/
+route(Origin,Destination,TrainType,[First|Rest],Length,Destination), \+(Origin = First).
+
+/********************************************************************************
+ * Check if there is a route from Niagara Falls to Hamilton using a dog sled
+ * Expecting: no
+ ********************************************************************************/
+route(niagara_falls,hamilton,dog_sled,_,_,_).
+
+
+/********************************************************************************
+ * Check where you can go to from Alexandria in 0 hours
+ * This produces two answers, one for each train type.
+ * Expecting: To = alexandria
+ *            To = alexandria
+ *            no
+ ********************************************************************************/
+route(alexandria,To,_,_,_,0).
+;
+;
+
+/********************************************************************************
+ * Check if there is a route from any city to Lisbon
+ * Expecting: no
+ ********************************************************************************/
+route(City, lisbon,_,_,_,_). 
+
+/********************************************************************************
+ * Check for a route where the origin city is a list
+ * Expecting no
+ ********************************************************************************/
+route([1],_,_,_,_,_);
+
+/********************************************************************************
+ * Check for a route where the destination city is a list
+ * Expecting no
+ ********************************************************************************/
+route(_,[1],_,_,_,_).
+
+/********************************************************************************
+ * Check for a route where the train type is a list
+ * Expecting: no
+ ********************************************************************************/
+route(_,_,[1],_,_,_).
+
+/********************************************************************************
+ * Check for a route where the path is not a list
+ * Expecting: no
+ ********************************************************************************/
+route(_,_,_,1,_,_).
+
+
+

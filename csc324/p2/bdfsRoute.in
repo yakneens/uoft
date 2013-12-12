@@ -1,0 +1,69 @@
+/********************************************************************************
+ * CSC 324 Prolog Project
+ * By: Sergei Iakhnin
+ * #: 981843420
+ ********************************************************************************/
+
+
+% Load the bdfsRoute predicate
+import bdfsRoute/7 from p2route.
+
+
+/********************************************************************************
+ * Test whether any route has a duration of less than 0
+ * Expecting: no
+ ********************************************************************************/
+bdfsRoute(From,To,TrainType,0,Path,Length,Duration).
+
+/********************************************************************************
+ * Produce all possible routes that take less than 1 hour where From is different
+ * from To in order to avoid the routes of duration 0.
+ * Will only show the first 5 answers
+ ********************************************************************************/
+bdfsRoute(From,To,TrainType,1,Path,Length,Duration),\+(From = To).
+;
+;
+;
+;
+
+/********************************************************************************
+ * Verify whether there is a route from Sherbrooke to Niagara Falls that has a 
+ * duration of less than 5 for some train type. If so determine the route.
+ * Expecting: no
+ ********************************************************************************/
+bdfsRoute(sherbrooke,niagara_falls,TrainType,5,Path,Length,Duration).
+
+/********************************************************************************
+ * Verify whether there is a route from Sherbrooke to Niagara Falls that has a 
+ * duration of less than 6 for some train type. If so determine the route.
+ * Expecting: TrainType = passenger
+ *            Path = [sherbrooke,montreal,cornwall,brockville,kingston,hamilton,niagara_falls]
+ *            Length = 815
+ *            Duration = 5.5000
+ *
+ * Expecting a no at the end.
+ ********************************************************************************/
+bdfsRoute(sherbrooke,niagara_falls,TrainType,6,Path,Length,Duration).
+;
+
+/********************************************************************************
+ * Find the cities from which one can travel to Montreal in less than 3 hours 
+ * with a freight train
+ * Expecting 15 answers.
+ ********************************************************************************/
+bdfsRoute(From,montreal,freight,3,Path,_,Duration).
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;

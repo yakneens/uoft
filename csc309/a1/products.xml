@@ -1,0 +1,138 @@
+<?xml version = "1.0"?>
+
+<!DOCTYPE store [
+<!ELEMENT store (product+)>
+
+<!ELEMENT product (prodId, category, manufacturer, name, type, description, units, price, image, sale?)>
+<!ELEMENT prodId (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT manufacturer (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT units (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT image (#PCDATA)>
+
+<!ELEMENT sale (salePrice)>
+<!ELEMENT salePrice (#PCDATA)>
+
+]>
+
+<?xml-stylesheet type="text/css" href="store.css"?>
+
+<store>
+    <product>
+        <prodId>1</prodId>
+	<category>Dairy</category>
+	<manufacturer>Natrel</manufacturer>
+	<name>Milk</name>
+	<type>2%</type>
+	<description>Fat free and delicious. Unparallel experience.</description>
+	<units>1</units>
+	<price>5.00</price>
+	<image>images/tomatoes.jpg</image>
+    </product>
+    <product>
+        <prodId>2</prodId>
+	<category>Meat</category>
+	<manufacturer>Schneiders</manufacturer>
+	<name>Chicken</name>
+	<type>Wire Wrapped</type>
+	<description>Healthy and fat free. Great for any occasion.</description>
+	<units>1</units>
+	<price>25.00</price>
+	<image>images/tomatoes.jpg</image>
+	<sale>
+	        <salePrice>20.00</salePrice>
+	</sale>
+    </product>
+    <product>
+        <prodId>3</prodId>
+	<category>Dairy</category>
+	<manufacturer>Yoplait</manufacturer>
+	<name>Yogurt</name>
+	<type>Strawberry</type>
+	<description>Healthy and fat free. Great for any occasion.</description>
+	<units>12</units>
+	<price>6.00</price>
+	<image>images/tomatoes.jpg</image>
+	<sale>
+	        <salePrice>4.00</salePrice>
+	</sale>
+    </product>
+    <product>
+        <prodId>4</prodId>
+	<category>Cans</category>
+	<manufacturer>Campbells</manufacturer>
+	<name>Soup</name>
+	<type>Mushroom</type>
+	<description>Healthy and fat free. Great for any occasion.</description>
+	<units>12</units>
+	<price>20.00</price>
+	<image>images/tomatoes.jpg</image>
+    </product>
+    <product>
+        <prodId>5</prodId>
+	<category>Bulk</category>
+	<manufacturer>Kraft</manufacturer>
+	<name>Kraft Dinner</name>
+	<type>Cheese</type>
+	<description>Junk Food</description>
+	<units>24</units>
+	<price>28.55</price>
+	<image>images/tomatoes.jpg</image>
+    </product>
+    <product>
+        <prodId>6</prodId>
+	<category>Dairy</category>
+	<manufacturer>Lactancia</manufacturer>
+	<name>Butter</name>
+	<type>Fat Free</type>
+	<description>Healthy and fat free. Great for any occasion.</description>
+	<units>1</units>
+	<price>4.00</price>
+	<image>images/tomatoes.jpg</image>
+    </product>
+    <product>
+        <prodId>7</prodId>
+	<category>Meat</category>
+	<manufacturer>President's Choice</manufacturer>
+	<name>Chicken</name>
+	<type>Stuffed</type>
+	<description>Very well produced and bread. Comes wrapped with a string</description>
+	<units>1</units>
+	<price>29.99</price>
+	<image>images/tomatoes.jpg</image>
+	<sale>
+	        <salePrice>25.00</salePrice>
+	</sale>
+    </product>
+    <product>
+        <prodId>8</prodId>
+	<category>Meat</category>
+	<manufacturer>Schneiders</manufacturer>
+	<name>Bacon</name>
+	<type>Thin Sliced</type>
+	<description>Healthy and fat free. Great for any occasion.</description>
+	<units>1</units>
+	<price>35.00</price>
+	<image>images/tomatoes.jpg</image>
+    </product>
+    <product>
+        <prodId>9</prodId>
+	<category>Dairy</category>
+	<manufacturer>President's Choice</manufacturer>
+	<name>Milk</name>
+	<type>Skim</type>
+	<description>Fat free and delicious. Unparallel experience.</description>
+	<units>1</units>
+	<price>4.00</price>
+	<image>images/tomatoes.jpg</image>
+	<sale>
+	        <salePrice>3.50</salePrice>
+	</sale>
+    </product>
+
+
+</store>

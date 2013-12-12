@@ -1,0 +1,52 @@
+###################################################################
+# Auto generated configuration. Dated: Tue Apr 15 00:53:39 EDT 2003
+###################################################################
+
+#
+# The following line instructs Apache to load the jk module
+#
+LoadModule jk_module libexec/mod_jk.so
+
+JkWorkersFile /h/u3/g2/00/g2poupon/public_html/conf/workers.properties
+JkLogFile /h/u3/g2/00/g2poupon/public_html/logs/mod_jk.log
+
+#
+# Log level to be used by mod_jk
+#
+JkLogLevel error
+
+###################################################################
+#                     SSL configuration                           #
+# 
+# By default mod_jk is configured to collect SSL information from
+# the apache environment and send it to the Tomcat workers. The
+# problem is that there are many SSL solutions for Apache and as
+# a result the environment variable names may change.
+#
+# The following (commented out) JK related SSL configureation
+# can be used to customize mod_jk's SSL behaviour.
+# 
+# Should mod_jk send SSL information to Tomact (default is On)
+# JkExtractSSL Off
+# 
+# What is the indicator for SSL (default is HTTPS)
+# JkHTTPSIndicator HTTPS
+# 
+# What is the indicator for SSL session (default is SSL_SESSION_ID)
+# JkSESSIONIndicator SSL_SESSION_ID
+# 
+# What is the indicator for client SSL cipher suit (default is SSL_CIPHER)
+# JkCIPHERIndicator SSL_CIPHER
+# 
+# What is the indicator for the client SSL certificated (default is SSL_CLIENT_CERT)
+# JkCERTSIndicator SSL_CLIENT_CERT
+# 
+#                                                                 #
+###################################################################
+
+#
+# Root context mounts for Tomcat
+#
+JkMount /*.jsp ajp12
+JkMount /servlet/* ajp12
+

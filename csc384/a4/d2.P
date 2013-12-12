@@ -1,0 +1,90 @@
+/*
+
+Agents: rov1, instr1, instr2
+
+Actions: 
+
+perform_op(Robot, Instrument, Operation, Orientation), 
+face_sun(Robot),
+block_sun(Robot), 
+power_up(Robot, Instrument), 
+warm_up(Robot, Instrument).
+
+
+Predicates: 
+
+facing(Robot, Orientation), 
+powered(Robot, Instrument), 
+warmed(Robot, Instrument), 
+performs(I,T).
+holding(R,I)
+*/
+
+
+preconds(face_sun(_), [facing(X,away_from_sun)]).
+addlist(face_sun(X), [facing(X,sun)]).
+deletelist(face_sun(X), [facing(X,away_from_sun)]).
+
+preconds(block_sun(_), [facing(X,sun)]).
+addlist(block_sun(X), [facing(X, away_from_sun)]).
+deletelist(block_sun(X), [facing(X,sun)]).
+
+preconds(perform_op(R,I,Op,Or), [active(R,I), warmed(R,I), facing(R,Or), performs(I,Op)]).
+addlist(perform_op(R,_,Op,Or), [has(R,Op,Or)]).
+deletelist(perform_op(_,_,_,_), []).
+
+preconds(activate(R,I), [can_activate(R)]).
+addlist(activate(R,I), [active(R,I)]).
+deletelist(activate(R,I), [can_activate(R)]).
+
+preconds(deactivate_warmed(R,I), [active(R,I), powered(R,I), warmed(R,I)]).
+addlist(deactivate_warmed(R,I), [can_activate(R)]).
+deletelist(deactivate_warmed(R,I), [powered(R,I), warmed(R,I), active(R,I)]).
+
+preconds(deactivate_powered(R,I), [active(R,I), powered(R,I), neg(warmed(R,I))]).
+addlist(deactivate_powered(R,I), [can_activate(R)]).
+deletelist(deactivate_powered(R,I), [powered(R,I), active(R,I)]).
+
+
+preconds(deactivate(R,I), [active(R,I), neg(powered(R,I)), neg(warmed(R,I))]).
+addlist(deactivate(R,I), [can_activate(R)]).
+deletelist(deactivate(R,I), [active(R,I)]).
+
+
+preconds(power_up(R,I), [active(R,I)]).
+addlist(power_up(R,I), [powered(R,I)]).
+deletelist(power_up(R,I), []). 
+
+
+preconds(warm_up(R,I), [facing(R,sun), powered(R,I)]).
+addlist(warm_up(R,I), [warmed(R,I)]).
+deletelist(warm_up(R,I), []).
+
+
+
+boolean(facing(_,_)).
+boolean(powered(_,_)).
+boolean(warmed(_,_)).
+boolean(performs(_,_)).
+boolean(has(_,_,_)).
+boolean(can_activate(_)).
+boolean(active(_,_)).
+boolean(neg(X)) :- boolean(X).
+
+nonboolean(neg(X)) :- nonboolean(X).
+
+predicate(facing(_,_), facing).
+predicate(powered(_,_), powered).
+predicate(warmed(_,_), warmed).
+predicate(performs(_,_), performs).
+predicate(has(_,_,_), has).
+predicate(can_activate(_), can_activate).
+predicate(active(_,_), active).
+predicate(neg(X),P) :- predicate(X,P).
+
+
+actlist([face_sun(rov1), block_sun(rov1), 
+perform_op(rov1,inst1,therm,sun),perform_op(rov1,inst1,therm,away_from_sun),perform_op(rov1,inst1,spectr,sun),perform_op(rov1,inst1,spectr,away_from_sun),
+perform_op(rov1,inst2,therm,sun),perform_op(rov1,inst2,therm,away_from_sun),perform_op(rov1,inst2,spectr,sun),perform_op(rov1,inst2,spectr,away_from_sun),
+power_up(rov1,inst1),power_up(rov1,inst2),warm_up(rov1,inst1),warm_up(rov1,inst2),activate(rov1,inst1),activate(rov1,inst2),deactivate_warmed(rov1,inst1), deactivate_warmed(rov1,inst2),
+deactivate_powered(rov1,inst1), deactivate_powered(rov1,inst2), deactivate(rov1,inst1),deactivate(rov1,inst2)]).

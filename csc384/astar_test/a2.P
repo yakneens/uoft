@@ -1,0 +1,18 @@
+:- import append/3 from basics.
+:- import member/2 from basics.
+:- import length/2 from basics.
+
+h3([a],[g],21).
+h3([b],[g],13).
+h3([c],[g],3).
+h3([d],[g],17).
+h3([e],[g],1).
+h3([f],[g],12).
+h3([g],[g],0).
+
+h(N,Hvalue):-is_goal(G),h3(N,G,Hvalue).
+%is_goal([[1,4],[2],[3]]).
+is_goal([g]).
+%is_goal([[],[],[1,2,3,4]]).
+
+

@@ -1,0 +1,3 @@
+startstate([loc(s),in(p1,s),in(p2,b),rain,neg(wet),in(u,s),neg(has(_))]).
+goallist([in(p1,p),in(p2,b),neg(wet)]).
+

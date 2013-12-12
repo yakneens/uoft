@@ -1,0 +1,161 @@
+Question 1
+[Tanenbaum] One reason GUIs were initially slow to be adopted was the cost of the 
+hardware needed to support them. How much video RAM, in bytes, is needed to support 
+a 25 line X 80 row character monochrome text screen? How much for a 1024 X 768 24-
+bit color bitmap? What was the cost of this RAM at 1980 prices ($5/KB)? How much is it 
+now (say, $0.5/MB)? 
+There are 25 x 80 = 2000 total possible characters on the screen. At 1 byte per character that 
+would require 2000 bytes or roughly 1.95 KB. Then in the 1980's this would accordingly cost 
+around $9.76.
+
+Answer: At 1024x768 display has 786432 pixels in it. If each pixel is represented by 24 bits then 
+the whole screen can be held in 786432 x 24 = 18874368 bits = 2359296 bytes = 2304 KB = 2.25 
+MB of RAM. At $0.5/MB this costs roughly $1.13.
+
+
+Question 2:
+
+[Text question 2.8] Protecting the operating system is crucial to ensuring that the 
+computer system operates correctly. Provision of this protection is the reason for dual-
+mode operation, memory protection, and the timer. To allow maximum flexibility, 
+however, you should also place minimal constraints on the user. The following is a list of 
+instructions that are normally protected. For each, indicate whether the instruction needs 
+to be protected or not and give a one-line explanation of your answer. 
+Change to user mode.
+This instruction needs to be protected since if it is implemented as a simple bit flip it 
+could be used by an application to get into monitor mode.  
+Change to monitor mode.
+This instruction needs to be protected since a user that can change to monitor mode at 
+will will have access to all protected instructions once in monitor mode. 
+Read from monitor memory. 
+This instruction should be protected since it gives a user access to operating system 
+memory. Certain data stored in memory on behalf of the operating system may give the 
+user classified information about a computer.
+Write into monitor memory. 
+This instruction should be protected since it would make the user able to write code to 
+operating system memory which would in turn allow the user to execute code on behalf 
+of the operating system.
+Fetch an instruction from monitor memory.
+This instruction should be protected since it gives the user the ability to perform 
+operating system instructions at will since after an instruction is fetched it is necessarily 
+executed.  
+Turn on timer interrupt. 
+This instruction does not need to be protected since it does not give a user access to any 
+system critical resources.
+Turn off timer interrupt. 
+This instruction does not need to be protected since it does not give a user access to any 
+system critical resources.
+
+Q3: [Nutt] Explain two factors that might differentiate between the 
+time to do a normal procedure call from an application program to one 
+of its own procedures compared to the time it might take to perform a 
+system call to an OS procedure.
+
+Answer: 
+When an application program descends down into a normal procedure call 
+it does not require a mode switch. The current contents of registers 
+are saved and a new stack frame is created together with an activation 
+record on top of the active frame. The procedure then executes 
+instruction by instruction.
+
+The execution of a system call differs from the regular procedure call 
+in that it causes a mode switch into kernel mode initially, and back 
+into user mode after completion. Since a mode switch is time consuming 
+it directly affects performance of the system call versus a regular 
+procedure call.
+
+Another aspect of system calls that provides further distinction in 
+timings is the fact that in a system call hardware devices such as 
+hard-drives or CD-ROMs may be accessed whereas normal procedure calls 
+can only request data from main memory locations. Not only are requests 
+to hardware such as hard-drives orders of magnitude slower than RAM 
+accesses but these operations are also blocking if the requested device 
+isn't immediately ready to perform the requested operation. This factor 
+can add significantly to the time it requires to complete a system 
+call. 
+
+Q4: [Tanenbaum] Compare reading a file using a single-threaded file 
+server and a multithreaded file server. It takes 15 msec to get a 
+request for work, dispatch it, and do the rest of the necessary 
+processing, if the data is already cached in memory. Otherwise, an 
+additional 75 msec is required to fetch the data from the disk, during 
+which time the thread sleeps. Assume that one third of the requests to 
+the file server require a disk operation. How many requests per 
+second can the server handle if it is single threaded? If it is 
+multithreaded? 
+Answer:
+
+Assuming a single-threaded file server and that a third of the requests 
+require disk accesses processing 3 requests would take 3 x 15 + 75 = 
+120 ms. Thus executing 8 x 3 = 24 requests would require 960 ms which 
+would leave time for at most two more requests that do not require a 
+disk access. Thus a single-threaded server can execute between 24 and 
+26 requests per second.
+
+Assuming a multi-threaded server model and that a third of the requests 
+require disk accesses; while a thread sleeps waiting for the disk 
+operation to complete other threads can execute. Thus the 75 ms 
+overhead for each request that requires disk access does not need to be 
+figured in to the calculations at this point. Executing 66 requests at 
+15 ms per request would require 990 ms. If we are only interested in 
+the number of requests that can be FULLY completed in the course of one 
+second we need to consider that out of the 66 requests that are 
+initiated 22 will be requiring disk access. Assuming that only one 
+thread can access the disk at any time the disk accesses will have to 
+be queued and executed in sequence. At 75 ms per access only 13 such 
+accesses can be completed in the course of 1 second. Thus out of the 22 
+disk access requiring requests 9 will not be complete by the time one 
+second elapses and hence a multithreaded server will be able to FULLY 
+process at most 57 requests per second. 
+
+In summary, 66 requests can be processed per second if full completion 
+is not required and 57 requests can be processed if full completion is 
+required.     
+
+
+Q5: The elapsed real time between when a program starts executing, and 
+when it terminates (also referred to as the "wall clock" time since it 
+represents the time you would observe if you were watching a clock on 
+the wall instead of an internal computer clock) may include four major 
+components in a multiprogrammed system. Give a one sentence description 
+of each.
+***********************************************************************
+*********
+
+Answer:
+1. Time spent in ready state - When a program is executed it may not be 
+immediately scheduled for CPU time, it may instead wait in the queue 
+until the CPU becomes free to service the particular program. 
+Additionally, the program may be switched out of the CPU and put back 
+in the ready queue any number of times according to the number of CPU 
+time slices it requires to execute.
+2. Time spent in waiting state - A program that is executing may 
+require the resources of a piece of hardware or some information from 
+another program. If the requested resources are not immediately 
+available the program may block and go into a waiting queue for the 
+appropriate resource until that resource becomes available.
+3. Time spent in user mode - When a program is in running state it can 
+perform various operations on its data, such as fetching and storing 
+data in RAM and performing arithmetic operations on the data in non-
+protected user mode, as long as no access to the hardware (other than 
+cpu and main memory) is required.
+4. Time spent in kernel mode - When a program requires access to the 
+hardware, for instance in the case of an I/O operation, the program is 
+switched to protected kernel mode where the operating system performs 
+the requested task on behalf of the user application.
+
+Q6: Figures 5.2, 5.3, and 5.4 in the text illustrate different threading models. Indicate 
+which one most closely corresponds to Posix threads on Linux. (Don't try to redraw the 
+picture, just write down the figure number.) 
+
+Asnwer: Figure 5.2
+
+
+Coding Part Discussion:
+
+As was conjectured the overhead of thread creation and exit is orders of magnitude smaller than 
+the overhead of process creation. As discussed in class, this difference can be attributed to the 
+fact that creating a new process requires the creation and initialization of a PCB as well as 
+completion of 3 system calls: fork(), wait(), and exit() whereas pthreads being a user-level 
+package only creates threads within an existing task and thus a creation and exit only requires 
+initialization of a local stack and space for register values.

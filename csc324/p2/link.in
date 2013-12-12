@@ -1,0 +1,104 @@
+% Load the database including the link predicate
+[p2facts].
+
+/********************************************************************************
+ * Ask for all links in the database
+ * Expecting: Twice the number of links actually listed in the database
+ * One for the actual link listed and one for the same link with To and From 
+ * reversed.
+ ********************************************************************************/
+link(From,To,SpeedLimit,Length).
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+
+ /********************************************************************************
+  * Ask for all links in the database between two given cities(toronto and hamilton)
+  * There should only be 1. 
+  ********************************************************************************/
+link(toronto,hamilton,SpeedLimit,Length).
+;
+
+ 
+ /********************************************************************************
+  * Ask for all links in the database between two given cities(hamilton and toronto)
+  * There should only be 1. 
+  ********************************************************************************/
+link(hamilton,toronto,SpeedLimit,Length).
+;
+
+ /********************************************************************************
+  * Ask for a link in the database with a city that doesn't exist.
+  * Expecting: no
+  ********************************************************************************/
+link(yokohama,To,SpeedLimit,Length).
+  
+ 
+ 
+ /********************************************************************************
+  * Ask for all cities connected to North Bay
+  * Should only get Ottawa, Toronto and Sudbury
+  ********************************************************************************/
+link(north_bay, To,_,_).
+;
+;
+;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

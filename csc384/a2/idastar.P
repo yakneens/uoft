@@ -1,0 +1,75 @@
+% Computational Intelligence: a logical approach. 
+% Prolog Code.
+% Iterative deepening A* search, based on the generic search algorithm.
+% Copyright (c) 1998, Poole, Mackworth, Goebel and Oxford University Press.
+% Modified 2001, C. Boutilier
+
+% idsearch(N,P) is true if path P is a path found from node N
+% using iterative deepening A* search. Representations of paths, costs,
+% heuristics, etc. is the same as our implementation of A*.
+
+idsearch(N,P) :-
+   h(N,HN),
+   % writeln(['Trying Depth bound: ',HN]),
+   dbsearch([path(0,[N])],HN,[path(0,[N])],natural,P).
+
+% dbsearch(F,DB,Q,How1,P) is true if a depth bound search from frontier F
+% can find a path P of length >= DB. 
+% Notes:
+% * Q is the initial frontier to (re)start from: since dbsearch can 
+%   fail when the depth-bound is reached without 
+%   finding a solution, we must keep track of the
+%   initial frontier so we can start again with a larger depth-bound.
+% * How specifies whether the previous bound failed naturally (i.e., the
+%   depth-first search failed without finding a solution before hitting
+%   the depth bound) or gives the minimum f-value for which the search 
+%   failed (i.e., if the search failed "unnaturally" because it hit a 
+%   depth-bound).
+% * The frontier is a list of  node(Node,Path,PathLength)
+%   where Node is a node, Path is the path found to Node,
+%   PathLength is the length of the path.
+
+
+dbsearch([path(PC,[N|RestP])|_],DB,_,_,[N|RestP]) :-
+   PC =< DB,
+   is_goal(N),
+   mydisplay(path(PC,[N|RestP])).
+
+dbsearch([path(PC,[N|RestP])|RestF],DB,Q,H,Soln) :-
+   h(N,HN),
+   FVal is HN+PC,
+   FVal =< DB,
+   nb(N,NNs),
+   add_paths_db(NNs,[N|RestP],PC,RestF,NewF),
+   dbsearch(NewF,DB,Q,H,Soln).
+
+dbsearch([path(PC,[N|_])|RestF],DB,Q,H,Soln) :-
+   h(N,HN),
+   FVal is HN+PC,
+   FVal > DB,
+   min1(FVal,H,LUB),
+   dbsearch(RestF,DB,Q,LUB,Soln).
+
+dbsearch([],_,Q,NDB,Soln) :-
+   number(NDB),
+   % writeln(['Trying Depth bound: ',NDB]),
+   dbsearch(Q,NDB,Q,natural,Soln).
+
+%   add_paths(NNs,Path,PC,F0,F1)
+add_paths_db([],_,_,F,F).
+add_paths_db([arc(NN,AC)|RestNNs],Path,PC,F0,[path(PC1,[NN|Path])|F1]) :-
+   PC1 is PC+AC,
+   add_paths_db(RestNNs,Path,PC,F0,F1).
+
+min1(E,natural,V) :- !, V is E.
+min1(E,V,V) :- V =< E.
+min1(E,V,V1) :- V > E, V1 is E.
+
+% to display paths with complex states.
+
+mydisplay(path(PC,Path)) :-
+ writeln(['Path Cost: ', PC]),
+ myd(Path).
+myd([]) :- nl.
+myd([State|Rest]) :- writeln(State), myd(Rest).
+
